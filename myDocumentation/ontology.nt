@@ -1,0 +1,965 @@
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#BelongsTo
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#BelongsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#BelongsTo> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Comprise> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#BelongsTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AbstractConcept> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#BelongsTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:CulturalScope> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#BelongsTo> <http://www.w3.org/2000/01/rdf-schema#comment> "This property link and abstract concept to its origin movement. Example: Teoria dei moti dell'animo was formalised during Renaissance and belongs to it." .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Comprise
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Comprise> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Comprise> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:CulturalScope> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Comprise> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AbstractConcept> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Comprise> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of BelongsTo" .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompriseIconography
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompriseIconography> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompriseIconography> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographyCompriseIn> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompriseIconography> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicMotifs> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompriseIconography> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicRepresentation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompriseIconography> <http://www.w3.org/2000/01/rdf-schema#comment> "This property link the Iconographical motifs to all its known Iconographical Representations. Example: Last Supper Iconographical Motifs is linked to Florentine Last Supper, Da Vinci Last Supper, Nordic Last Supper ecc..." .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CreatedBy
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CreatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CreatedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IntroductedBy> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CreatedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Creates> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CreatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CreatedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AbstractConcept> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CreatedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#core:Agent> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CreatedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "This property highlights the role of creator of an agent of an abstract concept." .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Creates
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Creates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Creates> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Introduce> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Creates> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#core:Agent> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Creates> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AbstractConcept> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Creates> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of CreatedBy" .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DerivativeVisualAtom
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DerivativeVisualAtom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DerivativeVisualAtom> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasVisualAtom> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DerivativeVisualAtom> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsDerivativeVisualAtomOf> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DerivativeVisualAtom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DerivationRelation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DerivativeVisualAtom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#VisualAtom> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DerivativeVisualAtom> <http://www.w3.org/2000/01/rdf-schema#comment> "Specialisation of VisualAtom. Identifying the Derivated Visual Atom of a Derivation Relation." .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DescribedIn
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DescribedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DescribedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/arco/ontology/core/Concept> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DescribedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links a concept to a source that describes it" .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#EmbodiesArtisticTheory
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#EmbodiesArtisticTheory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#EmbodiesArtisticTheory> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPresentIn> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#EmbodiesArtisticTheory> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PresentsArtisticTheory> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#EmbodiesArtisticTheory> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicRepresentation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#EmbodiesArtisticTheory> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#ArtisticTheory> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#EmbodiesArtisticTheory> <http://www.w3.org/2000/01/rdf-schema#comment> "This property link an Iconographical Representation to the Theory it embodies inside it. Da Vinci Last Supper Iconography embodies Theory of Moti dell'Animo inside it." .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#FinalVisualAtom
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#FinalVisualAtom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#FinalVisualAtom> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasVisualAtom> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#FinalVisualAtom> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsFinalVisualAtomOf> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#FinalVisualAtom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PreparatoryRelation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#FinalVisualAtom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#VisualAtom> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#FinalVisualAtom> <http://www.w3.org/2000/01/rdf-schema#comment> "Specialisation of VisualAtom. Identifying the Final Visual Atom of a Preparatory relation." .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasAlternativeDating
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasAlternativeDating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasAlternativeDating> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:HasDating> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasAlternativeDating> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsAlternativeDatingOf> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasAlternativeDating> <http://www.w3.org/2000/01/rdf-schema#comment> "Specialisation of father property linking an element to its possible alternative dating." .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasCharacterVisualAtom
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasCharacterVisualAtom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasCharacterVisualAtom> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasVisualAtom> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasCharacterVisualAtom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasCharacterVisualAtom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CharacterVisualAtom> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasCharacterVisualAtom> <http://www.w3.org/2000/01/rdf-schema#comment> "Property specialisation of HasVisualAtom, linking an element to a Visual Atom identified as a character." .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasCompositionVisualAtom
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasCompositionVisualAtom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasCompositionVisualAtom> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasVisualAtom> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasCompositionVisualAtom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasCompositionVisualAtom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompositionVisualAtom> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasCompositionVisualAtom> <http://www.w3.org/2000/01/rdf-schema#comment> "Specialisation of HasVisualAtom used to link an element to a visual Atom representing the composition (the order of figures and elements) of something. Eg: A photo of Last Supper marked in order to highlights the groupings of figures." .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasDepiction
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasDepiction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasDepiction> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://dati.beniculturali.it/cis/CulturalEntity> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#VisualAtom> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#core:Agent> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasDepiction> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/spec/#term_Image> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasDerivatedCulturalProperty
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasDerivatedCulturalProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasDerivatedCulturalProperty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsRelatedWorkSituationOf> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasDerivatedCulturalProperty> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsDerivationInRelation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasDerivatedCulturalProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DerivationRelation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasDerivatedCulturalProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasDerivatedCulturalProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of  IsDerivationInRelation" .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasFinalCulturalProperty
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasFinalCulturalProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasFinalCulturalProperty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsRelatedWorkSituationOf> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasFinalCulturalProperty> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsFinalWorkInRelation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasFinalCulturalProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PreparatoryRelation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasFinalCulturalProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasGeometricalVisualAtom
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasGeometricalVisualAtom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasGeometricalVisualAtom> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasVisualAtom> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasGeometricalVisualAtom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasGeometricalVisualAtom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#GeometricalVisualAtom> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasGeometricalVisualAtom> <http://www.w3.org/2000/01/rdf-schema#label> "Specialisation of HasVisualAtom. It link something to a visual Atom showing the geometrical elements of a Cultural Property. Eg: a photo highlighting the perspectical lines of Leonardo's Last Supper" .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasIconographicalMotif
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasIconographicalMotif> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasIconographicalMotif> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RepresentSubject> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasIconographicalMotif> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:Subject> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasIconographicalMotif> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicMotifs> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasIconographicalMotif> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of RepresentSubject" .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasIconographicalRepresentation
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasIconographicalRepresentation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasIconographicalRepresentation> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsUsedInWork> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasIconographicalRepresentation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasIconographicalRepresentation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicRepresentation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasIconographicalRepresentation> <http://www.w3.org/2000/01/rdf-schema#comment> "This property link a Cultura Property to its iconographical representation. Ex: Cenacolo of Fuligno has a Florentine Last Supper Iconography." .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasInfluenceMedium
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasInfluenceMedium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasInfluenceMedium> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsRelatedWorkSituationOf> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasInfluenceMedium> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsMediumInRelation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasInfluenceMedium> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of IsMediumInRelation" .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasInfluencedCulturalProperty
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasInfluencedCulturalProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasInfluencedCulturalProperty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsRelatedWorkSituationOf> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasInfluencedCulturalProperty> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsInfluencedInRelation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasInfluencedCulturalProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#InfluenceRelation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasInfluencedCulturalProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasInfluencedCulturalProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of IsInfluencedInRelation" .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasInfluencerCulturalProperty
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasInfluencerCulturalProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasInfluencerCulturalProperty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsRelatedWorkSituationOf> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasInfluencerCulturalProperty> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsInfluencerInRelation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasInfluencerCulturalProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#InfluenceRelation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasInfluencerCulturalProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasInfluencerCulturalProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of IsInfluencerInRelation" .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasInterpretationCriterion
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasInterpretationCriterion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasInterpretationCriterion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasInterpretationCriterion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:InterpretationCriterion> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasInterpretationCriterion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:InterpretationCriterion> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasOriginalCulturalProperty
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasOriginalCulturalProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasOriginalCulturalProperty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsRelatedWorkSituationOf> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasOriginalCulturalProperty> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsOriginalInRelation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasOriginalCulturalProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DerivationRelation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasOriginalCulturalProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasOriginalCulturalProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of  IsOriginalInRelation" .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasPictorialAttribute
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasPictorialAttribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasPictorialAttribute> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsAttributeOf> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasPictorialAttribute> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicRepresentation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasPictorialAttribute> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PictorialAttribute> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasPictorialAttribute> <http://www.w3.org/2000/01/rdf-schema#comment> "This property link an iconographical representation to a pictorial attribute part of it. eg: Last Supper has the figure of Christ inside it." .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasPreparatoryCulturalPropety
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasPreparatoryCulturalPropety> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasPreparatoryCulturalPropety> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsRelatedWorkSituationOf> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasPreparatoryCulturalPropety> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPreparatoryWorkInRelation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasPreparatoryCulturalPropety> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PreparatoryRelation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasPreparatoryCulturalPropety> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasPreparatoryCulturalPropety> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of IsPreparatoryWorkInRelation" .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasVisualAtom
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasVisualAtom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasVisualAtom> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsVisualAtomOf> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasVisualAtom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasVisualAtom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#VisualAtom> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasVisualAtom> <http://www.w3.org/2000/01/rdf-schema#comment> "Property linking an Owl:thing to a Visual Atom representing a significant visual feature of it. Eg: Da Vinci's Last Supper Iconography linked to a Visual Atom showing a photo of a representation identifiable as part of this Iconography" .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographyCompriseIn
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographyCompriseIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographyCompriseIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicRepresentation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographyCompriseIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicMotifs> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographyCompriseIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of CompriseIconography" .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Influenced
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Influenced> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Influenced> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#ArtisticTheory> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Influenced> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicRepresentation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Influenced> <http://www.w3.org/2000/01/rdf-schema#comment> "This property highlights the influence that an artistic Theory has on an iconographical representation. At the moment no reification is provided." .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#InfluencedVisualAtom
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#InfluencedVisualAtom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#InfluencedVisualAtom> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasVisualAtom> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#InfluencedVisualAtom> <http://www.w3.org/2000/01/rdf-schema#comment> "Property used to describe the VisualAtom of the Influenced cultural property." .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#InfluencerVisualAtom
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#InfluencerVisualAtom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#InfluencerVisualAtom> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasVisualAtom> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#InfluencerVisualAtom> <http://www.w3.org/2000/01/rdf-schema#comment> "Property used to describe the VisualAtom of the Influencer cultural property." .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Introduce
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Introduce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Introduce> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IntroductedBy> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Introduce> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of IntroducedBy" .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IntroductedBy
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IntroductedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IntroductedBy> <http://www.w3.org/2000/01/rdf-schema#label> "" .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsAlternativeDatingOf
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsAlternativeDatingOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsAlternativeDatingOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:IsDatingOf> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsAlternativeDatingOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:Dating> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsAlternativeDatingOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsAttributeOf
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsAttributeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsAttributeOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PictorialAttribute> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsAttributeOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicRepresentation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsAttributeOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of  HasAttribute" .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsCharacterVisualAtomOf
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsCharacterVisualAtomOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsCharacterVisualAtomOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsVisualAtomOf> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsCompositionVisualAtomOf
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsCompositionVisualAtomOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsCompositionVisualAtomOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsVisualAtomOf> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsDerivationInRelation
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsDerivationInRelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsDerivationInRelation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:RelatedWorkSituation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsDerivationInRelation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsDerivationInRelation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DerivationRelation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsDerivationInRelation> <http://www.w3.org/2000/01/rdf-schema#comment> "Coupled with IsOriginalRelation this property link a cultural Property to the DerivationRelation node. Specifically this property link the derivation one of the 2 Cultural Properties." .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsDerivativeVisualAtomOf
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsDerivativeVisualAtomOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsDerivativeVisualAtomOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsVisualAtomOf> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsDerivativeVisualAtomOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#VisualAtom> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsDerivativeVisualAtomOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DerivationRelation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsDerivativeVisualAtomOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of DerivativeVisualAtom" .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsFinalVisualAtomOf
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsFinalVisualAtomOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsFinalVisualAtomOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsVisualAtomOf> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsFinalVisualAtomOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#VisualAtom> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsFinalVisualAtomOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PreparatoryRelation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsFinalVisualAtomOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of FinalVisualAtom" .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsFinalWorkInRelation
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsFinalWorkInRelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsFinalWorkInRelation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:RelatedWorkSituation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsFinalWorkInRelation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsFinalWorkInRelation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PreparatoryRelation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsFinalWorkInRelation> <http://www.w3.org/2000/01/rdf-schema#comment> "Coupled with IsPreparatoryWorkInRelation. This property link a Cultural Property to its PreparatoryRelation node. Specifically this property identify the final work of the relation." .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsGeometricalVisualAtomOf
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsGeometricalVisualAtomOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsGeometricalVisualAtomOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsVisualAtomOf> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsIconologicalMeaningOf
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsIconologicalMeaningOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsIconologicalMeaningOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicRepresentation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsIconologicalMeaningOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of HasIconologicalMeaning" .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsInfluencedInRelation
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsInfluencedInRelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsInfluencedInRelation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:RelatedWorkSituation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsInfluencedInRelation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsInfluencedInRelation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#InfluenceRelation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsInfluencedInRelation> <http://www.w3.org/2000/01/rdf-schema#comment> "Coupled with InfluencerInRelation. This property links a Cultural Property to its influence relation node. Specifically this property identify the cultural property that is influenced by another one." .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsInfluencedVisualAtomOf
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsInfluencedVisualAtomOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsInfluencedVisualAtomOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsVisualAtomOf> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsInfluencerInRelation
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsInfluencerInRelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsInfluencerInRelation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:RelatedWorkSituation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsInfluencerInRelation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsInfluencerInRelation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#InfluenceRelation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsInfluencerInRelation> <http://www.w3.org/2000/01/rdf-schema#comment> "Coupled with InfluencerInRelation. This property links a Cultural Property to its influence relation node. Specifically this property identify the cultural property that influence the other one." .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsInfluencerVisualAtomOf
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsInfluencerVisualAtomOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsInfluencerVisualAtomOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsVisualAtomOf> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsMediumInRelation
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsMediumInRelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsMediumInRelation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:RelatedWorkSituation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsMediumInRelation> <http://www.w3.org/2000/01/rdf-schema#comment> "This property highlights the role of medium in the relation between 2 cultural properties. Eg: The incision from Pietro Birago of Last Supper was the medium of influence from Last Supper to the Flanders." .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsOriginalInRelation
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsOriginalInRelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsOriginalInRelation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:RelatedWorkSituation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsOriginalInRelation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsOriginalInRelation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DerivationRelation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsOriginalInRelation> <http://www.w3.org/2000/01/rdf-schema#comment> "Coupled with IsOriginalRelation this property link a cultural Property to the DerivationRelation node. Specifically this property link the original one of the 2 cultural properties." .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsOriginalVisualAtomOf
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsOriginalVisualAtomOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsOriginalVisualAtomOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsVisualAtomOf> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsOriginalVisualAtomOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#OriginalVisualAtom> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsOriginalVisualAtomOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#VisualAtom> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsOriginalVisualAtomOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DerivationRelation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsOriginalVisualAtomOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of OriginalVisualAtom" .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPredecessorOf
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPredecessorOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPredecessorOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsSuccessorOf> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPredecessorOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicRepresentation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPredecessorOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicRepresentation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPredecessorOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This property link an iconographical representation to another one that come immediately before it. Eg: The Florentine iconographical representation is the predecessor of Da Vinci's one." .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPreparatoryVisualAtomOf
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPreparatoryVisualAtomOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPreparatoryVisualAtomOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsVisualAtomOf> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPreparatoryVisualAtomOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PreparatoryVisualAtom> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPreparatoryVisualAtomOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#VisualAtom> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPreparatoryVisualAtomOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PreparatoryRelation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPreparatoryVisualAtomOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of PreparatoryVisualAtom" .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPreparatoryWorkInRelation
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPreparatoryWorkInRelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPreparatoryWorkInRelation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:RelatedWorkSituation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPreparatoryWorkInRelation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPreparatoryWorkInRelation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PreparatoryRelation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPreparatoryWorkInRelation> <http://www.w3.org/2000/01/rdf-schema#comment> "Coupled with IsPreparatoryWorkInRelation. This property link a Cultural Property to its PreparatoryRelation node. Specifically this property identify the preparatory work of the relation." .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPresentIn
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPresentIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPresentIn> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Presents> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPresentIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AbstractConcept> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPresentIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPresentIn> <http://www.w3.org/2000/01/rdf-schema#comment> "It highlights the presence of an abstract concept inside a Cultural property. Eg: Da Vinci's iconographical rapresentation of Last Supper is present in a set of different Cultural Properties. Teoria dei Moti dell'animo is present in another set of other Cultural Properties." .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsRelatedWorkSituationOf
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsRelatedWorkSituationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsRelatedWorkSituationOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:RelatedWorkSituation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsRelatedWorkSituationOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:RelatedWorkSituation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsRelatedWorkSituationOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsSuccessorOf
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsSuccessorOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsSuccessorOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsSuccessorOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicRepresentation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsSuccessorOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicRepresentation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsSuccessorOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of IsPredecessorOf" .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsUsedInWork
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsUsedInWork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsUsedInWork> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicRepresentation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsUsedInWork> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsUsedInWork> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of HasIconographicalRepresentation" .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsVisualAtomOf
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsVisualAtomOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsVisualAtomOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of HasVisualAtom" .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#OriginalVisualAtom
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#OriginalVisualAtom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#OriginalVisualAtom> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasVisualAtom> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#OriginalVisualAtom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DerivationRelation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#OriginalVisualAtom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#VisualAtom> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#OriginalVisualAtom> <http://www.w3.org/2000/01/rdf-schema#comment> "Specialisation of VisualAtom. Identifying the Original Visual Atom of the relation." .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PreparatoryVisualAtom
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PreparatoryVisualAtom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PreparatoryVisualAtom> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasVisualAtom> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PreparatoryVisualAtom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PreparatoryRelation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PreparatoryVisualAtom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#VisualAtom> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PreparatoryVisualAtom> <http://www.w3.org/2000/01/rdf-schema#comment> "Specialisation of VisualAtom. Identifying the Preparatory Visual Atom of a Preparatory Relation." .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Presents
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Presents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Presents> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Presents> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AbstractConcept> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Presents> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of IsPresentIn" .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PresentsArtisticTheory
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PresentsArtisticTheory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PresentsArtisticTheory> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Presents> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RepresentSubject
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RepresentSubject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RepresentSubject> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicMotifs> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RepresentSubject> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:Subject> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RepresentSubject> <http://www.w3.org/2000/01/rdf-schema#comment> "This property show the subject highlighted by the Iconographical Motifs" .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#TheorisedBy
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#TheorisedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#TheorisedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IntroductedBy> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#TheorisedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Theorises> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#TheorisedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AbstractConcept> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#TheorisedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#core:Agent> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#TheorisedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "This property highlights who theorised a certain artistic theory." .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Theorises
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Theorises> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Theorises> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Introduce> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Theorises> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#core:Agent> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Theorises> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AbstractConcept> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Theorises> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of TheorisedBy" .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:HasAuthor
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:HasAuthor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:HasAuthor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:HasAuthor> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:IsAuthorOf> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:HasAuthor> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid5 <http://www.w3.org/2002/07/owl#unionOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://dati.beniculturali.it/cis/CulturalEntity> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/arco/ontology/context-description/Bibliography> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:HasAuthor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#core:Agent> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:HasDating
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:HasDating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:HasDating> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:IsDatingOf> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:HasDating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:HasDating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:Dating> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:HasDating> <http://www.w3.org/2000/01/rdf-schema#comment> "Mutuated from contextual description module, this property links an element to its dating node." .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:HasDating> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/arco/ontology/context-description/hasDating> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:HasDatingEvent
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:HasDatingEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:HasDatingEvent> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:IsDatingEventOf> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:HasDatingEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:Dating> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:HasDatingEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IO:Event> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:HasDatingEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "This property link the Dating node to its dating Event. The dating pattern is mutuated by the contextual description module." .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:HasDatingEvent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/arco/ontology/context-description/hasDatingEvent> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:IsAuthorOf
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:IsAuthorOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:IsAuthorOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:IsDatingEventOf
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:IsDatingEventOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:IsDatingEventOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IO:Event> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:IsDatingEventOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:Dating> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:IsDatingEventOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of HasDatingEvent" .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:IsDatingOf
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:IsDatingOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:IsDatingOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:Dating> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:IsDatingOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:IsDatingOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of Arco:HasDating" .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:RelatedWorkSituation
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:RelatedWorkSituation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:RelatedWorkSituation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:RelatedWorkSituation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:RelatedWorkSituation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:RelatedWorkSituation> <http://www.w3.org/2000/01/rdf-schema#comment> "Mutuated by Contextual Description module of Arco. This property links a work to a related one. The pattern used in Arco is maintained even if it is specialised by a new set of subproperties and subclasses." .
+# 
+# https://ontopia-lodview.agid.gov.it/onto/TI/atTime
+<https://ontopia-lodview.agid.gov.it/onto/TI/atTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ontopia-lodview.agid.gov.it/onto/TI/atTime> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ontopia-lodview.agid.gov.it/onto/TI/hasTemporalEntity> .
+<https://ontopia-lodview.agid.gov.it/onto/TI/atTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<https://ontopia-lodview.agid.gov.it/onto/TI/atTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Tiapit:TimeInterval> .
+# 
+# https://ontopia-lodview.agid.gov.it/onto/TI/hasTemporalEntity
+<https://ontopia-lodview.agid.gov.it/onto/TI/hasTemporalEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ontopia-lodview.agid.gov.it/onto/TI/hasTemporalEntity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<https://ontopia-lodview.agid.gov.it/onto/TI/hasTemporalEntity> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/italia/onto/TI/TemporalEntity> .
+# 
+# https://w3id.org/arco/ontology/context-description/hasBibliography
+<https://w3id.org/arco/ontology/context-description/hasBibliography> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/arco/ontology/context-description/hasBibliography> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/arco/ontology/context-description/isBibliographyOf> .
+# 
+# https://w3id.org/arco/ontology/context-description/hasBibliographyType
+<https://w3id.org/arco/ontology/context-description/hasBibliographyType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/arco/ontology/context-description/hasBibliographyType> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/arco/ontology/context-description/isBibliographyTypeOf> .
+# 
+# https://w3id.org/arco/ontology/context-description/isBibliographyOf
+<https://w3id.org/arco/ontology/context-description/isBibliographyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/arco/ontology/context-description/isBibliographyOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+# 
+# https://w3id.org/arco/ontology/context-description/isBibliographyTypeOf
+<https://w3id.org/arco/ontology/context-description/isBibliographyTypeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/arco/ontology/context-description/specificTime
+<https://w3id.org/arco/ontology/context-description/specificTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/arco/ontology/context-description/specificTime> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://ontopia-lodview.agid.gov.it/onto/TI/atTime> .
+<https://w3id.org/arco/ontology/context-description/specificTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/italia/onto/l0/EventOrSituation> .
+<https://w3id.org/arco/ontology/context-description/specificTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Tiapit:TimeInterval> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AlternativeRelationDate
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AlternativeRelationDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AlternativeRelationDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:Date> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AlternativeRelationDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:RelatedWorkSituation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AlternativeRelationDate> <http://www.w3.org/2000/01/rdf-schema#range> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid8 <http://www.w3.org/2002/07/owl#unionOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#int> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AlternativeRelationDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Alternative date of a relation" .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#ApproximateDate
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#ApproximateDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#ApproximateDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:Date> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#ApproximateDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#ApproximateDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#ApproximateDate> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#EndDate> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#ApproximateDate> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#StartDate> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CharacterDescription
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CharacterDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CharacterDescription> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#LongDescription> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CharacterDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CharacterDescription> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CharacterRelationDescription> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CharacterRelationDescription
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CharacterRelationDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CharacterRelationDescription> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RelationDescription> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CharacterRelationDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:RelatedWorkSituation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CharacterRelationDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CharacterRelationDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Specialisation of Relation Description. This property describes the influence a work has on another one from a character point of view. Eg: Judas of Da Vinci Last Supper influenced the Judas of Gaudenzio Ferrari Last Supper" .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompositionDescription
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompositionDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompositionDescription> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#LongDescription> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompositionDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompositionDescription> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompositionRelationDescription> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompositionRelationDescription
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompositionRelationDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompositionRelationDescription> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RelationDescription> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompositionRelationDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:RelatedWorkSituation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompositionRelationDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompositionRelationDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Property describing the influence a work has on another from a composition point of view. Eg: Marcantonio Raimondi Last Supper shows a composition influenced by the symmetry and the groupings of 3 of Leonardo Last Supper" .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Depiction
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Depiction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Depiction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Depiction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Depiction> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/spec/#term_depiction> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Description
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Description> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Description> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Description> <http://www.w3.org/2000/01/rdf-schema#comment> "Long description of an owl thing." .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#EndDate
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#EndDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#EndDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:Date> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#EndDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#EndDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#GeometricalDescription
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#GeometricalDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#GeometricalDescription> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#LongDescription> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#GeometricalDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#GeometricalDescription> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#GeometricalRelationDescription> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#GeometricalRelationDescription
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#GeometricalRelationDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#GeometricalRelationDescription> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RelationDescription> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#GeometricalRelationDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:RelatedWorkSituation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#GeometricalRelationDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#GeometricalRelationDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Property describing the geometrical influence a work has on another from a Geometrical point of view. Eg: The symmetry used in Leonardo Last Supper partially reused in Albrecht Durer Last Supper of 1523" .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconclassCode
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconclassCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconclassCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicMotifs> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconclassCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconclassCode> <http://www.w3.org/2000/01/rdf-schema#comment> <https://w3id.org/arco/ontology/context-description/iconclassCode> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Label
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Label> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Label> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Label> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2000/01/rdf-schema#label> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#LongDescription
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#LongDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#LongDescription> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Description> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#LongDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#LongDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Name
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Name> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/italia/onto/l0/name> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#OtherIconclassCode
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#OtherIconclassCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#OtherIconclassCode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconclassCode> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#OtherIconclassCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicMotifs> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#OtherIconclassCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#OtherIconclassCode> <http://www.w3.org/2000/01/rdf-schema#comment> "Mention of other possible Iconclass Code" .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RealisationPeriod
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RealisationPeriod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RealisationPeriod> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:Date> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RealisationPeriod> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RealisationPeriod> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RelationDate
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RelationDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RelationDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:Date> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RelationDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:RelatedWorkSituation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RelationDate> <http://www.w3.org/2000/01/rdf-schema#range> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid11 <http://www.w3.org/2002/07/owl#unionOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#int> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RelationDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date of a relation" .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RelationDescription
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RelationDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RelationDescription> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Description> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RelationDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:RelatedWorkSituation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RelationDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RelationDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Long description of a relation between 2 entities in a RelatedWorkSituation class." .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#StartDate
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#StartDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#StartDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:Date> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#StartDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#StartDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#TypicalIconclassCode
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#TypicalIconclassCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#TypicalIconclassCode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconclassCode> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#TypicalIconclassCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicMotifs> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#TypicalIconclassCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#TypicalIconclassCode> <http://www.w3.org/2000/01/rdf-schema#comment> "Mention of the typical Iconclass Code used to mark the episode of an iconographical motif." .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#URI
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#URI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#URI> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/spec/#term_Image> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#URI> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:Date
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:Date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:Date> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:Date> <http://www.w3.org/2000/01/rdf-schema#range> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid14 <http://www.w3.org/2002/07/owl#unionOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#int> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:Date> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/italia/onto/TI/date> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:AgentDate
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:AgentDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:AgentDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:Date> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:AgentDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#core:Agent> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:AgentDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:AgentDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Property used to indicate temporal information (birth date/death date/period of life)"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:AgentDate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/arco/ontology/context-description/agentDate"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# https://w3id.org/arco/ontology/context-description/bibliographicReferenceAuthor
+<https://w3id.org/arco/ontology/context-description/bibliographicReferenceAuthor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/arco/ontology/context-description/bibliographicReferenceAuthor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/arco/ontology/context-description/Bibliography> .
+<https://w3id.org/arco/ontology/context-description/bibliographicReferenceAuthor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# https://w3id.org/arco/ontology/context-description/bilbiographicReference
+<https://w3id.org/arco/ontology/context-description/bilbiographicReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/arco/ontology/context-description/bilbiographicReference> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/arco/ontology/context-description/Bibliography> .
+<https://w3id.org/arco/ontology/context-description/bilbiographicReference> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://dati.beniculturali.it/cis/CulturalEntity
+<http://dati.beniculturali.it/cis/CulturalEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AbstractConcept
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AbstractConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AbstractConcept> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/arco/ontology/core/Concept> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AbstractConcept> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represent a specification class for the \"Concept\" of Top Level Ontology. It is not thought to be directly instatiated, but only to be a collector of more defined abstract concepts as Artistic Theories, Iconographies, Iconologies interpretations and elements of paintings."^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#ArtisticTheory
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#ArtisticTheory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#ArtisticTheory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AbstractConcept> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#ArtisticTheory> <http://www.w3.org/2000/01/rdf-schema#comment> "Artistic Theory groups all the theories conceived in the art domain. It specifically focus on theories of painting. Example: Moti dell'Animo. Theory with the Aim of expressing the range of human emotion inside a painting."^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CharacterVisualAtom
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CharacterVisualAtom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CharacterVisualAtom> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#VisualAtom> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CharacterVisualAtom> <http://www.w3.org/2000/01/rdf-schema#comment> "Specialisation of VisualAtom, it collects the atoms identified as being a character without a link to a special meaning. Eg: the figure of Judas in Last Supper is a character, but is not linked to his identification." .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompositionVisualAtom
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompositionVisualAtom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompositionVisualAtom> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#VisualAtom> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompositionVisualAtom> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#GeometricalVisualAtom> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompositionVisualAtom> <http://www.w3.org/2000/01/rdf-schema#comment> "Specialisation of VisualAtom, it represent VisualAtoms identified to be representative of composition elements of a painting. Eg: the groupings of 3 figures in Last Supper." .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DerivationRelation
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DerivationRelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DerivationRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:RelatedWorkSituation> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#GeometricalVisualAtom
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#GeometricalVisualAtom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#GeometricalVisualAtom> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#VisualAtom> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#GeometricalVisualAtom> <http://www.w3.org/2000/01/rdf-schema#comment> "Specialisation of VisualAtom. It comprise visual Atoms aimed at showing the geometrical elements of a painting. Eg: the perspective lines of Last Supper" .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicMotifs
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicMotifs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicMotifs> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AbstractConcept> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicMotifs> <http://www.w3.org/2000/01/rdf-schema#comment> "Iconographical Motifs is the class aimed to collect all the single representations of different subjects. Example: the pictorical subject \"Last Supper\" has an iconographical Motifs. This motifs collects an x number of different single iconographical representations."^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicRepresentation
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicRepresentation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicRepresentation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AbstractConcept> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicRepresentation> <http://www.w3.org/2000/01/rdf-schema#comment> "This class is the single iconographical representation. Each instance of this class could be present in different cultural properties and has a specific set of features that distinguish it from another one. Example: Florentine Last Supper is a way of representing Last Supper with certain temporal and location characteristics and with specific visual features."^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#InfluenceRelation
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#InfluenceRelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#InfluenceRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:RelatedWorkSituation> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#MainCharacter
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#MainCharacter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#MainCharacter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PictorialAttribute> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PartialDerivationRelation
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PartialDerivationRelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PartialDerivationRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DerivationRelation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PartialDerivationRelation> <http://www.w3.org/2000/01/rdf-schema#label> "Relation describing the derivation relation between only a part of a cultural property and another. Eg: Bayonne Tapestry is a derivation of Last Supper but only for the central composition, the background is totally different." .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PictorialAttribute
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PictorialAttribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PictorialAttribute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AbstractConcept> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PictorialAttribute> <http://www.w3.org/2000/01/rdf-schema#comment> "It is a significant element of an iconographical representation. it difference itself from a simple visual features due to its having an indipendence from the representation itself. Example: Last Supper has inside it the figure of Peter. Peter is a character that is independent from a single painting."^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PreparatoryRelation
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PreparatoryRelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PreparatoryRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:RelatedWorkSituation> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#SceneObject
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#SceneObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#SceneObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PictorialAttribute> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#SecondaryCharacter
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#SecondaryCharacter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#SecondaryCharacter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PictorialAttribute> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#VisualAtom
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#VisualAtom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#VisualAtom> <http://www.w3.org/2000/01/rdf-schema#comment> "Inspired by VIR: this class represent the minimum set of significative physical features without a linked meaning. Eg: the figure of Christ in Last Supper from Leonardo da Vinci is denoted by the set of colors that represent that figure inside the painting." .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:AlternativeDating
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:AlternativeDating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:AlternativeDating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:Dating> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:AlternativeDating> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/arco/ontology/context-description/AlternativeDating> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dati.beniculturali.it/cis/CulturalEntity> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/arco/ontology/arco/CulturalProperty> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IO:Event
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IO:Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IO:Event> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/italia/onto/l0/EventOrSituation> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Tiapit:TimeInterval
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Tiapit:TimeInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Tiapit:TimeInterval> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontopia-lodview.agid.gov.it/onto/l0/Characteristic> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Tiapit:TimeInterval> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/italia/onto/TI/TimeInterval> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:CulturalPropertyStage
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:CulturalPropertyStage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:CulturalPropertyStage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/arco/ontology/core/CulturalEntityCharacteristic> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:CulturalPropertyStage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/arco/ontology/context-description/CulturalPropertyStage> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:CulturalScope
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:CulturalScope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:CulturalScope> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/onto/l0/Topic> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:CulturalScope> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/arco/ontology/context-description/CulturalScope> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:Dating
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:Dating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:Dating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/arco/ontology/context-description/DetectionMethod> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:Dating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/arco/ontology/context-description/Interpretation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:Dating> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/arco/ontology/context-description/Dating> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:InterpretationCriterion
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:InterpretationCriterion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:InterpretationCriterion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/onto/l0/Description> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:InterpretationCriterion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/arco/ontology/context-description/InterpretationCriterion> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:RelatedWorkSituation
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:RelatedWorkSituation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:RelatedWorkSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/arco/ontology/core/Situation> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:RelatedWorkSituation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/arco/ontology/context-description/RelatedWorkSituation> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:Subject
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:Subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:Subject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/onto/l0/Topic> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:Subject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/arco/ontology/context-description/Subject> .
+# 
+# http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#core:Agent
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#core:Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#core:Agent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://dati.gov.it/onto/dcatapit#Agent> .
+# 
+# http://xmlns.com/foaf/spec/#term_Image
+<http://xmlns.com/foaf/spec/#term_Image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://ontopia-lodview.agid.gov.it/onto/l0/Characteristic
+<https://ontopia-lodview.agid.gov.it/onto/l0/Characteristic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontopia-lodview.agid.gov.it/onto/l0/Characteristic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/onto/Entity> .
+# 
+# https://w3id.org/arco/ontology/context-description/Bibliography
+<https://w3id.org/arco/ontology/context-description/Bibliography> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/arco/ontology/context-description/BibliographyType
+<https://w3id.org/arco/ontology/context-description/BibliographyType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/arco/ontology/context-description/DetectionMethod
+<https://w3id.org/arco/ontology/context-description/DetectionMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/arco/ontology/context-description/DetectionMethod> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/arco/ontology/core/Method> .
+# 
+# https://w3id.org/arco/ontology/context-description/Interpretation
+<https://w3id.org/arco/ontology/context-description/Interpretation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/arco/ontology/context-description/Interpretation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/arco/ontology/core/Situation> .
+# 
+# https://w3id.org/arco/ontology/core/Concept
+<https://w3id.org/arco/ontology/core/Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/arco/ontology/core/Concept> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/onto/l0/Object> .
+<https://w3id.org/arco/ontology/core/Concept> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/italia/onto/l0/Concept> .
+# 
+# https://w3id.org/arco/ontology/core/CulturalEntityCharacteristic
+<https://w3id.org/arco/ontology/core/CulturalEntityCharacteristic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/arco/ontology/core/CulturalEntityCharacteristic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontopia-lodview.agid.gov.it/onto/l0/Characteristic> .
+# 
+# https://w3id.org/arco/ontology/core/Method
+<https://w3id.org/arco/ontology/core/Method> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/arco/ontology/core/Method> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/onto/l0/Description> .
+# 
+# https://w3id.org/arco/ontology/core/Situation
+<https://w3id.org/arco/ontology/core/Situation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/arco/ontology/core/Situation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/onto/l0/EventOrSituation> .
+# 
+# https://w3id.org/italia/onto/Entity
+<https://w3id.org/italia/onto/Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/italia/onto/Location
+<https://w3id.org/italia/onto/Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/onto/Location> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/onto/Entity> .
+<https://w3id.org/italia/onto/Location> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/italia/onto/l0/Location" .
+# 
+# https://w3id.org/italia/onto/CLV/Feature
+<https://w3id.org/italia/onto/CLV/Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/onto/CLV/Feature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/onto/CLV/SpatialObject> .
+<https://w3id.org/italia/onto/CLV/Feature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/italia/onto/CLV/Feature" .
+# 
+# https://w3id.org/italia/onto/CLV/SpatialObject
+<https://w3id.org/italia/onto/CLV/SpatialObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/onto/CLV/SpatialObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/onto/Location> .
+<https://w3id.org/italia/onto/CLV/SpatialObject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/italia/onto/CLV/SpatialObject" .
+# 
+# https://w3id.org/italia/onto/TI/TemporalEntity
+<https://w3id.org/italia/onto/TI/TemporalEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/onto/TI/TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/onto/Entity> .
+# 
+# https://w3id.org/italia/onto/l0/Description
+<https://w3id.org/italia/onto/l0/Description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/onto/l0/Description> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/onto/l0/Object> .
+# 
+# https://w3id.org/italia/onto/l0/EventOrSituation
+<https://w3id.org/italia/onto/l0/EventOrSituation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/onto/l0/EventOrSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/onto/Entity> .
+# 
+# https://w3id.org/italia/onto/l0/Object
+<https://w3id.org/italia/onto/l0/Object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/onto/l0/Object> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/onto/Entity> .
+# 
+# https://w3id.org/italia/onto/l0/Topic
+<https://w3id.org/italia/onto/l0/Topic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/italia/onto/l0/Topic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/italia/onto/Entity> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid17 <http://www.w3.org/2002/07/owl#members> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CharacterVisualAtom> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompositionVisualAtom> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#GeometricalVisualAtom> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid21 <http://www.w3.org/2002/07/owl#members> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#MainCharacter> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#SceneObject> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#SecondaryCharacter> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

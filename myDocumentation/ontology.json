@@ -1,0 +1,1756 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://dati.beniculturali.it/cis/CulturalEntity"
+    }, {
+      "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#VisualAtom"
+    }, {
+      "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#core:Agent"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#int"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#int"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CharacterVisualAtom"
+    }, {
+      "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompositionVisualAtom"
+    }, {
+      "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#GeometricalVisualAtom"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#MainCharacter"
+    }, {
+      "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#SceneObject"
+    }, {
+      "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#SecondaryCharacter"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://dati.beniculturali.it/cis/CulturalEntity"
+    }, {
+      "@id" : "https://w3id.org/arco/ontology/context-description/Bibliography"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#int"
+    } ]
+  } ]
+}, {
+  "@id" : "http://dati.beniculturali.it/cis/CulturalEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AbstractConcept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "This class represent a specification class for the \"Concept\" of Top Level Ontology. It is not thought to be directly instatiated, but only to be a collector of more defined abstract concepts as Artistic Theories, Iconographies, Iconologies interpretations and elements of paintings."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/arco/ontology/core/Concept"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AlternativeRelationDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Alternative date of a relation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:RelatedWorkSituation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid8"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:Date"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#ApproximateDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:Date"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyDisjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#EndDate"
+  }, {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#StartDate"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:AlternativeDating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/arco/ontology/context-description/AlternativeDating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:Dating"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/arco/ontology/arco/CulturalProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://dati.beniculturali.it/cis/CulturalEntity"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:Date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/onto/TI/date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid14"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:HasAuthor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid5"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#core:Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:IsAuthorOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:HasDating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Mutuated from contextual description module, this property links an element to its dating node."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/arco/ontology/context-description/hasDating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:Dating"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:IsDatingOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:HasDatingEvent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This property link the Dating node to its dating Event. The dating pattern is mutuated by the contextual description module."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:Dating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/arco/ontology/context-description/hasDatingEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IO:Event"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:IsDatingEventOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:IsAuthorOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:IsDatingEventOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Inverse of HasDatingEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IO:Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:Dating"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:IsDatingOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Inverse of Arco:HasDating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:Dating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:RelatedWorkSituation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Mutuated by Contextual Description module of Arco. This property links a work to a related one. The pattern used in Arco is maintained even if it is specialised by a new set of subproperties and subclasses."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:RelatedWorkSituation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#ArtisticTheory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Artistic Theory groups all the theories conceived in the art domain. It specifically focus on theories of painting. Example: Moti dell'Animo. Theory with the Aim of expressing the range of human emotion inside a painting."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AbstractConcept"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#BelongsTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This property link and abstract concept to its origin movement. Example: Teoria dei moti dell'animo was formalised during Renaissance and belongs to it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AbstractConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:CulturalScope"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Comprise"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CharacterDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#LongDescription"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyDisjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CharacterRelationDescription"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CharacterRelationDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Specialisation of Relation Description. This property describes the influence a work has on another one from a character point of view. Eg: Judas of Da Vinci Last Supper influenced the Judas of Gaudenzio Ferrari Last Supper"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:RelatedWorkSituation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RelationDescription"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CharacterVisualAtom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Specialisation of VisualAtom, it collects the atoms identified as being a character without a link to a special meaning. Eg: the figure of Judas in Last Supper is a character, but is not linked to his identification."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#VisualAtom"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompositionDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#LongDescription"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyDisjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompositionRelationDescription"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompositionRelationDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Property describing the influence a work has on another from a composition point of view. Eg: Marcantonio Raimondi Last Supper shows a composition influenced by the symmetry and the groupings of 3 of Leonardo Last Supper"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:RelatedWorkSituation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RelationDescription"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompositionVisualAtom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Specialisation of VisualAtom, it represent VisualAtoms identified to be representative of composition elements of a painting. Eg: the groupings of 3 figures in Last Supper."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#VisualAtom"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#GeometricalVisualAtom"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Comprise",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Inverse of BelongsTo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:CulturalScope"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AbstractConcept"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompriseIconography",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This property link the Iconographical motifs to all its known Iconographical Representations. Example: Last Supper Iconographical Motifs is linked to Florentine Last Supper, Da Vinci Last Supper, Nordic Last Supper ecc..."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicMotifs"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicRepresentation"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographyCompriseIn"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CreatedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This property highlights the role of creator of an agent of an abstract concept."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AbstractConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#core:Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IntroductedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Creates"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Creates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Inverse of CreatedBy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#core:Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AbstractConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Introduce"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Depiction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://xmlns.com/foaf/spec/#term_depiction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DerivationRelation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:RelatedWorkSituation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DerivativeVisualAtom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Specialisation of VisualAtom. Identifying the Derivated Visual Atom of a Derivation Relation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DerivationRelation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#VisualAtom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasVisualAtom"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsDerivativeVisualAtomOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DescribedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This property links a concept to a source that describes it"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/arco/ontology/core/Concept"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Long description of an owl thing."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#EmbodiesArtisticTheory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This property link an Iconographical Representation to the Theory it embodies inside it. Da Vinci Last Supper Iconography embodies Theory of Moti dell'Animo inside it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicRepresentation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#ArtisticTheory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPresentIn"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PresentsArtisticTheory"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#EndDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:Date"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#FinalVisualAtom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Specialisation of VisualAtom. Identifying the Final Visual Atom of a Preparatory relation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PreparatoryRelation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#VisualAtom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasVisualAtom"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsFinalVisualAtomOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#GeometricalDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#LongDescription"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyDisjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#GeometricalRelationDescription"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#GeometricalRelationDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Property describing the geometrical influence a work has on another from a Geometrical point of view. Eg: The symmetry used in Leonardo Last Supper partially reused in Albrecht Durer Last Supper of 1523"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:RelatedWorkSituation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RelationDescription"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#GeometricalVisualAtom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Specialisation of VisualAtom. It comprise visual Atoms aimed at showing the geometrical elements of a painting. Eg: the perspective lines of Last Supper"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#VisualAtom"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasAlternativeDating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Specialisation of father property linking an element to its possible alternative dating."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:HasDating"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsAlternativeDatingOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasCharacterVisualAtom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Property specialisation of HasVisualAtom, linking an element to a Visual Atom identified as a character."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CharacterVisualAtom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasVisualAtom"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasCompositionVisualAtom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Specialisation of HasVisualAtom used to link an element to a visual Atom representing the composition (the order of figures and elements) of something. Eg: A photo of Last Supper marked in order to highlights the groupings of figures."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompositionVisualAtom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasVisualAtom"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasDepiction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://xmlns.com/foaf/spec/#term_Image"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasDerivatedCulturalProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Inverse of  IsDerivationInRelation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DerivationRelation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsRelatedWorkSituationOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsDerivationInRelation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasFinalCulturalProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PreparatoryRelation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsRelatedWorkSituationOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsFinalWorkInRelation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasGeometricalVisualAtom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Specialisation of HasVisualAtom. It link something to a visual Atom showing the geometrical elements of a Cultural Property. Eg: a photo highlighting the perspectical lines of Leonardo's Last Supper"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#GeometricalVisualAtom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasVisualAtom"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasIconographicalMotif",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Inverse of RepresentSubject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:Subject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicMotifs"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RepresentSubject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasIconographicalRepresentation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This property link a Cultura Property to its iconographical representation. Ex: Cenacolo of Fuligno has a Florentine Last Supper Iconography."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicRepresentation"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsUsedInWork"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasInfluenceMedium",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Inverse of IsMediumInRelation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsRelatedWorkSituationOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsMediumInRelation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasInfluencedCulturalProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Inverse of IsInfluencedInRelation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#InfluenceRelation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsRelatedWorkSituationOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsInfluencedInRelation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasInfluencerCulturalProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Inverse of IsInfluencerInRelation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#InfluenceRelation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsRelatedWorkSituationOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsInfluencerInRelation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasInterpretationCriterion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:InterpretationCriterion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:InterpretationCriterion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasOriginalCulturalProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Inverse of  IsOriginalInRelation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DerivationRelation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsRelatedWorkSituationOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsOriginalInRelation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasPictorialAttribute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This property link an iconographical representation to a pictorial attribute part of it. eg: Last Supper has the figure of Christ inside it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicRepresentation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PictorialAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsAttributeOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasPreparatoryCulturalPropety",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Inverse of IsPreparatoryWorkInRelation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PreparatoryRelation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsRelatedWorkSituationOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPreparatoryWorkInRelation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasVisualAtom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Property linking an Owl:thing to a Visual Atom representing a significant visual feature of it. Eg: Da Vinci's Last Supper Iconography linked to a Visual Atom showing a photo of a representation identifiable as part of this Iconography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#VisualAtom"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsVisualAtomOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IO:Event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/EventOrSituation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconclassCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "https://w3id.org/arco/ontology/context-description/iconclassCode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicMotifs"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicMotifs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Iconographical Motifs is the class aimed to collect all the single representations of different subjects. Example: the pictorical subject \"Last Supper\" has an iconographical Motifs. This motifs collects an x number of different single iconographical representations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AbstractConcept"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicRepresentation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "This class is the single iconographical representation. Each instance of this class could be present in different cultural properties and has a specific set of features that distinguish it from another one. Example: Florentine Last Supper is a way of representing Last Supper with certain temporal and location characteristics and with specific visual features."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AbstractConcept"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographyCompriseIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Inverse of CompriseIconography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicRepresentation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicMotifs"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#InfluenceRelation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:RelatedWorkSituation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Influenced",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This property highlights the influence that an artistic Theory has on an iconographical representation. At the moment no reification is provided."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#ArtisticTheory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicRepresentation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#InfluencedVisualAtom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Property used to describe the VisualAtom of the Influenced cultural property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasVisualAtom"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#InfluencerVisualAtom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Property used to describe the VisualAtom of the Influencer cultural property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasVisualAtom"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Introduce",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Inverse of IntroducedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IntroductedBy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IntroductedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : ""
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsAlternativeDatingOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:Dating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:IsDatingOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsAttributeOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Inverse of  HasAttribute"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PictorialAttribute"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicRepresentation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsCharacterVisualAtomOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsVisualAtomOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsCompositionVisualAtomOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsVisualAtomOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsDerivationInRelation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Coupled with IsOriginalRelation this property link a cultural Property to the DerivationRelation node. Specifically this property link the derivation one of the 2 Cultural Properties."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DerivationRelation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:RelatedWorkSituation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsDerivativeVisualAtomOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Inverse of DerivativeVisualAtom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#VisualAtom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DerivationRelation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsVisualAtomOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsFinalVisualAtomOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Inverse of FinalVisualAtom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#VisualAtom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PreparatoryRelation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsVisualAtomOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsFinalWorkInRelation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Coupled with IsPreparatoryWorkInRelation. This property link a Cultural Property to its PreparatoryRelation node. Specifically this property identify the final work of the relation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PreparatoryRelation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:RelatedWorkSituation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsGeometricalVisualAtomOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsVisualAtomOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsIconologicalMeaningOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Inverse of HasIconologicalMeaning"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicRepresentation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsInfluencedInRelation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Coupled with InfluencerInRelation. This property links a Cultural Property to its influence relation node. Specifically this property identify the cultural property that is influenced by another one."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#InfluenceRelation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:RelatedWorkSituation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsInfluencedVisualAtomOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsVisualAtomOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsInfluencerInRelation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Coupled with InfluencerInRelation. This property links a Cultural Property to its influence relation node. Specifically this property identify the cultural property that influence the other one."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#InfluenceRelation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:RelatedWorkSituation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsInfluencerVisualAtomOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsVisualAtomOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsMediumInRelation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This property highlights the role of medium in the relation between 2 cultural properties. Eg: The incision from Pietro Birago of Last Supper was the medium of influence from Last Supper to the Flanders."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:RelatedWorkSituation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsOriginalInRelation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Coupled with IsOriginalRelation this property link a cultural Property to the DerivationRelation node. Specifically this property link the original one of the 2 cultural properties."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DerivationRelation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:RelatedWorkSituation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsOriginalVisualAtomOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Inverse of OriginalVisualAtom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#VisualAtom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DerivationRelation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsVisualAtomOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#OriginalVisualAtom"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPredecessorOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This property link an iconographical representation to another one that come immediately before it. Eg: The Florentine iconographical representation is the predecessor of Da Vinci's one."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicRepresentation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicRepresentation"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsSuccessorOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPreparatoryVisualAtomOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Inverse of PreparatoryVisualAtom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#VisualAtom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PreparatoryRelation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsVisualAtomOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PreparatoryVisualAtom"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPreparatoryWorkInRelation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Coupled with IsPreparatoryWorkInRelation. This property link a Cultural Property to its PreparatoryRelation node. Specifically this property identify the preparatory work of the relation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PreparatoryRelation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:RelatedWorkSituation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPresentIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "It highlights the presence of an abstract concept inside a Cultural property. Eg: Da Vinci's iconographical rapresentation of Last Supper is present in a set of different Cultural Properties. Teoria dei Moti dell'animo is present in another set of other Cultural Properties."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AbstractConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Presents"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsRelatedWorkSituationOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:RelatedWorkSituation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:RelatedWorkSituation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsSuccessorOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Inverse of IsPredecessorOf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicRepresentation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicRepresentation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsUsedInWork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Inverse of HasIconographicalRepresentation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicRepresentation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsVisualAtomOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Inverse of HasVisualAtom"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Label",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#LongDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Description"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#MainCharacter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PictorialAttribute"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#OriginalVisualAtom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Specialisation of VisualAtom. Identifying the Original Visual Atom of the relation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DerivationRelation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#VisualAtom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasVisualAtom"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#OtherIconclassCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Mention of other possible Iconclass Code"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicMotifs"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconclassCode"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PartialDerivationRelation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Relation describing the derivation relation between only a part of a cultural property and another. Eg: Bayonne Tapestry is a derivation of Last Supper but only for the central composition, the background is totally different."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DerivationRelation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PictorialAttribute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "It is a significant element of an iconographical representation. it difference itself from a simple visual features due to its having an indipendence from the representation itself. Example: Last Supper has inside it the figure of Peter. Peter is a character that is independent from a single painting."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AbstractConcept"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PreparatoryRelation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:RelatedWorkSituation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PreparatoryVisualAtom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Specialisation of VisualAtom. Identifying the Preparatory Visual Atom of a Preparatory Relation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PreparatoryRelation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#VisualAtom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasVisualAtom"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Presents",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Inverse of IsPresentIn"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AbstractConcept"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PresentsArtisticTheory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Presents"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RealisationPeriod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:Date"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RelationDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Date of a relation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:RelatedWorkSituation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid11"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:Date"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RelationDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Long description of a relation between 2 entities in a RelatedWorkSituation class."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:RelatedWorkSituation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Description"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RepresentSubject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This property show the subject highlighted by the Iconographical Motifs"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicMotifs"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:Subject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#SceneObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PictorialAttribute"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#SecondaryCharacter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PictorialAttribute"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#StartDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:Date"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#TheorisedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This property highlights who theorised a certain artistic theory."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AbstractConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#core:Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IntroductedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Theorises"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Theorises",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Inverse of TheorisedBy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#core:Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AbstractConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Introduce"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Tiapit:TimeInterval",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/onto/TI/TimeInterval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontopia-lodview.agid.gov.it/onto/l0/Characteristic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#TypicalIconclassCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Mention of the typical Iconclass Code used to mark the episode of an iconographical motif."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicMotifs"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconclassCode"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#URI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://xmlns.com/foaf/spec/#term_Image"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#VisualAtom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Inspired by VIR: this class represent the minimum set of significative physical features without a linked meaning. Eg: the figure of Christ in Last Supper from Leonardo da Vinci is denoted by the set of colors that represent that figure inside the painting."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:AgentDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Property used to indicate temporal information (birth date/death date/period of life)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#core:Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "https://w3id.org/arco/ontology/context-description/agentDate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:Date"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:CulturalPropertyStage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/arco/ontology/context-description/CulturalPropertyStage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/arco/ontology/core/CulturalEntityCharacteristic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:CulturalScope",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/arco/ontology/context-description/CulturalScope"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:Dating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/arco/ontology/context-description/Dating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/arco/ontology/context-description/DetectionMethod"
+  }, {
+    "@id" : "https://w3id.org/arco/ontology/context-description/Interpretation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:InterpretationCriterion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/arco/ontology/context-description/InterpretationCriterion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Description"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:RelatedWorkSituation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/arco/ontology/context-description/RelatedWorkSituation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/arco/ontology/core/Situation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:Subject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/arco/ontology/context-description/Subject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#core:Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://dati.gov.it/onto/dcatapit#Agent"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/spec/#term_Image",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://ontopia-lodview.agid.gov.it/onto/TI/atTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Tiapit:TimeInterval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ontopia-lodview.agid.gov.it/onto/TI/hasTemporalEntity"
+  } ]
+}, {
+  "@id" : "https://ontopia-lodview.agid.gov.it/onto/TI/hasTemporalEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/italia/onto/TI/TemporalEntity"
+  } ]
+}, {
+  "@id" : "https://ontopia-lodview.agid.gov.it/onto/l0/Characteristic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/Entity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/arco/ontology/context-description/Bibliography",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/arco/ontology/context-description/BibliographyType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/arco/ontology/context-description/DetectionMethod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/arco/ontology/core/Method"
+  } ]
+}, {
+  "@id" : "https://w3id.org/arco/ontology/context-description/Interpretation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/arco/ontology/core/Situation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/arco/ontology/context-description/bibliographicReferenceAuthor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/arco/ontology/context-description/Bibliography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/arco/ontology/context-description/bilbiographicReference",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/arco/ontology/context-description/Bibliography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/arco/ontology/context-description/hasBibliography",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/arco/ontology/context-description/isBibliographyOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/arco/ontology/context-description/hasBibliographyType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/arco/ontology/context-description/isBibliographyTypeOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/arco/ontology/context-description/isBibliographyOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/arco/ontology/context-description/isBibliographyTypeOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/arco/ontology/context-description/specificTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/EventOrSituation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Tiapit:TimeInterval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://ontopia-lodview.agid.gov.it/onto/TI/atTime"
+  } ]
+}, {
+  "@id" : "https://w3id.org/arco/ontology/core/Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Object"
+  } ]
+}, {
+  "@id" : "https://w3id.org/arco/ontology/core/CulturalEntityCharacteristic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontopia-lodview.agid.gov.it/onto/l0/Characteristic"
+  } ]
+}, {
+  "@id" : "https://w3id.org/arco/ontology/core/Method",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Description"
+  } ]
+}, {
+  "@id" : "https://w3id.org/arco/ontology/core/Situation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/EventOrSituation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/onto/CLV/Feature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "https://w3id.org/italia/onto/CLV/Feature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/CLV/SpatialObject"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/onto/CLV/SpatialObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "https://w3id.org/italia/onto/CLV/SpatialObject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/Location"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/onto/Entity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/italia/onto/Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "https://w3id.org/italia/onto/l0/Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/Entity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/onto/TI/TemporalEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/Entity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/onto/l0/Description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Object"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/onto/l0/EventOrSituation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/Entity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/onto/l0/Object",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/Entity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/italia/onto/l0/Topic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/italia/onto/Entity"
+  } ]
+} ]

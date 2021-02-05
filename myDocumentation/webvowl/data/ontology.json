@@ -1,0 +1,3223 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/2002/07/owl", "https://ontopia-lodview.agid.gov.it/onto/l0", "https://w3id.org/italia/onto/l0", "https://w3id.org/arco/ontology/core", "http://www.w3.org/2001/XMLSchema", "http://xmlns.com/foaf/spec/", "https://w3id.org/arco/ontology/context-description", "http://dati.beniculturali.it/cis", "https://w3id.org/italia/onto", "https://w3id.org/italia/onto/CLV", "https://w3id.org/italia/onto/TI", "http://www.w3.org/2000/01/rdf-schema", "https://ontopia-lodview.agid.gov.it/onto/TI", "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25" ],
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "owl:Class"
+  }, {
+    "id" : "90",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "121",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "128",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "114",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "134",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "11",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "140",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "141",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "142",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "136",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "143",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "144",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "145",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "146",
+    "type" : "owl:Class"
+  }, {
+    "id" : "147",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "150",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "118",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "151",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "152",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "104",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "130",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "171",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "172",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "137",
+    "type" : "owl:Class"
+  }, {
+    "id" : "126",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "174",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "175",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "85",
+    "type" : "owl:Class"
+  }, {
+    "id" : "119",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "139",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "79",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "66",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "188",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "103",
+    "type" : "owl:Class"
+  }, {
+    "id" : "127",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "124",
+    "type" : "owl:Class"
+  }, {
+    "id" : "110",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "170",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "123",
+    "type" : "owl:Class"
+  }, {
+    "id" : "112",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "219",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "131",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://xmlns.com/foaf/spec/#term_Image",
+    "baseIri" : "http://xmlns.com/foaf/spec/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "term_Image"
+    },
+    "attributes" : [ "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PartialDerivationRelation",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PartialDerivationRelation",
+      "undefined" : "Relation describing the derivation relation between only a part of a cultural property and another. Eg: Bayonne Tapestry is a derivation of Last Supper but only for the central composition, the background is totally different."
+    },
+    "id" : "16",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:CulturalPropertyStage",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/arco/ontology/context-description/CulturalPropertyStage",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "a-cd:CulturalPropertyStage"
+    },
+    "id" : "18",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompositionVisualAtom",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CompositionVisualAtom"
+    },
+    "comment" : {
+      "undefined" : "Specialisation of VisualAtom, it represent VisualAtoms identified to be representative of composition elements of a painting. Eg: the groupings of 3 figures in Last Supper."
+    },
+    "id" : "32",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/arco/ontology/arco/CulturalProperty",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Arco:CulturalProperty"
+    },
+    "id" : "1",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Tiapit:TimeInterval",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/italia/onto/TI/TimeInterval",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Tiapit:TimeInterval"
+    },
+    "id" : "43",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "https://ontopia-lodview.agid.gov.it/onto/l0/Characteristic",
+    "baseIri" : "https://ontopia-lodview.agid.gov.it/onto/l0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Characteristic"
+    },
+    "subClasses" : [ "43", "19" ],
+    "attributes" : [ "external" ],
+    "id" : "44",
+    "superClasses" : [ "53" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:Dating",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/arco/ontology/context-description/Dating",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "a-cd:Dating"
+    },
+    "subClasses" : [ "61" ],
+    "id" : "24",
+    "superClasses" : [ "59", "60" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CharacterVisualAtom",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CharacterVisualAtom"
+    },
+    "comment" : {
+      "undefined" : "Specialisation of VisualAtom, it collects the atoms identified as being a character without a link to a special meaning. Eg: the figure of Judas in Last Supper is a character, but is not linked to his identification."
+    },
+    "id" : "67",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#ArtisticTheory",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ArtisticTheory"
+    },
+    "comment" : {
+      "undefined" : "Artistic Theory groups all the theories conceived in the art domain. It specifically focus on theories of painting. Example: Moti dell'Animo. Theory with the Aim of expressing the range of human emotion inside a painting."
+    },
+    "id" : "52",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PreparatoryRelation",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PreparatoryRelation"
+    },
+    "id" : "38",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/italia/onto/CLV/Feature",
+    "baseIri" : "https://w3id.org/italia/onto/CLV",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/italia/onto/CLV/Feature",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Feature"
+    },
+    "attributes" : [ "external" ],
+    "id" : "71",
+    "superClasses" : [ "72" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:CulturalScope",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/arco/ontology/context-description/CulturalScope",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "a-cd:CulturalScope"
+    },
+    "id" : "76",
+    "superClasses" : [ "77" ]
+  }, {
+    "iri" : "https://w3id.org/italia/onto/l0/Topic",
+    "baseIri" : "https://w3id.org/italia/onto/l0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Topic"
+    },
+    "subClasses" : [ "82", "76" ],
+    "attributes" : [ "external" ],
+    "id" : "77",
+    "superClasses" : [ "53" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:AlternativeDating",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/arco/ontology/context-description/AlternativeDating",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Arco:AlternativeDating"
+    },
+    "id" : "61",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:Subject",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/arco/ontology/context-description/Subject",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "a-cd:Subject"
+    },
+    "id" : "82",
+    "superClasses" : [ "77" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#SecondaryCharacter",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SecondaryCharacter"
+    },
+    "id" : "86",
+    "superClasses" : [ "87" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#SceneObject",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SceneObject"
+    },
+    "id" : "90",
+    "superClasses" : [ "87" ]
+  }, {
+    "iri" : "https://w3id.org/italia/onto/CLV/SpatialObject",
+    "baseIri" : "https://w3id.org/italia/onto/CLV",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/italia/onto/CLV/SpatialObject",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SpatialObject"
+    },
+    "subClasses" : [ "71" ],
+    "attributes" : [ "external" ],
+    "id" : "72",
+    "superClasses" : [ "103" ]
+  }, {
+    "iri" : "https://w3id.org/arco/ontology/context-description/DetectionMethod",
+    "baseIri" : "https://w3id.org/arco/ontology/context-description",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DetectionMethod"
+    },
+    "subClasses" : [ "24" ],
+    "attributes" : [ "external" ],
+    "id" : "59",
+    "superClasses" : [ "104" ]
+  }, {
+    "iri" : "https://w3id.org/arco/ontology/context-description/Bibliography",
+    "baseIri" : "https://w3id.org/arco/ontology/context-description",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Bibliography"
+    },
+    "attributes" : [ "external" ],
+    "id" : "121"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PictorialAttribute",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PictorialAttribute"
+    },
+    "subClasses" : [ "86", "90", "124" ],
+    "comment" : {
+      "undefined" : "It is a significant element of an iconographical representation. it difference itself from a simple visual features due to its having an indipendence from the representation itself. Example: Last Supper has inside it the figure of Peter. Peter is a character that is independent from a single painting."
+    },
+    "id" : "87",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DerivationRelation",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DerivationRelation"
+    },
+    "subClasses" : [ "16" ],
+    "id" : "17",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#core:Agent",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://dati.gov.it/onto/dcatapit#Agent",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "core:Agent"
+    },
+    "id" : "29"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#GeometricalVisualAtom",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GeometricalVisualAtom"
+    },
+    "comment" : {
+      "undefined" : "Specialisation of VisualAtom. It comprise visual Atoms aimed at showing the geometrical elements of a painting. Eg: the perspective lines of Last Supper"
+    },
+    "id" : "128",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicMotifs",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IconographicMotifs"
+    },
+    "comment" : {
+      "undefined" : "Iconographical Motifs is the class aimed to collect all the single representations of different subjects. Example: the pictorical subject \"Last Supper\" has an iconographical Motifs. This motifs collects an x number of different single iconographical representations."
+    },
+    "id" : "49",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "https://w3id.org/italia/onto/l0/EventOrSituation",
+    "baseIri" : "https://w3id.org/italia/onto/l0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EventOrSituation"
+    },
+    "subClasses" : [ "131" ],
+    "attributes" : [ "external" ],
+    "id" : "114",
+    "superClasses" : [ "53" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "25",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AbstractConcept",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AbstractConcept"
+    },
+    "subClasses" : [ "21", "49", "87", "52" ],
+    "comment" : {
+      "undefined" : "This class represent a specification class for the \"Concept\" of Top Level Ontology. It is not thought to be directly instatiated, but only to be a collector of more defined abstract concepts as Artistic Theories, Iconographies, Iconologies interpretations and elements of paintings."
+    },
+    "id" : "28",
+    "superClasses" : [ "65" ]
+  }, {
+    "iri" : "https://w3id.org/italia/onto/Entity",
+    "baseIri" : "https://w3id.org/italia/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Entity"
+    },
+    "subClasses" : [ "114", "127", "137", "44", "77", "103" ],
+    "attributes" : [ "external" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "134",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "11",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "140",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "141",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "142",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "136",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "143",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "55",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "144",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "145",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/italia/onto/l0/Description",
+    "baseIri" : "https://w3id.org/italia/onto/l0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Description"
+    },
+    "subClasses" : [ "104", "123" ],
+    "attributes" : [ "external" ],
+    "id" : "146",
+    "superClasses" : [ "137" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "147",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "63",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "148",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "92",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "81",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "150",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "50",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "118",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "151",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "152",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "https://w3id.org/arco/ontology/core/Method",
+    "baseIri" : "https://w3id.org/arco/ontology/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Method"
+    },
+    "subClasses" : [ "59" ],
+    "attributes" : [ "external" ],
+    "id" : "104",
+    "superClasses" : [ "146" ]
+  }, {
+    "iri" : "https://w3id.org/arco/ontology/core/Concept",
+    "baseIri" : "https://w3id.org/arco/ontology/core",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/italia/onto/l0/Concept",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Concept"
+    },
+    "subClasses" : [ "28" ],
+    "attributes" : [ "external" ],
+    "id" : "65",
+    "superClasses" : [ "137" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "130",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "171",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "172",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#VisualAtom",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VisualAtom"
+    },
+    "subClasses" : [ "32", "128", "67" ],
+    "comment" : {
+      "undefined" : "Inspired by VIR: this class represent the minimum set of significative physical features without a linked meaning. Eg: the figure of Christ in Last Supper from Leonardo da Vinci is denoted by the set of colors that represent that figure inside the painting."
+    },
+    "id" : "33"
+  }, {
+    "iri" : "https://w3id.org/italia/onto/l0/Object",
+    "baseIri" : "https://w3id.org/italia/onto/l0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Object"
+    },
+    "subClasses" : [ "65", "146" ],
+    "attributes" : [ "external" ],
+    "id" : "137",
+    "superClasses" : [ "53" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "126",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "174",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "89",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "175",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#InfluenceRelation",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InfluenceRelation"
+    },
+    "id" : "85",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "119",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "42",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "139",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "79",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "66",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/arco/ontology/context-description/BibliographyType",
+    "baseIri" : "https://w3id.org/arco/ontology/context-description",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BibliographyType"
+    },
+    "attributes" : [ "external" ],
+    "id" : "188"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:RelatedWorkSituation",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/arco/ontology/context-description/RelatedWorkSituation",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "a-cd:RelatedWorkSituation"
+    },
+    "subClasses" : [ "38", "17", "85" ],
+    "id" : "2",
+    "superClasses" : [ "131" ]
+  }, {
+    "iri" : "https://w3id.org/italia/onto/Location",
+    "baseIri" : "https://w3id.org/italia/onto",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/italia/onto/l0/Location",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Location"
+    },
+    "subClasses" : [ "72" ],
+    "attributes" : [ "external" ],
+    "id" : "103",
+    "superClasses" : [ "53" ]
+  }, {
+    "iri" : "https://w3id.org/italia/onto/TI/TemporalEntity",
+    "baseIri" : "https://w3id.org/italia/onto/TI",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TemporalEntity"
+    },
+    "attributes" : [ "external" ],
+    "id" : "127",
+    "superClasses" : [ "53" ]
+  }, {
+    "iri" : "https://w3id.org/arco/ontology/core/CulturalEntityCharacteristic",
+    "baseIri" : "https://w3id.org/arco/ontology/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CulturalEntityCharacteristic"
+    },
+    "subClasses" : [ "18" ],
+    "attributes" : [ "external" ],
+    "id" : "19",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IO:Event",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/italia/onto/l0/EventOrSituation",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IO:Event"
+    },
+    "id" : "46"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicRepresentation",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IconographicRepresentation"
+    },
+    "comment" : {
+      "undefined" : "This class is the single iconographical representation. Each instance of this class could be present in different cultural properties and has a specific set of features that distinguish it from another one. Example: Florentine Last Supper is a way of representing Last Supper with certain temporal and location characteristics and with specific visual features."
+    },
+    "id" : "21",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "http://dati.beniculturali.it/cis/CulturalEntity",
+    "baseIri" : "http://dati.beniculturali.it/cis",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CulturalEntity"
+    },
+    "subClasses" : [ "1" ],
+    "attributes" : [ "external" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#MainCharacter",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MainCharacter"
+    },
+    "id" : "124",
+    "superClasses" : [ "87" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "33", "40", "29" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "110"
+  }, {
+    "instances" : 0,
+    "union" : [ "121", "40" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "170"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:InterpretationCriterion",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/arco/ontology/context-description/InterpretationCriterion",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "a-cd:InterpretationCriterion"
+    },
+    "id" : "123",
+    "superClasses" : [ "146" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "112",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "219",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/arco/ontology/core/Situation",
+    "baseIri" : "https://w3id.org/arco/ontology/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Situation"
+    },
+    "subClasses" : [ "60", "2" ],
+    "attributes" : [ "external" ],
+    "id" : "131",
+    "superClasses" : [ "114" ]
+  }, {
+    "iri" : "https://w3id.org/arco/ontology/context-description/Interpretation",
+    "baseIri" : "https://w3id.org/arco/ontology/context-description",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Interpretation"
+    },
+    "subClasses" : [ "24" ],
+    "attributes" : [ "external" ],
+    "id" : "60",
+    "superClasses" : [ "131" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "68",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "84",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "88",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "102",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "105",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "107",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "109",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "111",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "113",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "116",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "117",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "100",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "120",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "122",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "125",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "108",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "129",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "132",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "133",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "135",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "138",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "149",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "153",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "154",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "155",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "156",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "157",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "158",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "159",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "160",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "161",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "162",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "163",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "168",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "169",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "167",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "173",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "176",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "177",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "179",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "180",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "181",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "182",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "183",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "165",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "184",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "185",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "186",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "187",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "189",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "178",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "190",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "193",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "194",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "69",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "195",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "196",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "197",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "198",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "191",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "199",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "200",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "201",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "202",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "203",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "204",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "205",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "206",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "207",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "208",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "209",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "210",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "211",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "212",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "213",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "214",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "215",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "216",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "217",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "218",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "220",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "221",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "222",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "223",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "164",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "224",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "225",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "166",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "226",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "227",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "229",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "106",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "192",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "98",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "230",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "228",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "231",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "232",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "233",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "234",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:RelatedWorkSituation",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "Arco:RelatedWorkSituation"
+    },
+    "domain" : "1",
+    "subproperty" : [ "3", "4", "5", "6", "7", "8", "9" ],
+    "comment" : {
+      "undefined" : "Mutuated by Contextual Description module of Arco. This property links a work to a related one. The pattern used in Arco is maintained even if it is specialised by a new set of subproperties and subclasses."
+    },
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:IsAuthorOf",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "Arco:IsAuthorOf"
+    },
+    "superproperty" : [ "12" ],
+    "domain" : "11",
+    "attributes" : [ "object" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsCharacterVisualAtomOf",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "IsCharacterVisualAtomOf"
+    },
+    "superproperty" : [ "15" ],
+    "domain" : "11",
+    "attributes" : [ "object" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPredecessorOf",
+    "inverse" : "22",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "IsPredecessorOf"
+    },
+    "domain" : "21",
+    "comment" : {
+      "undefined" : "This property link an iconographical representation to another one that come immediately before it. Eg: The Florentine iconographical representation is the predecessor of Da Vinci's one."
+    },
+    "attributes" : [ "object" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsAlternativeDatingOf",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "IsAlternativeDatingOf"
+    },
+    "superproperty" : [ "26" ],
+    "domain" : "24",
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#TheorisedBy",
+    "inverse" : "30",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "TheorisedBy"
+    },
+    "superproperty" : [ "31" ],
+    "domain" : "28",
+    "comment" : {
+      "undefined" : "This property highlights who theorised a certain artistic theory."
+    },
+    "attributes" : [ "object" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "11",
+    "subproperty" : [ "34", "35", "10", "36", "22" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasFinalCulturalProperty",
+    "inverse" : "3",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "HasFinalCulturalProperty"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "38",
+    "attributes" : [ "object" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CharacterDescription",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "CharacterDescription"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:HasDatingEvent",
+    "inverse" : "47",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "46",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/arco/ontology/context-description/hasDatingEvent",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Arco:HasDatingEvent"
+    },
+    "domain" : "24",
+    "comment" : {
+      "undefined" : "This property link the Dating node to its dating Event. The dating pattern is mutuated by the contextual description module."
+    },
+    "attributes" : [ "object" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconclassCode",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "IconclassCode"
+    },
+    "domain" : "49",
+    "comment" : {
+      "undefined" : "https://w3id.org/arco/ontology/context-description/iconclassCode"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Influenced",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "Influenced"
+    },
+    "domain" : "52",
+    "comment" : {
+      "undefined" : "This property highlights the influence that an artistic Theory has on an iconographical representation. At the moment no reification is provided."
+    },
+    "attributes" : [ "object" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RealisationPeriod",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "RealisationPeriod"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsCompositionVisualAtomOf",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "IsCompositionVisualAtomOf"
+    },
+    "superproperty" : [ "15" ],
+    "domain" : "11",
+    "attributes" : [ "object" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasAlternativeDating",
+    "inverse" : "23",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "HasAlternativeDating"
+    },
+    "superproperty" : [ "58" ],
+    "domain" : "25",
+    "comment" : {
+      "undefined" : "Specialisation of father property linking an element to its possible alternative dating."
+    },
+    "attributes" : [ "object" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#LongDescription",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "LongDescription"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DescribedIn",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "DescribedIn"
+    },
+    "domain" : "65",
+    "comment" : {
+      "undefined" : "This property links a concept to a source that describes it"
+    },
+    "attributes" : [ "object" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsMediumInRelation",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "IsMediumInRelation"
+    },
+    "superproperty" : [ "0" ],
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "This property highlights the role of medium in the relation between 2 cultural properties. Eg: The incision from Pietro Birago of Last Supper was the medium of influence from Last Supper to the Flanders."
+    },
+    "attributes" : [ "object" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Introduce",
+    "inverse" : "31",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "Introduce"
+    },
+    "domain" : "11",
+    "subproperty" : [ "69", "30" ],
+    "comment" : {
+      "undefined" : "Inverse of IntroducedBy"
+    },
+    "attributes" : [ "object" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CreatedBy",
+    "inverse" : "69",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "CreatedBy"
+    },
+    "superproperty" : [ "31" ],
+    "domain" : "28",
+    "comment" : {
+      "undefined" : "This property highlights the role of creator of an agent of an abstract concept."
+    },
+    "attributes" : [ "asymmetric", "object" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsOriginalInRelation",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "IsOriginalInRelation"
+    },
+    "superproperty" : [ "0" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Coupled with IsOriginalRelation this property link a cultural Property to the DerivationRelation node. Specifically this property link the original one of the 2 cultural properties."
+    },
+    "attributes" : [ "object" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#FinalVisualAtom",
+    "inverse" : "74",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "FinalVisualAtom"
+    },
+    "superproperty" : [ "75" ],
+    "domain" : "38",
+    "comment" : {
+      "undefined" : "Specialisation of VisualAtom. Identifying the Final Visual Atom of a Preparatory relation."
+    },
+    "attributes" : [ "object" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsIconologicalMeaningOf",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "IsIconologicalMeaningOf"
+    },
+    "domain" : "79",
+    "comment" : {
+      "undefined" : "Inverse of HasIconologicalMeaning"
+    },
+    "attributes" : [ "object" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#EndDate",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "81",
+    "label" : {
+      "IRI-based" : "EndDate"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:IsDatingOf",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "Arco:IsDatingOf"
+    },
+    "domain" : "24",
+    "subproperty" : [ "23" ],
+    "comment" : {
+      "undefined" : "Inverse of Arco:HasDating"
+    },
+    "attributes" : [ "object" ],
+    "id" : "26"
+  }, {
+    "iri" : "https://w3id.org/arco/ontology/context-description/hasBibliography",
+    "inverse" : "36",
+    "baseIri" : "https://w3id.org/arco/ontology/context-description",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasBibliography"
+    },
+    "domain" : "11",
+    "attributes" : [ "external", "object" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasInfluencerCulturalProperty",
+    "inverse" : "6",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "HasInfluencerCulturalProperty"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "85",
+    "comment" : {
+      "undefined" : "Inverse of IsInfluencerInRelation"
+    },
+    "attributes" : [ "object" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:Date",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "89",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/italia/onto/TI/date",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Arco:Date"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype" ],
+    "id" : "88"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#GeometricalRelationDescription",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "GeometricalRelationDescription"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Property describing the geometrical influence a work has on another from a Geometrical point of view. Eg: The symmetry used in Leonardo Last Supper partially reused in Albrecht Durer Last Supper of 1523"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPreparatoryWorkInRelation",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "IsPreparatoryWorkInRelation"
+    },
+    "superproperty" : [ "0" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Coupled with IsPreparatoryWorkInRelation. This property link a Cultural Property to its PreparatoryRelation node. Specifically this property identify the preparatory work of the relation."
+    },
+    "attributes" : [ "object" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasPreparatoryCulturalPropety",
+    "inverse" : "8",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "HasPreparatoryCulturalPropety"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "38",
+    "comment" : {
+      "undefined" : "Inverse of IsPreparatoryWorkInRelation"
+    },
+    "attributes" : [ "object" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasVisualAtom",
+    "inverse" : "15",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "HasVisualAtom"
+    },
+    "domain" : "11",
+    "subproperty" : [ "94", "95", "96", "73", "97", "98", "99", "100", "101" ],
+    "comment" : {
+      "undefined" : "Property linking an Owl:thing to a Visual Atom representing a significant visual feature of it. Eg: Da Vinci's Last Supper Iconography linked to a Visual Atom showing a photo of a representation identifiable as part of this Iconography"
+    },
+    "attributes" : [ "object" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasOriginalCulturalProperty",
+    "inverse" : "4",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "HasOriginalCulturalProperty"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "Inverse of  IsOriginalInRelation"
+    },
+    "attributes" : [ "object" ],
+    "id" : "102"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsInfluencedInRelation",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "85",
+    "label" : {
+      "IRI-based" : "IsInfluencedInRelation"
+    },
+    "superproperty" : [ "0" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Coupled with InfluencerInRelation. This property links a Cultural Property to its influence relation node. Specifically this property identify the cultural property that is influenced by another one."
+    },
+    "attributes" : [ "object" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PresentsArtisticTheory",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "PresentsArtisticTheory"
+    },
+    "superproperty" : [ "106" ],
+    "domain" : "11",
+    "attributes" : [ "object" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPresentIn",
+    "inverse" : "106",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "IsPresentIn"
+    },
+    "domain" : "28",
+    "subproperty" : [ "108" ],
+    "comment" : {
+      "undefined" : "It highlights the presence of an abstract concept inside a Cultural property. Eg: Da Vinci's iconographical rapresentation of Last Supper is present in a set of different Cultural Properties. Teoria dei Moti dell'animo is present in another set of other Cultural Properties."
+    },
+    "attributes" : [ "object" ],
+    "id" : "107"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasDepiction",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "HasDepiction"
+    },
+    "domain" : "110",
+    "attributes" : [ "object" ],
+    "id" : "109"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#ApproximateDate",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "112",
+    "label" : {
+      "IRI-based" : "ApproximateDate"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype" ],
+    "id" : "111"
+  }, {
+    "iri" : "https://w3id.org/arco/ontology/context-description/specificTime",
+    "baseIri" : "https://w3id.org/arco/ontology/context-description",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "specificTime"
+    },
+    "superproperty" : [ "115" ],
+    "domain" : "114",
+    "attributes" : [ "external", "object" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsInfluencerVisualAtomOf",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "IsInfluencerVisualAtomOf"
+    },
+    "superproperty" : [ "15" ],
+    "domain" : "11",
+    "attributes" : [ "object" ],
+    "id" : "116"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompositionRelationDescription",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "118",
+    "label" : {
+      "IRI-based" : "CompositionRelationDescription"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Property describing the influence a work has on another from a composition point of view. Eg: Marcantonio Raimondi Last Supper shows a composition influenced by the symmetry and the groupings of 3 of Leonardo Last Supper"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "117"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasCharacterVisualAtom",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "67",
+    "label" : {
+      "IRI-based" : "HasCharacterVisualAtom"
+    },
+    "superproperty" : [ "75" ],
+    "domain" : "119",
+    "comment" : {
+      "undefined" : "Property specialisation of HasVisualAtom, linking an element to a Visual Atom identified as a character."
+    },
+    "attributes" : [ "object" ],
+    "id" : "100"
+  }, {
+    "iri" : "https://w3id.org/arco/ontology/context-description/isBibliographyTypeOf",
+    "baseIri" : "https://w3id.org/arco/ontology/context-description",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "isBibliographyTypeOf"
+    },
+    "domain" : "11",
+    "attributes" : [ "external", "object" ],
+    "id" : "120"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsFinalWorkInRelation",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "IsFinalWorkInRelation"
+    },
+    "superproperty" : [ "0" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Coupled with IsPreparatoryWorkInRelation. This property link a Cultural Property to its PreparatoryRelation node. Specifically this property identify the final work of the relation."
+    },
+    "attributes" : [ "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasInfluenceMedium",
+    "inverse" : "9",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "HasInfluenceMedium"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Inverse of IsMediumInRelation"
+    },
+    "attributes" : [ "object" ],
+    "id" : "122"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasInterpretationCriterion",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "123",
+    "label" : {
+      "IRI-based" : "HasInterpretationCriterion"
+    },
+    "superproperty" : [ "12" ],
+    "domain" : "123",
+    "attributes" : [ "object" ],
+    "id" : "34"
+  }, {
+    "iri" : "https://ontopia-lodview.agid.gov.it/onto/TI/hasTemporalEntity",
+    "baseIri" : "https://ontopia-lodview.agid.gov.it/onto/TI",
+    "range" : "127",
+    "label" : {
+      "IRI-based" : "hasTemporalEntity"
+    },
+    "domain" : "126",
+    "subproperty" : [ "115" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "125"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsSuccessorOf",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "IsSuccessorOf"
+    },
+    "superproperty" : [ "12" ],
+    "domain" : "21",
+    "comment" : {
+      "undefined" : "Inverse of IsPredecessorOf"
+    },
+    "attributes" : [ "object" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#EmbodiesArtisticTheory",
+    "inverse" : "105",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "EmbodiesArtisticTheory"
+    },
+    "superproperty" : [ "107" ],
+    "domain" : "21",
+    "comment" : {
+      "undefined" : "This property link an Iconographical Representation to the Theory it embodies inside it. Da Vinci Last Supper Iconography embodies Theory of Moti dell'Animo inside it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "108"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Theorises",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "Theorises"
+    },
+    "superproperty" : [ "68" ],
+    "domain" : "29",
+    "comment" : {
+      "undefined" : "Inverse of TheorisedBy"
+    },
+    "attributes" : [ "object" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RelationDate",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "130",
+    "label" : {
+      "IRI-based" : "RelationDate"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Date of a relation"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "129"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsUsedInWork",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "IsUsedInWork"
+    },
+    "domain" : "21",
+    "comment" : {
+      "undefined" : "Inverse of HasIconographicalRepresentation"
+    },
+    "attributes" : [ "object" ],
+    "id" : "132"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#InfluencedVisualAtom",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "InfluencedVisualAtom"
+    },
+    "superproperty" : [ "75" ],
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Property used to describe the VisualAtom of the Influenced cultural property."
+    },
+    "attributes" : [ "object" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#InfluencerVisualAtom",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "InfluencerVisualAtom"
+    },
+    "superproperty" : [ "75" ],
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Property used to describe the VisualAtom of the Influencer cultural property."
+    },
+    "attributes" : [ "object" ],
+    "id" : "99"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AlternativeRelationDate",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "134",
+    "label" : {
+      "IRI-based" : "AlternativeRelationDate"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Alternative date of a relation"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "133"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:IsDatingEventOf",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "Arco:IsDatingEventOf"
+    },
+    "domain" : "46",
+    "comment" : {
+      "undefined" : "Inverse of HasDatingEvent"
+    },
+    "attributes" : [ "object" ],
+    "id" : "47"
+  }, {
+    "iri" : "https://w3id.org/arco/ontology/context-description/bibliographicReferenceAuthor",
+    "baseIri" : "https://w3id.org/arco/ontology/context-description",
+    "range" : "136",
+    "label" : {
+      "IRI-based" : "bibliographicReferenceAuthor"
+    },
+    "domain" : "121",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "135"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompositionDescription",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "139",
+    "label" : {
+      "IRI-based" : "CompositionDescription"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype" ],
+    "id" : "138"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#TypicalIconclassCode",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "144",
+    "label" : {
+      "IRI-based" : "TypicalIconclassCode"
+    },
+    "domain" : "49",
+    "comment" : {
+      "undefined" : "Mention of the typical Iconclass Code used to mark the episode of an iconographical motif."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "149"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IntroductedBy",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "IntroductedBy"
+    },
+    "domain" : "11",
+    "subproperty" : [ "27", "70" ],
+    "attributes" : [ "object" ],
+    "id" : "31"
+  }, {
+    "range" : "87",
+    "domain" : "86",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "153"
+  }, {
+    "range" : "87",
+    "domain" : "124",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "154"
+  }, {
+    "range" : "87",
+    "domain" : "90",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "155"
+  }, {
+    "iri" : "https://w3id.org/arco/ontology/context-description/isBibliographyOf",
+    "baseIri" : "https://w3id.org/arco/ontology/context-description",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "isBibliographyOf"
+    },
+    "superproperty" : [ "12" ],
+    "domain" : "11",
+    "attributes" : [ "external", "object" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RelationDescription",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "143",
+    "label" : {
+      "IRI-based" : "RelationDescription"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Long description of a relation between 2 entities in a RelatedWorkSituation class."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "156"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#StartDate",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "145",
+    "label" : {
+      "IRI-based" : "StartDate"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype" ],
+    "id" : "157"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsDerivativeVisualAtomOf",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "IsDerivativeVisualAtomOf"
+    },
+    "superproperty" : [ "15" ],
+    "domain" : "33",
+    "comment" : {
+      "undefined" : "Inverse of DerivativeVisualAtom"
+    },
+    "attributes" : [ "object" ],
+    "id" : "158"
+  }, {
+    "range" : "77",
+    "domain" : "76",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "159"
+  }, {
+    "range" : "77",
+    "domain" : "82",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "160"
+  }, {
+    "range" : "59",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "161"
+  }, {
+    "range" : "72",
+    "domain" : "71",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "162"
+  }, {
+    "range" : "44",
+    "domain" : "43",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "163"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsVisualAtomOf",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "IsVisualAtomOf"
+    },
+    "domain" : "11",
+    "subproperty" : [ "158", "164", "116", "165", "166", "14", "167", "56", "74" ],
+    "comment" : {
+      "undefined" : "Inverse of HasVisualAtom"
+    },
+    "attributes" : [ "object" ],
+    "id" : "15"
+  }, {
+    "range" : "24",
+    "domain" : "61",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "168"
+  }, {
+    "range" : "44",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "169"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:HasAuthor",
+    "inverse" : "10",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "Arco:HasAuthor"
+    },
+    "superproperty" : [ "12" ],
+    "domain" : "170",
+    "attributes" : [ "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsInfluencedVisualAtomOf",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "IsInfluencedVisualAtomOf"
+    },
+    "superproperty" : [ "15" ],
+    "domain" : "11",
+    "attributes" : [ "object" ],
+    "id" : "167"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PreparatoryVisualAtom",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "PreparatoryVisualAtom"
+    },
+    "superproperty" : [ "75" ],
+    "domain" : "38",
+    "comment" : {
+      "undefined" : "Specialisation of VisualAtom. Identifying the Preparatory Visual Atom of a Preparatory Relation."
+    },
+    "attributes" : [ "object" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Description",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "151",
+    "label" : {
+      "IRI-based" : "Description"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Long description of an owl thing."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "173"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsDerivationInRelation",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "IsDerivationInRelation"
+    },
+    "superproperty" : [ "0" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Coupled with IsOriginalRelation this property link a cultural Property to the DerivationRelation node. Specifically this property link the derivation one of the 2 Cultural Properties."
+    },
+    "attributes" : [ "object" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsFinalVisualAtomOf",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "IsFinalVisualAtomOf"
+    },
+    "superproperty" : [ "15" ],
+    "domain" : "33",
+    "comment" : {
+      "undefined" : "Inverse of FinalVisualAtom"
+    },
+    "attributes" : [ "object" ],
+    "id" : "74"
+  }, {
+    "range" : "137",
+    "domain" : "65",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "176"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#BelongsTo",
+    "inverse" : "178",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "76",
+    "label" : {
+      "IRI-based" : "BelongsTo"
+    },
+    "domain" : "28",
+    "comment" : {
+      "undefined" : "This property link and abstract concept to its origin movement. Example: Teoria dei moti dell'animo was formalised during Renaissance and belongs to it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "177"
+  }, {
+    "range" : "33",
+    "domain" : "67",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "179"
+  }, {
+    "range" : "2",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "180"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#URI",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "141",
+    "label" : {
+      "IRI-based" : "URI"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype" ],
+    "id" : "181"
+  }, {
+    "range" : "137",
+    "domain" : "146",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "182"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:AgentDate",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "140",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/arco/ontology/context-description/agentDate",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "a-cd:AgentDate"
+    },
+    "domain" : "29",
+    "comment" : {
+      "undefined" : "Property used to indicate temporal information (birth date/death date/period of life)"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "183"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsOriginalVisualAtomOf",
+    "inverse" : "94",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "IsOriginalVisualAtomOf"
+    },
+    "superproperty" : [ "15" ],
+    "domain" : "33",
+    "comment" : {
+      "undefined" : "Inverse of OriginalVisualAtom"
+    },
+    "attributes" : [ "object" ],
+    "id" : "165"
+  }, {
+    "range" : "33",
+    "domain" : "128",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "184"
+  }, {
+    "iri" : "https://w3id.org/arco/ontology/context-description/bilbiographicReference",
+    "baseIri" : "https://w3id.org/arco/ontology/context-description",
+    "range" : "142",
+    "label" : {
+      "IRI-based" : "bilbiographicReference"
+    },
+    "domain" : "121",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "185"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasInfluencedCulturalProperty",
+    "inverse" : "7",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "HasInfluencedCulturalProperty"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "85",
+    "comment" : {
+      "undefined" : "Inverse of IsInfluencedInRelation"
+    },
+    "attributes" : [ "object" ],
+    "id" : "186"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Depiction",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "152",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/spec/#term_depiction",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Depiction"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype" ],
+    "id" : "187"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#OtherIconclassCode",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "148",
+    "label" : {
+      "IRI-based" : "OtherIconclassCode"
+    },
+    "domain" : "49",
+    "comment" : {
+      "undefined" : "Mention of other possible Iconclass Code"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "189"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Comprise",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "Comprise"
+    },
+    "domain" : "76",
+    "comment" : {
+      "undefined" : "Inverse of BelongsTo"
+    },
+    "attributes" : [ "object" ],
+    "id" : "178"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasCompositionVisualAtom",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "HasCompositionVisualAtom"
+    },
+    "superproperty" : [ "75" ],
+    "domain" : "174",
+    "comment" : {
+      "undefined" : "Specialisation of HasVisualAtom used to link an element to a visual Atom representing the composition (the order of figures and elements) of something. Eg: A photo of Last Supper marked in order to highlights the groupings of figures."
+    },
+    "attributes" : [ "object" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompriseIconography",
+    "inverse" : "191",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "CompriseIconography"
+    },
+    "domain" : "49",
+    "comment" : {
+      "undefined" : "This property link the Iconographical motifs to all its known Iconographical Representations. Example: Last Supper Iconographical Motifs is linked to Florentine Last Supper, Da Vinci Last Supper, Nordic Last Supper ecc..."
+    },
+    "attributes" : [ "object" ],
+    "id" : "190"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsRelatedWorkSituationOf",
+    "inverse" : "0",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "IsRelatedWorkSituationOf"
+    },
+    "domain" : "2",
+    "subproperty" : [ "93", "84", "192", "37", "102", "122", "186" ],
+    "attributes" : [ "object" ],
+    "id" : "39"
+  }, {
+    "range" : "33",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "193"
+  }, {
+    "range" : "65",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "194"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Creates",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "Creates"
+    },
+    "superproperty" : [ "68" ],
+    "domain" : "29",
+    "comment" : {
+      "undefined" : "Inverse of CreatedBy"
+    },
+    "attributes" : [ "object" ],
+    "id" : "69"
+  }, {
+    "range" : "146",
+    "domain" : "104",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "195"
+  }, {
+    "range" : "53",
+    "domain" : "103",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "196"
+  }, {
+    "range" : "104",
+    "domain" : "59",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "197"
+  }, {
+    "range" : "146",
+    "domain" : "123",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "198"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographyCompriseIn",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "IconographyCompriseIn"
+    },
+    "domain" : "21",
+    "comment" : {
+      "undefined" : "Inverse of CompriseIconography"
+    },
+    "attributes" : [ "object" ],
+    "id" : "191"
+  }, {
+    "range" : "53",
+    "domain" : "137",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "199"
+  }, {
+    "range" : "53",
+    "domain" : "127",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "200"
+  }, {
+    "range" : "53",
+    "domain" : "77",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "201"
+  }, {
+    "range" : "53",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "202"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Label",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "150",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2000/01/rdf-schema#label",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Label"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype" ],
+    "id" : "203"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RepresentSubject",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "82",
+    "label" : {
+      "IRI-based" : "RepresentSubject"
+    },
+    "domain" : "49",
+    "comment" : {
+      "undefined" : "This property show the subject highlighted by the Iconographical Motifs"
+    },
+    "attributes" : [ "object" ],
+    "id" : "204"
+  }, {
+    "range" : "28",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "205"
+  }, {
+    "range" : "28",
+    "domain" : "87",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "206"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasIconographicalMotif",
+    "inverse" : "204",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "HasIconographicalMotif"
+    },
+    "domain" : "82",
+    "comment" : {
+      "undefined" : "Inverse of RepresentSubject"
+    },
+    "attributes" : [ "object" ],
+    "id" : "207"
+  }, {
+    "range" : "53",
+    "domain" : "114",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "208"
+  }, {
+    "range" : "114",
+    "domain" : "131",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "209"
+  }, {
+    "range" : "17",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "210"
+  }, {
+    "range" : "28",
+    "domain" : "49",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "211"
+  }, {
+    "range" : "28",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "212"
+  }, {
+    "iri" : "https://w3id.org/arco/ontology/context-description/hasBibliographyType",
+    "inverse" : "120",
+    "baseIri" : "https://w3id.org/arco/ontology/context-description",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasBibliographyType"
+    },
+    "domain" : "11",
+    "attributes" : [ "external", "object" ],
+    "id" : "213"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:HasDating",
+    "inverse" : "26",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "24",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/arco/ontology/context-description/hasDating",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Arco:HasDating"
+    },
+    "domain" : "25",
+    "subproperty" : [ "57" ],
+    "comment" : {
+      "undefined" : "Mutuated from contextual description module, this property links an element to its dating node."
+    },
+    "attributes" : [ "object" ],
+    "id" : "58"
+  }, {
+    "range" : "128",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "214"
+  }, {
+    "range" : "90",
+    "domain" : "124",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "215"
+  }, {
+    "range" : "86",
+    "domain" : "124",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "216"
+  }, {
+    "range" : "86",
+    "domain" : "90",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "217"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Name",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "147",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/italia/onto/l0/name",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Name"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype" ],
+    "id" : "218"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CharacterRelationDescription",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "219",
+    "label" : {
+      "IRI-based" : "CharacterRelationDescription"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Specialisation of Relation Description. This property describes the influence a work has on another one from a character point of view. Eg: Judas of Da Vinci Last Supper influenced the Judas of Gaudenzio Ferrari Last Supper"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "220"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasGeometricalVisualAtom",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "128",
+    "label" : {
+      "IRI-based" : "HasGeometricalVisualAtom",
+      "undefined" : "Specialisation of HasVisualAtom. It link something to a visual Atom showing the geometrical elements of a Cultural Property. Eg: a photo highlighting the perspectical lines of Leonardo's Last Supper"
+    },
+    "superproperty" : [ "75" ],
+    "domain" : "175",
+    "attributes" : [ "object" ],
+    "id" : "97"
+  }, {
+    "range" : "32",
+    "domain" : "67",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "221"
+  }, {
+    "range" : "128",
+    "domain" : "67",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "222"
+  }, {
+    "range" : "60",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "223"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsGeometricalVisualAtomOf",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "IsGeometricalVisualAtomOf"
+    },
+    "superproperty" : [ "15" ],
+    "domain" : "11",
+    "attributes" : [ "object" ],
+    "id" : "164"
+  }, {
+    "range" : "131",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "224"
+  }, {
+    "range" : "131",
+    "domain" : "60",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "225"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPreparatoryVisualAtomOf",
+    "inverse" : "101",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "IsPreparatoryVisualAtomOf"
+    },
+    "superproperty" : [ "15" ],
+    "domain" : "33",
+    "comment" : {
+      "undefined" : "Inverse of PreparatoryVisualAtom"
+    },
+    "attributes" : [ "object" ],
+    "id" : "166"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsInfluencerInRelation",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "85",
+    "label" : {
+      "IRI-based" : "IsInfluencerInRelation"
+    },
+    "superproperty" : [ "0" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Coupled with InfluencerInRelation. This property links a Cultural Property to its influence relation node. Specifically this property identify the cultural property that influence the other one."
+    },
+    "attributes" : [ "object" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://ontopia-lodview.agid.gov.it/onto/TI/atTime",
+    "baseIri" : "https://ontopia-lodview.agid.gov.it/onto/TI",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "atTime"
+    },
+    "superproperty" : [ "125" ],
+    "domain" : "172",
+    "subproperty" : [ "113" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "115"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#GeometricalDescription",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "171",
+    "label" : {
+      "IRI-based" : "GeometricalDescription"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype" ],
+    "id" : "226"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#OriginalVisualAtom",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "OriginalVisualAtom"
+    },
+    "superproperty" : [ "75" ],
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "Specialisation of VisualAtom. Identifying the Original Visual Atom of the relation."
+    },
+    "attributes" : [ "object" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasPictorialAttribute",
+    "inverse" : "228",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "87",
+    "label" : {
+      "IRI-based" : "HasPictorialAttribute"
+    },
+    "domain" : "21",
+    "comment" : {
+      "undefined" : "This property link an iconographical representation to a pictorial attribute part of it. eg: Last Supper has the figure of Christ inside it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "227"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasIconographicalRepresentation",
+    "inverse" : "132",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "HasIconographicalRepresentation"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "This property link a Cultura Property to its iconographical representation. Ex: Cenacolo of Fuligno has a Florentine Last Supper Iconography."
+    },
+    "attributes" : [ "object" ],
+    "id" : "229"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Presents",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "Presents"
+    },
+    "domain" : "1",
+    "subproperty" : [ "105" ],
+    "comment" : {
+      "undefined" : "Inverse of IsPresentIn"
+    },
+    "attributes" : [ "object" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasDerivatedCulturalProperty",
+    "inverse" : "5",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "HasDerivatedCulturalProperty"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "Inverse of  IsDerivationInRelation"
+    },
+    "attributes" : [ "object" ],
+    "id" : "192"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DerivativeVisualAtom",
+    "inverse" : "158",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "DerivativeVisualAtom"
+    },
+    "superproperty" : [ "75" ],
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "Specialisation of VisualAtom. Identifying the Derivated Visual Atom of a Derivation Relation."
+    },
+    "attributes" : [ "object" ],
+    "id" : "98"
+  }, {
+    "range" : "40",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "230"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsAttributeOf",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "IsAttributeOf"
+    },
+    "domain" : "87",
+    "comment" : {
+      "undefined" : "Inverse of  HasAttribute"
+    },
+    "attributes" : [ "object" ],
+    "id" : "228"
+  }, {
+    "range" : "2",
+    "domain" : "85",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "231"
+  }, {
+    "range" : "2",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "232"
+  }, {
+    "range" : "19",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "233"
+  }, {
+    "range" : "103",
+    "domain" : "72",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "234"
+  } ]
+}
