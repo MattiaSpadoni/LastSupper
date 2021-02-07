@@ -34,7 +34,7 @@
     "id" : "67",
     "type" : "owl:Class"
   }, {
-    "id" : "52",
+    "id" : "49",
     "type" : "owl:Class"
   }, {
     "id" : "38",
@@ -43,10 +43,10 @@
     "id" : "71",
     "type" : "owl:Class"
   }, {
-    "id" : "76",
+    "id" : "78",
     "type" : "owl:Class"
   }, {
-    "id" : "77",
+    "id" : "79",
     "type" : "owl:Class"
   }, {
     "id" : "61",
@@ -64,7 +64,7 @@
     "id" : "72",
     "type" : "owl:Class"
   }, {
-    "id" : "59",
+    "id" : "60",
     "type" : "owl:Class"
   }, {
     "id" : "121",
@@ -82,7 +82,7 @@
     "id" : "128",
     "type" : "owl:Class"
   }, {
-    "id" : "49",
+    "id" : "51",
     "type" : "owl:Class"
   }, {
     "id" : "114",
@@ -148,7 +148,7 @@
     "id" : "150",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "50",
+    "id" : "52",
     "type" : "rdfs:Literal"
   }, {
     "id" : "118",
@@ -160,10 +160,10 @@
     "id" : "152",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "104",
+    "id" : "65",
     "type" : "owl:Class"
   }, {
-    "id" : "65",
+    "id" : "104",
     "type" : "owl:Class"
   }, {
     "id" : "130",
@@ -205,7 +205,7 @@
     "id" : "139",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "79",
+    "id" : "77",
     "type" : "owl:Thing"
   }, {
     "id" : "66",
@@ -253,10 +253,10 @@
     "id" : "219",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "131",
+    "id" : "132",
     "type" : "owl:Class"
   }, {
-    "id" : "60",
+    "id" : "59",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -392,7 +392,7 @@
     "comment" : {
       "undefined" : "Artistic Theory groups all the theories conceived in the art domain. It specifically focus on theories of painting. Example: Moti dell'Animo. Theory with the Aim of expressing the range of human emotion inside a painting."
     },
-    "id" : "52",
+    "id" : "49",
     "superClasses" : [ "28" ]
   }, {
     "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PreparatoryRelation",
@@ -436,8 +436,8 @@
     "label" : {
       "IRI-based" : "a-cd:CulturalScope"
     },
-    "id" : "76",
-    "superClasses" : [ "77" ]
+    "id" : "78",
+    "superClasses" : [ "79" ]
   }, {
     "iri" : "https://w3id.org/italia/onto/l0/Topic",
     "baseIri" : "https://w3id.org/italia/onto/l0",
@@ -445,9 +445,9 @@
     "label" : {
       "IRI-based" : "Topic"
     },
-    "subClasses" : [ "82", "76" ],
+    "subClasses" : [ "82", "78" ],
     "attributes" : [ "external" ],
-    "id" : "77",
+    "id" : "79",
     "superClasses" : [ "53" ]
   }, {
     "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:AlternativeDating",
@@ -482,7 +482,7 @@
       "IRI-based" : "a-cd:Subject"
     },
     "id" : "82",
-    "superClasses" : [ "77" ]
+    "superClasses" : [ "79" ]
   }, {
     "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#SecondaryCharacter",
     "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
@@ -529,7 +529,7 @@
     },
     "subClasses" : [ "24" ],
     "attributes" : [ "external" ],
-    "id" : "59",
+    "id" : "60",
     "superClasses" : [ "104" ]
   }, {
     "iri" : "https://w3id.org/arco/ontology/context-description/Bibliography",
@@ -601,7 +601,7 @@
     "comment" : {
       "undefined" : "Iconographical Motifs is the class aimed to collect all the single representations of different subjects. Example: the pictorical subject \"Last Supper\" has an iconographical Motifs. This motifs collects an x number of different single iconographical representations."
     },
-    "id" : "49",
+    "id" : "51",
     "superClasses" : [ "28" ]
   }, {
     "iri" : "https://w3id.org/italia/onto/l0/EventOrSituation",
@@ -610,7 +610,7 @@
     "label" : {
       "IRI-based" : "EventOrSituation"
     },
-    "subClasses" : [ "131" ],
+    "subClasses" : [ "132" ],
     "attributes" : [ "external" ],
     "id" : "114",
     "superClasses" : [ "53" ]
@@ -628,7 +628,7 @@
     "label" : {
       "IRI-based" : "AbstractConcept"
     },
-    "subClasses" : [ "21", "49", "87", "52" ],
+    "subClasses" : [ "21", "51", "87", "49" ],
     "comment" : {
       "undefined" : "This class represent a specification class for the \"Concept\" of Top Level Ontology. It is not thought to be directly instatiated, but only to be a collector of more defined abstract concepts as Artistic Theories, Iconographies, Iconologies interpretations and elements of paintings."
     },
@@ -641,7 +641,7 @@
     "label" : {
       "IRI-based" : "Entity"
     },
-    "subClasses" : [ "114", "127", "137", "44", "77", "103" ],
+    "subClasses" : [ "114", "127", "137", "44", "79", "103" ],
     "attributes" : [ "external" ],
     "id" : "53"
   }, {
@@ -783,7 +783,7 @@
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "50",
+    "id" : "52",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -812,17 +812,6 @@
       "IRI-based" : "anyURI"
     }
   }, {
-    "iri" : "https://w3id.org/arco/ontology/core/Method",
-    "baseIri" : "https://w3id.org/arco/ontology/core",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Method"
-    },
-    "subClasses" : [ "59" ],
-    "attributes" : [ "external" ],
-    "id" : "104",
-    "superClasses" : [ "146" ]
-  }, {
     "iri" : "https://w3id.org/arco/ontology/core/Concept",
     "baseIri" : "https://w3id.org/arco/ontology/core",
     "instances" : 0,
@@ -841,6 +830,17 @@
     "attributes" : [ "external" ],
     "id" : "65",
     "superClasses" : [ "137" ]
+  }, {
+    "iri" : "https://w3id.org/arco/ontology/core/Method",
+    "baseIri" : "https://w3id.org/arco/ontology/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Method"
+    },
+    "subClasses" : [ "60" ],
+    "attributes" : [ "external" ],
+    "id" : "104",
+    "superClasses" : [ "146" ]
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "id" : "130",
@@ -946,7 +946,7 @@
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "79",
+    "id" : "77",
     "label" : {
       "undefined" : "Thing"
     }
@@ -983,7 +983,7 @@
     },
     "subClasses" : [ "38", "17", "85" ],
     "id" : "2",
-    "superClasses" : [ "131" ]
+    "superClasses" : [ "132" ]
   }, {
     "iri" : "https://w3id.org/italia/onto/Location",
     "baseIri" : "https://w3id.org/italia/onto",
@@ -1074,12 +1074,12 @@
   }, {
     "instances" : 0,
     "union" : [ "33", "40", "29" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "110"
   }, {
     "instances" : 0,
     "union" : [ "121", "40" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "170"
   }, {
     "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:InterpretationCriterion",
@@ -1121,9 +1121,9 @@
     "label" : {
       "IRI-based" : "Situation"
     },
-    "subClasses" : [ "60", "2" ],
+    "subClasses" : [ "59", "2" ],
     "attributes" : [ "external" ],
-    "id" : "131",
+    "id" : "132",
     "superClasses" : [ "114" ]
   }, {
     "iri" : "https://w3id.org/arco/ontology/context-description/Interpretation",
@@ -1134,8 +1134,8 @@
     },
     "subClasses" : [ "24" ],
     "attributes" : [ "external" ],
-    "id" : "60",
-    "superClasses" : [ "131" ]
+    "id" : "59",
+    "superClasses" : [ "132" ]
   } ],
   "property" : [ {
     "id" : "0",
@@ -1169,10 +1169,10 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "48",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "51",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "54",
     "type" : "owl:datatypeProperty"
@@ -1198,13 +1198,13 @@
     "id" : "70",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "4",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "73",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "78",
+    "id" : "4",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "76",
     "type" : "owl:objectProperty"
   }, {
     "id" : "80",
@@ -1291,19 +1291,19 @@
     "id" : "129",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "132",
+    "id" : "131",
     "type" : "owl:objectProperty"
   }, {
     "id" : "95",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "99",
+    "id" : "47",
     "type" : "owl:objectProperty"
   }, {
     "id" : "133",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "47",
+    "id" : "99",
     "type" : "owl:objectProperty"
   }, {
     "id" : "135",
@@ -1423,10 +1423,10 @@
     "id" : "178",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "96",
+    "id" : "190",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "190",
+    "id" : "96",
     "type" : "owl:objectProperty"
   }, {
     "id" : "39",
@@ -1543,10 +1543,10 @@
     "id" : "225",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "166",
+    "id" : "6",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "6",
+    "id" : "166",
     "type" : "owl:objectProperty"
   }, {
     "id" : "115",
@@ -1676,7 +1676,7 @@
     },
     "domain" : "11",
     "subproperty" : [ "34", "35", "10", "36", "22" ],
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "12"
   }, {
     "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasFinalCulturalProperty",
@@ -1723,31 +1723,31 @@
     "attributes" : [ "object" ],
     "id" : "45"
   }, {
-    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconclassCode",
-    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
-    "range" : "50",
-    "label" : {
-      "IRI-based" : "IconclassCode"
-    },
-    "domain" : "49",
-    "comment" : {
-      "undefined" : "https://w3id.org/arco/ontology/context-description/iconclassCode"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "48"
-  }, {
     "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Influenced",
     "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
     "range" : "21",
     "label" : {
       "IRI-based" : "Influenced"
     },
-    "domain" : "52",
+    "domain" : "49",
     "comment" : {
       "undefined" : "This property highlights the influence that an artistic Theory has on an iconographical representation. At the moment no reification is provided."
     },
     "attributes" : [ "object" ],
-    "id" : "51"
+    "id" : "48"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconclassCode",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "IconclassCode"
+    },
+    "domain" : "51",
+    "comment" : {
+      "undefined" : "https://w3id.org/arco/ontology/context-description/iconclassCode"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "50"
   }, {
     "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RealisationPeriod",
     "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
@@ -1849,22 +1849,8 @@
     "comment" : {
       "undefined" : "This property highlights the role of creator of an agent of an abstract concept."
     },
-    "attributes" : [ "asymmetric", "object" ],
+    "attributes" : [ "object", "asymmetric" ],
     "id" : "70"
-  }, {
-    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsOriginalInRelation",
-    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
-    "range" : "17",
-    "label" : {
-      "IRI-based" : "IsOriginalInRelation"
-    },
-    "superproperty" : [ "0" ],
-    "domain" : "1",
-    "comment" : {
-      "undefined" : "Coupled with IsOriginalRelation this property link a cultural Property to the DerivationRelation node. Specifically this property link the original one of the 2 cultural properties."
-    },
-    "attributes" : [ "object" ],
-    "id" : "4"
   }, {
     "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#FinalVisualAtom",
     "inverse" : "74",
@@ -1881,18 +1867,32 @@
     "attributes" : [ "object" ],
     "id" : "73"
   }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsOriginalInRelation",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "IsOriginalInRelation"
+    },
+    "superproperty" : [ "0" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Coupled with IsOriginalRelation this property link a cultural Property to the DerivationRelation node. Specifically this property link the original one of the 2 cultural properties."
+    },
+    "attributes" : [ "object" ],
+    "id" : "4"
+  }, {
     "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsIconologicalMeaningOf",
     "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
     "range" : "21",
     "label" : {
       "IRI-based" : "IsIconologicalMeaningOf"
     },
-    "domain" : "79",
+    "domain" : "77",
     "comment" : {
       "undefined" : "Inverse of HasIconologicalMeaning"
     },
     "attributes" : [ "object" ],
-    "id" : "78"
+    "id" : "76"
   }, {
     "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#EndDate",
     "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
@@ -1926,7 +1926,7 @@
       "IRI-based" : "hasBibliography"
     },
     "domain" : "11",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "83"
   }, {
     "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasInfluencerCulturalProperty",
@@ -2102,7 +2102,7 @@
     },
     "superproperty" : [ "115" ],
     "domain" : "114",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "113"
   }, {
     "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsInfluencerVisualAtomOf",
@@ -2150,7 +2150,7 @@
       "IRI-based" : "isBibliographyTypeOf"
     },
     "domain" : "11",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "120"
   }, {
     "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsFinalWorkInRelation",
@@ -2201,7 +2201,7 @@
     },
     "domain" : "126",
     "subproperty" : [ "115" ],
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "125"
   }, {
     "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsSuccessorOf",
@@ -2221,7 +2221,7 @@
     "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#EmbodiesArtisticTheory",
     "inverse" : "105",
     "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
-    "range" : "52",
+    "range" : "49",
     "label" : {
       "IRI-based" : "EmbodiesArtisticTheory"
     },
@@ -2271,7 +2271,7 @@
       "undefined" : "Inverse of HasIconographicalRepresentation"
     },
     "attributes" : [ "object" ],
-    "id" : "132"
+    "id" : "131"
   }, {
     "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#InfluencedVisualAtom",
     "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
@@ -2287,19 +2287,18 @@
     "attributes" : [ "object" ],
     "id" : "95"
   }, {
-    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#InfluencerVisualAtom",
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:IsDatingEventOf",
     "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
-    "range" : "11",
+    "range" : "24",
     "label" : {
-      "IRI-based" : "InfluencerVisualAtom"
+      "IRI-based" : "Arco:IsDatingEventOf"
     },
-    "superproperty" : [ "75" ],
-    "domain" : "11",
+    "domain" : "46",
     "comment" : {
-      "undefined" : "Property used to describe the VisualAtom of the Influencer cultural property."
+      "undefined" : "Inverse of HasDatingEvent"
     },
     "attributes" : [ "object" ],
-    "id" : "99"
+    "id" : "47"
   }, {
     "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AlternativeRelationDate",
     "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
@@ -2314,18 +2313,19 @@
     "attributes" : [ "datatype" ],
     "id" : "133"
   }, {
-    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:IsDatingEventOf",
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#InfluencerVisualAtom",
     "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
-    "range" : "24",
+    "range" : "11",
     "label" : {
-      "IRI-based" : "Arco:IsDatingEventOf"
+      "IRI-based" : "InfluencerVisualAtom"
     },
-    "domain" : "46",
+    "superproperty" : [ "75" ],
+    "domain" : "11",
     "comment" : {
-      "undefined" : "Inverse of HasDatingEvent"
+      "undefined" : "Property used to describe the VisualAtom of the Influencer cultural property."
     },
     "attributes" : [ "object" ],
-    "id" : "47"
+    "id" : "99"
   }, {
     "iri" : "https://w3id.org/arco/ontology/context-description/bibliographicReferenceAuthor",
     "baseIri" : "https://w3id.org/arco/ontology/context-description",
@@ -2353,7 +2353,7 @@
     "label" : {
       "IRI-based" : "TypicalIconclassCode"
     },
-    "domain" : "49",
+    "domain" : "51",
     "comment" : {
       "undefined" : "Mention of the typical Iconclass Code used to mark the episode of an iconographical motif."
     },
@@ -2394,7 +2394,7 @@
     },
     "superproperty" : [ "12" ],
     "domain" : "11",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "36"
   }, {
     "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RelationDescription",
@@ -2434,17 +2434,17 @@
     "attributes" : [ "object" ],
     "id" : "158"
   }, {
-    "range" : "77",
-    "domain" : "76",
+    "range" : "79",
+    "domain" : "78",
     "attributes" : [ "anonymous", "object" ],
     "id" : "159"
   }, {
-    "range" : "77",
+    "range" : "79",
     "domain" : "82",
     "attributes" : [ "anonymous", "object" ],
     "id" : "160"
   }, {
-    "range" : "59",
+    "range" : "60",
     "domain" : "24",
     "attributes" : [ "anonymous", "object" ],
     "id" : "161"
@@ -2569,7 +2569,7 @@
     "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#BelongsTo",
     "inverse" : "178",
     "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
-    "range" : "76",
+    "range" : "78",
     "label" : {
       "IRI-based" : "BelongsTo"
     },
@@ -2695,7 +2695,7 @@
     "label" : {
       "IRI-based" : "OtherIconclassCode"
     },
-    "domain" : "49",
+    "domain" : "51",
     "comment" : {
       "undefined" : "Mention of other possible Iconclass Code"
     },
@@ -2708,12 +2708,26 @@
     "label" : {
       "IRI-based" : "Comprise"
     },
-    "domain" : "76",
+    "domain" : "78",
     "comment" : {
       "undefined" : "Inverse of BelongsTo"
     },
     "attributes" : [ "object" ],
     "id" : "178"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompriseIconography",
+    "inverse" : "191",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "CompriseIconography"
+    },
+    "domain" : "51",
+    "comment" : {
+      "undefined" : "This property link the Iconographical motifs to all its known Iconographical Representations. Example: Last Supper Iconographical Motifs is linked to Florentine Last Supper, Da Vinci Last Supper, Nordic Last Supper ecc..."
+    },
+    "attributes" : [ "object" ],
+    "id" : "190"
   }, {
     "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasCompositionVisualAtom",
     "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
@@ -2728,20 +2742,6 @@
     },
     "attributes" : [ "object" ],
     "id" : "96"
-  }, {
-    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompriseIconography",
-    "inverse" : "191",
-    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
-    "range" : "21",
-    "label" : {
-      "IRI-based" : "CompriseIconography"
-    },
-    "domain" : "49",
-    "comment" : {
-      "undefined" : "This property link the Iconographical motifs to all its known Iconographical Representations. Example: Last Supper Iconographical Motifs is linked to Florentine Last Supper, Da Vinci Last Supper, Nordic Last Supper ecc..."
-    },
-    "attributes" : [ "object" ],
-    "id" : "190"
   }, {
     "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsRelatedWorkSituationOf",
     "inverse" : "0",
@@ -2760,8 +2760,8 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "193"
   }, {
-    "range" : "65",
-    "domain" : "28",
+    "range" : "104",
+    "domain" : "60",
     "attributes" : [ "anonymous", "object" ],
     "id" : "194"
   }, {
@@ -2789,8 +2789,8 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "196"
   }, {
-    "range" : "104",
-    "domain" : "59",
+    "range" : "65",
+    "domain" : "28",
     "attributes" : [ "anonymous", "object" ],
     "id" : "197"
   }, {
@@ -2801,7 +2801,7 @@
   }, {
     "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographyCompriseIn",
     "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
-    "range" : "49",
+    "range" : "51",
     "label" : {
       "IRI-based" : "IconographyCompriseIn"
     },
@@ -2823,7 +2823,7 @@
     "id" : "200"
   }, {
     "range" : "53",
-    "domain" : "77",
+    "domain" : "79",
     "attributes" : [ "anonymous", "object" ],
     "id" : "201"
   }, {
@@ -2856,7 +2856,7 @@
     "label" : {
       "IRI-based" : "RepresentSubject"
     },
-    "domain" : "49",
+    "domain" : "51",
     "comment" : {
       "undefined" : "This property show the subject highlighted by the Iconographical Motifs"
     },
@@ -2864,7 +2864,7 @@
     "id" : "204"
   }, {
     "range" : "28",
-    "domain" : "52",
+    "domain" : "49",
     "attributes" : [ "anonymous", "object" ],
     "id" : "205"
   }, {
@@ -2876,7 +2876,7 @@
     "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasIconographicalMotif",
     "inverse" : "204",
     "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
-    "range" : "49",
+    "range" : "51",
     "label" : {
       "IRI-based" : "HasIconographicalMotif"
     },
@@ -2893,7 +2893,7 @@
     "id" : "208"
   }, {
     "range" : "114",
-    "domain" : "131",
+    "domain" : "132",
     "attributes" : [ "anonymous", "object" ],
     "id" : "209"
   }, {
@@ -2903,7 +2903,7 @@
     "id" : "210"
   }, {
     "range" : "28",
-    "domain" : "49",
+    "domain" : "51",
     "attributes" : [ "anonymous", "object" ],
     "id" : "211"
   }, {
@@ -2920,7 +2920,7 @@
       "IRI-based" : "hasBibliographyType"
     },
     "domain" : "11",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "213"
   }, {
     "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:HasDating",
@@ -3019,7 +3019,7 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "222"
   }, {
-    "range" : "60",
+    "range" : "59",
     "domain" : "24",
     "attributes" : [ "anonymous", "object" ],
     "id" : "223"
@@ -3035,15 +3035,29 @@
     "attributes" : [ "object" ],
     "id" : "164"
   }, {
-    "range" : "131",
+    "range" : "132",
     "domain" : "2",
     "attributes" : [ "anonymous", "object" ],
     "id" : "224"
   }, {
-    "range" : "131",
-    "domain" : "60",
+    "range" : "132",
+    "domain" : "59",
     "attributes" : [ "anonymous", "object" ],
     "id" : "225"
+  }, {
+    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsInfluencerInRelation",
+    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
+    "range" : "85",
+    "label" : {
+      "IRI-based" : "IsInfluencerInRelation"
+    },
+    "superproperty" : [ "0" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Coupled with InfluencerInRelation. This property links a Cultural Property to its influence relation node. Specifically this property identify the cultural property that influence the other one."
+    },
+    "attributes" : [ "object" ],
+    "id" : "6"
   }, {
     "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPreparatoryVisualAtomOf",
     "inverse" : "101",
@@ -3060,20 +3074,6 @@
     "attributes" : [ "object" ],
     "id" : "166"
   }, {
-    "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsInfluencerInRelation",
-    "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
-    "range" : "85",
-    "label" : {
-      "IRI-based" : "IsInfluencerInRelation"
-    },
-    "superproperty" : [ "0" ],
-    "domain" : "1",
-    "comment" : {
-      "undefined" : "Coupled with InfluencerInRelation. This property links a Cultural Property to its influence relation node. Specifically this property identify the cultural property that influence the other one."
-    },
-    "attributes" : [ "object" ],
-    "id" : "6"
-  }, {
     "iri" : "https://ontopia-lodview.agid.gov.it/onto/TI/atTime",
     "baseIri" : "https://ontopia-lodview.agid.gov.it/onto/TI",
     "range" : "43",
@@ -3083,7 +3083,7 @@
     "superproperty" : [ "125" ],
     "domain" : "172",
     "subproperty" : [ "113" ],
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "115"
   }, {
     "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#GeometricalDescription",
@@ -3125,7 +3125,7 @@
     "id" : "227"
   }, {
     "iri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasIconographicalRepresentation",
-    "inverse" : "132",
+    "inverse" : "131",
     "baseIri" : "http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25",
     "range" : "21",
     "label" : {
