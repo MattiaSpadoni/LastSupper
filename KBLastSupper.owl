@@ -29,28 +29,25 @@
         <Class IRI="#ArtisticTheory"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#CharacterVisualAtom"/>
+        <Class IRI="#Character"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#CompositionVisualAtom"/>
+        <Class IRI="#CompositionMotif"/>
     </Declaration>
     <Declaration>
         <Class IRI="#DerivationRelation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#GeometricalVisualAtom"/>
+        <Class IRI="#GeometricVisualUnit"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#IconographicMotifs"/>
+        <Class IRI="#IconographicTheme"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#IconographicRepresentation"/>
+        <Class IRI="#Iconography"/>
     </Declaration>
     <Declaration>
         <Class IRI="#InfluenceRelation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#MainCharacter"/>
     </Declaration>
     <Declaration>
         <Class IRI="#PartialDerivationRelation"/>
@@ -65,10 +62,7 @@
         <Class IRI="#SceneObject"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SecondaryCharacter"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#VisualAtom"/>
+        <Class IRI="#VisualUnit"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Arco:AlternativeDating"/>
@@ -102,6 +96,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#core:Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://xmlns.com/foaf/spec/#term_Image"/>
@@ -191,31 +188,28 @@
         <ObjectProperty IRI="#Creates"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#DerivativeVisualAtom"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#DescribedIn"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#EmbodiesArtisticTheory"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#FinalVisualAtom"/>
+        <ObjectProperty IRI="#HasCompositionalMotif"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#HasCharacterVisualAtom"/>
+        <ObjectProperty IRI="#HasDerivatedWork"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#HasCompositionVisualAtom"/>
+        <ObjectProperty IRI="#HasDerivativeVisualUnit"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#HasDerivatedCulturalProperty"/>
+        <ObjectProperty IRI="#HasFinalVisualUnit"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#HasFinalCulturalProperty"/>
+        <ObjectProperty IRI="#HasFinalWork"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#HasGeometricalVisualAtom"/>
+        <ObjectProperty IRI="#HasGeometricVisualUnit"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#HasIconographicTheme"/>
@@ -224,22 +218,40 @@
         <ObjectProperty IRI="#HasIconography"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#HasInfluenceMedium"/>
+        <ObjectProperty IRI="#HasInfluencedVisualUnit"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#HasInfluencedCulturalProperty"/>
+        <ObjectProperty IRI="#HasInfluencedWork"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#HasInfluencerCulturalProperty"/>
+        <ObjectProperty IRI="#HasInfluencerVisualUnit"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#HasOriginalCulturalProperty"/>
+        <ObjectProperty IRI="#HasInfluencerWork"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasMediumVisualUnit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasMediumWork"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasOriginalVisualUnit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasOriginalWork"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#HasPictorialAttribute"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#HasPreparatoryCulturalPropety"/>
+        <ObjectProperty IRI="#HasPreparatoryVisualUnit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasPreparatoryWork"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#HasVisualUnit"/>
@@ -251,12 +263,6 @@
         <ObjectProperty IRI="#Influenced"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#InfluencedVisualAtom"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#InfluencerVisualAtom"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#Introduce"/>
     </Declaration>
     <Declaration>
@@ -266,58 +272,67 @@
         <ObjectProperty IRI="#IsAttributeOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#IsCharacterVisualAtomOf"/>
+        <ObjectProperty IRI="#IsCompositionMotifOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#IsCompositionVisualAtomOf"/>
+        <ObjectProperty IRI="#IsDerivatedVisualUnitOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#IsDerivationInRelation"/>
+        <ObjectProperty IRI="#IsDerivationIn"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#IsDerivativeVisualAtomOf"/>
+        <ObjectProperty IRI="#IsFinalIn"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#IsFinalVisualAtomOf"/>
+        <ObjectProperty IRI="#IsFinalVisualUnitOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#IsFinalWorkInRelation"/>
+        <ObjectProperty IRI="#IsGeometricVisualUnitOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#IsGeometricalVisualAtomOf"/>
+        <ObjectProperty IRI="#IsInfluencedIn"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#IsInfluencedInRelation"/>
+        <ObjectProperty IRI="#IsInfluencedVisualUnitOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#IsInfluencedVisualAtomOf"/>
+        <ObjectProperty IRI="#IsInfluencerIn"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#IsInfluencerInRelation"/>
+        <ObjectProperty IRI="#IsInfluencerVisualUnitOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#IsInfluencerVisualAtomOf"/>
+        <ObjectProperty IRI="#IsLocationOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#IsMediumInRelation"/>
+        <ObjectProperty IRI="#IsMediumIn"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#IsOriginalInRelation"/>
+        <ObjectProperty IRI="#IsMediumVisualUnitOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#IsOriginalVisualAtomOf"/>
+        <ObjectProperty IRI="#IsOriginalVisualUnitOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsOriginaln"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#IsPredecessorOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#IsPreparatoryVisualAtomOf"/>
+        <ObjectProperty IRI="#IsPreparatoryIn"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#IsPreparatoryWorkInRelation"/>
+        <ObjectProperty IRI="#IsPreparatoryVisualUnitOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#IsPresentIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsRelationLocationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsStartingLocationOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#IsSuccessorOf"/>
@@ -329,19 +344,19 @@
         <ObjectProperty IRI="#IsVisualUnitOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#OriginalVisualAtom"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#PreparatoryVisualAtom"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#Presents"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#PresentsArtisticTheory"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#RelationLocation"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#RepresentSubject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#StartingLocation"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#TheorisedBy"/>
@@ -491,6 +506,9 @@
         <DataProperty IRI="#URI"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#URL"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
     </Declaration>
     <Declaration>
@@ -582,6 +600,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#CatturaDiCristo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Character1"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ChristHead"/>
@@ -779,97 +800,97 @@
         <NamedIndividual IRI="#VespinoLastSupper"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#VisualAtom1"/>
+        <NamedIndividual IRI="#VisualUnit1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#VisualAtom10"/>
+        <NamedIndividual IRI="#VisualUnit10"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#VisualAtom11"/>
+        <NamedIndividual IRI="#VisualUnit11"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#VisualAtom12"/>
+        <NamedIndividual IRI="#VisualUnit12"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#VisualAtom13"/>
+        <NamedIndividual IRI="#VisualUnit13"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#VisualAtom14"/>
+        <NamedIndividual IRI="#VisualUnit14"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#VisualAtom15"/>
+        <NamedIndividual IRI="#VisualUnit15"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#VisualAtom16"/>
+        <NamedIndividual IRI="#VisualUnit16"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#VisualAtom17"/>
+        <NamedIndividual IRI="#VisualUnit17"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#VisualAtom18"/>
+        <NamedIndividual IRI="#VisualUnit18"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#VisualAtom19"/>
+        <NamedIndividual IRI="#VisualUnit19"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#VisualAtom2"/>
+        <NamedIndividual IRI="#VisualUnit2"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#VisualAtom20"/>
+        <NamedIndividual IRI="#VisualUnit20"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#VisualAtom21"/>
+        <NamedIndividual IRI="#VisualUnit21"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#VisualAtom22"/>
+        <NamedIndividual IRI="#VisualUnit22"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#VisualAtom23"/>
+        <NamedIndividual IRI="#VisualUnit23"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#VisualAtom24"/>
+        <NamedIndividual IRI="#VisualUnit24"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#VisualAtom25"/>
+        <NamedIndividual IRI="#VisualUnit25"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#VisualAtom26"/>
+        <NamedIndividual IRI="#VisualUnit26"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#VisualAtom27"/>
+        <NamedIndividual IRI="#VisualUnit27"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#VisualAtom28"/>
+        <NamedIndividual IRI="#VisualUnit28"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#VisualAtom29"/>
+        <NamedIndividual IRI="#VisualUnit29"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#VisualAtom3"/>
+        <NamedIndividual IRI="#VisualUnit3"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#VisualAtom30"/>
+        <NamedIndividual IRI="#VisualUnit30"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#VisualAtom31"/>
+        <NamedIndividual IRI="#VisualUnit31"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#VisualAtom4"/>
+        <NamedIndividual IRI="#VisualUnit4"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#VisualAtom5"/>
+        <NamedIndividual IRI="#VisualUnit5"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#VisualAtom6"/>
+        <NamedIndividual IRI="#VisualUnit6"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#VisualAtom7"/>
+        <NamedIndividual IRI="#VisualUnit7"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#VisualAtom8"/>
+        <NamedIndividual IRI="#VisualUnit8"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#VisualAtom9"/>
+        <NamedIndividual IRI="#VisualUnit9"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Windsor12542"/>
@@ -925,27 +946,27 @@
         <Class IRI="#AbstractConcept"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#CharacterVisualAtom"/>
-        <Class IRI="#VisualAtom"/>
+        <Class IRI="#Character"/>
+        <Class IRI="#PictorialAttribute"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#CompositionVisualAtom"/>
-        <Class IRI="#VisualAtom"/>
+        <Class IRI="#CompositionMotif"/>
+        <Class IRI="#VisualUnit"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DerivationRelation"/>
         <Class IRI="#a-cd:RelatedWorkSituation"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#GeometricalVisualAtom"/>
-        <Class IRI="#VisualAtom"/>
+        <Class IRI="#GeometricVisualUnit"/>
+        <Class IRI="#VisualUnit"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#IconographicMotifs"/>
+        <Class IRI="#IconographicTheme"/>
         <Class IRI="#AbstractConcept"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#IconographicRepresentation"/>
+        <Class IRI="#Iconography"/>
         <Class IRI="#AbstractConcept"/>
     </SubClassOf>
     <SubClassOf>
@@ -953,16 +974,8 @@
         <Class IRI="#a-cd:RelatedWorkSituation"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#MainCharacter"/>
-        <Class IRI="#PictorialAttribute"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#PartialDerivationRelation"/>
         <Class IRI="#DerivationRelation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#PictorialAttribute"/>
-        <Class IRI="#AbstractConcept"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PreparatoryRelation"/>
@@ -970,10 +983,6 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SceneObject"/>
-        <Class IRI="#PictorialAttribute"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SecondaryCharacter"/>
         <Class IRI="#PictorialAttribute"/>
     </SubClassOf>
     <SubClassOf>
@@ -1077,18 +1086,8 @@
         <Class IRI="https://w3id.org/italia/onto/Entity"/>
     </SubClassOf>
     <DisjointClasses>
-        <Class IRI="#CharacterVisualAtom"/>
-        <Class IRI="#CompositionVisualAtom"/>
-        <Class IRI="#GeometricalVisualAtom"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#CompositionVisualAtom"/>
-        <Class IRI="#GeometricalVisualAtom"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#MainCharacter"/>
-        <Class IRI="#SceneObject"/>
-        <Class IRI="#SecondaryCharacter"/>
+        <Class IRI="#CompositionMotif"/>
+        <Class IRI="#GeometricVisualUnit"/>
     </DisjointClasses>
     <ClassAssertion>
         <Class IRI="#core:Agent"/>
@@ -1191,11 +1190,19 @@
         <NamedIndividual IRI="#CatturaDiCristo"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Character"/>
+        <NamedIndividual IRI="#Character1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Iconography"/>
+        <NamedIndividual IRI="#Character1"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Arco:CulturalProperty"/>
         <NamedIndividual IRI="#ChristHead"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#IconographicRepresentation"/>
+        <Class IRI="#Iconography"/>
         <NamedIndividual IRI="#DaVinciIconographyLastSupper"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1331,11 +1338,11 @@
         <NamedIndividual IRI="#LastSupper"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#IconographicMotifs"/>
+        <Class IRI="#IconographicTheme"/>
         <NamedIndividual IRI="#LastSupperIconography"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#IconographicRepresentation"/>
+        <Class IRI="#Iconography"/>
         <NamedIndividual IRI="#LateFlorentineLastSupperIconography"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1363,7 +1370,7 @@
         <NamedIndividual IRI="#MrsJamesWyatt"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#IconographicRepresentation"/>
+        <Class IRI="#Iconography"/>
         <NamedIndividual IRI="#OldFlorentineLastSupper"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1375,7 +1382,7 @@
         <NamedIndividual IRI="#PeruginoLastSupper"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#IconographicRepresentation"/>
+        <Class IRI="#Iconography"/>
         <NamedIndividual IRI="#PreRefectoryLastSupperIconography"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1455,220 +1462,160 @@
         <NamedIndividual IRI="#VespinoLastSupper"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#VisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom1"/>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit1"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#CharacterVisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom10"/>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit10"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#VisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom10"/>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit11"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#VisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom11"/>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit12"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#VisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom12"/>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit13"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#VisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom13"/>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit14"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#VisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom14"/>
+        <Class IRI="#CompositionMotif"/>
+        <NamedIndividual IRI="#VisualUnit15"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#CompositionVisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom15"/>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit15"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#VisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom15"/>
+        <Class IRI="#CompositionMotif"/>
+        <NamedIndividual IRI="#VisualUnit16"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#CompositionVisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom16"/>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit16"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#VisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom16"/>
+        <Class IRI="#GeometricVisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit17"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#GeometricalVisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom17"/>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit17"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#VisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom17"/>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit18"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#CharacterVisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom18"/>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit19"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#VisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom18"/>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit2"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#CharacterVisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom19"/>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit20"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#VisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom19"/>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit21"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#VisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom2"/>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit22"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#VisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom20"/>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit23"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#CharacterVisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom21"/>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit24"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#VisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom21"/>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit25"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#CharacterVisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom22"/>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit26"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#VisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom22"/>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit27"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#CharacterVisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom23"/>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit28"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#VisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom23"/>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit29"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#CharacterVisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom24"/>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit3"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#VisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom24"/>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit30"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#CharacterVisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom25"/>
+        <Class IRI="#CompositionMotif"/>
+        <NamedIndividual IRI="#VisualUnit31"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#VisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom25"/>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit31"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#CharacterVisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom26"/>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit4"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#VisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom26"/>
+        <Class IRI="#GeometricVisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit5"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#CharacterVisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom27"/>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit5"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#VisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom27"/>
+        <Class IRI="#GeometricVisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit6"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#CharacterVisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom28"/>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit6"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#VisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom28"/>
+        <Class IRI="#CompositionMotif"/>
+        <NamedIndividual IRI="#VisualUnit7"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#CharacterVisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom29"/>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit7"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#VisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom29"/>
+        <Class IRI="#CompositionMotif"/>
+        <NamedIndividual IRI="#VisualUnit8"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#CharacterVisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom3"/>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit8"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#VisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom3"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#CharacterVisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom30"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#VisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom30"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#CompositionVisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom31"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#VisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom31"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#VisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom4"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#GeometricalVisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom5"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#VisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom5"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#GeometricalVisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom6"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#VisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom6"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#CompositionVisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom7"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#VisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom7"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#CompositionVisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom8"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#VisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom8"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#CharacterVisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom9"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#VisualAtom"/>
-        <NamedIndividual IRI="#VisualAtom9"/>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit9"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Arco:CulturalProperty"/>
@@ -1727,7 +1674,7 @@
         <NamedIndividual IRI="#436E"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#IconographicRepresentation"/>
+        <Class IRI="#Iconography"/>
         <NamedIndividual IRI="#Ferrari&apos;sLastSupperIconography"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
@@ -1761,7 +1708,7 @@
         <NamedIndividual IRI="#AnonimoUmbro"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsDerivationInRelation"/>
+        <ObjectProperty IRI="#IsDerivationIn"/>
         <NamedIndividual IRI="#AraldiUltimaCena"/>
         <NamedIndividual IRI="#Derivation1"/>
     </ObjectPropertyAssertion>
@@ -1966,7 +1913,7 @@
         <NamedIndividual IRI="#BibliographyType2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsDerivationInRelation"/>
+        <ObjectProperty IRI="#IsDerivationIn"/>
         <NamedIndividual IRI="#BiragoLastSupper"/>
         <NamedIndividual IRI="#Derivation2"/>
     </ObjectPropertyAssertion>
@@ -1981,7 +1928,7 @@
         <NamedIndividual IRI="#BoccaccinoPastori"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsInfluencedInRelation"/>
+        <ObjectProperty IRI="#IsInfluencedIn"/>
         <NamedIndividual IRI="#BoccaccinoPastori"/>
         <NamedIndividual IRI="#Influence1"/>
     </ObjectPropertyAssertion>
@@ -2001,7 +1948,7 @@
         <NamedIndividual IRI="#AndreaDelCastagno"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsInfluencedInRelation"/>
+        <ObjectProperty IRI="#IsInfluencedIn"/>
         <NamedIndividual IRI="#CatturaDiCristo"/>
         <NamedIndividual IRI="#Influence2"/>
     </ObjectPropertyAssertion>
@@ -2081,52 +2028,52 @@
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasDerivatedCulturalProperty"/>
+        <ObjectProperty IRI="#HasDerivatedWork"/>
         <NamedIndividual IRI="#Derivation1"/>
         <NamedIndividual IRI="#AraldiUltimaCena"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasOriginalCulturalProperty"/>
+        <ObjectProperty IRI="#HasOriginalWork"/>
         <NamedIndividual IRI="#Derivation1"/>
         <NamedIndividual IRI="#LastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasDerivatedCulturalProperty"/>
+        <ObjectProperty IRI="#HasDerivatedWork"/>
         <NamedIndividual IRI="#Derivation2"/>
         <NamedIndividual IRI="#BiragoLastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasOriginalCulturalProperty"/>
+        <ObjectProperty IRI="#HasOriginalWork"/>
         <NamedIndividual IRI="#Derivation2"/>
         <NamedIndividual IRI="#LastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasDerivatedCulturalProperty"/>
+        <ObjectProperty IRI="#HasDerivatedWork"/>
         <NamedIndividual IRI="#Derivation3"/>
         <NamedIndividual IRI="#MorghenLastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasOriginalCulturalProperty"/>
+        <ObjectProperty IRI="#HasOriginalWork"/>
         <NamedIndividual IRI="#Derivation3"/>
         <NamedIndividual IRI="#LastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasDerivatedCulturalProperty"/>
+        <ObjectProperty IRI="#HasDerivatedWork"/>
         <NamedIndividual IRI="#Derivation4"/>
         <NamedIndividual IRI="#VaticanTapestry"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasOriginalCulturalProperty"/>
+        <ObjectProperty IRI="#HasOriginalWork"/>
         <NamedIndividual IRI="#Derivation4"/>
         <NamedIndividual IRI="#LastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasDerivatedCulturalProperty"/>
+        <ObjectProperty IRI="#HasDerivatedWork"/>
         <NamedIndividual IRI="#Derivation5"/>
         <NamedIndividual IRI="#VespinoLastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasOriginalCulturalProperty"/>
+        <ObjectProperty IRI="#HasOriginalWork"/>
         <NamedIndividual IRI="#Derivation5"/>
         <NamedIndividual IRI="#LastSupper"/>
     </ObjectPropertyAssertion>
@@ -2141,7 +2088,7 @@
         <NamedIndividual IRI="#GhirlandaioLastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsInfluencedInRelation"/>
+        <ObjectProperty IRI="#IsInfluencedIn"/>
         <NamedIndividual IRI="#DurerLastSupper"/>
         <NamedIndividual IRI="#Influence3"/>
     </ObjectPropertyAssertion>
@@ -2176,7 +2123,7 @@
         <NamedIndividual IRI="#GarofaloAdultera"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsInfluencedInRelation"/>
+        <ObjectProperty IRI="#IsInfluencedIn"/>
         <NamedIndividual IRI="#GarofaloAdultera"/>
         <NamedIndividual IRI="#Influence4"/>
     </ObjectPropertyAssertion>
@@ -2201,7 +2148,7 @@
         <NamedIndividual IRI="#Le_tre_età"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsInfluencedInRelation"/>
+        <ObjectProperty IRI="#IsInfluencedIn"/>
         <NamedIndividual IRI="#GiovanniAgostinoDoublePortrait"/>
         <NamedIndividual IRI="#Influence5"/>
     </ObjectPropertyAssertion>
@@ -2221,184 +2168,184 @@
         <NamedIndividual IRI="#BiragoLastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasInfluencedCulturalProperty"/>
+        <ObjectProperty IRI="#HasInfluencedVisualUnit"/>
+        <NamedIndividual IRI="#Influence1"/>
+        <NamedIndividual IRI="#VisualUnit1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasInfluencedWork"/>
         <NamedIndividual IRI="#Influence1"/>
         <NamedIndividual IRI="#BoccaccinoPastori"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasInfluencerCulturalProperty"/>
+        <ObjectProperty IRI="#HasInfluencerVisualUnit"/>
+        <NamedIndividual IRI="#Influence1"/>
+        <NamedIndividual IRI="#VisualUnit2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasInfluencerWork"/>
         <NamedIndividual IRI="#Influence1"/>
         <NamedIndividual IRI="#LastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#InfluencedVisualAtom"/>
-        <NamedIndividual IRI="#Influence1"/>
-        <NamedIndividual IRI="#VisualAtom1"/>
+        <ObjectProperty IRI="#HasInfluencedVisualUnit"/>
+        <NamedIndividual IRI="#Influence2"/>
+        <NamedIndividual IRI="#VisualUnit3"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#InfluencerVisualAtom"/>
-        <NamedIndividual IRI="#Influence1"/>
-        <NamedIndividual IRI="#VisualAtom2"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasInfluencedCulturalProperty"/>
+        <ObjectProperty IRI="#HasInfluencedWork"/>
         <NamedIndividual IRI="#Influence2"/>
         <NamedIndividual IRI="#CatturaDiCristo"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasInfluencerCulturalProperty"/>
+        <ObjectProperty IRI="#HasInfluencerVisualUnit"/>
+        <NamedIndividual IRI="#Influence2"/>
+        <NamedIndividual IRI="#VisualUnit4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasInfluencerWork"/>
         <NamedIndividual IRI="#Influence2"/>
         <NamedIndividual IRI="#LastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#InfluencedVisualAtom"/>
-        <NamedIndividual IRI="#Influence2"/>
-        <NamedIndividual IRI="#VisualAtom3"/>
+        <ObjectProperty IRI="#HasInfluencedVisualUnit"/>
+        <NamedIndividual IRI="#Influence3"/>
+        <NamedIndividual IRI="#VisualUnit5"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#InfluencerVisualAtom"/>
-        <NamedIndividual IRI="#Influence2"/>
-        <NamedIndividual IRI="#VisualAtom4"/>
+        <ObjectProperty IRI="#HasInfluencedVisualUnit"/>
+        <NamedIndividual IRI="#Influence3"/>
+        <NamedIndividual IRI="#VisualUnit7"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasInfluencedCulturalProperty"/>
+        <ObjectProperty IRI="#HasInfluencedWork"/>
         <NamedIndividual IRI="#Influence3"/>
         <NamedIndividual IRI="#DurerLastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasInfluencerCulturalProperty"/>
+        <ObjectProperty IRI="#HasInfluencerVisualUnit"/>
+        <NamedIndividual IRI="#Influence3"/>
+        <NamedIndividual IRI="#VisualUnit6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasInfluencerVisualUnit"/>
+        <NamedIndividual IRI="#Influence3"/>
+        <NamedIndividual IRI="#VisualUnit8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasInfluencerWork"/>
         <NamedIndividual IRI="#Influence3"/>
         <NamedIndividual IRI="#LastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#InfluencedVisualAtom"/>
-        <NamedIndividual IRI="#Influence3"/>
-        <NamedIndividual IRI="#VisualAtom5"/>
+        <ObjectProperty IRI="#HasInfluencedVisualUnit"/>
+        <NamedIndividual IRI="#Influence4"/>
+        <NamedIndividual IRI="#VisualUnit9"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#InfluencedVisualAtom"/>
-        <NamedIndividual IRI="#Influence3"/>
-        <NamedIndividual IRI="#VisualAtom7"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#InfluencerVisualAtom"/>
-        <NamedIndividual IRI="#Influence3"/>
-        <NamedIndividual IRI="#VisualAtom6"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#InfluencerVisualAtom"/>
-        <NamedIndividual IRI="#Influence3"/>
-        <NamedIndividual IRI="#VisualAtom8"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasInfluencedCulturalProperty"/>
+        <ObjectProperty IRI="#HasInfluencedWork"/>
         <NamedIndividual IRI="#Influence4"/>
         <NamedIndividual IRI="#GarofaloAdultera"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasInfluencerCulturalProperty"/>
+        <ObjectProperty IRI="#HasInfluencerVisualUnit"/>
+        <NamedIndividual IRI="#Influence4"/>
+        <NamedIndividual IRI="#VisualUnit10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasInfluencerWork"/>
         <NamedIndividual IRI="#Influence4"/>
         <NamedIndividual IRI="#LastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#InfluencedVisualAtom"/>
-        <NamedIndividual IRI="#Influence4"/>
-        <NamedIndividual IRI="#VisualAtom9"/>
+        <ObjectProperty IRI="#HasInfluencedVisualUnit"/>
+        <NamedIndividual IRI="#Influence5"/>
+        <NamedIndividual IRI="#VisualUnit11"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#InfluencerVisualAtom"/>
-        <NamedIndividual IRI="#Influence4"/>
-        <NamedIndividual IRI="#VisualAtom10"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasInfluencedCulturalProperty"/>
+        <ObjectProperty IRI="#HasInfluencedWork"/>
         <NamedIndividual IRI="#Influence5"/>
         <NamedIndividual IRI="#GiovanniAgostinoDoublePortrait"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasInfluencerCulturalProperty"/>
+        <ObjectProperty IRI="#HasInfluencerVisualUnit"/>
+        <NamedIndividual IRI="#Influence5"/>
+        <NamedIndividual IRI="#VisualUnit12"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasInfluencerWork"/>
         <NamedIndividual IRI="#Influence5"/>
         <NamedIndividual IRI="#LastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#InfluencedVisualAtom"/>
-        <NamedIndividual IRI="#Influence5"/>
-        <NamedIndividual IRI="#VisualAtom11"/>
+        <ObjectProperty IRI="#HasInfluencedVisualUnit"/>
+        <NamedIndividual IRI="#Influence6"/>
+        <NamedIndividual IRI="#VisualUnit14"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#InfluencerVisualAtom"/>
-        <NamedIndividual IRI="#Influence5"/>
-        <NamedIndividual IRI="#VisualAtom12"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasInfluencedCulturalProperty"/>
+        <ObjectProperty IRI="#HasInfluencedWork"/>
         <NamedIndividual IRI="#Influence6"/>
         <NamedIndividual IRI="#MrsJamesWyatt"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasInfluencerCulturalProperty"/>
+        <ObjectProperty IRI="#HasInfluencerVisualUnit"/>
+        <NamedIndividual IRI="#Influence6"/>
+        <NamedIndividual IRI="#VisualUnit13"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasInfluencerWork"/>
         <NamedIndividual IRI="#Influence6"/>
         <NamedIndividual IRI="#LastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#InfluencedVisualAtom"/>
-        <NamedIndividual IRI="#Influence6"/>
-        <NamedIndividual IRI="#VisualAtom14"/>
+        <ObjectProperty IRI="#HasInfluencedVisualUnit"/>
+        <NamedIndividual IRI="#Influence7"/>
+        <NamedIndividual IRI="#VisualUnit15"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#InfluencerVisualAtom"/>
-        <NamedIndividual IRI="#Influence6"/>
-        <NamedIndividual IRI="#VisualAtom13"/>
+        <ObjectProperty IRI="#HasInfluencedVisualUnit"/>
+        <NamedIndividual IRI="#Influence7"/>
+        <NamedIndividual IRI="#VisualUnit17"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasInfluencedCulturalProperty"/>
+        <ObjectProperty IRI="#HasInfluencedWork"/>
         <NamedIndividual IRI="#Influence7"/>
         <NamedIndividual IRI="#RaimondiLastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasInfluencerCulturalProperty"/>
+        <ObjectProperty IRI="#HasInfluencerVisualUnit"/>
+        <NamedIndividual IRI="#Influence7"/>
+        <NamedIndividual IRI="#VisualUnit16"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasInfluencerVisualUnit"/>
+        <NamedIndividual IRI="#Influence7"/>
+        <NamedIndividual IRI="#VisualUnit6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasInfluencerWork"/>
         <NamedIndividual IRI="#Influence7"/>
         <NamedIndividual IRI="#LastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#InfluencedVisualAtom"/>
-        <NamedIndividual IRI="#Influence7"/>
-        <NamedIndividual IRI="#VisualAtom15"/>
+        <ObjectProperty IRI="#HasInfluencedVisualUnit"/>
+        <NamedIndividual IRI="#Influence_8"/>
+        <NamedIndividual IRI="#VisualUnit19"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#InfluencedVisualAtom"/>
-        <NamedIndividual IRI="#Influence7"/>
-        <NamedIndividual IRI="#VisualAtom17"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#InfluencerVisualAtom"/>
-        <NamedIndividual IRI="#Influence7"/>
-        <NamedIndividual IRI="#VisualAtom16"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#InfluencerVisualAtom"/>
-        <NamedIndividual IRI="#Influence7"/>
-        <NamedIndividual IRI="#VisualAtom6"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasInfluencedCulturalProperty"/>
+        <ObjectProperty IRI="#HasInfluencedWork"/>
         <NamedIndividual IRI="#Influence_8"/>
         <NamedIndividual IRI="#Le_tre_età"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasInfluencerCulturalProperty"/>
+        <ObjectProperty IRI="#HasInfluencerVisualUnit"/>
+        <NamedIndividual IRI="#Influence_8"/>
+        <NamedIndividual IRI="#VisualUnit18"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasInfluencerWork"/>
         <NamedIndividual IRI="#Influence_8"/>
         <NamedIndividual IRI="#LastSupper"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#InfluencedVisualAtom"/>
-        <NamedIndividual IRI="#Influence_8"/>
-        <NamedIndividual IRI="#VisualAtom19"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#InfluencerVisualAtom"/>
-        <NamedIndividual IRI="#Influence_8"/>
-        <NamedIndividual IRI="#VisualAtom18"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
@@ -2406,92 +2353,92 @@
         <NamedIndividual IRI="#MrsJamesWyatt"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsFinalWorkInRelation"/>
+        <ObjectProperty IRI="#IsFinalIn"/>
         <NamedIndividual IRI="#LastSupper"/>
         <NamedIndividual IRI="#PreparatoryRelation1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsFinalWorkInRelation"/>
+        <ObjectProperty IRI="#IsFinalIn"/>
         <NamedIndividual IRI="#LastSupper"/>
         <NamedIndividual IRI="#PreparatoryRelation2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsFinalWorkInRelation"/>
+        <ObjectProperty IRI="#IsFinalIn"/>
         <NamedIndividual IRI="#LastSupper"/>
         <NamedIndividual IRI="#PreparatoryRelation3"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsFinalWorkInRelation"/>
+        <ObjectProperty IRI="#IsFinalIn"/>
         <NamedIndividual IRI="#LastSupper"/>
         <NamedIndividual IRI="#PreparatoryRelation4"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsFinalWorkInRelation"/>
+        <ObjectProperty IRI="#IsFinalIn"/>
         <NamedIndividual IRI="#LastSupper"/>
         <NamedIndividual IRI="#PreparatoryRelation5"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsFinalWorkInRelation"/>
+        <ObjectProperty IRI="#IsFinalIn"/>
         <NamedIndividual IRI="#LastSupper"/>
         <NamedIndividual IRI="#PreparatoryRelation6"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsFinalWorkInRelation"/>
+        <ObjectProperty IRI="#IsFinalIn"/>
         <NamedIndividual IRI="#LastSupper"/>
         <NamedIndividual IRI="#PreparatoryRelation7"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsFinalWorkInRelation"/>
+        <ObjectProperty IRI="#IsFinalIn"/>
         <NamedIndividual IRI="#LastSupper"/>
         <NamedIndividual IRI="#PreparatoryRelation8"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsFinalWorkInRelation"/>
+        <ObjectProperty IRI="#IsFinalIn"/>
         <NamedIndividual IRI="#LastSupper"/>
         <NamedIndividual IRI="#PreparatoryRelation9"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsInfluencerInRelation"/>
+        <ObjectProperty IRI="#IsInfluencerIn"/>
         <NamedIndividual IRI="#LastSupper"/>
         <NamedIndividual IRI="#Influence1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsInfluencerInRelation"/>
+        <ObjectProperty IRI="#IsInfluencerIn"/>
         <NamedIndividual IRI="#LastSupper"/>
         <NamedIndividual IRI="#Influence2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsInfluencerInRelation"/>
+        <ObjectProperty IRI="#IsInfluencerIn"/>
         <NamedIndividual IRI="#LastSupper"/>
         <NamedIndividual IRI="#Influence3"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsInfluencerInRelation"/>
+        <ObjectProperty IRI="#IsInfluencerIn"/>
         <NamedIndividual IRI="#LastSupper"/>
         <NamedIndividual IRI="#Influence4"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsInfluencerInRelation"/>
+        <ObjectProperty IRI="#IsInfluencerIn"/>
         <NamedIndividual IRI="#LastSupper"/>
         <NamedIndividual IRI="#Influence5"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsInfluencerInRelation"/>
+        <ObjectProperty IRI="#IsInfluencerIn"/>
         <NamedIndividual IRI="#LastSupper"/>
         <NamedIndividual IRI="#Influence6"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsInfluencerInRelation"/>
+        <ObjectProperty IRI="#IsInfluencerIn"/>
         <NamedIndividual IRI="#LastSupper"/>
         <NamedIndividual IRI="#Influence7"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsInfluencerInRelation"/>
+        <ObjectProperty IRI="#IsInfluencerIn"/>
         <NamedIndividual IRI="#LastSupper"/>
         <NamedIndividual IRI="#Influence_8"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsOriginalInRelation"/>
+        <ObjectProperty IRI="#IsOriginaln"/>
         <NamedIndividual IRI="#LastSupper"/>
         <NamedIndividual IRI="#Derivation5"/>
     </ObjectPropertyAssertion>
@@ -2521,7 +2468,7 @@
         <NamedIndividual IRI="#PeruginoLastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsInfluencedInRelation"/>
+        <ObjectProperty IRI="#IsInfluencedIn"/>
         <NamedIndividual IRI="#Le_tre_età"/>
         <NamedIndividual IRI="#Influence_8"/>
     </ObjectPropertyAssertion>
@@ -2616,7 +2563,7 @@
         <NamedIndividual IRI="#436E"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsInfluencedInRelation"/>
+        <ObjectProperty IRI="#IsInfluencedIn"/>
         <NamedIndividual IRI="#MarcantonioRaimondi"/>
         <NamedIndividual IRI="#Influence7"/>
     </ObjectPropertyAssertion>
@@ -2626,7 +2573,7 @@
         <NamedIndividual IRI="#RaimondiLastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsDerivationInRelation"/>
+        <ObjectProperty IRI="#IsDerivationIn"/>
         <NamedIndividual IRI="#MorghenLastSupper"/>
         <NamedIndividual IRI="#Derivation3"/>
     </ObjectPropertyAssertion>
@@ -2636,7 +2583,7 @@
         <NamedIndividual IRI="#RaffaelloMorghen"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsInfluencedInRelation"/>
+        <ObjectProperty IRI="#IsInfluencedIn"/>
         <NamedIndividual IRI="#MrsJamesWyatt"/>
         <NamedIndividual IRI="#Influence6"/>
     </ObjectPropertyAssertion>
@@ -2666,157 +2613,157 @@
         <NamedIndividual IRI="#DiBartoloLastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#FinalVisualAtom"/>
+        <ObjectProperty IRI="#HasFinalVisualUnit"/>
         <NamedIndividual IRI="#PreparatoryRelation1"/>
-        <NamedIndividual IRI="#VisualAtom31"/>
+        <NamedIndividual IRI="#VisualUnit31"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasFinalCulturalProperty"/>
+        <ObjectProperty IRI="#HasFinalWork"/>
         <NamedIndividual IRI="#PreparatoryRelation1"/>
         <NamedIndividual IRI="#LastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasPreparatoryCulturalPropety"/>
+        <ObjectProperty IRI="#HasPreparatoryWork"/>
         <NamedIndividual IRI="#PreparatoryRelation1"/>
         <NamedIndividual IRI="#Windsor12542"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#FinalVisualAtom"/>
+        <ObjectProperty IRI="#HasFinalVisualUnit"/>
         <NamedIndividual IRI="#PreparatoryRelation10"/>
-        <NamedIndividual IRI="#VisualAtom20"/>
+        <NamedIndividual IRI="#VisualUnit20"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasFinalCulturalProperty"/>
+        <ObjectProperty IRI="#HasFinalWork"/>
         <NamedIndividual IRI="#PreparatoryRelation10"/>
         <NamedIndividual IRI="#LastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasPreparatoryCulturalPropety"/>
+        <ObjectProperty IRI="#HasPreparatoryWork"/>
         <NamedIndividual IRI="#PreparatoryRelation10"/>
         <NamedIndividual IRI="#ChristHead"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#FinalVisualAtom"/>
+        <ObjectProperty IRI="#HasFinalVisualUnit"/>
         <NamedIndividual IRI="#PreparatoryRelation2"/>
-        <NamedIndividual IRI="#VisualAtom27"/>
+        <NamedIndividual IRI="#VisualUnit27"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasFinalCulturalProperty"/>
+        <ObjectProperty IRI="#HasFinalWork"/>
         <NamedIndividual IRI="#PreparatoryRelation2"/>
         <NamedIndividual IRI="#LastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasPreparatoryCulturalPropety"/>
+        <ObjectProperty IRI="#HasPreparatoryWork"/>
         <NamedIndividual IRI="#PreparatoryRelation2"/>
         <NamedIndividual IRI="#Windsor12543"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#FinalVisualAtom"/>
+        <ObjectProperty IRI="#HasFinalVisualUnit"/>
         <NamedIndividual IRI="#PreparatoryRelation3"/>
-        <NamedIndividual IRI="#VisualAtom30"/>
+        <NamedIndividual IRI="#VisualUnit30"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasFinalCulturalProperty"/>
+        <ObjectProperty IRI="#HasFinalWork"/>
         <NamedIndividual IRI="#PreparatoryRelation3"/>
         <NamedIndividual IRI="#LastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasPreparatoryCulturalPropety"/>
+        <ObjectProperty IRI="#HasPreparatoryWork"/>
         <NamedIndividual IRI="#PreparatoryRelation3"/>
         <NamedIndividual IRI="#Windsor12544"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#FinalVisualAtom"/>
+        <ObjectProperty IRI="#HasFinalVisualUnit"/>
         <NamedIndividual IRI="#PreparatoryRelation4"/>
-        <NamedIndividual IRI="#VisualAtom29"/>
+        <NamedIndividual IRI="#VisualUnit29"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasFinalCulturalProperty"/>
+        <ObjectProperty IRI="#HasFinalWork"/>
         <NamedIndividual IRI="#PreparatoryRelation4"/>
         <NamedIndividual IRI="#LastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasPreparatoryCulturalPropety"/>
+        <ObjectProperty IRI="#HasPreparatoryWork"/>
         <NamedIndividual IRI="#PreparatoryRelation4"/>
         <NamedIndividual IRI="#Windsor12545"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#FinalVisualAtom"/>
+        <ObjectProperty IRI="#HasFinalVisualUnit"/>
         <NamedIndividual IRI="#PreparatoryRelation5"/>
-        <NamedIndividual IRI="#VisualAtom22"/>
+        <NamedIndividual IRI="#VisualUnit22"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasFinalCulturalProperty"/>
+        <ObjectProperty IRI="#HasFinalWork"/>
         <NamedIndividual IRI="#PreparatoryRelation5"/>
         <NamedIndividual IRI="#LastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasPreparatoryCulturalPropety"/>
+        <ObjectProperty IRI="#HasPreparatoryWork"/>
         <NamedIndividual IRI="#PreparatoryRelation5"/>
         <NamedIndividual IRI="#Windsor12547"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#FinalVisualAtom"/>
+        <ObjectProperty IRI="#HasFinalVisualUnit"/>
         <NamedIndividual IRI="#PreparatoryRelation6"/>
-        <NamedIndividual IRI="#VisualAtom25"/>
+        <NamedIndividual IRI="#VisualUnit25"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasFinalCulturalProperty"/>
+        <ObjectProperty IRI="#HasFinalWork"/>
         <NamedIndividual IRI="#PreparatoryRelation6"/>
         <NamedIndividual IRI="#LastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasPreparatoryCulturalPropety"/>
+        <ObjectProperty IRI="#HasPreparatoryWork"/>
         <NamedIndividual IRI="#PreparatoryRelation6"/>
         <NamedIndividual IRI="#Windsor12548"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#FinalVisualAtom"/>
+        <ObjectProperty IRI="#HasFinalVisualUnit"/>
         <NamedIndividual IRI="#PreparatoryRelation7"/>
-        <NamedIndividual IRI="#VisualAtom28"/>
+        <NamedIndividual IRI="#VisualUnit28"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasFinalCulturalProperty"/>
+        <ObjectProperty IRI="#HasFinalWork"/>
         <NamedIndividual IRI="#PreparatoryRelation7"/>
         <NamedIndividual IRI="#LastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasPreparatoryCulturalPropety"/>
+        <ObjectProperty IRI="#HasPreparatoryWork"/>
         <NamedIndividual IRI="#PreparatoryRelation7"/>
         <NamedIndividual IRI="#Windsor12549"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#FinalVisualAtom"/>
+        <ObjectProperty IRI="#HasFinalVisualUnit"/>
         <NamedIndividual IRI="#PreparatoryRelation8"/>
-        <NamedIndividual IRI="#VisualAtom23"/>
+        <NamedIndividual IRI="#VisualUnit23"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasFinalCulturalProperty"/>
+        <ObjectProperty IRI="#HasFinalWork"/>
         <NamedIndividual IRI="#PreparatoryRelation8"/>
         <NamedIndividual IRI="#LastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasPreparatoryCulturalPropety"/>
+        <ObjectProperty IRI="#HasPreparatoryWork"/>
         <NamedIndividual IRI="#PreparatoryRelation8"/>
         <NamedIndividual IRI="#Windsor12551"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#FinalVisualAtom"/>
+        <ObjectProperty IRI="#HasFinalVisualUnit"/>
         <NamedIndividual IRI="#PreparatoryRelation9"/>
-        <NamedIndividual IRI="#VisualAtom24"/>
+        <NamedIndividual IRI="#VisualUnit24"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasFinalCulturalProperty"/>
+        <ObjectProperty IRI="#HasFinalWork"/>
         <NamedIndividual IRI="#PreparatoryRelation9"/>
         <NamedIndividual IRI="#LastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasPreparatoryCulturalPropety"/>
+        <ObjectProperty IRI="#HasPreparatoryWork"/>
         <NamedIndividual IRI="#PreparatoryRelation9"/>
         <NamedIndividual IRI="#Windsor12552"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsInfluencedInRelation"/>
+        <ObjectProperty IRI="#IsInfluencedIn"/>
         <NamedIndividual IRI="#RaimondiLastSupper"/>
         <NamedIndividual IRI="#Influence7"/>
     </ObjectPropertyAssertion>
@@ -2841,12 +2788,12 @@
         <NamedIndividual IRI="#Tiziano"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsDerivationInRelation"/>
+        <ObjectProperty IRI="#IsDerivationIn"/>
         <NamedIndividual IRI="#VaticanTapestry"/>
         <NamedIndividual IRI="#Derivation4"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsDerivationInRelation"/>
+        <ObjectProperty IRI="#IsDerivationIn"/>
         <NamedIndividual IRI="#VespinoLastSupper"/>
         <NamedIndividual IRI="#Derivation5"/>
     </ObjectPropertyAssertion>
@@ -2856,7 +2803,7 @@
         <NamedIndividual IRI="#Vespino"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsPreparatoryWorkInRelation"/>
+        <ObjectProperty IRI="#IsPreparatoryIn"/>
         <NamedIndividual IRI="#Windsor12542"/>
         <NamedIndividual IRI="#PreparatoryRelation1"/>
     </ObjectPropertyAssertion>
@@ -2866,7 +2813,7 @@
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsPreparatoryWorkInRelation"/>
+        <ObjectProperty IRI="#IsPreparatoryIn"/>
         <NamedIndividual IRI="#Windsor12543"/>
         <NamedIndividual IRI="#PreparatoryRelation2"/>
     </ObjectPropertyAssertion>
@@ -2876,7 +2823,7 @@
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsPreparatoryWorkInRelation"/>
+        <ObjectProperty IRI="#IsPreparatoryIn"/>
         <NamedIndividual IRI="#Windsor12544"/>
         <NamedIndividual IRI="#PreparatoryRelation3"/>
     </ObjectPropertyAssertion>
@@ -2886,7 +2833,7 @@
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsPreparatoryWorkInRelation"/>
+        <ObjectProperty IRI="#IsPreparatoryIn"/>
         <NamedIndividual IRI="#Windsor12545"/>
         <NamedIndividual IRI="#PreparatoryRelation4"/>
     </ObjectPropertyAssertion>
@@ -2896,7 +2843,7 @@
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsPreparatoryWorkInRelation"/>
+        <ObjectProperty IRI="#IsPreparatoryIn"/>
         <NamedIndividual IRI="#Windsor12547"/>
         <NamedIndividual IRI="#PreparatoryRelation5"/>
     </ObjectPropertyAssertion>
@@ -2906,7 +2853,7 @@
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsPreparatoryWorkInRelation"/>
+        <ObjectProperty IRI="#IsPreparatoryIn"/>
         <NamedIndividual IRI="#Windsor12548"/>
         <NamedIndividual IRI="#PreparatoryRelation6"/>
     </ObjectPropertyAssertion>
@@ -2916,7 +2863,7 @@
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsPreparatoryWorkInRelation"/>
+        <ObjectProperty IRI="#IsPreparatoryIn"/>
         <NamedIndividual IRI="#Windsor12549"/>
         <NamedIndividual IRI="#PreparatoryRelation7"/>
     </ObjectPropertyAssertion>
@@ -2926,7 +2873,7 @@
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsPreparatoryWorkInRelation"/>
+        <ObjectProperty IRI="#IsPreparatoryIn"/>
         <NamedIndividual IRI="#Windsor12551"/>
         <NamedIndividual IRI="#PreparatoryRelation8"/>
     </ObjectPropertyAssertion>
@@ -2936,7 +2883,7 @@
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsPreparatoryWorkInRelation"/>
+        <ObjectProperty IRI="#IsPreparatoryIn"/>
         <NamedIndividual IRI="#Windsor12552"/>
         <NamedIndividual IRI="#PreparatoryRelation9"/>
     </ObjectPropertyAssertion>
@@ -3399,6 +3346,11 @@
         <DataProperty IRI="#StartDate"/>
         <NamedIndividual IRI="#CatturaDiCristo"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1602</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Character1"/>
+        <Literal>Pietro dell&apos;Ultima Cena</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#ApproximateDate"/>
@@ -4679,144 +4631,160 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <ObjectProperty IRI="#Introduce"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#DerivativeVisualAtom"/>
-        <ObjectProperty IRI="#HasVisualUnit"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
         <ObjectProperty IRI="#EmbodiesArtisticTheory"/>
         <ObjectProperty IRI="#IsPresentIn"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#FinalVisualAtom"/>
+        <ObjectProperty IRI="#HasCompositionalMotif"/>
         <ObjectProperty IRI="#HasVisualUnit"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#HasCharacterVisualAtom"/>
+        <ObjectProperty IRI="#HasDerivatedWork"/>
+        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isRelatedWorkSituationOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#HasDerivativeVisualUnit"/>
         <ObjectProperty IRI="#HasVisualUnit"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#HasCompositionVisualAtom"/>
+        <ObjectProperty IRI="#HasFinalVisualUnit"/>
         <ObjectProperty IRI="#HasVisualUnit"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#HasDerivatedCulturalProperty"/>
+        <ObjectProperty IRI="#HasFinalWork"/>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isRelatedWorkSituationOf"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#HasFinalCulturalProperty"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isRelatedWorkSituationOf"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#HasGeometricalVisualAtom"/>
+        <ObjectProperty IRI="#HasGeometricVisualUnit"/>
         <ObjectProperty IRI="#HasVisualUnit"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#HasInfluenceMedium"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isRelatedWorkSituationOf"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#HasInfluencedCulturalProperty"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isRelatedWorkSituationOf"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#HasInfluencerCulturalProperty"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isRelatedWorkSituationOf"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#HasOriginalCulturalProperty"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isRelatedWorkSituationOf"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#HasPreparatoryCulturalPropety"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isRelatedWorkSituationOf"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#InfluencedVisualAtom"/>
+        <ObjectProperty IRI="#HasInfluencedVisualUnit"/>
         <ObjectProperty IRI="#HasVisualUnit"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#InfluencerVisualAtom"/>
+        <ObjectProperty IRI="#HasInfluencedWork"/>
+        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isRelatedWorkSituationOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#HasInfluencerVisualUnit"/>
         <ObjectProperty IRI="#HasVisualUnit"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#IsCharacterVisualAtomOf"/>
+        <ObjectProperty IRI="#HasInfluencerWork"/>
+        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isRelatedWorkSituationOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#HasMediumVisualUnit"/>
+        <ObjectProperty IRI="#HasVisualUnit"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#HasMediumWork"/>
+        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isRelatedWorkSituationOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#HasOriginalVisualUnit"/>
+        <ObjectProperty IRI="#HasVisualUnit"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#HasOriginalWork"/>
+        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isRelatedWorkSituationOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#HasPreparatoryVisualUnit"/>
+        <ObjectProperty IRI="#HasVisualUnit"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#HasPreparatoryWork"/>
+        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isRelatedWorkSituationOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsCompositionMotifOf"/>
         <ObjectProperty IRI="#IsVisualUnitOf"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#IsCompositionVisualAtomOf"/>
+        <ObjectProperty IRI="#IsDerivatedVisualUnitOf"/>
         <ObjectProperty IRI="#IsVisualUnitOf"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#IsDerivationInRelation"/>
+        <ObjectProperty IRI="#IsDerivationIn"/>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasRelatedWorkSituation"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#IsDerivativeVisualAtomOf"/>
-        <ObjectProperty IRI="#IsVisualUnitOf"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#IsFinalVisualAtomOf"/>
-        <ObjectProperty IRI="#IsVisualUnitOf"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#IsFinalWorkInRelation"/>
+        <ObjectProperty IRI="#IsFinalIn"/>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasRelatedWorkSituation"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#IsGeometricalVisualAtomOf"/>
+        <ObjectProperty IRI="#IsFinalVisualUnitOf"/>
         <ObjectProperty IRI="#IsVisualUnitOf"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#IsInfluencedInRelation"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasRelatedWorkSituation"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#IsInfluencedVisualAtomOf"/>
+        <ObjectProperty IRI="#IsGeometricVisualUnitOf"/>
         <ObjectProperty IRI="#IsVisualUnitOf"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#IsInfluencerInRelation"/>
+        <ObjectProperty IRI="#IsInfluencedIn"/>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasRelatedWorkSituation"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#IsInfluencerVisualAtomOf"/>
+        <ObjectProperty IRI="#IsInfluencedVisualUnitOf"/>
         <ObjectProperty IRI="#IsVisualUnitOf"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#IsMediumInRelation"/>
+        <ObjectProperty IRI="#IsInfluencerIn"/>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasRelatedWorkSituation"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#IsOriginalInRelation"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasRelatedWorkSituation"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#IsOriginalVisualAtomOf"/>
+        <ObjectProperty IRI="#IsInfluencerVisualUnitOf"/>
         <ObjectProperty IRI="#IsVisualUnitOf"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#IsPreparatoryVisualAtomOf"/>
+        <ObjectProperty IRI="#IsMediumIn"/>
+        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasRelatedWorkSituation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsMediumVisualUnitOf"/>
         <ObjectProperty IRI="#IsVisualUnitOf"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#IsPreparatoryWorkInRelation"/>
+        <ObjectProperty IRI="#IsOriginalVisualUnitOf"/>
+        <ObjectProperty IRI="#IsVisualUnitOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsOriginaln"/>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasRelatedWorkSituation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsPreparatoryIn"/>
+        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasRelatedWorkSituation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsPreparatoryVisualUnitOf"/>
+        <ObjectProperty IRI="#IsVisualUnitOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsRelationLocationOf"/>
+        <ObjectProperty IRI="#IsLocationOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsStartingLocationOf"/>
+        <ObjectProperty IRI="#IsLocationOf"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#IsSuccessorOf"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#OriginalVisualAtom"/>
-        <ObjectProperty IRI="#HasVisualUnit"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#PreparatoryVisualAtom"/>
-        <ObjectProperty IRI="#HasVisualUnit"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
         <ObjectProperty IRI="#PresentsArtisticTheory"/>
         <ObjectProperty IRI="#Presents"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#RelationLocation"/>
+        <ObjectProperty IRI="#HasLocation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#StartingLocation"/>
+        <ObjectProperty IRI="#HasLocation"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#TheorisedBy"/>
@@ -4915,24 +4883,32 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <ObjectProperty IRI="#Creates"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#DerivativeVisualAtom"/>
-        <ObjectProperty IRI="#IsDerivativeVisualAtomOf"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
         <ObjectProperty IRI="#EmbodiesArtisticTheory"/>
         <ObjectProperty IRI="#PresentsArtisticTheory"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#FinalVisualAtom"/>
-        <ObjectProperty IRI="#IsFinalVisualAtomOf"/>
+        <ObjectProperty IRI="#HasCompositionalMotif"/>
+        <ObjectProperty IRI="#IsCompositionMotifOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#HasDerivatedCulturalProperty"/>
-        <ObjectProperty IRI="#IsDerivationInRelation"/>
+        <ObjectProperty IRI="#HasDerivatedWork"/>
+        <ObjectProperty IRI="#IsDerivationIn"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#HasFinalCulturalProperty"/>
-        <ObjectProperty IRI="#IsFinalWorkInRelation"/>
+        <ObjectProperty IRI="#HasDerivativeVisualUnit"/>
+        <ObjectProperty IRI="#IsDerivatedVisualUnitOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#HasFinalVisualUnit"/>
+        <ObjectProperty IRI="#IsFinalVisualUnitOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#HasFinalWork"/>
+        <ObjectProperty IRI="#IsFinalIn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#HasGeometricVisualUnit"/>
+        <ObjectProperty IRI="#IsGeometricVisualUnitOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#HasIconographicTheme"/>
@@ -4943,28 +4919,52 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <ObjectProperty IRI="#RepresentSubject"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#HasInfluenceMedium"/>
-        <ObjectProperty IRI="#IsMediumInRelation"/>
+        <ObjectProperty IRI="#HasInfluencedVisualUnit"/>
+        <ObjectProperty IRI="#IsInfluencedVisualUnitOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#HasInfluencedCulturalProperty"/>
-        <ObjectProperty IRI="#IsInfluencedInRelation"/>
+        <ObjectProperty IRI="#HasInfluencedWork"/>
+        <ObjectProperty IRI="#IsInfluencedIn"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#HasInfluencerCulturalProperty"/>
-        <ObjectProperty IRI="#IsInfluencerInRelation"/>
+        <ObjectProperty IRI="#HasInfluencerVisualUnit"/>
+        <ObjectProperty IRI="#IsInfluencerVisualUnitOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#HasOriginalCulturalProperty"/>
-        <ObjectProperty IRI="#IsOriginalInRelation"/>
+        <ObjectProperty IRI="#HasInfluencerWork"/>
+        <ObjectProperty IRI="#IsInfluencerIn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#HasLocation"/>
+        <ObjectProperty IRI="#IsLocationOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#HasMediumVisualUnit"/>
+        <ObjectProperty IRI="#IsMediumVisualUnitOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#HasMediumWork"/>
+        <ObjectProperty IRI="#IsMediumIn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#HasOriginalVisualUnit"/>
+        <ObjectProperty IRI="#IsOriginalVisualUnitOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#HasOriginalWork"/>
+        <ObjectProperty IRI="#IsOriginaln"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#HasPictorialAttribute"/>
         <ObjectProperty IRI="#IsAttributeOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#HasPreparatoryCulturalPropety"/>
-        <ObjectProperty IRI="#IsPreparatoryWorkInRelation"/>
+        <ObjectProperty IRI="#HasPreparatoryVisualUnit"/>
+        <ObjectProperty IRI="#IsPreparatoryVisualUnitOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#HasPreparatoryWork"/>
+        <ObjectProperty IRI="#IsPreparatoryIn"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#HasVisualUnit"/>
@@ -4975,20 +4975,20 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <ObjectProperty IRI="#IntroductedBy"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#IsOriginalVisualAtomOf"/>
-        <ObjectProperty IRI="#OriginalVisualAtom"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
         <ObjectProperty IRI="#IsPredecessorOf"/>
         <ObjectProperty IRI="#IsSuccessorOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#IsPreparatoryVisualAtomOf"/>
-        <ObjectProperty IRI="#PreparatoryVisualAtom"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
         <ObjectProperty IRI="#IsPresentIn"/>
         <ObjectProperty IRI="#Presents"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#IsRelationLocationOf"/>
+        <ObjectProperty IRI="#StartingLocation"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#IsStartingLocationOf"/>
+        <ObjectProperty IRI="#RelationLocation"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#TheorisedBy"/>
@@ -5043,7 +5043,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#CompriseIconography"/>
-        <Class IRI="#IconographicMotifs"/>
+        <Class IRI="#IconographicTheme"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#CreatedBy"/>
@@ -5054,39 +5054,35 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Class IRI="#core:Agent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#DerivativeVisualAtom"/>
-        <Class IRI="#DerivationRelation"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#DescribedIn"/>
         <Class IRI="https://w3id.org/arco/ontology/core/Concept"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#EmbodiesArtisticTheory"/>
-        <Class IRI="#IconographicRepresentation"/>
+        <Class IRI="#Iconography"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#FinalVisualAtom"/>
-        <Class IRI="#PreparatoryRelation"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#HasCharacterVisualAtom"/>
+        <ObjectProperty IRI="#HasCompositionalMotif"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#HasCompositionVisualAtom"/>
-        <Class abbreviatedIRI="owl:Thing"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#HasDerivatedCulturalProperty"/>
+        <ObjectProperty IRI="#HasDerivatedWork"/>
         <Class IRI="#DerivationRelation"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#HasFinalCulturalProperty"/>
+        <ObjectProperty IRI="#HasDerivativeVisualUnit"/>
+        <Class IRI="#DerivationRelation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasFinalVisualUnit"/>
         <Class IRI="#PreparatoryRelation"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#HasGeometricalVisualAtom"/>
+        <ObjectProperty IRI="#HasFinalWork"/>
+        <Class IRI="#PreparatoryRelation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasGeometricVisualUnit"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -5098,23 +5094,39 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Class IRI="#a-cd:Subject"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#HasInfluencedCulturalProperty"/>
+        <ObjectProperty IRI="#HasInfluencedWork"/>
         <Class IRI="#InfluenceRelation"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#HasInfluencerCulturalProperty"/>
+        <ObjectProperty IRI="#HasInfluencerWork"/>
         <Class IRI="#InfluenceRelation"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#HasOriginalCulturalProperty"/>
+        <ObjectProperty IRI="#HasLocation"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasMediumVisualUnit"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasOriginalVisualUnit"/>
+        <Class IRI="#DerivationRelation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasOriginalWork"/>
         <Class IRI="#DerivationRelation"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#HasPictorialAttribute"/>
-        <Class IRI="#IconographicRepresentation"/>
+        <Class IRI="#Iconography"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#HasPreparatoryCulturalPropety"/>
+        <ObjectProperty IRI="#HasPreparatoryVisualUnit"/>
+        <Class IRI="#PreparatoryRelation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasPreparatoryWork"/>
         <Class IRI="#PreparatoryRelation"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -5123,7 +5135,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#IconographyCompriseIn"/>
-        <Class IRI="#IconographicRepresentation"/>
+        <Class IRI="#Iconography"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#Influenced"/>
@@ -5134,76 +5146,112 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Class IRI="#PictorialAttribute"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#IsDerivationInRelation"/>
+        <ObjectProperty IRI="#IsCompositionMotifOf"/>
+        <Class IRI="#CompositionMotif"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsDerivatedVisualUnitOf"/>
+        <Class IRI="#VisualUnit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsDerivationIn"/>
         <Class IRI="#Arco:CulturalProperty"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#IsDerivativeVisualAtomOf"/>
-        <Class IRI="#VisualAtom"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#IsFinalVisualAtomOf"/>
-        <Class IRI="#VisualAtom"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#IsFinalWorkInRelation"/>
+        <ObjectProperty IRI="#IsFinalIn"/>
         <Class IRI="#Arco:CulturalProperty"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#IsInfluencedInRelation"/>
+        <ObjectProperty IRI="#IsFinalVisualUnitOf"/>
+        <Class IRI="#VisualUnit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsGeometricVisualUnitOf"/>
+        <Class IRI="#GeometricVisualUnit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsInfluencedIn"/>
         <Class IRI="#Arco:CulturalProperty"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#IsInfluencerInRelation"/>
+        <ObjectProperty IRI="#IsInfluencedVisualUnitOf"/>
+        <Class IRI="#VisualUnit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsInfluencerIn"/>
         <Class IRI="#Arco:CulturalProperty"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#IsOriginalInRelation"/>
-        <Class IRI="#Arco:CulturalProperty"/>
+        <ObjectProperty IRI="#IsInfluencerVisualUnitOf"/>
+        <Class IRI="#VisualUnit"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#IsOriginalVisualAtomOf"/>
-        <Class IRI="#VisualAtom"/>
+        <ObjectProperty IRI="#IsLocationOf"/>
+        <Class IRI="https://w3id.org/italia/onto/Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsMediumVisualUnitOf"/>
+        <Class IRI="#VisualUnit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsOriginalVisualUnitOf"/>
+        <Class IRI="#VisualUnit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsOriginaln"/>
+        <Class IRI="#Arco:CulturalProperty"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#IsPredecessorOf"/>
-        <Class IRI="#IconographicRepresentation"/>
+        <Class IRI="#Iconography"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#IsPreparatoryVisualAtomOf"/>
-        <Class IRI="#VisualAtom"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#IsPreparatoryWorkInRelation"/>
+        <ObjectProperty IRI="#IsPreparatoryIn"/>
         <Class IRI="#Arco:CulturalProperty"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsPreparatoryVisualUnitOf"/>
+        <Class IRI="#VisualUnit"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#IsPresentIn"/>
         <Class IRI="#AbstractConcept"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsRelationLocationOf"/>
+        <Class IRI="https://w3id.org/italia/onto/Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsStartingLocationOf"/>
+        <Class IRI="https://w3id.org/italia/onto/Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#IsSuccessorOf"/>
-        <Class IRI="#IconographicRepresentation"/>
+        <Class IRI="#Iconography"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#IsUsedInWork"/>
-        <Class IRI="#IconographicRepresentation"/>
+        <Class IRI="#Iconography"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#OriginalVisualAtom"/>
-        <Class IRI="#DerivationRelation"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#PreparatoryVisualAtom"/>
-        <Class IRI="#PreparatoryRelation"/>
+        <ObjectProperty IRI="#IsVisualUnitOf"/>
+        <Class IRI="#VisualUnit"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#Presents"/>
         <Class IRI="#Arco:CulturalProperty"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#RelationLocation"/>
+        <Class IRI="#a-cd:RelatedWorkSituation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#RepresentSubject"/>
-        <Class IRI="#IconographicMotifs"/>
+        <Class IRI="#IconographicTheme"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#StartingLocation"/>
+        <Class IRI="#AbstractConcept"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#TheorisedBy"/>
@@ -5240,7 +5288,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
         <ObjectUnionOf>
             <Class abbreviatedIRI="cis:CulturalEntity"/>
-            <Class IRI="#VisualAtom"/>
+            <Class IRI="#VisualUnit"/>
             <Class IRI="#core:Agent"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
@@ -5278,7 +5326,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#CompriseIconography"/>
-        <Class IRI="#IconographicRepresentation"/>
+        <Class IRI="#Iconography"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#CreatedBy"/>
@@ -5289,55 +5337,63 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Class IRI="#AbstractConcept"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#DerivativeVisualAtom"/>
-        <Class IRI="#VisualAtom"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#EmbodiesArtisticTheory"/>
         <Class IRI="#ArtisticTheory"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#FinalVisualAtom"/>
-        <Class IRI="#VisualAtom"/>
+        <ObjectProperty IRI="#HasCompositionalMotif"/>
+        <Class IRI="#CompositionMotif"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#HasCharacterVisualAtom"/>
-        <Class IRI="#CharacterVisualAtom"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#HasCompositionVisualAtom"/>
-        <Class IRI="#CompositionVisualAtom"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#HasDerivatedCulturalProperty"/>
+        <ObjectProperty IRI="#HasDerivatedWork"/>
         <Class IRI="#Arco:CulturalProperty"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#HasFinalCulturalProperty"/>
+        <ObjectProperty IRI="#HasDerivativeVisualUnit"/>
+        <Class IRI="#VisualUnit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasFinalVisualUnit"/>
+        <Class IRI="#VisualUnit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasFinalWork"/>
         <Class IRI="#Arco:CulturalProperty"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#HasGeometricalVisualAtom"/>
-        <Class IRI="#GeometricalVisualAtom"/>
+        <ObjectProperty IRI="#HasGeometricVisualUnit"/>
+        <Class IRI="#GeometricVisualUnit"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#HasIconographicTheme"/>
-        <Class IRI="#IconographicRepresentation"/>
+        <Class IRI="#Iconography"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#HasIconography"/>
-        <Class IRI="#IconographicMotifs"/>
+        <Class IRI="#IconographicTheme"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#HasInfluencedCulturalProperty"/>
+        <ObjectProperty IRI="#HasInfluencedWork"/>
         <Class IRI="#Arco:CulturalProperty"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#HasInfluencerCulturalProperty"/>
+        <ObjectProperty IRI="#HasInfluencerWork"/>
         <Class IRI="#Arco:CulturalProperty"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#HasOriginalCulturalProperty"/>
+        <ObjectProperty IRI="#HasLocation"/>
+        <Class IRI="https://w3id.org/italia/onto/Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasMediumVisualUnit"/>
+        <Class IRI="#VisualUnit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasOriginalVisualUnit"/>
+        <Class IRI="#VisualUnit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasOriginalWork"/>
         <Class IRI="#Arco:CulturalProperty"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -5345,67 +5401,95 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Class IRI="#PictorialAttribute"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#HasPreparatoryCulturalPropety"/>
+        <ObjectProperty IRI="#HasPreparatoryVisualUnit"/>
+        <Class IRI="#VisualUnit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasPreparatoryWork"/>
         <Class IRI="#Arco:CulturalProperty"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#HasVisualUnit"/>
-        <Class IRI="#VisualAtom"/>
+        <Class IRI="#VisualUnit"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#IconographyCompriseIn"/>
-        <Class IRI="#IconographicMotifs"/>
+        <Class IRI="#IconographicTheme"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#Influenced"/>
-        <Class IRI="#IconographicRepresentation"/>
+        <Class IRI="#Iconography"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#IsAttributeOf"/>
-        <Class IRI="#IconographicRepresentation"/>
+        <Class IRI="#Iconography"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#IsDerivationInRelation"/>
+        <ObjectProperty IRI="#IsCompositionMotifOf"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsDerivatedVisualUnitOf"/>
         <Class IRI="#DerivationRelation"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#IsDerivativeVisualAtomOf"/>
+        <ObjectProperty IRI="#IsDerivationIn"/>
         <Class IRI="#DerivationRelation"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#IsFinalVisualAtomOf"/>
+        <ObjectProperty IRI="#IsFinalIn"/>
         <Class IRI="#PreparatoryRelation"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#IsFinalWorkInRelation"/>
+        <ObjectProperty IRI="#IsFinalVisualUnitOf"/>
         <Class IRI="#PreparatoryRelation"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#IsInfluencedInRelation"/>
+        <ObjectProperty IRI="#IsGeometricVisualUnitOf"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsInfluencedIn"/>
         <Class IRI="#InfluenceRelation"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#IsInfluencerInRelation"/>
+        <ObjectProperty IRI="#IsInfluencedVisualUnitOf"/>
         <Class IRI="#InfluenceRelation"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#IsOriginalInRelation"/>
+        <ObjectProperty IRI="#IsInfluencerIn"/>
+        <Class IRI="#InfluenceRelation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsInfluencerVisualUnitOf"/>
+        <Class IRI="#InfluenceRelation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsLocationOf"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsMediumVisualUnitOf"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsOriginalVisualUnitOf"/>
         <Class IRI="#DerivationRelation"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#IsOriginalVisualAtomOf"/>
+        <ObjectProperty IRI="#IsOriginaln"/>
         <Class IRI="#DerivationRelation"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#IsPredecessorOf"/>
-        <Class IRI="#IconographicRepresentation"/>
+        <Class IRI="#Iconography"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#IsPreparatoryVisualAtomOf"/>
+        <ObjectProperty IRI="#IsPreparatoryIn"/>
         <Class IRI="#PreparatoryRelation"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#IsPreparatoryWorkInRelation"/>
+        <ObjectProperty IRI="#IsPreparatoryVisualUnitOf"/>
         <Class IRI="#PreparatoryRelation"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -5413,28 +5497,40 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Class IRI="#Arco:CulturalProperty"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsRelationLocationOf"/>
+        <Class IRI="#AbstractConcept"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsStartingLocationOf"/>
+        <Class IRI="#a-cd:RelatedWorkSituation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#IsSuccessorOf"/>
-        <Class IRI="#IconographicRepresentation"/>
+        <Class IRI="#Iconography"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#IsUsedInWork"/>
         <Class IRI="#Arco:CulturalProperty"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#OriginalVisualAtom"/>
-        <Class IRI="#VisualAtom"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#PreparatoryVisualAtom"/>
-        <Class IRI="#VisualAtom"/>
+        <ObjectProperty IRI="#IsVisualUnitOf"/>
+        <Class abbreviatedIRI="owl:Thing"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#Presents"/>
         <Class IRI="#AbstractConcept"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#RelationLocation"/>
+        <Class IRI="https://w3id.org/italia/onto/Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#RepresentSubject"/>
         <Class IRI="#a-cd:Subject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#StartingLocation"/>
+        <Class IRI="https://w3id.org/italia/onto/Location"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#TheorisedBy"/>
@@ -5466,7 +5562,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
-        <Class IRI="http://xmlns.com/foaf/spec/#term_Image"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasInterpretationCriterion"/>
@@ -5618,7 +5714,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#OtherIconclassCode"/>
-        <Class IRI="#IconographicMotifs"/>
+        <Class IRI="#IconographicTheme"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#RealisationPeriod"/>
@@ -5638,11 +5734,15 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#TypicalIconclassCode"/>
-        <Class IRI="#IconographicMotifs"/>
+        <Class IRI="#IconographicTheme"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#URI"/>
         <Class IRI="http://xmlns.com/foaf/spec/#term_Image"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#URL"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
@@ -5658,7 +5758,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="https://w3id.org/arco/ontology/context-description/iconclassCode"/>
-        <Class IRI="#IconographicMotifs"/>
+        <Class IRI="#IconographicTheme"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="https://w3id.org/italia/onto/TI/date"/>
@@ -5739,6 +5839,10 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Datatype abbreviatedIRI="xsd:anyURI"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#URL"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
@@ -5813,18 +5917,13 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#CharacterVisualAtom</IRI>
-        <Literal>Specialisation of VisualAtom, it collects the atoms identified as being a character without a link to a special meaning. Eg: the figure of Judas in Last Supper is a character, but is not linked to his identification.</Literal>
+        <IRI>#CompositionMotif</IRI>
+        <Literal>Specialisation of VisualAtom, it represent VisualAtoms identified to be representative of composition elements of a painting. Eg: the groupings of 3 figures in Last Supper.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#CompositionRelationDescription</IRI>
         <Literal>Property describing the influence a work has on another from a composition point of view. Eg: Marcantonio Raimondi Last Supper shows a composition influenced by the symmetry and the groupings of 3 of Leonardo Last Supper</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#CompositionVisualAtom</IRI>
-        <Literal>Specialisation of VisualAtom, it represent VisualAtoms identified to be representative of composition elements of a painting. Eg: the groupings of 3 figures in Last Supper.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -5848,11 +5947,6 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#DerivativeVisualAtom</IRI>
-        <Literal>Specialisation of VisualAtom. Identifying the Derivated Visual Atom of a Derivation Relation.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#DescribedIn</IRI>
         <Literal>This property links a concept to a source that describes it</Literal>
     </AnnotationAssertion>
@@ -5872,24 +5966,19 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Literal>This property link an Iconographical Representation to the Theory it embodies inside it. Da Vinci Last Supper Iconography embodies Theory of Moti dell&apos;Animo inside it.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#FinalVisualAtom</IRI>
-        <Literal>Specialisation of VisualAtom. Identifying the Final Visual Atom of a Preparatory relation.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#GaddiLastSupper</IRI>
         <Literal>https://dati.beniculturali.it/lodview-arco/resource/HistoricOrArtisticProperty/0900281049-20.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#GeometricalRelationDescription</IRI>
-        <Literal>Property describing the geometrical influence a work has on another from a Geometrical point of view. Eg: The symmetry used in Leonardo Last Supper partially reused in Albrecht Durer Last Supper of 1523</Literal>
+        <IRI>#GeometricVisualUnit</IRI>
+        <Literal>Specialisation of VisualAtom. It comprise visual Atoms aimed at showing the geometrical elements of a painting. Eg: the perspective lines of Last Supper</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#GeometricalVisualAtom</IRI>
-        <Literal>Specialisation of VisualAtom. It comprise visual Atoms aimed at showing the geometrical elements of a painting. Eg: the perspective lines of Last Supper</Literal>
+        <IRI>#GeometricalRelationDescription</IRI>
+        <Literal>Property describing the geometrical influence a work has on another from a Geometrical point of view. Eg: The symmetry used in Leonardo Last Supper partially reused in Albrecht Durer Last Supper of 1523</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
@@ -5898,22 +5987,27 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#HasCharacterVisualAtom</IRI>
-        <Literal>Property specialisation of HasVisualAtom, linking an element to a Visual Atom identified as a character.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#HasCompositionVisualAtom</IRI>
+        <IRI>#HasCompositionalMotif</IRI>
         <Literal>Specialisation of HasVisualAtom used to link an element to a visual Atom representing the composition (the order of figures and elements) of something. Eg: A photo of Last Supper marked in order to highlights the groupings of figures.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#HasDerivatedCulturalProperty</IRI>
+        <IRI>#HasDerivatedWork</IRI>
         <Literal>Inverse of  IsDerivationInRelation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#HasGeometricalVisualAtom</IRI>
+        <IRI>#HasDerivativeVisualUnit</IRI>
+        <Literal>Specialisation of VisualAtom. Identifying the Derivated Visual Atom of a Derivation Relation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HasFinalVisualUnit</IRI>
+        <Literal>Specialisation of VisualAtom. Identifying the Final Visual Atom of a Preparatory relation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HasGeometricVisualUnit</IRI>
         <Literal>Specialisation of HasVisualAtom. It link something to a visual Atom showing the geometrical elements of a Cultural Property. Eg: a photo highlighting the perspectical lines of Leonardo&apos;s Last Supper</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -5928,22 +6022,37 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#HasInfluenceMedium</IRI>
-        <Literal>Inverse of IsMediumInRelation</Literal>
+        <IRI>#HasInfluencedVisualUnit</IRI>
+        <Literal>Property used to describe the VisualAtom of the Influenced cultural property.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#HasInfluencedCulturalProperty</IRI>
+        <IRI>#HasInfluencedWork</IRI>
         <Literal>Inverse of IsInfluencedInRelation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#HasInfluencerCulturalProperty</IRI>
+        <IRI>#HasInfluencerVisualUnit</IRI>
+        <Literal>Property used to describe the VisualAtom of the Influencer cultural property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HasInfluencerWork</IRI>
         <Literal>Inverse of IsInfluencerInRelation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#HasOriginalCulturalProperty</IRI>
+        <IRI>#HasMediumWork</IRI>
+        <Literal>Inverse of IsMediumInRelation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HasOriginalVisualUnit</IRI>
+        <Literal>Specialisation of VisualAtom. Identifying the Original Visual Atom of the relation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HasOriginalWork</IRI>
         <Literal>Inverse of  IsOriginalInRelation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -5953,7 +6062,12 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#HasPreparatoryCulturalPropety</IRI>
+        <IRI>#HasPreparatoryVisualUnit</IRI>
+        <Literal>Specialisation of VisualAtom. Identifying the Preparatory Visual Atom of a Preparatory Relation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HasPreparatoryWork</IRI>
         <Literal>Inverse of IsPreparatoryWorkInRelation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -5963,12 +6077,12 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#IconographicMotifs</IRI>
+        <IRI>#IconographicTheme</IRI>
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Iconographical Motifs is the class aimed to collect all the single representations of different subjects. Example: the pictorical subject &quot;Last Supper&quot; has an iconographical Motifs. This motifs collects an x number of different single iconographical representations.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#IconographicRepresentation</IRI>
+        <IRI>#Iconography</IRI>
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">This class is the single iconographical representation. Each instance of this class could be present in different cultural properties and has a specific set of features that distinguish it from another one. Example: Florentine Last Supper is a way of representing Last Supper with certain temporal and location characteristics and with specific visual features.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -5983,16 +6097,6 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#InfluencedVisualAtom</IRI>
-        <Literal>Property used to describe the VisualAtom of the Influenced cultural property.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#InfluencerVisualAtom</IRI>
-        <Literal>Property used to describe the VisualAtom of the Influencer cultural property.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Introduce</IRI>
         <Literal>Inverse of IntroducedBy</Literal>
     </AnnotationAssertion>
@@ -6003,48 +6107,48 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#IsDerivationInRelation</IRI>
-        <Literal>Coupled with IsOriginalRelation this property link a cultural Property to the DerivationRelation node. Specifically this property link the derivation one of the 2 Cultural Properties.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#IsDerivativeVisualAtomOf</IRI>
+        <IRI>#IsDerivatedVisualUnitOf</IRI>
         <Literal>Inverse of DerivativeVisualAtom</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#IsFinalVisualAtomOf</IRI>
-        <Literal>Inverse of FinalVisualAtom</Literal>
+        <IRI>#IsDerivationIn</IRI>
+        <Literal>Coupled with IsOriginalRelation this property link a cultural Property to the DerivationRelation node. Specifically this property link the derivation one of the 2 Cultural Properties.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#IsFinalWorkInRelation</IRI>
+        <IRI>#IsFinalIn</IRI>
         <Literal>Coupled with IsPreparatoryWorkInRelation. This property link a Cultural Property to its PreparatoryRelation node. Specifically this property identify the final work of the relation.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#IsInfluencedInRelation</IRI>
+        <IRI>#IsFinalVisualUnitOf</IRI>
+        <Literal>Inverse of FinalVisualAtom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IsInfluencedIn</IRI>
         <Literal>Coupled with InfluencerInRelation. This property links a Cultural Property to its influence relation node. Specifically this property identify the cultural property that is influenced by another one.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#IsInfluencerInRelation</IRI>
+        <IRI>#IsInfluencerIn</IRI>
         <Literal>Coupled with InfluencerInRelation. This property links a Cultural Property to its influence relation node. Specifically this property identify the cultural property that influence the other one.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#IsMediumInRelation</IRI>
+        <IRI>#IsMediumIn</IRI>
         <Literal>This property highlights the role of medium in the relation between 2 cultural properties. Eg: The incision from Pietro Birago of Last Supper was the medium of influence from Last Supper to the Flanders.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#IsOriginalInRelation</IRI>
-        <Literal>Coupled with IsOriginalRelation this property link a cultural Property to the DerivationRelation node. Specifically this property link the original one of the 2 cultural properties.</Literal>
+        <IRI>#IsOriginalVisualUnitOf</IRI>
+        <Literal>Inverse of OriginalVisualAtom</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#IsOriginalVisualAtomOf</IRI>
-        <Literal>Inverse of OriginalVisualAtom</Literal>
+        <IRI>#IsOriginaln</IRI>
+        <Literal>Coupled with IsOriginalRelation this property link a cultural Property to the DerivationRelation node. Specifically this property link the original one of the 2 cultural properties.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -6053,13 +6157,13 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#IsPreparatoryVisualAtomOf</IRI>
-        <Literal>Inverse of PreparatoryVisualAtom</Literal>
+        <IRI>#IsPreparatoryIn</IRI>
+        <Literal>Coupled with IsPreparatoryWorkInRelation. This property link a Cultural Property to its PreparatoryRelation node. Specifically this property identify the preparatory work of the relation.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#IsPreparatoryWorkInRelation</IRI>
-        <Literal>Coupled with IsPreparatoryWorkInRelation. This property link a Cultural Property to its PreparatoryRelation node. Specifically this property identify the preparatory work of the relation.</Literal>
+        <IRI>#IsPreparatoryVisualUnitOf</IRI>
+        <Literal>Inverse of PreparatoryVisualAtom</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -6113,11 +6217,6 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#OriginalVisualAtom</IRI>
-        <Literal>Specialisation of VisualAtom. Identifying the Original Visual Atom of the relation.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#OtherIconclassCode</IRI>
         <Literal>Mention of other possible Iconclass Code</Literal>
     </AnnotationAssertion>
@@ -6130,11 +6229,6 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#PictorialAttribute</IRI>
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">It is a significant element of an iconographical representation. it difference itself from a simple visual features due to its having an indipendence from the representation itself. Example: Last Supper has inside it the figure of Peter. Peter is a character that is independent from a single painting.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#PreparatoryVisualAtom</IRI>
-        <Literal>Specialisation of VisualAtom. Identifying the Preparatory Visual Atom of a Preparatory Relation.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -6173,147 +6267,147 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#VisualAtom</IRI>
+        <IRI>#VisualUnit</IRI>
         <Literal>Inspired by VIR: this class represent the minimum set of significative physical features without a linked meaning. Eg: the figure of Christ in Last Supper from Leonardo da Vinci is denoted by the set of colors that represent that figure inside the painting.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualAtom1</IRI>
+        <IRI>#VisualUnit1</IRI>
         <Literal>Particular of Last Supper engraving in painting</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualAtom10</IRI>
+        <IRI>#VisualUnit10</IRI>
         <Literal>Figura di Cristo ne L&apos;Ultima Cena di Leonardo da Vinci</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualAtom11</IRI>
+        <IRI>#VisualUnit11</IRI>
         <Literal>Particolare altezza volti di &quot;Doppio Ritratto&quot; di Benvenuto Tisi detto il Garofalo.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualAtom15</IRI>
+        <IRI>#VisualUnit15</IRI>
         <Literal>Visione della simmetria nell&apos;Ultima Cena di Marcantonio Raimondi</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualAtom16</IRI>
+        <IRI>#VisualUnit16</IRI>
         <Literal>Visione della simmetria nell&apos;Ultima Cena di Leonardo da Vinci</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualAtom17</IRI>
+        <IRI>#VisualUnit17</IRI>
         <Literal>Visione prospettica Ultima Cena di Marcantonio Raimondi</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualAtom18</IRI>
+        <IRI>#VisualUnit18</IRI>
         <Literal>San Filippo, dettaglio dell&apos;Ultima Cena di Leonardo da Vinci</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualAtom19</IRI>
+        <IRI>#VisualUnit19</IRI>
         <Literal>Dettaglio di giovane uomo, &quot;Le tre età&quot; di Giorgione</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualAtom2</IRI>
+        <IRI>#VisualUnit2</IRI>
         <Literal>Da definire</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualAtom20</IRI>
+        <IRI>#VisualUnit20</IRI>
         <Literal>Testa di Cristo, Ultima Cena di Leonardo da Vinci</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualAtom21</IRI>
+        <IRI>#VisualUnit21</IRI>
         <Literal>Braccio di Pietro, Ultima Cena, Leoanardo da Vinci</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualAtom22</IRI>
+        <IRI>#VisualUnit22</IRI>
         <Literal>Volto di Giuda, Ultima Cena, Leonardo da Vinci</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualAtom23</IRI>
+        <IRI>#VisualUnit23</IRI>
         <Literal>Volto di Filippo, Ultima Cena, Leonardo da Vinci</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualAtom24</IRI>
+        <IRI>#VisualUnit24</IRI>
         <Literal>Volto di Giacomo, Ultima Cena, Leonardo da Vinci</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualAtom25</IRI>
+        <IRI>#VisualUnit25</IRI>
         <Literal>Volto di Bartolomeo, Ultima Cena, Leonardo da Vinci</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualAtom26</IRI>
+        <IRI>#VisualUnit26</IRI>
         <Literal>Volto di San Giovanni, Ultima Cena, Leonardo da Vinci</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualAtom27</IRI>
+        <IRI>#VisualUnit27</IRI>
         <Literal>Mani di San Giovanni, Ultima Cena, Leonardo da Vinci</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualAtom28</IRI>
+        <IRI>#VisualUnit28</IRI>
         <Literal>Volto di Simone, Ultima Cena, Leonardo da Vinci</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualAtom29</IRI>
+        <IRI>#VisualUnit29</IRI>
         <Literal>Mano sinistra di Tommaso, Ultima Cena, Leonardo da Vinci</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualAtom3</IRI>
+        <IRI>#VisualUnit3</IRI>
         <Literal>Particular of Christ figure in &quot;Cattura di Cristo&quot;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualAtom30</IRI>
+        <IRI>#VisualUnit30</IRI>
         <Literal>Mano sinistra di Bartolomeo, Ultima Cena, Leonardo da Vinci</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualAtom31</IRI>
+        <IRI>#VisualUnit31</IRI>
         <Literal>Particolare composizione Ultima Cena di Leonardo da Vinci</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualAtom4</IRI>
+        <IRI>#VisualUnit4</IRI>
         <Literal>Particular of S. John, Last Supper</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualAtom5</IRI>
+        <IRI>#VisualUnit5</IRI>
         <Literal>Visione prospettica de l&apos;Ultima Cena di Albrecht Durer</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualAtom6</IRI>
+        <IRI>#VisualUnit6</IRI>
         <Literal>Visione prospettica de l&apos;Ultima Cena di Leonardo da Vinci</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualAtom7</IRI>
+        <IRI>#VisualUnit7</IRI>
         <Literal>Partiolare della composizione dei personaggi dell&apos;Ultima Cena di Durer</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualAtom8</IRI>
+        <IRI>#VisualUnit8</IRI>
         <Literal>Particolare dell&apos;Ultima Cena di Leonardo da Vinci, focus sulla composizione dei personaggi</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualAtom9</IRI>
+        <IRI>#VisualUnit9</IRI>
         <Literal>Figura di Cristo in &quot;Cristo e l&apos;Adultera&quot;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
