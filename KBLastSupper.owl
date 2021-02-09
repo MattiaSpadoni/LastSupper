@@ -671,6 +671,30 @@
         <NamedIndividual IRI="#GiovanniPietroBirago"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Image1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Image2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Image3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Image4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Image5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Image6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Image7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Image9"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Influence1"/>
     </Declaration>
     <Declaration>
@@ -912,6 +936,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Windsor12554"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#image8"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#423E"/>
@@ -1290,6 +1317,38 @@
         <NamedIndividual IRI="#GiovanniPietroBirago"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
+        <NamedIndividual IRI="#Image1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
+        <NamedIndividual IRI="#Image2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
+        <NamedIndividual IRI="#Image3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
+        <NamedIndividual IRI="#Image4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
+        <NamedIndividual IRI="#Image5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
+        <NamedIndividual IRI="#Image6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
+        <NamedIndividual IRI="#Image7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
+        <NamedIndividual IRI="#Image9"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#InfluenceRelation"/>
         <NamedIndividual IRI="#Influence1"/>
     </ClassAssertion>
@@ -1632,6 +1691,10 @@
     <ClassAssertion>
         <Class IRI="#Arco:CulturalProperty"/>
         <NamedIndividual IRI="#Windsor12554"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
+        <NamedIndividual IRI="#image8"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Arco:CulturalProperty"/>
@@ -2835,9 +2898,14 @@
         <NamedIndividual IRI="#PreparatoryRelation3"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasPreparatoryVisualUnit"/>
+        <ObjectProperty IRI="#IsPreparatoryVisualUnitOf"/>
+        <NamedIndividual IRI="#VisualUnit24"/>
+        <NamedIndividual IRI="#PreparatoryRelation1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsPreparatoryVisualUnitOf"/>
         <NamedIndividual IRI="#VisualUnit25"/>
-        <NamedIndividual IRI="#VisualUnit25"/>
+        <NamedIndividual IRI="#PreparatoryRelation2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasPreparatoryVisualUnit"/>
@@ -3866,6 +3934,46 @@ Gli elementi religiosi di questa stampa sono stemperati rispetto all&apos;origin
         <Literal xml:lang="en">not known, probably end of XV and beginning of XVI century, last mention in 1510.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#Image1"/>
+        <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/UltimaCenaCastagno.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#Image2"/>
+        <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/AlbrechtDurerUltimaCena.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#Image3"/>
+        <Literal>http://www.sigecweb.beniculturali.it/images/fullsize/ICCD1004088/ICCD10182325_513853.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#Image4"/>
+        <Literal>https://upload.wikimedia.org/wikipedia/commons/e/e1/The_Lady_with_an_Ermine.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#Image5"/>
+        <Literal>http://www.sigecweb.beniculturali.it/images/fullsize/ICCD50007116/ICCD8181179_C0062415.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#Image6"/>
+        <Literal>https://www.metmuseum.org/art/collection/search/335031</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#Image7"/>
+        <Literal>https://upload.wikimedia.org/wikipedia/commons/b/b9/John_Everett_Millais_-_Mrs_James_Wyatt_Jr_and_her_Daughter_Sarah_-_Google_Art_Project.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#Image9"/>
+        <Literal>http://www.sigecweb.beniculturali.it/images/fullsize/ICCD12506/ICCD2395365_00211015.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#CharacterRelationDescription"/>
         <NamedIndividual IRI="#Influence1"/>
         <Literal>La figura del pastore anziano nell&apos;opera di Boccaccino mostra somiglianze con la posa e l&apos;espressione dell&apos;Apostolo Taddeo nell&apos;Ultima Cena</Literal>
@@ -4752,6 +4860,11 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <DataProperty IRI="#Label"/>
         <NamedIndividual IRI="#Windsor12554"/>
         <Literal xml:lang="it">Windsor 12554, testa di giovane uomo di profilo.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#image8"/>
+        <Literal>https://upload.wikimedia.org/wikipedia/commons/5/56/Giorgione%2C_Three_Ages.jpg</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#Label"/>
@@ -6254,6 +6367,36 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#IconographyCompriseIn</IRI>
         <Literal>Inverse of CompriseIconography</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Image1</IRI>
+        <Literal>Castagno Last Supper</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Image2</IRI>
+        <Literal>DurerLastSupper</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Image3</IRI>
+        <Literal>Ghirlandaio Last Supper</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Image5</IRI>
+        <Literal>Double Portrait</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Image6</IRI>
+        <Literal>Birago engraving</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Image7</IRI>
+        <Literal>Sara and her daugher</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
