@@ -2135,7 +2135,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasInfluencedVisualUnit"/>
         <NamedIndividual IRI="#Influence1"/>
-        <NamedIndividual IRI="#VisualUnit1"/>
+        <NamedIndividual IRI="#VisualUnit2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasInfluencedWork"/>
@@ -2145,7 +2145,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasInfluencerVisualUnit"/>
         <NamedIndividual IRI="#Influence1"/>
-        <NamedIndividual IRI="#VisualUnit2"/>
+        <NamedIndividual IRI="#VisualUnit1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasInfluencerWork"/>
@@ -2728,6 +2728,31 @@
         <NamedIndividual IRI="#PreparatoryRelation5"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsFinalVisualUnitOf"/>
+        <NamedIndividual IRI="#VisualUnit17"/>
+        <NamedIndividual IRI="#PreparatoryRelation8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsFinalVisualUnitOf"/>
+        <NamedIndividual IRI="#VisualUnit18"/>
+        <NamedIndividual IRI="#PreparatoryRelation9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsFinalVisualUnitOf"/>
+        <NamedIndividual IRI="#VisualUnit19"/>
+        <NamedIndividual IRI="#PreparatoryRelation6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsInfluencedVisualUnitOf"/>
+        <NamedIndividual IRI="#VisualUnit2"/>
+        <NamedIndividual IRI="#Influence1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsFinalVisualUnitOf"/>
+        <NamedIndividual IRI="#VisualUnit21"/>
+        <NamedIndividual IRI="#PreparatoryRelation7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#IsPreparatoryIn"/>
         <NamedIndividual IRI="#Windsor12542"/>
         <NamedIndividual IRI="#PreparatoryRelation1"/>
@@ -2736,6 +2761,11 @@
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
         <NamedIndividual IRI="#Windsor12542"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <NamedIndividual IRI="#Windsor12542"/>
+        <NamedIndividual IRI="#VisualUnit24"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#IsPreparatoryIn"/>
@@ -2748,6 +2778,11 @@
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <NamedIndividual IRI="#Windsor12543"/>
+        <NamedIndividual IRI="#VisualUnit25"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#IsPreparatoryIn"/>
         <NamedIndividual IRI="#Windsor12544"/>
         <NamedIndividual IRI="#PreparatoryRelation3"/>
@@ -2756,6 +2791,11 @@
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
         <NamedIndividual IRI="#Windsor12544"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <NamedIndividual IRI="#Windsor12544"/>
+        <NamedIndividual IRI="#VisualUnit26"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#IsPreparatoryIn"/>
@@ -2768,6 +2808,11 @@
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <NamedIndividual IRI="#Windsor12545"/>
+        <NamedIndividual IRI="#VisualUnit27"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#IsPreparatoryIn"/>
         <NamedIndividual IRI="#Windsor12547"/>
         <NamedIndividual IRI="#PreparatoryRelation5"/>
@@ -2776,6 +2821,11 @@
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
         <NamedIndividual IRI="#Windsor12547"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <NamedIndividual IRI="#Windsor12547"/>
+        <NamedIndividual IRI="#VisualUnit28"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#IsPreparatoryIn"/>
@@ -2788,6 +2838,11 @@
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <NamedIndividual IRI="#Windsor12548"/>
+        <NamedIndividual IRI="#VisualUnit29"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#IsPreparatoryIn"/>
         <NamedIndividual IRI="#Windsor12549"/>
         <NamedIndividual IRI="#PreparatoryRelation7"/>
@@ -2796,6 +2851,11 @@
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
         <NamedIndividual IRI="#Windsor12549"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <NamedIndividual IRI="#Windsor12549"/>
+        <NamedIndividual IRI="#VisualUnit30"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#IsPreparatoryIn"/>
@@ -2808,6 +2868,11 @@
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <NamedIndividual IRI="#Windsor12551"/>
+        <NamedIndividual IRI="#VisualUnit31"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#IsPreparatoryIn"/>
         <NamedIndividual IRI="#Windsor12552"/>
         <NamedIndividual IRI="#PreparatoryRelation9"/>
@@ -2818,9 +2883,24 @@
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <NamedIndividual IRI="#Windsor12552"/>
+        <NamedIndividual IRI="#VisualUnit32"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Presents"/>
+        <NamedIndividual IRI="#Windsor12554"/>
+        <NamedIndividual IRI="#ArtisticTheory1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
         <NamedIndividual IRI="#Windsor12554"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <NamedIndividual IRI="#Windsor12554"/>
+        <NamedIndividual IRI="#VisualUnit33"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
@@ -4305,6 +4385,86 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <DataProperty IRI="#URI"/>
         <NamedIndividual IRI="#VisualUnit15"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/VisualUnit/TreEtaGiorgionedettaglio.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit16"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/VisualUnit/JudasDaVinci.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit17"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/VisualUnit/Filippo.png</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit18"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/VisualUnit/GiacomoMaggiore.png</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit19"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/VisualUnit/Bartolomeo.png</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/VisualUnit/BoccaccinoInfluence.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit21"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/VisualUnit/Simone.png</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit24"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/DisegniPreparatori/Windsor12542.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit25"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/DisegniPreparatori/Windsor12543.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit26"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/DisegniPreparatori/Windsor12544.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit27"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/DisegniPreparatori/Windsor12545.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit28"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/DisegniPreparatori/Windsor12547.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit29"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/DisegniPreparatori/Windsor12548.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit30"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/DisegniPreparatori/Windsor12549.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit31"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/DisegniPreparatori/Windsor12551.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit32"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/DisegniPreparatori/Windsor12552.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit33"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/DisegniPreparatori/Windsor12554.jpg</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#ApproximateDate"/>
