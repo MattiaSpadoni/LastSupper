@@ -863,6 +863,9 @@
         <NamedIndividual IRI="#VisualUnit33"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#VisualUnit34"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#VisualUnit4"/>
     </Declaration>
     <Declaration>
@@ -1545,6 +1548,10 @@
     <ClassAssertion>
         <Class IRI="#VisualUnit"/>
         <NamedIndividual IRI="#VisualUnit33"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit34"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#VisualUnit"/>
@@ -2538,14 +2545,29 @@
         <NamedIndividual IRI="#LastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasPreparatoryVisualUnit"/>
+        <NamedIndividual IRI="#PreparatoryRelation1"/>
+        <NamedIndividual IRI="#VisualUnit24"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasPreparatoryWork"/>
         <NamedIndividual IRI="#PreparatoryRelation1"/>
         <NamedIndividual IRI="#Windsor12542"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasFinalVisualUnit"/>
+        <NamedIndividual IRI="#PreparatoryRelation10"/>
+        <NamedIndividual IRI="#VisualUnit10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasFinalWork"/>
         <NamedIndividual IRI="#PreparatoryRelation10"/>
         <NamedIndividual IRI="#LastSupper"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasPreparatoryVisualUnit"/>
+        <NamedIndividual IRI="#PreparatoryRelation10"/>
+        <NamedIndividual IRI="#VisualUnit34"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasPreparatoryWork"/>
@@ -2563,6 +2585,11 @@
         <NamedIndividual IRI="#LastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasPreparatoryVisualUnit"/>
+        <NamedIndividual IRI="#PreparatoryRelation2"/>
+        <NamedIndividual IRI="#VisualUnit25"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasPreparatoryWork"/>
         <NamedIndividual IRI="#PreparatoryRelation2"/>
         <NamedIndividual IRI="#Windsor12543"/>
@@ -2576,6 +2603,11 @@
         <ObjectProperty IRI="#HasFinalWork"/>
         <NamedIndividual IRI="#PreparatoryRelation3"/>
         <NamedIndividual IRI="#LastSupper"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasPreparatoryVisualUnit"/>
+        <NamedIndividual IRI="#PreparatoryRelation3"/>
+        <NamedIndividual IRI="#VisualUnit26"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasPreparatoryWork"/>
@@ -2593,6 +2625,11 @@
         <NamedIndividual IRI="#LastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasPreparatoryVisualUnit"/>
+        <NamedIndividual IRI="#PreparatoryRelation4"/>
+        <NamedIndividual IRI="#VisualUnit27"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasPreparatoryWork"/>
         <NamedIndividual IRI="#PreparatoryRelation4"/>
         <NamedIndividual IRI="#Windsor12545"/>
@@ -2606,6 +2643,11 @@
         <ObjectProperty IRI="#HasFinalWork"/>
         <NamedIndividual IRI="#PreparatoryRelation5"/>
         <NamedIndividual IRI="#LastSupper"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasPreparatoryVisualUnit"/>
+        <NamedIndividual IRI="#PreparatoryRelation5"/>
+        <NamedIndividual IRI="#VisualUnit28"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasPreparatoryWork"/>
@@ -2623,6 +2665,11 @@
         <NamedIndividual IRI="#LastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasPreparatoryVisualUnit"/>
+        <NamedIndividual IRI="#PreparatoryRelation6"/>
+        <NamedIndividual IRI="#VisualUnit29"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasPreparatoryWork"/>
         <NamedIndividual IRI="#PreparatoryRelation6"/>
         <NamedIndividual IRI="#Windsor12548"/>
@@ -2636,6 +2683,11 @@
         <ObjectProperty IRI="#HasFinalWork"/>
         <NamedIndividual IRI="#PreparatoryRelation7"/>
         <NamedIndividual IRI="#LastSupper"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasPreparatoryVisualUnit"/>
+        <NamedIndividual IRI="#PreparatoryRelation7"/>
+        <NamedIndividual IRI="#VisualUnit30"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasPreparatoryWork"/>
@@ -2653,6 +2705,11 @@
         <NamedIndividual IRI="#LastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasPreparatoryVisualUnit"/>
+        <NamedIndividual IRI="#PreparatoryRelation8"/>
+        <NamedIndividual IRI="#VisualUnit31"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasPreparatoryWork"/>
         <NamedIndividual IRI="#PreparatoryRelation8"/>
         <NamedIndividual IRI="#Windsor12551"/>
@@ -2666,6 +2723,11 @@
         <ObjectProperty IRI="#HasFinalWork"/>
         <NamedIndividual IRI="#PreparatoryRelation9"/>
         <NamedIndividual IRI="#LastSupper"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasPreparatoryVisualUnit"/>
+        <NamedIndividual IRI="#PreparatoryRelation9"/>
+        <NamedIndividual IRI="#VisualUnit32"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasPreparatoryWork"/>
@@ -2691,6 +2753,11 @@
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
         <NamedIndividual IRI="#VespinoLastSupper"/>
         <NamedIndividual IRI="#Vespino"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsFinalVisualUnitOf"/>
+        <NamedIndividual IRI="#VisualUnit10"/>
+        <NamedIndividual IRI="#LastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#IsInfluencerVisualUnitOf"/>
@@ -2749,8 +2816,33 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#IsFinalVisualUnitOf"/>
+        <NamedIndividual IRI="#VisualUnit20"/>
+        <NamedIndividual IRI="#PreparatoryRelation2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsFinalVisualUnitOf"/>
         <NamedIndividual IRI="#VisualUnit21"/>
         <NamedIndividual IRI="#PreparatoryRelation7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsFinalVisualUnitOf"/>
+        <NamedIndividual IRI="#VisualUnit22"/>
+        <NamedIndividual IRI="#PreparatoryRelation4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsFinalVisualUnitOf"/>
+        <NamedIndividual IRI="#VisualUnit23"/>
+        <NamedIndividual IRI="#PreparatoryRelation3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasPreparatoryVisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit25"/>
+        <NamedIndividual IRI="#VisualUnit25"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasPreparatoryVisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit27"/>
+        <NamedIndividual IRI="#VisualUnit27"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#IsPreparatoryIn"/>
@@ -4354,7 +4446,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     <DataPropertyAssertion>
         <DataProperty IRI="#URI"/>
         <NamedIndividual IRI="#VisualUnit1"/>
-        <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/VisualUnit/GiudaTaddeo</Literal>
+        <Literal>raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/VisualUnit/GiudaTaddeo.png</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#URI"/>
@@ -4413,8 +4505,23 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit20"/>
+        <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/VisualUnit/ManiGiovanni.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
         <NamedIndividual IRI="#VisualUnit21"/>
         <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/VisualUnit/Simone.png</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit22"/>
+        <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/VisualUnit/ManoTommaso.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit23"/>
+        <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/VisualUnit/ManoSinistraBart.jpg</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#URI"/>
@@ -4439,7 +4546,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     <DataPropertyAssertion>
         <DataProperty IRI="#URI"/>
         <NamedIndividual IRI="#VisualUnit28"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/DisegniPreparatori/Windsor12547.jpg</Literal>
+        <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/DisegniPreparatori/Windsor12547.jpg</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#URI"/>
@@ -4454,7 +4561,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     <DataPropertyAssertion>
         <DataProperty IRI="#URI"/>
         <NamedIndividual IRI="#VisualUnit31"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">&lt;https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/DisegniPreparatori/Windsor12551.jpg&gt;</Literal>
+        <Literal>raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/DisegniPreparatori/Windsor12551.jpg</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#URI"/>
@@ -4465,6 +4572,11 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <DataProperty IRI="#URI"/>
         <NamedIndividual IRI="#VisualUnit33"/>
         <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/DisegniPreparatori/Windsor12554.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit34"/>
+        <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/TestaCristoBrera.jpg</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#URI"/>
@@ -5893,7 +6005,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#URI"/>
-        <Datatype abbreviatedIRI="xsd:anyURI"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
