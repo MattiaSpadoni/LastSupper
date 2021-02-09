@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25"
+     xml:base="http://www.semanticweb.org/mattia/ontologies/2020/10/LastSupperOntology"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25">
+     ontologyIRI="http://www.semanticweb.org/mattia/ontologies/2020/10/LastSupperOntology">
     <Prefix name="" IRI="http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25"/>
     <Prefix name="IO" IRI="https://w3id.org/italia/onto/l0"/>
     <Prefix name="LS" IRI="http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25"/>
@@ -99,9 +99,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://xmlns.com/foaf/spec/#term_Image"/>
     </Declaration>
     <Declaration>
         <Class IRI="https://ontopia-lodview.agid.gov.it/onto/l0/Characteristic"/>
@@ -506,9 +503,6 @@
         <DataProperty IRI="#URI"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#URL"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
     </Declaration>
     <Declaration>
@@ -695,9 +689,6 @@
         <NamedIndividual IRI="#Influence6"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Influence7"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#Influence_8"/>
     </Declaration>
     <Declaration>
@@ -779,16 +770,7 @@
         <NamedIndividual IRI="#RaimondiLastSupper"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#StudioNatività"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#TaddeoGaddi"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Tiziano"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#TizianoLastSupper"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#VaticanTapestry"/>
@@ -875,6 +857,12 @@
         <NamedIndividual IRI="#VisualUnit31"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#VisualUnit32"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VisualUnit33"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#VisualUnit4"/>
     </Declaration>
     <Declaration>
@@ -921,9 +909,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Windsor12554"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Windsor12635"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#423E"/>
@@ -984,6 +969,10 @@
     <SubClassOf>
         <Class IRI="#SceneObject"/>
         <Class IRI="#PictorialAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VisualUnit"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Arco:AlternativeDating"/>
@@ -1323,10 +1312,6 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#InfluenceRelation"/>
-        <NamedIndividual IRI="#Influence7"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#InfluenceRelation"/>
         <NamedIndividual IRI="#Influence_8"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1434,20 +1419,8 @@
         <NamedIndividual IRI="#RaimondiLastSupper"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Arco:CulturalProperty"/>
-        <NamedIndividual IRI="#StudioNatività"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#core:Agent"/>
         <NamedIndividual IRI="#TaddeoGaddi"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#core:Agent"/>
-        <NamedIndividual IRI="#Tiziano"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Arco:CulturalProperty"/>
-        <NamedIndividual IRI="#TizianoLastSupper"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Arco:CulturalProperty"/>
@@ -1482,28 +1455,20 @@
         <NamedIndividual IRI="#VisualUnit13"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#CompositionMotif"/>
+        <NamedIndividual IRI="#VisualUnit14"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#VisualUnit"/>
         <NamedIndividual IRI="#VisualUnit14"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#CompositionMotif"/>
-        <NamedIndividual IRI="#VisualUnit15"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#VisualUnit"/>
         <NamedIndividual IRI="#VisualUnit15"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#CompositionMotif"/>
-        <NamedIndividual IRI="#VisualUnit16"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#VisualUnit"/>
         <NamedIndividual IRI="#VisualUnit16"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#GeometricVisualUnit"/>
-        <NamedIndividual IRI="#VisualUnit17"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#VisualUnit"/>
@@ -1570,12 +1535,16 @@
         <NamedIndividual IRI="#VisualUnit30"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#CompositionMotif"/>
+        <Class IRI="#VisualUnit"/>
         <NamedIndividual IRI="#VisualUnit31"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#VisualUnit"/>
-        <NamedIndividual IRI="#VisualUnit31"/>
+        <NamedIndividual IRI="#VisualUnit32"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit33"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#VisualUnit"/>
@@ -1656,10 +1625,6 @@
     <ClassAssertion>
         <Class IRI="#Arco:CulturalProperty"/>
         <NamedIndividual IRI="#Windsor12554"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Arco:CulturalProperty"/>
-        <NamedIndividual IRI="#Windsor12635"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Arco:CulturalProperty"/>
@@ -2258,11 +2223,6 @@
         <NamedIndividual IRI="#LastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasInfluencedVisualUnit"/>
-        <NamedIndividual IRI="#Influence5"/>
-        <NamedIndividual IRI="#VisualUnit11"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasInfluencedWork"/>
         <NamedIndividual IRI="#Influence5"/>
         <NamedIndividual IRI="#GiovanniAgostinoDoublePortrait"/>
@@ -2270,7 +2230,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasInfluencerVisualUnit"/>
         <NamedIndividual IRI="#Influence5"/>
-        <NamedIndividual IRI="#VisualUnit12"/>
+        <NamedIndividual IRI="#VisualUnit11"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasInfluencerWork"/>
@@ -2280,7 +2240,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasInfluencedVisualUnit"/>
         <NamedIndividual IRI="#Influence6"/>
-        <NamedIndividual IRI="#VisualUnit14"/>
+        <NamedIndividual IRI="#VisualUnit13"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasInfluencedWork"/>
@@ -2290,7 +2250,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasInfluencerVisualUnit"/>
         <NamedIndividual IRI="#Influence6"/>
-        <NamedIndividual IRI="#VisualUnit13"/>
+        <NamedIndividual IRI="#VisualUnit12"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasInfluencerWork"/>
@@ -2299,38 +2259,8 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasInfluencedVisualUnit"/>
-        <NamedIndividual IRI="#Influence7"/>
-        <NamedIndividual IRI="#VisualUnit15"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasInfluencedVisualUnit"/>
-        <NamedIndividual IRI="#Influence7"/>
-        <NamedIndividual IRI="#VisualUnit17"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasInfluencedWork"/>
-        <NamedIndividual IRI="#Influence7"/>
-        <NamedIndividual IRI="#RaimondiLastSupper"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasInfluencerVisualUnit"/>
-        <NamedIndividual IRI="#Influence7"/>
-        <NamedIndividual IRI="#VisualUnit16"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasInfluencerVisualUnit"/>
-        <NamedIndividual IRI="#Influence7"/>
-        <NamedIndividual IRI="#VisualUnit6"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasInfluencerWork"/>
-        <NamedIndividual IRI="#Influence7"/>
-        <NamedIndividual IRI="#LastSupper"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasInfluencedVisualUnit"/>
         <NamedIndividual IRI="#Influence_8"/>
-        <NamedIndividual IRI="#VisualUnit19"/>
+        <NamedIndividual IRI="#VisualUnit15"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasInfluencedWork"/>
@@ -2340,7 +2270,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasInfluencerVisualUnit"/>
         <NamedIndividual IRI="#Influence_8"/>
-        <NamedIndividual IRI="#VisualUnit18"/>
+        <NamedIndividual IRI="#VisualUnit14"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasInfluencerWork"/>
@@ -2351,6 +2281,11 @@
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
         <NamedIndividual IRI="#John_Everett_Millais"/>
         <NamedIndividual IRI="#MrsJamesWyatt"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasFinalVisualUnit"/>
+        <NamedIndividual IRI="#LastSupper"/>
+        <NamedIndividual IRI="#VisualUnit10"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#IsFinalIn"/>
@@ -2430,11 +2365,6 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#IsInfluencerIn"/>
         <NamedIndividual IRI="#LastSupper"/>
-        <NamedIndividual IRI="#Influence7"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsInfluencerIn"/>
-        <NamedIndividual IRI="#LastSupper"/>
         <NamedIndividual IRI="#Influence_8"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
@@ -2490,11 +2420,6 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
-        <NamedIndividual IRI="#StudioNatività"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
-        <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
         <NamedIndividual IRI="#Windsor12542"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
@@ -2545,11 +2470,6 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
-        <NamedIndividual IRI="#Windsor12635"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
-        <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
         <NamedIndividual IRI="#423E"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
@@ -2561,11 +2481,6 @@
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
         <NamedIndividual IRI="#436E"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsInfluencedIn"/>
-        <NamedIndividual IRI="#MarcantonioRaimondi"/>
-        <NamedIndividual IRI="#Influence7"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
@@ -2615,7 +2530,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasFinalVisualUnit"/>
         <NamedIndividual IRI="#PreparatoryRelation1"/>
-        <NamedIndividual IRI="#VisualUnit31"/>
+        <NamedIndividual IRI="#VisualUnit14"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasFinalWork"/>
@@ -2626,11 +2541,6 @@
         <ObjectProperty IRI="#HasPreparatoryWork"/>
         <NamedIndividual IRI="#PreparatoryRelation1"/>
         <NamedIndividual IRI="#Windsor12542"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasFinalVisualUnit"/>
-        <NamedIndividual IRI="#PreparatoryRelation10"/>
-        <NamedIndividual IRI="#VisualUnit20"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasFinalWork"/>
@@ -2645,7 +2555,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasFinalVisualUnit"/>
         <NamedIndividual IRI="#PreparatoryRelation2"/>
-        <NamedIndividual IRI="#VisualUnit27"/>
+        <NamedIndividual IRI="#VisualUnit20"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasFinalWork"/>
@@ -2660,7 +2570,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasFinalVisualUnit"/>
         <NamedIndividual IRI="#PreparatoryRelation3"/>
-        <NamedIndividual IRI="#VisualUnit30"/>
+        <NamedIndividual IRI="#VisualUnit23"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasFinalWork"/>
@@ -2675,7 +2585,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasFinalVisualUnit"/>
         <NamedIndividual IRI="#PreparatoryRelation4"/>
-        <NamedIndividual IRI="#VisualUnit29"/>
+        <NamedIndividual IRI="#VisualUnit22"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasFinalWork"/>
@@ -2690,7 +2600,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasFinalVisualUnit"/>
         <NamedIndividual IRI="#PreparatoryRelation5"/>
-        <NamedIndividual IRI="#VisualUnit22"/>
+        <NamedIndividual IRI="#VisualUnit16"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasFinalWork"/>
@@ -2705,7 +2615,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasFinalVisualUnit"/>
         <NamedIndividual IRI="#PreparatoryRelation6"/>
-        <NamedIndividual IRI="#VisualUnit25"/>
+        <NamedIndividual IRI="#VisualUnit19"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasFinalWork"/>
@@ -2720,7 +2630,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasFinalVisualUnit"/>
         <NamedIndividual IRI="#PreparatoryRelation7"/>
-        <NamedIndividual IRI="#VisualUnit28"/>
+        <NamedIndividual IRI="#VisualUnit21"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasFinalWork"/>
@@ -2735,7 +2645,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasFinalVisualUnit"/>
         <NamedIndividual IRI="#PreparatoryRelation8"/>
-        <NamedIndividual IRI="#VisualUnit23"/>
+        <NamedIndividual IRI="#VisualUnit17"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasFinalWork"/>
@@ -2750,7 +2660,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasFinalVisualUnit"/>
         <NamedIndividual IRI="#PreparatoryRelation9"/>
-        <NamedIndividual IRI="#VisualUnit24"/>
+        <NamedIndividual IRI="#VisualUnit18"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasFinalWork"/>
@@ -2763,29 +2673,9 @@
         <NamedIndividual IRI="#Windsor12552"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsInfluencedIn"/>
-        <NamedIndividual IRI="#RaimondiLastSupper"/>
-        <NamedIndividual IRI="#Influence7"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
         <NamedIndividual IRI="#RaimondiLastSupper"/>
         <NamedIndividual IRI="#MarcantonioRaimondi"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
-        <NamedIndividual IRI="#StudioNatività"/>
-        <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
-        <NamedIndividual IRI="#Tiziano"/>
-        <NamedIndividual IRI="#TizianoLastSupper"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
-        <NamedIndividual IRI="#TizianoLastSupper"/>
-        <NamedIndividual IRI="#Tiziano"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#IsDerivationIn"/>
@@ -2895,11 +2785,6 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
         <NamedIndividual IRI="#Windsor12554"/>
-        <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
-        <NamedIndividual IRI="#Windsor12635"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
@@ -3814,11 +3699,6 @@ Gli elementi religiosi di questa stampa sono stemperati rispetto all&apos;origin
         <Literal>L&apos;influenza dell&apos;Ultima Cena su quest&apos;opera è data dall&apos;uso all&apos;interno della composizione pittorica di una rappresentazione in forma di quadro dell&apos;Ultima Cena.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#GeometricalRelationDescription"/>
-        <NamedIndividual IRI="#Influence7"/>
-        <Literal>La stampa di Marcantonio Raimondi (originata da un disegno perduto di Raffaello), mostra l&apos;influenza che l&apos;Ultima Cena ha da un punto di vista geometrico con la presenza di un impianto prospettico e della simmetria nell&apos;opera stessa, mutuando la struttura dell&apos;opera leonardiana.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#CharacterRelationDescription"/>
         <NamedIndividual IRI="#Influence_8"/>
         <Literal>Il volto del giovane all&apos;interno dell&apos;opera &quot;Le 3 età dell&apos;Uomo&quot; di Giorgione mostra l&apos;influenza della figura dell&apos;apostolo Filippo dell&apos;Ultima Cena di Leonardo. L&apos;influenza è probabilmente avvenuta tramite un non noto disegno di Leonardo.</Literal>
@@ -4272,11 +4152,6 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1515</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#ApproximateDate"/>
-        <NamedIndividual IRI="#StudioNatività"/>
-        <Literal>1483-1492 ca</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#Label"/>
         <NamedIndividual IRI="#TaddeoGaddi"/>
         <Literal xml:lang="en">Taddeo Gaddi</Literal>
@@ -4300,56 +4175,6 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
         <NamedIndividual IRI="#TaddeoGaddi"/>
         <Literal>1290 / 1366</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#Label"/>
-        <NamedIndividual IRI="#Tiziano"/>
-        <Literal xml:lang="it">Tiziano Vecelli o Tiziano Vecellio</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#Label"/>
-        <NamedIndividual IRI="#Tiziano"/>
-        <Literal xml:lang="it">Tiziano Vecelli o Tiziano Vecellio, conosciuto in inglese come Titian, pittore italiano</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#Label"/>
-        <NamedIndividual IRI="#Tiziano"/>
-        <Literal xml:lang="en">Tiziano Vecelli or Tiziano Vecellio known in English as Titian</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#Label"/>
-        <NamedIndividual IRI="#Tiziano"/>
-        <Literal xml:lang="en">Tiziano Vecelli or Tiziano Vecellio known in English as Titian, was an Italian painter</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
-        <NamedIndividual IRI="#Tiziano"/>
-        <Literal>1490 / 1576 - 08 - 27</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
-        <NamedIndividual IRI="#Tiziano"/>
-        <Literal>fine XVI sec. / almeno primo trentennio XVII</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#EndDate"/>
-        <NamedIndividual IRI="#TizianoLastSupper"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1544</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#Label"/>
-        <NamedIndividual IRI="#TizianoLastSupper"/>
-        <Literal xml:lang="en">Tiziano Vecellio, Ultima cena</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#Label"/>
-        <NamedIndividual IRI="#TizianoLastSupper"/>
-        <Literal xml:lang="it">Tiziano Vecellio, Ultima cena</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#StartDate"/>
-        <NamedIndividual IRI="#TizianoLastSupper"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1542</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#ApproximateDate"/>
@@ -4410,6 +4235,11 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <DataProperty IRI="#StartDate"/>
         <NamedIndividual IRI="#VespinoLastSupper"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1611</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://drive.google.com/file/d/18_UC8utuLhjRRzRuxnFecSDDBUdRCdtW/view?usp=sharing</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#ApproximateDate"/>
@@ -4560,21 +4390,6 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <DataProperty IRI="#Label"/>
         <NamedIndividual IRI="#Windsor12554"/>
         <Literal xml:lang="it">Windsor 12554, testa di giovane uomo di profilo.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#ApproximateDate"/>
-        <NamedIndividual IRI="#Windsor12635"/>
-        <Literal>1493-1494 ca</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#Label"/>
-        <NamedIndividual IRI="#Windsor12635"/>
-        <Literal xml:lang="it">Windsor 12635, studio di un piede.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#Label"/>
-        <NamedIndividual IRI="#Windsor12635"/>
-        <Literal xml:lang="en">Windsor 12635, study of a foot</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#Label"/>
@@ -5737,14 +5552,6 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Class IRI="#IconographicTheme"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#URI"/>
-        <Class IRI="http://xmlns.com/foaf/spec/#term_Image"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#URL"/>
-        <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
         <Class IRI="#core:Agent"/>
     </DataPropertyDomain>
@@ -5836,10 +5643,6 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#URI"/>
-        <Datatype abbreviatedIRI="xsd:anyURI"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#URL"/>
         <Datatype abbreviatedIRI="xsd:anyURI"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -6267,13 +6070,8 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#VisualUnit</IRI>
-        <Literal>Inspired by VIR: this class represent the minimum set of significative physical features without a linked meaning. Eg: the figure of Christ in Last Supper from Leonardo da Vinci is denoted by the set of colors that represent that figure inside the painting.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#VisualUnit1</IRI>
-        <Literal>Particular of Last Supper engraving in painting</Literal>
+        <Literal>Particular of Taddeo</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -6281,89 +6079,99 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Literal>Figura di Cristo ne L&apos;Ultima Cena di Leonardo da Vinci</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualUnit11</IRI>
-        <Literal>Particolare altezza volti di &quot;Doppio Ritratto&quot; di Benvenuto Tisi detto il Garofalo.</Literal>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VisualUnit12</IRI>
+        <Literal>Last Supper photographs</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualUnit15</IRI>
-        <Literal>Visione della simmetria nell&apos;Ultima Cena di Marcantonio Raimondi</Literal>
+        <IRI>#VisualUnit14</IRI>
+        <Literal>Particolare composizione Ultima Cena di Leonardo da Vinci</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualUnit16</IRI>
-        <Literal>Visione della simmetria nell&apos;Ultima Cena di Leonardo da Vinci</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualUnit17</IRI>
-        <Literal>Visione prospettica Ultima Cena di Marcantonio Raimondi</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualUnit18</IRI>
+        <IRI>#VisualUnit14</IRI>
         <Literal>San Filippo, dettaglio dell&apos;Ultima Cena di Leonardo da Vinci</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualUnit19</IRI>
+        <IRI>#VisualUnit15</IRI>
         <Literal>Dettaglio di giovane uomo, &quot;Le tre età&quot; di Giorgione</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualUnit2</IRI>
-        <Literal>Da definire</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualUnit20</IRI>
-        <Literal>Testa di Cristo, Ultima Cena di Leonardo da Vinci</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualUnit21</IRI>
-        <Literal>Braccio di Pietro, Ultima Cena, Leoanardo da Vinci</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualUnit22</IRI>
+        <IRI>#VisualUnit16</IRI>
         <Literal>Volto di Giuda, Ultima Cena, Leonardo da Vinci</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualUnit23</IRI>
+        <IRI>#VisualUnit17</IRI>
         <Literal>Volto di Filippo, Ultima Cena, Leonardo da Vinci</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualUnit24</IRI>
+        <IRI>#VisualUnit18</IRI>
         <Literal>Volto di Giacomo, Ultima Cena, Leonardo da Vinci</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualUnit25</IRI>
+        <IRI>#VisualUnit19</IRI>
         <Literal>Volto di Bartolomeo, Ultima Cena, Leonardo da Vinci</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualUnit26</IRI>
-        <Literal>Volto di San Giovanni, Ultima Cena, Leonardo da Vinci</Literal>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VisualUnit2</IRI>
+        <Literal>Old Farmer Boccaccino</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualUnit27</IRI>
+        <IRI>#VisualUnit20</IRI>
         <Literal>Mani di San Giovanni, Ultima Cena, Leonardo da Vinci</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualUnit28</IRI>
+        <IRI>#VisualUnit21</IRI>
         <Literal>Volto di Simone, Ultima Cena, Leonardo da Vinci</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualUnit29</IRI>
+        <IRI>#VisualUnit22</IRI>
         <Literal>Mano sinistra di Tommaso, Ultima Cena, Leonardo da Vinci</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#VisualUnit23</IRI>
+        <Literal>Mano sinistra di Bartolomeo, Ultima Cena, Leonardo da Vinci</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VisualUnit24</IRI>
+        <Literal>Depiction Windsor 12542</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VisualUnit25</IRI>
+        <Literal>Depiction Windsor 12543</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VisualUnit26</IRI>
+        <Literal>Depiction of windsor 12544</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VisualUnit27</IRI>
+        <Literal>Depiction of Windsor 12545</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VisualUnit28</IRI>
+        <Literal>Depiction of Windsor 12547</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VisualUnit29</IRI>
+        <Literal>Depiction of Windsor 12548</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -6371,14 +6179,24 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Literal>Particular of Christ figure in &quot;Cattura di Cristo&quot;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#VisualUnit30</IRI>
-        <Literal>Mano sinistra di Bartolomeo, Ultima Cena, Leonardo da Vinci</Literal>
+        <Literal>Depiction of Windsor 12549</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#VisualUnit31</IRI>
-        <Literal>Particolare composizione Ultima Cena di Leonardo da Vinci</Literal>
+        <Literal>Depiction of windsor 12551</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VisualUnit32</IRI>
+        <Literal>Depiction of Windsor 12552</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VisualUnit33</IRI>
+        <Literal>Depiction of Windsor 12554</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -6396,9 +6214,9 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Literal>Visione prospettica de l&apos;Ultima Cena di Leonardo da Vinci</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#VisualUnit7</IRI>
-        <Literal>Partiolare della composizione dei personaggi dell&apos;Ultima Cena di Durer</Literal>
+        <Literal>Composizione personaggi Ultima Cena Durer</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
