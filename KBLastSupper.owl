@@ -2693,6 +2693,41 @@
         <NamedIndividual IRI="#Vespino"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsInfluencerVisualUnitOf"/>
+        <NamedIndividual IRI="#VisualUnit11"/>
+        <NamedIndividual IRI="#Influence5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsInfluencerVisualUnitOf"/>
+        <NamedIndividual IRI="#VisualUnit12"/>
+        <NamedIndividual IRI="#Influence6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsInfluencedVisualUnitOf"/>
+        <NamedIndividual IRI="#VisualUnit13"/>
+        <NamedIndividual IRI="#Influence6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsFinalVisualUnitOf"/>
+        <NamedIndividual IRI="#VisualUnit14"/>
+        <NamedIndividual IRI="#PreparatoryRelation1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsInfluencerVisualUnitOf"/>
+        <NamedIndividual IRI="#VisualUnit14"/>
+        <NamedIndividual IRI="#Influence_8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsInfluencedVisualUnitOf"/>
+        <NamedIndividual IRI="#VisualUnit15"/>
+        <NamedIndividual IRI="#Influence_8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsFinalVisualUnitOf"/>
+        <NamedIndividual IRI="#VisualUnit16"/>
+        <NamedIndividual IRI="#PreparatoryRelation5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#IsPreparatoryIn"/>
         <NamedIndividual IRI="#Windsor12542"/>
         <NamedIndividual IRI="#PreparatoryRelation1"/>
@@ -4239,7 +4274,37 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     <DataPropertyAssertion>
         <DataProperty IRI="#URI"/>
         <NamedIndividual IRI="#VisualUnit1"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://drive.google.com/file/d/18_UC8utuLhjRRzRuxnFecSDDBUdRCdtW/view?usp=sharing</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/VisualUnit/GiudaTaddeo.png</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/VisualUnit/ChristDaVinci.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit11"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/VisualUnit/ParticolareAltezzaUltimaCena.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit12"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/ultimaCenaAltaDefinizione.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit13"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/VisualUnit/Sara.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit14"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/VisualUnit/UltimaCenaFilippo.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit15"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/VisualUnit/TreEtaGiorgionedettaglio.jpg</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#ApproximateDate"/>
@@ -6082,16 +6147,6 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#VisualUnit12</IRI>
         <Literal>Last Supper photographs</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualUnit14</IRI>
-        <Literal>Particolare composizione Ultima Cena di Leonardo da Vinci</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#VisualUnit14</IRI>
-        <Literal>San Filippo, dettaglio dell&apos;Ultima Cena di Leonardo da Vinci</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
