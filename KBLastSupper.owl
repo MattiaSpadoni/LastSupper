@@ -698,9 +698,6 @@
         <NamedIndividual IRI="#Image18"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Image19"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#Image2"/>
     </Declaration>
     <Declaration>
@@ -740,7 +737,7 @@
         <NamedIndividual IRI="#Influence6"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Influence_8"/>
+        <NamedIndividual IRI="#Influence8"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#John_Everett_Millais"/>
@@ -912,6 +909,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#VisualUnit34"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VisualUnit35"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#VisualUnit4"/>
@@ -1378,10 +1378,6 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
-        <NamedIndividual IRI="#Image19"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
         <NamedIndividual IRI="#Image2"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1434,7 +1430,7 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#InfluenceRelation"/>
-        <NamedIndividual IRI="#Influence_8"/>
+        <NamedIndividual IRI="#Influence8"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#core:Agent"/>
@@ -1669,6 +1665,10 @@
         <NamedIndividual IRI="#VisualUnit34"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
+        <NamedIndividual IRI="#VisualUnit35"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#VisualUnit"/>
         <NamedIndividual IRI="#VisualUnit4"/>
     </ClassAssertion>
@@ -1796,7 +1796,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
         <NamedIndividual IRI="#AnonimoUmbroLastSupper"/>
-        <NamedIndividual IRI="#Image10"/>
+        <NamedIndividual IRI="#Image9"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#IsDerivationIn"/>
@@ -1811,7 +1811,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
         <NamedIndividual IRI="#AraldiUltimaCena"/>
-        <NamedIndividual IRI="#Image11"/>
+        <NamedIndividual IRI="#Image10"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#IsPresentIn"/>
@@ -2066,7 +2066,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
         <NamedIndividual IRI="#CatturaDiCristo"/>
-        <NamedIndividual IRI="#Image12"/>
+        <NamedIndividual IRI="#Image11"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
@@ -2226,7 +2226,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
         <NamedIndividual IRI="#FerrariUltimaCena"/>
-        <NamedIndividual IRI="#Image13"/>
+        <NamedIndividual IRI="#Image12"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
@@ -2236,7 +2236,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
         <NamedIndividual IRI="#FranciobigiLastSupper"/>
-        <NamedIndividual IRI="#Image14"/>
+        <NamedIndividual IRI="#Image13"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
@@ -2251,7 +2251,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
         <NamedIndividual IRI="#GaddiLastSupper"/>
-        <NamedIndividual IRI="#Image15"/>
+        <NamedIndividual IRI="#Image14"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
@@ -2271,7 +2271,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
         <NamedIndividual IRI="#GarofaloAdultera"/>
-        <NamedIndividual IRI="#Image16"/>
+        <NamedIndividual IRI="#Image15"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
@@ -2445,23 +2445,33 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasInfluencedVisualUnit"/>
-        <NamedIndividual IRI="#Influence_8"/>
+        <NamedIndividual IRI="#Influence8"/>
         <NamedIndividual IRI="#VisualUnit15"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasInfluencedWork"/>
-        <NamedIndividual IRI="#Influence_8"/>
+        <NamedIndividual IRI="#Influence8"/>
         <NamedIndividual IRI="#Le_tre_età"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasInfluencerVisualUnit"/>
-        <NamedIndividual IRI="#Influence_8"/>
+        <NamedIndividual IRI="#Influence8"/>
         <NamedIndividual IRI="#VisualUnit14"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasInfluencerWork"/>
-        <NamedIndividual IRI="#Influence_8"/>
+        <NamedIndividual IRI="#Influence8"/>
         <NamedIndividual IRI="#LastSupper"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasMediumVisualUnit"/>
+        <NamedIndividual IRI="#Influence8"/>
+        <NamedIndividual IRI="#VisualUnit35"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasMediumWork"/>
+        <NamedIndividual IRI="#Influence8"/>
+        <NamedIndividual IRI="#MorghenLastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
@@ -2551,7 +2561,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#IsInfluencerIn"/>
         <NamedIndividual IRI="#LastSupper"/>
-        <NamedIndividual IRI="#Influence_8"/>
+        <NamedIndividual IRI="#Influence8"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#IsOriginaln"/>
@@ -2591,7 +2601,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#IsInfluencedIn"/>
         <NamedIndividual IRI="#Le_tre_età"/>
-        <NamedIndividual IRI="#Influence_8"/>
+        <NamedIndividual IRI="#Influence8"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
@@ -2696,7 +2706,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
         <NamedIndividual IRI="#MorghenLastSupper"/>
-        <NamedIndividual IRI="#Image9"/>
+        <NamedIndividual IRI="#VisualUnit35"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#IsInfluencedIn"/>
@@ -2946,7 +2956,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
         <NamedIndividual IRI="#VaticanTapestry"/>
-        <NamedIndividual IRI="#Image18"/>
+        <NamedIndividual IRI="#Image17"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#IsDerivationIn"/>
@@ -2961,7 +2971,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
         <NamedIndividual IRI="#VespinoLastSupper"/>
-        <NamedIndividual IRI="#Image19"/>
+        <NamedIndividual IRI="#Image18"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#IsFinalVisualUnitOf"/>
@@ -2991,12 +3001,12 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#IsInfluencerVisualUnitOf"/>
         <NamedIndividual IRI="#VisualUnit14"/>
-        <NamedIndividual IRI="#Influence_8"/>
+        <NamedIndividual IRI="#Influence8"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#IsInfluencedVisualUnitOf"/>
         <NamedIndividual IRI="#VisualUnit15"/>
-        <NamedIndividual IRI="#Influence_8"/>
+        <NamedIndividual IRI="#Influence8"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#IsFinalVisualUnitOf"/>
@@ -4067,51 +4077,46 @@ Gli elementi religiosi di questa stampa sono stemperati rispetto all&apos;origin
     <DataPropertyAssertion>
         <DataProperty IRI="#URI"/>
         <NamedIndividual IRI="#Image10"/>
-        <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/AnonimoUmbroUltimaCena.jpg</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#URI"/>
-        <NamedIndividual IRI="#Image11"/>
         <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/AraldiUltimaCena.jpg</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#URI"/>
-        <NamedIndividual IRI="#Image12"/>
+        <NamedIndividual IRI="#Image11"/>
         <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/CatturaDiCristo.jpg</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#URI"/>
-        <NamedIndividual IRI="#Image13"/>
+        <NamedIndividual IRI="#Image12"/>
         <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/GFerrari_SCagnola_Ultima_Cena_Duomo_NO.jpg</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#URI"/>
-        <NamedIndividual IRI="#Image14"/>
+        <NamedIndividual IRI="#Image13"/>
         <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/FranciabigioUltimaCena.jpg</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#URI"/>
-        <NamedIndividual IRI="#Image15"/>
+        <NamedIndividual IRI="#Image14"/>
         <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/Gaddi.jpg</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#URI"/>
-        <NamedIndividual IRI="#Image16"/>
+        <NamedIndividual IRI="#Image15"/>
         <Literal>https://upload.wikimedia.org/wikipedia/commons/f/f4/Garofalo_Cristo_y_la_ad%C3%BAltera_Budapest.jpg</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#URI"/>
-        <NamedIndividual IRI="#Image17"/>
+        <NamedIndividual IRI="#Image16"/>
         <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/MarcantonioRaimondiCopiaRaffaello.jpg</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#URI"/>
-        <NamedIndividual IRI="#Image18"/>
+        <NamedIndividual IRI="#Image17"/>
         <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/ArazzoVaticano.jpeg</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#URI"/>
-        <NamedIndividual IRI="#Image19"/>
+        <NamedIndividual IRI="#Image18"/>
         <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/Vespino.png</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
@@ -4147,7 +4152,7 @@ Gli elementi religiosi di questa stampa sono stemperati rispetto all&apos;origin
     <DataPropertyAssertion>
         <DataProperty IRI="#URI"/>
         <NamedIndividual IRI="#Image9"/>
-        <Literal>http://www.sigecweb.beniculturali.it/images/fullsize/ICCD12506/ICCD2395365_00211015.jpg</Literal>
+        <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/AnonimoUmbroUltimaCena.jpg</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#CharacterRelationDescription"/>
@@ -4191,7 +4196,7 @@ Gli elementi religiosi di questa stampa sono stemperati rispetto all&apos;origin
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#CharacterRelationDescription"/>
-        <NamedIndividual IRI="#Influence_8"/>
+        <NamedIndividual IRI="#Influence8"/>
         <Literal>Il volto del giovane all&apos;interno dell&apos;opera &quot;Le 3 età dell&apos;Uomo&quot; di Giorgione mostra l&apos;influenza della figura dell&apos;apostolo Filippo dell&apos;Ultima Cena di Leonardo. L&apos;influenza è probabilmente avvenuta tramite un non noto disegno di Leonardo.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
@@ -4836,6 +4841,11 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <DataProperty IRI="#URI"/>
         <NamedIndividual IRI="#VisualUnit34"/>
         <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/TestaCristoBrera.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit35"/>
+        <Literal>http://www.sigecweb.beniculturali.it/images/fullsize/ICCD12506/ICCD2395365_00211015.jpg</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#URI"/>
@@ -6516,47 +6526,47 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Image11</IRI>
+        <IRI>#Image10</IRI>
         <Literal>Araldi Last Supper</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Image12</IRI>
+        <IRI>#Image11</IRI>
         <Literal>Cattura di Cristo</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Image13</IRI>
+        <IRI>#Image12</IRI>
         <Literal>Ferrari Last Supper</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Image14</IRI>
+        <IRI>#Image13</IRI>
         <Literal>Franciabigio Last Supper</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Image15</IRI>
+        <IRI>#Image14</IRI>
         <Literal>Gaddi Last Supper</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Image16</IRI>
+        <IRI>#Image15</IRI>
         <Literal>Cristo e l&apos;Adultera</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Image17</IRI>
+        <IRI>#Image16</IRI>
         <Literal>Raimondi Last Supper</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Image18</IRI>
+        <IRI>#Image17</IRI>
         <Literal>Vatican tapestry</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Image19</IRI>
+        <IRI>#Image18</IRI>
         <Literal>Vespino Last Supper</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -6583,11 +6593,6 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Image7</IRI>
         <Literal>Sara and her daugher</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Image9</IRI>
-        <Literal>Morghen Last Supper</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -6878,6 +6883,11 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#VisualUnit33</IRI>
         <Literal>Depiction of Windsor 12554</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VisualUnit35</IRI>
+        <Literal>Morghen Last Supper</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
