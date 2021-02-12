@@ -137,6 +137,9 @@
         <Class abbreviatedIRI="CLV:Feature"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="CLV:Geometry"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="CLV:SpatialObject"/>
     </Declaration>
     <Declaration>
@@ -347,19 +350,19 @@
         <ObjectProperty IRI="#PresentsArtisticTheory"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#RelationLocation"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#RepresentSubject"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#StartingLocation"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#TheorisedBy"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#Theorises"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRelationLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStartingLocation"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="https://ontopia-lodview.agid.gov.it/onto/TI/atTime"/>
@@ -384,9 +387,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasInterpretationCriterion"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasRelatedAgent"/>
@@ -437,7 +437,10 @@
         <ObjectProperty IRI="https://w3id.org/arco/ontology/core/isTypeOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://w3id.org/italia/onto/l0/hasDescription"/>
+        <ObjectProperty abbreviatedIRI="CLV:hasGeometry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="CLV:isGeometryFor"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#AlternativeRelationDate"/>
@@ -479,9 +482,6 @@
         <DataProperty IRI="#LongDescription"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#Name"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#OtherIconclassCode"/>
     </Declaration>
     <Declaration>
@@ -503,6 +503,9 @@
         <DataProperty IRI="#URI"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="https://ontopia-lodview.agid.gov.it/onto/CLV/coordinate"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
     </Declaration>
     <Declaration>
@@ -515,7 +518,16 @@
         <DataProperty IRI="https://w3id.org/arco/ontology/context-description/iconclassCode"/>
     </Declaration>
     <Declaration>
+        <DataProperty abbreviatedIRI="CLV:lat"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="CLV:long"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="https://w3id.org/italia/onto/TI/date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#AlbrechtDurer"/>
@@ -602,6 +614,9 @@
         <NamedIndividual IRI="#ChristHead"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#CoeckeLastSupper"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#DaVinciIconographyLastSupper"/>
     </Declaration>
     <Declaration>
@@ -651,6 +666,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#GaudenzioFerrari"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Geometry1"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#GhirlandaioLastSupper"/>
@@ -737,6 +755,9 @@
         <NamedIndividual IRI="#Influence6"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Influence7"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Influence8"/>
     </Declaration>
     <Declaration>
@@ -755,7 +776,16 @@
         <NamedIndividual IRI="#Le_tre_età"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#LeonardoLastSupperIconography"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Location1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Location2"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#MarcantonioRaimondi"/>
@@ -774,6 +804,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#PeruginoLastSupper"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PeterCoeckeVanAelst"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#PreRefectoryLastSupperIconography"/>
@@ -912,6 +945,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#VisualUnit35"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VisualUnit36"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#VisualUnit4"/>
@@ -1105,6 +1141,10 @@
         <Class abbreviatedIRI="CLV:SpatialObject"/>
     </SubClassOf>
     <SubClassOf>
+        <Class abbreviatedIRI="CLV:Geometry"/>
+        <Class abbreviatedIRI="CLV:SpatialObject"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class abbreviatedIRI="CLV:SpatialObject"/>
         <Class IRI="https://w3id.org/italia/onto/Location"/>
     </SubClassOf>
@@ -1245,6 +1285,10 @@
         <NamedIndividual IRI="#ChristHead"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Arco:CulturalProperty"/>
+        <NamedIndividual IRI="#CoeckeLastSupper"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Iconography"/>
         <NamedIndividual IRI="#DaVinciIconographyLastSupper"/>
     </ClassAssertion>
@@ -1315,6 +1359,10 @@
     <ClassAssertion>
         <Class IRI="#core:Agent"/>
         <NamedIndividual IRI="#GaudenzioFerrari"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="CLV:Geometry"/>
+        <NamedIndividual IRI="#Geometry1"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Arco:CulturalProperty"/>
@@ -1393,6 +1441,10 @@
         <NamedIndividual IRI="#Image5"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#Image6"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
         <NamedIndividual IRI="#Image6"/>
     </ClassAssertion>
@@ -1430,6 +1482,10 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#InfluenceRelation"/>
+        <NamedIndividual IRI="#Influence7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InfluenceRelation"/>
         <NamedIndividual IRI="#Influence8"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1453,8 +1509,20 @@
         <NamedIndividual IRI="#Le_tre_età"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Iconography"/>
+        <NamedIndividual IRI="#LeonardoLastSupperIconography"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#core:Agent"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="CLV:Feature"/>
+        <NamedIndividual IRI="#Location1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="CLV:Feature"/>
+        <NamedIndividual IRI="#Location2"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#core:Agent"/>
@@ -1479,6 +1547,10 @@
     <ClassAssertion>
         <Class IRI="#Arco:CulturalProperty"/>
         <NamedIndividual IRI="#PeruginoLastSupper"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#core:Agent"/>
+        <NamedIndividual IRI="#PeterCoeckeVanAelst"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Iconography"/>
@@ -1667,6 +1739,14 @@
     <ClassAssertion>
         <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
         <NamedIndividual IRI="#VisualUnit35"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CompositionMotif"/>
+        <NamedIndividual IRI="#VisualUnit36"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit36"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#VisualUnit"/>
@@ -2444,6 +2524,51 @@
         <NamedIndividual IRI="#LastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasMediumVisualUnit"/>
+        <NamedIndividual IRI="#Influence6"/>
+        <NamedIndividual IRI="#VisualUnit35"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasMediumWork"/>
+        <NamedIndividual IRI="#Influence6"/>
+        <NamedIndividual IRI="#MorghenLastSupper"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasInfluencedVisualUnit"/>
+        <NamedIndividual IRI="#Influence7"/>
+        <NamedIndividual IRI="#VisualUnit35"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasInfluencedWork"/>
+        <NamedIndividual IRI="#Influence7"/>
+        <NamedIndividual IRI="#CoeckeLastSupper"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasInfluencerVisualUnit"/>
+        <NamedIndividual IRI="#Influence7"/>
+        <NamedIndividual IRI="#VisualUnit12"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasInfluencerWork"/>
+        <NamedIndividual IRI="#Influence7"/>
+        <NamedIndividual IRI="#LastSupper"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasMediumVisualUnit"/>
+        <NamedIndividual IRI="#Influence7"/>
+        <NamedIndividual IRI="#Image6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasMediumWork"/>
+        <NamedIndividual IRI="#Influence7"/>
+        <NamedIndividual IRI="#BiragoLastSupper"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRelationLocation"/>
+        <NamedIndividual IRI="#Influence7"/>
+        <NamedIndividual IRI="#Location1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasInfluencedVisualUnit"/>
         <NamedIndividual IRI="#Influence8"/>
         <NamedIndividual IRI="#VisualUnit15"/>
@@ -2477,11 +2602,6 @@
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
         <NamedIndividual IRI="#John_Everett_Millais"/>
         <NamedIndividual IRI="#MrsJamesWyatt"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasFinalVisualUnit"/>
-        <NamedIndividual IRI="#LastSupper"/>
-        <NamedIndividual IRI="#VisualUnit10"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#IsFinalIn"/>
@@ -2614,6 +2734,31 @@
         <NamedIndividual IRI="#image8"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsPresentIn"/>
+        <NamedIndividual IRI="#LeonardoLastSupperIconography"/>
+        <NamedIndividual IRI="#AraldiUltimaCena"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsPresentIn"/>
+        <NamedIndividual IRI="#LeonardoLastSupperIconography"/>
+        <NamedIndividual IRI="#BiragoLastSupper"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsPresentIn"/>
+        <NamedIndividual IRI="#LeonardoLastSupperIconography"/>
+        <NamedIndividual IRI="#LastSupper"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsPresentIn"/>
+        <NamedIndividual IRI="#LeonardoLastSupperIconography"/>
+        <NamedIndividual IRI="#VespinoLastSupper"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasStartingLocation"/>
+        <NamedIndividual IRI="#LeonardoLastSupperIconography"/>
+        <NamedIndividual IRI="#Location2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
         <NamedIndividual IRI="#DamaErmellino"/>
@@ -2689,6 +2834,11 @@
         <NamedIndividual IRI="#436E"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="CLV:hasGeometry"/>
+        <NamedIndividual IRI="#Location2"/>
+        <NamedIndividual IRI="#Geometry1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
         <NamedIndividual IRI="#MarcantonioRaimondi"/>
         <NamedIndividual IRI="#RaimondiLastSupper"/>
@@ -2737,6 +2887,11 @@
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
         <NamedIndividual IRI="#PeruginoLastSupper"/>
         <NamedIndividual IRI="#Perugino"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
+        <NamedIndividual IRI="#PeterCoeckeVanAelst"/>
+        <NamedIndividual IRI="#CoeckeLastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasFinalVisualUnit"/>
@@ -3239,14 +3394,14 @@
         <Literal>Albrecht Durer, artista tedesco.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
-        <NamedIndividual IRI="#AlbrechtDurer"/>
-        <Literal>Albrecht Durer</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
         <NamedIndividual IRI="#AlbrechtDurer"/>
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">1471 - 05 -21 / 1528 - 04 - 06</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <NamedIndividual IRI="#AlbrechtDurer"/>
+        <Literal>Albrecht Durer</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#Label"/>
@@ -3259,19 +3414,19 @@
         <Literal xml:lang="it">Alessandro Araldi, pittore parmense.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
+        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
+        <NamedIndividual IRI="#Alessandro_Araldi"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">1460 - 1529</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
         <NamedIndividual IRI="#Alessandro_Araldi"/>
         <Literal xml:lang="en">Alessandro Araldi.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
         <NamedIndividual IRI="#Alessandro_Araldi"/>
         <Literal xml:lang="it">Alessandro Araldi.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
-        <NamedIndividual IRI="#Alessandro_Araldi"/>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">1460 - 1529</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#Label"/>
@@ -3279,14 +3434,14 @@
         <Literal>Andrea del Castagno, pittore.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
-        <NamedIndividual IRI="#AndreaDelCastagno"/>
-        <Literal>Andrea del Castagno.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
         <NamedIndividual IRI="#AndreaDelCastagno"/>
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">1419 / 1457 - 08 - 19</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <NamedIndividual IRI="#AndreaDelCastagno"/>
+        <Literal>Andrea del Castagno.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#Label"/>
@@ -3294,14 +3449,14 @@
         <Literal>Andrea di Bartolo, pittore toscano</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
-        <NamedIndividual IRI="#AndreaDiBartolo"/>
-        <Literal>Andrea Di Bartolo.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
         <NamedIndividual IRI="#AndreaDiBartolo"/>
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">1360 - 1428</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <NamedIndividual IRI="#AndreaDiBartolo"/>
+        <Literal>Andrea Di Bartolo.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#Label"/>
@@ -3309,14 +3464,14 @@
         <Literal>Maestro del Trittico di Perugia, anonimo Umbro</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
-        <NamedIndividual IRI="#AnonimoUmbro"/>
-        <Literal>Maestro del Trittico di Perugia.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
         <NamedIndividual IRI="#AnonimoUmbro"/>
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Sec XIII seconda metà / sec XIV</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <NamedIndividual IRI="#AnonimoUmbro"/>
+        <Literal>Maestro del Trittico di Perugia.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#Label"/>
@@ -3364,7 +3519,7 @@
         <Literal>Teoria dei moti dell&apos;animo</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
         <NamedIndividual IRI="#ArtisticTheory1"/>
         <Literal>Teoria dei moti dell&apos;animo</Literal>
     </DataPropertyAssertion>
@@ -3569,19 +3724,19 @@
         <Literal xml:lang="it">Boccaccio Boccaccino, pittore emiliano.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
+        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
+        <NamedIndividual IRI="#Boccaccino"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">c. 1467 / c. 1525</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
         <NamedIndividual IRI="#Boccaccino"/>
         <Literal xml:lang="en">Boccaccio Boccaccino</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
         <NamedIndividual IRI="#Boccaccino"/>
         <Literal xml:lang="it">Boccaccio Boccaccino</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
-        <NamedIndividual IRI="#Boccaccino"/>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">c. 1467 / c. 1525</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#EndDate"/>
@@ -3614,19 +3769,19 @@
         <Literal xml:lang="it">Michelangelo Merisi detto il Caravaggio, pittore Italiano</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
+        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
+        <NamedIndividual IRI="#Caravaggio"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">1571 - 09 - 29 / 1610 - 07 - 18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
         <NamedIndividual IRI="#Caravaggio"/>
         <Literal xml:lang="en">Michelangelo Merisi called Caravaggio</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
         <NamedIndividual IRI="#Caravaggio"/>
         <Literal xml:lang="it">Michelangelo Merisi detto il Caravaggio</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
-        <NamedIndividual IRI="#Caravaggio"/>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">1571 - 09 - 29 / 1610 - 07 - 18</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#EndDate"/>
@@ -3664,7 +3819,7 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1602</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
         <NamedIndividual IRI="#Character1"/>
         <Literal>Pietro dell&apos;Ultima Cena</Literal>
     </DataPropertyAssertion>
@@ -3682,6 +3837,21 @@
         <DataProperty IRI="#Label"/>
         <NamedIndividual IRI="#ChristHead"/>
         <Literal xml:lang="en">Testa di Cristo, charcoal on paper</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EndDate"/>
+        <NamedIndividual IRI="#CoeckeLastSupper"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1531</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Label"/>
+        <NamedIndividual IRI="#CoeckeLastSupper"/>
+        <Literal>Peter Coecke Van Aelst Last Supper</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#StartDate"/>
+        <NamedIndividual IRI="#CoeckeLastSupper"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1531</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#CharacterDescription"/>
@@ -3825,19 +3995,19 @@ Gli elementi religiosi di questa stampa sono stemperati rispetto all&apos;origin
         <Literal xml:lang="en">Francesco Melzi, or Francesco de Melzi, Italian painter</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
+        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
+        <NamedIndividual IRI="#FrancescoMelzi"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">1491 / 1570</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
         <NamedIndividual IRI="#FrancescoMelzi"/>
         <Literal xml:lang="en">Francesco Melzi</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
         <NamedIndividual IRI="#FrancescoMelzi"/>
         <Literal xml:lang="it">Francesco Melzi</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
-        <NamedIndividual IRI="#FrancescoMelzi"/>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">1491 / 1570</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#EndDate"/>
@@ -3870,19 +4040,19 @@ Gli elementi religiosi di questa stampa sono stemperati rispetto all&apos;origin
         <Literal xml:lang="it">Francesco di Cristofano, detto il Franciabigio, pittore italiano</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
+        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
+        <NamedIndividual IRI="#Franciobigio"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">1482 / 1525 - 01 - 24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
         <NamedIndividual IRI="#Franciobigio"/>
         <Literal xml:lang="it">Francesco di Cristofano, called Franciabigio</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
         <NamedIndividual IRI="#Franciobigio"/>
         <Literal xml:lang="it">Francesco di Cristofano, detto il Franciabigio.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
-        <NamedIndividual IRI="#Franciobigio"/>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">1482 / 1525 - 01 - 24</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#EndDate"/>
@@ -3915,19 +4085,19 @@ Gli elementi religiosi di questa stampa sono stemperati rispetto all&apos;origin
         <Literal xml:lang="it">Benvenuto Tisi da Garofalo, detto il Garofalo, pittore italiano</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
+        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
+        <NamedIndividual IRI="#Garofalo"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">1481 / 1559 - 09 - 06</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
         <NamedIndividual IRI="#Garofalo"/>
         <Literal xml:lang="en">Benvenuto Tisi da Garofalo, called Garofalo</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
         <NamedIndividual IRI="#Garofalo"/>
         <Literal xml:lang="it">Benvenuto Tisi da Garofalo, detto il Garofalo</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
-        <NamedIndividual IRI="#Garofalo"/>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">1481 / 1559 - 09 - 06</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#EndDate"/>
@@ -3935,19 +4105,19 @@ Gli elementi religiosi di questa stampa sono stemperati rispetto all&apos;origin
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1550</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
+        <DataProperty IRI="#StartDate"/>
+        <NamedIndividual IRI="#GarofaloAdultera"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1540</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
         <NamedIndividual IRI="#GarofaloAdultera"/>
         <Literal xml:lang="en">Cristo e l&apos;adultera</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
         <NamedIndividual IRI="#GarofaloAdultera"/>
         <Literal xml:lang="it">Cristo e l&apos;adultera</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#StartDate"/>
-        <NamedIndividual IRI="#GarofaloAdultera"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1540</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#Label"/>
@@ -3963,6 +4133,16 @@ Gli elementi religiosi di questa stampa sono stemperati rispetto all&apos;origin
         <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
         <NamedIndividual IRI="#GaudenzioFerrari"/>
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">c. 1471 / 1546 - 01 - 11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="CLV:lat"/>
+        <NamedIndividual IRI="#Geometry1"/>
+        <Literal>45° 27&apos; 51&apos;&apos;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="CLV:long"/>
+        <NamedIndividual IRI="#Geometry1"/>
+        <Literal>9° 11&apos; 22&apos;&apos;</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#EndDate"/>
@@ -3990,24 +4170,24 @@ Gli elementi religiosi di questa stampa sono stemperati rispetto all&apos;origin
         <Literal xml:lang="it">Giorgione o Giorgio da Castelfranco, pseudonimo di Giorgio Zorzi, o Zorzo, pittore italiano</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
+        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
+        <NamedIndividual IRI="#Giorgione"/>
+        <Literal xml:lang="en">1478 / 1510 - 10 - 25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
         <NamedIndividual IRI="#Giorgione"/>
         <Literal xml:lang="it">Giorgione o Giorgio da Castelfranco, pseudonimo di Giorgio Zorzi, o Zorzo</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
         <NamedIndividual IRI="#Giorgione"/>
         <Literal xml:lang="en">Giorgione or Giorgio da Castelfranco, pseudonym of Giorgio Zorzi or Zorzo</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
         <NamedIndividual IRI="#Giorgione"/>
         <Literal xml:lang="en">Giorgione or Giorgio da Castelfranco, pseudonym of Giorgio Zorzi or Zorzo, Italian painter</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
-        <NamedIndividual IRI="#Giorgione"/>
-        <Literal xml:lang="en">1478 / 1510 - 10 - 25</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#Label"/>
@@ -4050,24 +4230,24 @@ Gli elementi religiosi di questa stampa sono stemperati rispetto all&apos;origin
         <Literal xml:lang="en">Giovanni Pietro Birago, Italian engraver</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
+        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
+        <NamedIndividual IRI="#GiovanniPietroBirago"/>
+        <Literal xml:lang="en">not known, probably end of XV and beginning of XVI century, last mention in 1510.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
         <NamedIndividual IRI="#GiovanniPietroBirago"/>
         <Literal xml:lang="en">Giovanni Pietro Birago</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
         <NamedIndividual IRI="#GiovanniPietroBirago"/>
         <Literal xml:lang="it">Giovanni Pietro Birago</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
         <NamedIndividual IRI="#GiovanniPietroBirago"/>
         <Literal xml:lang="it">Giovanni Pietro Birago, incisore italiano</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
-        <NamedIndividual IRI="#GiovanniPietroBirago"/>
-        <Literal xml:lang="en">not known, probably end of XV and beginning of XVI century, last mention in 1510.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#URI"/>
@@ -4175,6 +4355,11 @@ Gli elementi religiosi di questa stampa sono stemperati rispetto all&apos;origin
         <Literal>L&apos;opera mantiene un&apos;impostazione iconografica e stilistica tipica del contesto nordico e tedesco, l&apos;impostazione geometrica dell&apos;opera però mostra i segni dell&apos;influenza Leonardesca con la presenza di un impianto prospettico.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#RelationDate"/>
+        <NamedIndividual IRI="#Influence3"/>
+        <Literal>1521 ca.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#RelationDescription"/>
         <NamedIndividual IRI="#Influence3"/>
         <Literal>Durer visitò i paesi bassi nel 1521-1522 venendo in contatto, probabilmente, con le stampe di Giovanni Pietro Birago. L&apos;opera di Albrecht Durer l&apos;Ultima cena del 1523 si differenzia da altre stampe da lui già realizzate a questo tema mostrando l&apos;influenza dell&apos;opera di Leonardo</Literal>
@@ -4195,6 +4380,16 @@ Gli elementi religiosi di questa stampa sono stemperati rispetto all&apos;origin
         <Literal>L&apos;influenza dell&apos;Ultima Cena su quest&apos;opera è data dall&apos;uso all&apos;interno della composizione pittorica di una rappresentazione in forma di quadro dell&apos;Ultima Cena.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#Label"/>
+        <NamedIndividual IRI="#Influence7"/>
+        <Literal>Influence Relation between Last Supper by Leonardo da Vinci and Last Supper by Peter Coecke Van Aelst</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#RelationDescription"/>
+        <NamedIndividual IRI="#Influence7"/>
+        <Literal>Last Supper from Peter Coecke Van Aelst shows a clear influence by Leonardo&apos;s one, specifically its composition shows many similarities to the Milan one. Even if it is slightly different apostles are divided in groups, they are symmetric and their expressivity and position is a reference to Leonardo&apos;s work. The presence of the dog is a sign of the usage of Birago&apos;s Last Supper as a medium between the 2 works.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#CharacterRelationDescription"/>
         <NamedIndividual IRI="#Influence8"/>
         <Literal>Il volto del giovane all&apos;interno dell&apos;opera &quot;Le 3 età dell&apos;Uomo&quot; di Giorgione mostra l&apos;influenza della figura dell&apos;apostolo Filippo dell&apos;Ultima Cena di Leonardo. L&apos;influenza è probabilmente avvenuta tramite un non noto disegno di Leonardo.</Literal>
@@ -4210,19 +4405,19 @@ Gli elementi religiosi di questa stampa sono stemperati rispetto all&apos;origin
         <Literal xml:lang="it">Sir John Everett Millais, I barone, pittore ed illustratore inglese</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
+        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
+        <NamedIndividual IRI="#John_Everett_Millais"/>
+        <Literal xml:lang="en">1829 - 06 - 09 / 1896 - 08 - 13</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
         <NamedIndividual IRI="#John_Everett_Millais"/>
         <Literal xml:lang="en">Sir John Everett Millais</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
         <NamedIndividual IRI="#John_Everett_Millais"/>
         <Literal xml:lang="it">Sir John Everett Millais</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
-        <NamedIndividual IRI="#John_Everett_Millais"/>
-        <Literal xml:lang="en">1829 - 06 - 09 / 1896 - 08 - 13</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#Label"/>
@@ -4273,6 +4468,11 @@ Cristo tipicamente dà del pane a Giuda legandosi ad un episodio evangelico.</Li
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#Label"/>
+        <NamedIndividual IRI="#LeonardoLastSupperIconography"/>
+        <Literal>Leonardo&apos;s Iconography of Last Supper</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Label"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
         <Literal xml:lang="en">Leonardo di ser Piero da Vinci more commonly Leonardo da Vinci or simply Leonardo,  Italian polymath</Literal>
     </DataPropertyAssertion>
@@ -4297,6 +4497,16 @@ Cristo tipicamente dà del pane a Giuda legandosi ad un episodio evangelico.</Li
         <Literal xml:lang="en">1452 - 04 - 15 / 1519 - 05 - 2</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <NamedIndividual IRI="#Location1"/>
+        <Literal>Flanders, historica region</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <NamedIndividual IRI="#Location2"/>
+        <Literal>Milan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#Label"/>
         <NamedIndividual IRI="#MarcantonioRaimondi"/>
         <Literal xml:lang="en">Marcantonio Raimondi, engraver</Literal>
@@ -4307,19 +4517,19 @@ Cristo tipicamente dà del pane a Giuda legandosi ad un episodio evangelico.</Li
         <Literal xml:lang="it">Marcantonio Raimondi, incisore</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
+        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
+        <NamedIndividual IRI="#MarcantonioRaimondi"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">1480 / 1534</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
         <NamedIndividual IRI="#MarcantonioRaimondi"/>
         <Literal xml:lang="en">Marcantonio Raimondi</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
         <NamedIndividual IRI="#MarcantonioRaimondi"/>
         <Literal xml:lang="it">Marcantonio Raimondi.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
-        <NamedIndividual IRI="#MarcantonioRaimondi"/>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">1480 / 1534</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#ApproximateDate"/>
@@ -4380,24 +4590,24 @@ Giuda è posizionato dall&apos;altra parte del tavolo rispetto alle altre figure
         <Literal xml:lang="it">Pietro di Cristoforo Vannucci, noto come il Perugino, Il divin pittore o come Pietro Perugino, pittore Italiano</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
+        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
+        <NamedIndividual IRI="#Perugino"/>
+        <Literal>1446 / 1523</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
         <NamedIndividual IRI="#Perugino"/>
         <Literal xml:lang="en">Pietro di Cristoforo Vannucci, know as il Perugino, &quot;Il divin pittore&quot; or as Pietro Perugino</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
         <NamedIndividual IRI="#Perugino"/>
         <Literal xml:lang="en">Pietro di Cristoforo Vannucci, know as il Perugino, &quot;Il divin pittore&quot; or as Pietro Perugino, Italian painter.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
         <NamedIndividual IRI="#Perugino"/>
         <Literal xml:lang="it">Pietro di Cristoforo Vannucci, noto come il Perugino, Il divin pittore o come Pietro Perugino.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
-        <NamedIndividual IRI="#Perugino"/>
-        <Literal>1446 / 1523</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#EndDate"/>
@@ -4405,19 +4615,34 @@ Giuda è posizionato dall&apos;altra parte del tavolo rispetto alle altre figure
         <Literal xml:lang="it">1495</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
+        <DataProperty IRI="#StartDate"/>
+        <NamedIndividual IRI="#PeruginoLastSupper"/>
+        <Literal xml:lang="it">1480</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
         <NamedIndividual IRI="#PeruginoLastSupper"/>
         <Literal xml:lang="en">Cenacolo di Fuligno</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
         <NamedIndividual IRI="#PeruginoLastSupper"/>
         <Literal xml:lang="it">Cenacolo di Fuligno</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#StartDate"/>
-        <NamedIndividual IRI="#PeruginoLastSupper"/>
-        <Literal xml:lang="it">1480</Literal>
+        <DataProperty IRI="#Label"/>
+        <NamedIndividual IRI="#PeterCoeckeVanAelst"/>
+        <Literal>Peter Coecke Van Aelst, Flemish painter and master</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
+        <NamedIndividual IRI="#PeterCoeckeVanAelst"/>
+        <Literal>1502 - 1550</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <NamedIndividual IRI="#PeterCoeckeVanAelst"/>
+        <Literal>Peter Coecke Van Aelst</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#CharacterDescription"/>
@@ -4588,19 +4813,19 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Literal xml:lang="en">Raffaello Morghen, also known as Raffaele Morghen, italian engraver.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
+        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
+        <NamedIndividual IRI="#RaffaelloMorghen"/>
+        <Literal>1758 - 06 - 19 / 1833 - 04 - 8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
         <NamedIndividual IRI="#RaffaelloMorghen"/>
         <Literal xml:lang="en">Raffaello Morghen, also known as Raffaele Morghen</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
         <NamedIndividual IRI="#RaffaelloMorghen"/>
         <Literal xml:lang="it">Raffaello Morghen, conosciuto anche come Raffaele Morghen</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
-        <NamedIndividual IRI="#RaffaelloMorghen"/>
-        <Literal>1758 - 06 - 19 / 1833 - 04 - 8</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#EndDate"/>
@@ -4673,19 +4898,19 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Literal xml:lang="it">Andrea Bianchi, chiamato Vespino, pittore Italiano</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
+        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
+        <NamedIndividual IRI="#Vespino"/>
+        <Literal>fine XVI sec. / almeno primo trentennio XVII</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
         <NamedIndividual IRI="#Vespino"/>
         <Literal xml:lang="en">Andrea Bianchi, called Vespino</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
         <NamedIndividual IRI="#Vespino"/>
         <Literal xml:lang="it">Andrea Bianchi, detto Vespino</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
-        <NamedIndividual IRI="#Vespino"/>
-        <Literal>fine XVI sec. / almeno primo trentennio XVII</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#EndDate"/>
@@ -4693,19 +4918,19 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1616</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
+        <DataProperty IRI="#StartDate"/>
+        <NamedIndividual IRI="#VespinoLastSupper"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1611</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
         <NamedIndividual IRI="#VespinoLastSupper"/>
         <Literal xml:lang="en">Ultima Cena, 1611-1616</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#Name"/>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
         <NamedIndividual IRI="#VespinoLastSupper"/>
         <Literal xml:lang="it">Ultima Cena, 1611-1616</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#StartDate"/>
-        <NamedIndividual IRI="#VespinoLastSupper"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1611</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#URI"/>
@@ -4846,6 +5071,11 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <DataProperty IRI="#URI"/>
         <NamedIndividual IRI="#VisualUnit35"/>
         <Literal>http://www.sigecweb.beniculturali.it/images/fullsize/ICCD12506/ICCD2395365_00211015.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit36"/>
+        <Literal>https://artsandculture.google.com/asset/the-last-supper-pieter-coecke-van-aelst-studio/3wEuCGKG8K9BFg?hl=en</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#URI"/>
@@ -5230,20 +5460,20 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <ObjectProperty IRI="#Presents"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#RelationLocation"/>
-        <ObjectProperty IRI="#HasLocation"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#StartingLocation"/>
-        <ObjectProperty IRI="#HasLocation"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
         <ObjectProperty IRI="#TheorisedBy"/>
         <ObjectProperty IRI="#IntroductedBy"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#Theorises"/>
         <ObjectProperty IRI="#Introduce"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasRelationLocation"/>
+        <ObjectProperty IRI="#HasLocation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasStartingLocation"/>
+        <ObjectProperty IRI="#HasLocation"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="https://ontopia-lodview.agid.gov.it/onto/TI/atTime"/>
@@ -5260,10 +5490,6 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDating"/>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasSituation"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasInterpretationCriterion"/>
-        <ObjectProperty IRI="https://w3id.org/italia/onto/l0/hasDescription"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasRelatedWorkSituation"/>
@@ -5435,11 +5661,11 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#IsRelationLocationOf"/>
-        <ObjectProperty IRI="#StartingLocation"/>
+        <ObjectProperty IRI="#hasRelationLocation"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#IsStartingLocationOf"/>
-        <ObjectProperty IRI="#RelationLocation"/>
+        <ObjectProperty IRI="#hasStartingLocation"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#TheorisedBy"/>
@@ -5480,6 +5706,10 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     <InverseObjectProperties>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasSituation"/>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/core/isSituationOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="CLV:hasGeometry"/>
+        <ObjectProperty abbreviatedIRI="CLV:isGeometryFor"/>
     </InverseObjectProperties>
     <AsymmetricObjectProperty>
         <ObjectProperty IRI="#CreatedBy"/>
@@ -5693,16 +5923,8 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Class IRI="#Arco:CulturalProperty"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#RelationLocation"/>
-        <Class IRI="#a-cd:RelatedWorkSituation"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#RepresentSubject"/>
         <Class IRI="#IconographicTheme"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#StartingLocation"/>
-        <Class IRI="#AbstractConcept"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#TheorisedBy"/>
@@ -5711,6 +5933,14 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#Theorises"/>
         <Class IRI="#core:Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRelationLocation"/>
+        <Class IRI="#a-cd:RelatedWorkSituation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasStartingLocation"/>
+        <Class IRI="#AbstractConcept"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="https://ontopia-lodview.agid.gov.it/onto/TI/atTime"/>
@@ -5744,10 +5974,6 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasInterpretationCriterion"/>
-        <Class IRI="#a-cd:InterpretationCriterion"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasRelatedWorkSituation"/>
         <Class IRI="#Arco:CulturalProperty"/>
     </ObjectPropertyDomain>
@@ -5766,6 +5992,14 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/specificTime"/>
         <Class IRI="https://w3id.org/italia/onto/l0/EventOrSituation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="CLV:hasGeometry"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="CLV:isGeometryFor"/>
+        <Class abbreviatedIRI="CLV:Geometry"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#BelongsTo"/>
@@ -5972,16 +6206,8 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Class IRI="#AbstractConcept"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#RelationLocation"/>
-        <Class IRI="https://w3id.org/italia/onto/Location"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#RepresentSubject"/>
         <Class IRI="#a-cd:Subject"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#StartingLocation"/>
-        <Class IRI="https://w3id.org/italia/onto/Location"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#TheorisedBy"/>
@@ -5990,6 +6216,14 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#Theorises"/>
         <Class IRI="#AbstractConcept"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRelationLocation"/>
+        <Class IRI="https://w3id.org/italia/onto/Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasStartingLocation"/>
+        <Class IRI="https://w3id.org/italia/onto/Location"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="https://ontopia-lodview.agid.gov.it/onto/TI/atTime"/>
@@ -6016,10 +6250,6 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasInterpretationCriterion"/>
-        <Class IRI="#a-cd:InterpretationCriterion"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasRelatedWorkSituation"/>
         <Class IRI="#a-cd:RelatedWorkSituation"/>
     </ObjectPropertyRange>
@@ -6038,6 +6268,14 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     <ObjectPropertyRange>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/specificTime"/>
         <Class IRI="#Tiapit:TimeInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="CLV:hasGeometry"/>
+        <Class abbreviatedIRI="CLV:Geometry"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="CLV:isGeometryFor"/>
+        <Class abbreviatedIRI="owl:Thing"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty IRI="#AlternativeRelationDate"/>
@@ -6106,6 +6344,14 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     <SubDataPropertyOf>
         <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
         <DataProperty IRI="https://w3id.org/italia/onto/TI/date"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty abbreviatedIRI="CLV:lat"/>
+        <DataProperty IRI="https://ontopia-lodview.agid.gov.it/onto/CLV/coordinate"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty abbreviatedIRI="CLV:long"/>
+        <DataProperty IRI="https://ontopia-lodview.agid.gov.it/onto/CLV/coordinate"/>
     </SubDataPropertyOf>
     <DataPropertyDomain>
         <DataProperty IRI="#AlternativeRelationDate"/>
@@ -6160,10 +6406,6 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Class abbreviatedIRI="owl:Thing"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#Name"/>
-        <Class abbreviatedIRI="owl:Thing"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#OtherIconclassCode"/>
         <Class IRI="#IconographicTheme"/>
     </DataPropertyDomain>
@@ -6188,6 +6430,10 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Class IRI="#IconographicTheme"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="https://ontopia-lodview.agid.gov.it/onto/CLV/coordinate"/>
+        <Class abbreviatedIRI="CLV:Geometry"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
         <Class IRI="#core:Agent"/>
     </DataPropertyDomain>
@@ -6204,7 +6450,19 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Class IRI="#IconographicTheme"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="CLV:lat"/>
+        <Class abbreviatedIRI="CLV:Geometry"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="CLV:long"/>
+        <Class abbreviatedIRI="CLV:Geometry"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="https://w3id.org/italia/onto/TI/date"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </DataPropertyDomain>
     <DataPropertyRange>
@@ -6247,10 +6505,6 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#Name"/>
-        <Datatype abbreviatedIRI="rdfs:Literal"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
         <DataProperty IRI="#OtherIconclassCode"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
@@ -6282,6 +6536,10 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="https://ontopia-lodview.agid.gov.it/onto/CLV/coordinate"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
@@ -6298,11 +6556,23 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty abbreviatedIRI="CLV:lat"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="CLV:long"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="https://w3id.org/italia/onto/TI/date"/>
         <DataUnionOf>
             <Datatype abbreviatedIRI="rdfs:Literal"/>
             <Datatype abbreviatedIRI="xsd:int"/>
         </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <DisjointDataProperties>
         <DataProperty IRI="#ApproximateDate"/>
@@ -6710,9 +6980,9 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Literal>http://dbpedia.org/page/Leonardo_da_Vinci</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>#Name</IRI>
-        <IRI>https://w3id.org/italia/onto/l0/name</IRI>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Location1</IRI>
+        <Literal>Flanders</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -6777,7 +7047,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#VisualUnit12</IRI>
-        <Literal>Last Supper photographs</Literal>
+        <Literal>Last Supper photograph</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -6888,6 +7158,11 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#VisualUnit35</IRI>
         <Literal>Morghen Last Supper</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VisualUnit36</IRI>
+        <Literal>Coecke Last Supper</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
