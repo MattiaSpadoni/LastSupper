@@ -74,9 +74,6 @@
         <Class IRI="#IO:Event"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Tiapit:TimeInterval"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#a-cd:CulturalPropertyStage"/>
     </Declaration>
     <Declaration>
@@ -146,6 +143,9 @@
         <Class IRI="https://w3id.org/italia/onto/TI/TemporalEntity"/>
     </Declaration>
     <Declaration>
+        <Class IRI="https://w3id.org/italia/onto/TI/TimeInterval"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="https://w3id.org/italia/onto/l0/Description"/>
     </Declaration>
     <Declaration>
@@ -194,6 +194,9 @@
         <ObjectProperty IRI="#EmbodiesArtisticTheory"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#HasCharacter"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#HasCompositionalMotif"/>
     </Declaration>
     <Declaration>
@@ -239,6 +242,9 @@
         <ObjectProperty IRI="#HasMediumWork"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#HasObject"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#HasOriginalVisualUnit"/>
     </Declaration>
     <Declaration>
@@ -270,6 +276,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#IsAttributeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsCharacterOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#IsCompositionMotifOf"/>
@@ -309,6 +318,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#IsMediumVisualUnitOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsObjectOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#IsOriginalVisualUnitOf"/>
@@ -357,6 +369,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#Theorises"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDiffusionPeriod"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasRelationLocation"/>
@@ -447,6 +462,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#ApproximateDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ApproximatePeriod"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#CharacterDescription"/>
@@ -611,6 +629,15 @@
         <NamedIndividual IRI="#Character1"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Character2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Character3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Character4"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#ChristHead"/>
     </Declaration>
     <Declaration>
@@ -644,6 +671,9 @@
         <NamedIndividual IRI="#DurerLastSupper"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#EarlyFlorentineLastSupperIconography"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#FerrariUltimaCena"/>
     </Declaration>
     <Declaration>
@@ -669,6 +699,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Geometry1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Geometry2"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#GhirlandaioLastSupper"/>
@@ -788,6 +821,9 @@
         <NamedIndividual IRI="#Location2"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Location3"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#MarcantonioRaimondi"/>
     </Declaration>
     <Declaration>
@@ -797,7 +833,7 @@
         <NamedIndividual IRI="#MrsJamesWyatt"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#OldFlorentineLastSupper"/>
+        <NamedIndividual IRI="#Object1"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Perugino"/>
@@ -849,6 +885,18 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#TaddeoGaddi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TimeInterval1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TimeInterval2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TimeInterval3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TimeInterval4"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#VaticanTapestry"/>
@@ -1073,10 +1121,6 @@
         <Class abbreviatedIRI="cis:CulturalEntity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Tiapit:TimeInterval"/>
-        <Class IRI="https://ontopia-lodview.agid.gov.it/onto/l0/Characteristic"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#a-cd:CulturalPropertyStage"/>
         <Class IRI="https://w3id.org/arco/ontology/core/CulturalEntityCharacteristic"/>
     </SubClassOf>
@@ -1151,6 +1195,14 @@
     <SubClassOf>
         <Class IRI="https://w3id.org/italia/onto/TI/TemporalEntity"/>
         <Class IRI="https://w3id.org/italia/onto/Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <Class IRI="https://ontopia-lodview.agid.gov.it/onto/l0/Characteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <Class IRI="https://w3id.org/italia/onto/TI/TemporalEntity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="https://w3id.org/italia/onto/l0/Description"/>
@@ -1281,6 +1333,30 @@
         <NamedIndividual IRI="#Character1"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Character"/>
+        <NamedIndividual IRI="#Character2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Iconography"/>
+        <NamedIndividual IRI="#Character2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Character"/>
+        <NamedIndividual IRI="#Character3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Iconography"/>
+        <NamedIndividual IRI="#Character3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Character"/>
+        <NamedIndividual IRI="#Character4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Iconography"/>
+        <NamedIndividual IRI="#Character4"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Arco:CulturalProperty"/>
         <NamedIndividual IRI="#ChristHead"/>
     </ClassAssertion>
@@ -1329,6 +1405,10 @@
         <NamedIndividual IRI="#DurerLastSupper"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Iconography"/>
+        <NamedIndividual IRI="#EarlyFlorentineLastSupperIconography"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Arco:CulturalProperty"/>
         <NamedIndividual IRI="#FerrariUltimaCena"/>
     </ClassAssertion>
@@ -1363,6 +1443,10 @@
     <ClassAssertion>
         <Class abbreviatedIRI="CLV:Geometry"/>
         <NamedIndividual IRI="#Geometry1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="CLV:Geometry"/>
+        <NamedIndividual IRI="#Geometry2"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Arco:CulturalProperty"/>
@@ -1509,10 +1593,6 @@
         <NamedIndividual IRI="#Le_tre_età"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Iconography"/>
-        <NamedIndividual IRI="#LeonardoLastSupperIconography"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#core:Agent"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ClassAssertion>
@@ -1523,6 +1603,10 @@
     <ClassAssertion>
         <Class abbreviatedIRI="CLV:Feature"/>
         <NamedIndividual IRI="#Location2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="CLV:Feature"/>
+        <NamedIndividual IRI="#Location3"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#core:Agent"/>
@@ -1537,8 +1621,8 @@
         <NamedIndividual IRI="#MrsJamesWyatt"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Iconography"/>
-        <NamedIndividual IRI="#OldFlorentineLastSupper"/>
+        <Class IRI="#SceneObject"/>
+        <NamedIndividual IRI="#Object1"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#core:Agent"/>
@@ -1607,6 +1691,22 @@
     <ClassAssertion>
         <Class IRI="#core:Agent"/>
         <NamedIndividual IRI="#TaddeoGaddi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <NamedIndividual IRI="#TimeInterval1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <NamedIndividual IRI="#TimeInterval2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <NamedIndividual IRI="#TimeInterval3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <NamedIndividual IRI="#TimeInterval4"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Arco:CulturalProperty"/>
@@ -1954,6 +2054,16 @@
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDiffusionPeriod"/>
+        <NamedIndividual IRI="#ArtisticTheory1"/>
+        <NamedIndividual IRI="#TimeInterval1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasStartingLocation"/>
+        <NamedIndividual IRI="#ArtisticTheory1"/>
+        <NamedIndividual IRI="#Location2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasBibliography"/>
         <NamedIndividual IRI="#ArtisticTheory1"/>
         <NamedIndividual IRI="#Bibliography1"/>
@@ -2149,6 +2259,26 @@
         <NamedIndividual IRI="#Image11"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IntroductedBy"/>
+        <NamedIndividual IRI="#Character1"/>
+        <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IntroductedBy"/>
+        <NamedIndividual IRI="#Character2"/>
+        <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IntroductedBy"/>
+        <NamedIndividual IRI="#Character3"/>
+        <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IntroductedBy"/>
+        <NamedIndividual IRI="#Character4"/>
+        <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
         <NamedIndividual IRI="#ChristHead"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
@@ -2157,6 +2287,26 @@
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
         <NamedIndividual IRI="#ChristHead"/>
         <NamedIndividual IRI="#VisualUnit34"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasCharacter"/>
+        <NamedIndividual IRI="#DaVinciIconographyLastSupper"/>
+        <NamedIndividual IRI="#Character1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasCharacter"/>
+        <NamedIndividual IRI="#DaVinciIconographyLastSupper"/>
+        <NamedIndividual IRI="#Character2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasCharacter"/>
+        <NamedIndividual IRI="#DaVinciIconographyLastSupper"/>
+        <NamedIndividual IRI="#Character3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasCharacter"/>
+        <NamedIndividual IRI="#DaVinciIconographyLastSupper"/>
+        <NamedIndividual IRI="#Character4"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#IsPresentIn"/>
@@ -2187,6 +2337,16 @@
         <ObjectProperty IRI="#TheorisedBy"/>
         <NamedIndividual IRI="#DaVinciIconographyLastSupper"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDiffusionPeriod"/>
+        <NamedIndividual IRI="#DaVinciIconographyLastSupper"/>
+        <NamedIndividual IRI="#TimeInterval1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasStartingLocation"/>
+        <NamedIndividual IRI="#DaVinciIconographyLastSupper"/>
+        <NamedIndividual IRI="#Location3"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasBibliography"/>
@@ -2297,6 +2457,31 @@
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
         <NamedIndividual IRI="#DurerLastSupper"/>
         <NamedIndividual IRI="#Image2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsPredecessorOf"/>
+        <NamedIndividual IRI="#EarlyFlorentineLastSupperIconography"/>
+        <NamedIndividual IRI="#LateFlorentineLastSupperIconography"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsPresentIn"/>
+        <NamedIndividual IRI="#EarlyFlorentineLastSupperIconography"/>
+        <NamedIndividual IRI="#GaddiLastSupper"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#TheorisedBy"/>
+        <NamedIndividual IRI="#EarlyFlorentineLastSupperIconography"/>
+        <NamedIndividual IRI="#TaddeoGaddi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDiffusionPeriod"/>
+        <NamedIndividual IRI="#EarlyFlorentineLastSupperIconography"/>
+        <NamedIndividual IRI="#TimeInterval4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasStartingLocation"/>
+        <NamedIndividual IRI="#EarlyFlorentineLastSupperIconography"/>
+        <NamedIndividual IRI="#Location3"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
@@ -2719,6 +2904,21 @@
         <NamedIndividual IRI="#PeruginoLastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsSuccessorOf"/>
+        <NamedIndividual IRI="#LateFlorentineLastSupperIconography"/>
+        <NamedIndividual IRI="#EarlyFlorentineLastSupperIconography"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDiffusionPeriod"/>
+        <NamedIndividual IRI="#LateFlorentineLastSupperIconography"/>
+        <NamedIndividual IRI="#TimeInterval2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasStartingLocation"/>
+        <NamedIndividual IRI="#LateFlorentineLastSupperIconography"/>
+        <NamedIndividual IRI="#Location3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#IsInfluencedIn"/>
         <NamedIndividual IRI="#Le_tre_età"/>
         <NamedIndividual IRI="#Influence8"/>
@@ -2752,6 +2952,11 @@
         <ObjectProperty IRI="#IsPresentIn"/>
         <NamedIndividual IRI="#LeonardoLastSupperIconography"/>
         <NamedIndividual IRI="#VespinoLastSupper"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsSuccessorOf"/>
+        <NamedIndividual IRI="#LeonardoLastSupperIconography"/>
+        <NamedIndividual IRI="#LateFlorentineLastSupperIconography"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasStartingLocation"/>
@@ -2839,6 +3044,11 @@
         <NamedIndividual IRI="#Geometry1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="CLV:hasGeometry"/>
+        <NamedIndividual IRI="#Location3"/>
+        <NamedIndividual IRI="#Geometry2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
         <NamedIndividual IRI="#MarcantonioRaimondi"/>
         <NamedIndividual IRI="#RaimondiLastSupper"/>
@@ -2872,16 +3082,6 @@
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
         <NamedIndividual IRI="#MrsJamesWyatt"/>
         <NamedIndividual IRI="#Image7"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IsPresentIn"/>
-        <NamedIndividual IRI="#OldFlorentineLastSupper"/>
-        <NamedIndividual IRI="#GaddiLastSupper"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#TheorisedBy"/>
-        <NamedIndividual IRI="#OldFlorentineLastSupper"/>
-        <NamedIndividual IRI="#TaddeoGaddi"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
@@ -3387,6 +3587,26 @@
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
         <NamedIndividual IRI="#436E"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsPresentIn"/>
+        <NamedIndividual IRI="#Ferrari&apos;sLastSupperIconography"/>
+        <NamedIndividual IRI="#FerrariUltimaCena"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsSuccessorOf"/>
+        <NamedIndividual IRI="#Ferrari&apos;sLastSupperIconography"/>
+        <NamedIndividual IRI="#DaVinciIconographyLastSupper"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDiffusionPeriod"/>
+        <NamedIndividual IRI="#Ferrari&apos;sLastSupperIconography"/>
+        <NamedIndividual IRI="#TimeInterval3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasStartingLocation"/>
+        <NamedIndividual IRI="#Ferrari&apos;sLastSupperIconography"/>
+        <NamedIndividual IRI="#Location2"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#Label"/>
@@ -3821,7 +4041,22 @@
     <DataPropertyAssertion>
         <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
         <NamedIndividual IRI="#Character1"/>
-        <Literal>Pietro dell&apos;Ultima Cena</Literal>
+        <Literal>Leonardo&apos;s Iconography Peter of Last Supper</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Label"/>
+        <NamedIndividual IRI="#Character2"/>
+        <Literal>Leonardo&apos;s Christ Last Supper iconography</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Label"/>
+        <NamedIndividual IRI="#Character3"/>
+        <Literal>Christ Leonardo&apos;s Last Supper Iconography</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Label"/>
+        <NamedIndividual IRI="#Character4"/>
+        <Literal>Judas Leonardo&apos;s Last Supper iconography</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#ApproximateDate"/>
@@ -3963,6 +4198,23 @@ Gli elementi religiosi di questa stampa sono stemperati rispetto all&apos;origin
         <DataProperty IRI="#StartDate"/>
         <NamedIndividual IRI="#DurerLastSupper"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1523</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CharacterDescription"/>
+        <NamedIndividual IRI="#EarlyFlorentineLastSupperIconography"/>
+        <Literal>Giovanni è reclinato sul ventre di Cristo.
+Cristo passa un boccone a Giuda ricollegandosi ad un passo evangelico.
+Giuda è posizionato dall&apos;altra parte del tavolo rispetto alle altre figure, a volte accompagnato da un piccolo demonio.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CompositionDescription"/>
+        <NamedIndividual IRI="#EarlyFlorentineLastSupperIconography"/>
+        <Literal>Non è presente un criterio compositivo uniforme.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#GeometricalDescription"/>
+        <NamedIndividual IRI="#EarlyFlorentineLastSupperIconography"/>
+        <Literal>Non si evidenzia la presenza di un impianto prospettico (poiché non ancora formalizzato) né un pattern geometrico ricorrente.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#EndDate"/>
@@ -4143,6 +4395,16 @@ Gli elementi religiosi di questa stampa sono stemperati rispetto all&apos;origin
         <DataProperty abbreviatedIRI="CLV:long"/>
         <NamedIndividual IRI="#Geometry1"/>
         <Literal>9° 11&apos; 22&apos;&apos;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="CLV:lat"/>
+        <NamedIndividual IRI="#Geometry2"/>
+        <Literal>43° 46&apos; 45&apos;&apos;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="CLV:long"/>
+        <NamedIndividual IRI="#Geometry2"/>
+        <Literal>11° 14&apos; 46&apos;&apos;</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#EndDate"/>
@@ -4507,6 +4769,11 @@ Cristo tipicamente dà del pane a Giuda legandosi ad un episodio evangelico.</Li
         <Literal>Milan</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <NamedIndividual IRI="#Location3"/>
+        <Literal>Florence</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#Label"/>
         <NamedIndividual IRI="#MarcantonioRaimondi"/>
         <Literal xml:lang="en">Marcantonio Raimondi, engraver</Literal>
@@ -4566,23 +4833,6 @@ Cristo tipicamente dà del pane a Giuda legandosi ad un episodio evangelico.</Li
         <NamedIndividual IRI="#MrsJamesWyatt"/>
         <Literal xml:lang="en">rs James Wyatt Jr and her Daughter Sarah
 c.1850</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#CharacterDescription"/>
-        <NamedIndividual IRI="#OldFlorentineLastSupper"/>
-        <Literal>Giovanni è reclinato sul ventre di Cristo.
-Cristo passa un boccone a Giuda ricollegandosi ad un passo evangelico.
-Giuda è posizionato dall&apos;altra parte del tavolo rispetto alle altre figure, a volte accompagnato da un piccolo demonio.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#CompositionDescription"/>
-        <NamedIndividual IRI="#OldFlorentineLastSupper"/>
-        <Literal>Non è presente un criterio compositivo uniforme.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#GeometricalDescription"/>
-        <NamedIndividual IRI="#OldFlorentineLastSupper"/>
-        <Literal>Non si evidenzia la presenza di un impianto prospettico (poiché non ancora formalizzato) né un pattern geometrico ricorrente.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#Label"/>
@@ -4871,6 +5121,36 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
         <NamedIndividual IRI="#TaddeoGaddi"/>
         <Literal>1290 / 1366</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ApproximatePeriod"/>
+        <NamedIndividual IRI="#TimeInterval1"/>
+        <Literal>End of XV century - first decades of XVI century.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#StartDate"/>
+        <NamedIndividual IRI="#TimeInterval1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1498</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ApproximatePeriod"/>
+        <NamedIndividual IRI="#TimeInterval2"/>
+        <Literal>Beginning of XV century - first decades of XVI century</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ApproximatePeriod"/>
+        <NamedIndividual IRI="#TimeInterval3"/>
+        <Literal>first decades of XVI century - Mid decades of XVI century</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#StartDate"/>
+        <NamedIndividual IRI="#TimeInterval3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1517</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ApproximatePeriod"/>
+        <NamedIndividual IRI="#TimeInterval4"/>
+        <Literal>XIV century</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#ApproximateDate"/>
@@ -5316,6 +5596,10 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <ObjectProperty IRI="#IsPresentIn"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#HasCharacter"/>
+        <ObjectProperty IRI="#HasPictorialAttribute"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#HasCompositionalMotif"/>
         <ObjectProperty IRI="#HasVisualUnit"/>
     </SubObjectPropertyOf>
@@ -5364,6 +5648,10 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isRelatedWorkSituationOf"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#HasObject"/>
+        <ObjectProperty IRI="#HasPictorialAttribute"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#HasOriginalVisualUnit"/>
         <ObjectProperty IRI="#HasVisualUnit"/>
     </SubObjectPropertyOf>
@@ -5378,6 +5666,10 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#HasPreparatoryWork"/>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isRelatedWorkSituationOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsCharacterOf"/>
+        <ObjectProperty IRI="#IsAttributeOf"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#IsCompositionMotifOf"/>
@@ -5426,6 +5718,10 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#IsMediumVisualUnitOf"/>
         <ObjectProperty IRI="#IsVisualUnitOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsObjectOf"/>
+        <ObjectProperty IRI="#IsAttributeOf"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#IsOriginalVisualUnitOf"/>
@@ -5564,6 +5860,10 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <ObjectProperty IRI="#PresentsArtisticTheory"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
+        <ObjectProperty IRI="#HasCharacter"/>
+        <ObjectProperty IRI="#IsCharacterOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
         <ObjectProperty IRI="#HasCompositionalMotif"/>
         <ObjectProperty IRI="#IsCompositionMotifOf"/>
     </InverseObjectProperties>
@@ -5622,6 +5922,10 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     <InverseObjectProperties>
         <ObjectProperty IRI="#HasMediumWork"/>
         <ObjectProperty IRI="#IsMediumIn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#HasObject"/>
+        <ObjectProperty IRI="#IsObjectOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#HasOriginalVisualUnit"/>
@@ -5743,6 +6047,10 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Class IRI="#Iconography"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasCharacter"/>
+        <Class IRI="#Iconography"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#HasCompositionalMotif"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </ObjectPropertyDomain>
@@ -5791,6 +6099,10 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Class abbreviatedIRI="owl:Thing"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasObject"/>
+        <Class IRI="#Iconography"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#HasOriginalVisualUnit"/>
         <Class IRI="#DerivationRelation"/>
     </ObjectPropertyDomain>
@@ -5825,6 +6137,10 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#IsAttributeOf"/>
         <Class IRI="#PictorialAttribute"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsCharacterOf"/>
+        <Class IRI="#Character"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#IsCompositionMotifOf"/>
@@ -5873,6 +6189,10 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#IsMediumVisualUnitOf"/>
         <Class IRI="#VisualUnit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsObjectOf"/>
+        <Class IRI="#SceneObject"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#IsOriginalVisualUnitOf"/>
@@ -5933,6 +6253,10 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#Theorises"/>
         <Class IRI="#core:Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDiffusionPeriod"/>
+        <Class IRI="#AbstractConcept"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasRelationLocation"/>
@@ -6026,6 +6350,10 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Class IRI="#ArtisticTheory"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasCharacter"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#HasCompositionalMotif"/>
         <Class IRI="#CompositionMotif"/>
     </ObjectPropertyRange>
@@ -6074,6 +6402,10 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Class IRI="#VisualUnit"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasObject"/>
+        <Class IRI="#SceneObject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#HasOriginalVisualUnit"/>
         <Class IRI="#VisualUnit"/>
     </ObjectPropertyRange>
@@ -6107,6 +6439,10 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#IsAttributeOf"/>
+        <Class IRI="#Iconography"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsCharacterOf"/>
         <Class IRI="#Iconography"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -6156,6 +6492,10 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#IsMediumVisualUnitOf"/>
         <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsObjectOf"/>
+        <Class IRI="#Iconography"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#IsOriginalVisualUnitOf"/>
@@ -6218,6 +6558,10 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Class IRI="#AbstractConcept"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDiffusionPeriod"/>
+        <Class IRI="https://w3id.org/italia/onto/TI/TimeInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasRelationLocation"/>
         <Class IRI="https://w3id.org/italia/onto/Location"/>
     </ObjectPropertyRange>
@@ -6227,7 +6571,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="https://ontopia-lodview.agid.gov.it/onto/TI/atTime"/>
-        <Class IRI="#Tiapit:TimeInterval"/>
+        <Class IRI="https://w3id.org/italia/onto/TI/TimeInterval"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="https://ontopia-lodview.agid.gov.it/onto/TI/hasTemporalEntity"/>
@@ -6267,7 +6611,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/specificTime"/>
-        <Class IRI="#Tiapit:TimeInterval"/>
+        <Class IRI="https://w3id.org/italia/onto/TI/TimeInterval"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="CLV:hasGeometry"/>
@@ -6284,6 +6628,10 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     <SubDataPropertyOf>
         <DataProperty IRI="#ApproximateDate"/>
         <DataProperty IRI="https://w3id.org/italia/onto/TI/date"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ApproximatePeriod"/>
+        <DataProperty IRI="#ApproximateDate"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#CharacterDescription"/>
@@ -6359,6 +6707,10 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#ApproximateDate"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ApproximatePeriod"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
@@ -6474,6 +6826,10 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#ApproximateDate"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ApproximatePeriod"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -7213,11 +7569,6 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#IO:Event</IRI>
         <IRI>https://w3id.org/italia/onto/l0/EventOrSituation</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>#Tiapit:TimeInterval</IRI>
-        <IRI>https://w3id.org/italia/onto/TI/TimeInterval</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
