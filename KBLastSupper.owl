@@ -197,7 +197,7 @@
         <ObjectProperty IRI="#HasCharacter"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#HasCompositionalMotif"/>
+        <ObjectProperty IRI="#HasCompositionMotif"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#HasDerivatedWork"/>
@@ -998,7 +998,43 @@
         <NamedIndividual IRI="#VisualUnit36"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#VisualUnit37"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VisualUnit38"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VisualUnit39"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#VisualUnit4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VisualUnit40"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VisualUnit41"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VisualUnit42"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VisualUnit43"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VisualUnit44"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VisualUnit45"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VisualUnit46"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VisualUnit47"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VisualUnit48"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#VisualUnit5"/>
@@ -1849,8 +1885,56 @@
         <NamedIndividual IRI="#VisualUnit36"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#CompositionMotif"/>
+        <NamedIndividual IRI="#VisualUnit37"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CompositionMotif"/>
+        <NamedIndividual IRI="#VisualUnit38"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CompositionMotif"/>
+        <NamedIndividual IRI="#VisualUnit39"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#VisualUnit"/>
         <NamedIndividual IRI="#VisualUnit4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GeometricVisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit40"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CompositionMotif"/>
+        <NamedIndividual IRI="#VisualUnit41"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GeometricVisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit42"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CompositionMotif"/>
+        <NamedIndividual IRI="#VisualUnit43"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CompositionMotif"/>
+        <NamedIndividual IRI="#VisualUnit44"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CompositionMotif"/>
+        <NamedIndividual IRI="#VisualUnit45"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CompositionMotif"/>
+        <NamedIndividual IRI="#VisualUnit46"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CompositionMotif"/>
+        <NamedIndividual IRI="#VisualUnit47"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CompositionMotif"/>
+        <NamedIndividual IRI="#VisualUnit48"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#GeometricVisualUnit"/>
@@ -2309,6 +2393,36 @@
         <NamedIndividual IRI="#Character4"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasCompositionMotif"/>
+        <NamedIndividual IRI="#DaVinciIconographyLastSupper"/>
+        <NamedIndividual IRI="#VisualUnit37"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasCompositionMotif"/>
+        <NamedIndividual IRI="#DaVinciIconographyLastSupper"/>
+        <NamedIndividual IRI="#VisualUnit38"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasCompositionMotif"/>
+        <NamedIndividual IRI="#DaVinciIconographyLastSupper"/>
+        <NamedIndividual IRI="#VisualUnit39"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasCompositionMotif"/>
+        <NamedIndividual IRI="#DaVinciIconographyLastSupper"/>
+        <NamedIndividual IRI="#VisualUnit41"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasGeometricVisualUnit"/>
+        <NamedIndividual IRI="#DaVinciIconographyLastSupper"/>
+        <NamedIndividual IRI="#VisualUnit40"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasGeometricVisualUnit"/>
+        <NamedIndividual IRI="#DaVinciIconographyLastSupper"/>
+        <NamedIndividual IRI="#VisualUnit42"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#IsPresentIn"/>
         <NamedIndividual IRI="#DaVinciIconographyLastSupper"/>
         <NamedIndividual IRI="#AraldiUltimaCena"/>
@@ -2457,6 +2571,31 @@
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
         <NamedIndividual IRI="#DurerLastSupper"/>
         <NamedIndividual IRI="#Image2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasCompositionMotif"/>
+        <NamedIndividual IRI="#EarlyFlorentineLastSupperIconography"/>
+        <NamedIndividual IRI="#VisualUnit44"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasCompositionMotif"/>
+        <NamedIndividual IRI="#EarlyFlorentineLastSupperIconography"/>
+        <NamedIndividual IRI="#VisualUnit45"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasCompositionMotif"/>
+        <NamedIndividual IRI="#EarlyFlorentineLastSupperIconography"/>
+        <NamedIndividual IRI="#VisualUnit46"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasCompositionMotif"/>
+        <NamedIndividual IRI="#EarlyFlorentineLastSupperIconography"/>
+        <NamedIndividual IRI="#VisualUnit47"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasCompositionMotif"/>
+        <NamedIndividual IRI="#EarlyFlorentineLastSupperIconography"/>
+        <NamedIndividual IRI="#VisualUnit48"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#IsPredecessorOf"/>
@@ -2882,6 +3021,31 @@
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
         <NamedIndividual IRI="#LastSupper"/>
         <NamedIndividual IRI="#VisualUnit12"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasCompositionMotif"/>
+        <NamedIndividual IRI="#LateFlorentineLastSupperIconography"/>
+        <NamedIndividual IRI="#VisualUnit44"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasCompositionMotif"/>
+        <NamedIndividual IRI="#LateFlorentineLastSupperIconography"/>
+        <NamedIndividual IRI="#VisualUnit45"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasCompositionMotif"/>
+        <NamedIndividual IRI="#LateFlorentineLastSupperIconography"/>
+        <NamedIndividual IRI="#VisualUnit46"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasCompositionMotif"/>
+        <NamedIndividual IRI="#LateFlorentineLastSupperIconography"/>
+        <NamedIndividual IRI="#VisualUnit47"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasCompositionMotif"/>
+        <NamedIndividual IRI="#LateFlorentineLastSupperIconography"/>
+        <NamedIndividual IRI="#VisualUnit48"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#IsPresentIn"/>
@@ -5359,8 +5523,68 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit37"/>
+        <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/VisualUnit/CompositionMotif/Composition1.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit38"/>
+        <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/VisualUnit/CompositionMotif/Composition2.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit39"/>
+        <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/VisualUnit/CompositionMotif/Composition3.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
         <NamedIndividual IRI="#VisualUnit4"/>
         <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/VisualUnit/JohnDaVinci.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit40"/>
+        <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/VisualUnit/GeometricVisualUnit/Geo1.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit41"/>
+        <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/VisualUnit/CompositionMotif/Composition4.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit42"/>
+        <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/VisualUnit/GeometricVisualUnit/Geo2.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit43"/>
+        <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/VisualUnit/CompositionMotif/Composition6.png</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit44"/>
+        <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/VisualUnit/CompositionMotif/Composition7.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit45"/>
+        <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/VisualUnit/CompositionMotif/Composition8.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit46"/>
+        <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/VisualUnit/CompositionMotif/Composition9.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit47"/>
+        <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/VisualUnit/CompositionMotif/Composition10.png</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit48"/>
+        <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/VisualUnit/CompositionMotif/Composition11.png</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#URI"/>
@@ -5600,7 +5824,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <ObjectProperty IRI="#HasPictorialAttribute"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#HasCompositionalMotif"/>
+        <ObjectProperty IRI="#HasCompositionMotif"/>
         <ObjectProperty IRI="#HasVisualUnit"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -5864,7 +6088,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <ObjectProperty IRI="#IsCharacterOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#HasCompositionalMotif"/>
+        <ObjectProperty IRI="#HasCompositionMotif"/>
         <ObjectProperty IRI="#IsCompositionMotifOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
@@ -6051,7 +6275,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Class IRI="#Iconography"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#HasCompositionalMotif"/>
+        <ObjectProperty IRI="#HasCompositionMotif"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -6354,7 +6578,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Class IRI="#Character"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#HasCompositionalMotif"/>
+        <ObjectProperty IRI="#HasCompositionMotif"/>
         <Class IRI="#CompositionMotif"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -6527,7 +6751,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#IsStartingLocationOf"/>
-        <Class IRI="#a-cd:RelatedWorkSituation"/>
+        <Class IRI="#AbstractConcept"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#IsSuccessorOf"/>
@@ -7042,7 +7266,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#HasCompositionalMotif</IRI>
+        <IRI>#HasCompositionMotif</IRI>
         <Literal>Specialisation of HasVisualAtom used to link an element to a visual Atom representing the composition (the order of figures and elements) of something. Eg: A photo of Last Supper marked in order to highlights the groupings of figures.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -7522,8 +7746,28 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VisualUnit37</IRI>
+        <Literal>Judas position 1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VisualUnit38</IRI>
+        <Literal>Groupings of 3.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#VisualUnit4</IRI>
         <Literal>Particular of S. John, Last Supper</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VisualUnit41</IRI>
+        <Literal>JudasPosition 2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VisualUnit43</IRI>
+        <Literal>Judas, Christ, Peter, John composition</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
