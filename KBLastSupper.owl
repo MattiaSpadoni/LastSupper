@@ -635,9 +635,6 @@
         <NamedIndividual IRI="#Character3"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Character4"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#ChristHead"/>
     </Declaration>
     <Declaration>
@@ -1037,7 +1034,34 @@
         <NamedIndividual IRI="#VisualUnit48"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#VisualUnit49"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#VisualUnit5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VisualUnit50"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VisualUnit51"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VisualUnit52"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VisualUnit53"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VisualUnit54"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VisualUnit55"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VisualUnit56"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VisualUnit57"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#VisualUnit6"/>
@@ -1383,14 +1407,6 @@
     <ClassAssertion>
         <Class IRI="#Iconography"/>
         <NamedIndividual IRI="#Character3"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Character"/>
-        <NamedIndividual IRI="#Character4"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Iconography"/>
-        <NamedIndividual IRI="#Character4"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Arco:CulturalProperty"/>
@@ -1937,12 +1953,48 @@
         <NamedIndividual IRI="#VisualUnit48"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit49"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#GeometricVisualUnit"/>
         <NamedIndividual IRI="#VisualUnit5"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#VisualUnit"/>
         <NamedIndividual IRI="#VisualUnit5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit50"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit51"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit52"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit53"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit54"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit55"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit56"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VisualUnit"/>
+        <NamedIndividual IRI="#VisualUnit57"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#GeometricVisualUnit"/>
@@ -2343,9 +2395,34 @@
         <NamedIndividual IRI="#Image11"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IntroductedBy"/>
+        <ObjectProperty IRI="#HasObject"/>
         <NamedIndividual IRI="#Character1"/>
-        <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
+        <NamedIndividual IRI="#Object1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasVisualUnit"/>
+        <NamedIndividual IRI="#Character1"/>
+        <NamedIndividual IRI="#VisualUnit49"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasVisualUnit"/>
+        <NamedIndividual IRI="#Character1"/>
+        <NamedIndividual IRI="#VisualUnit50"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasVisualUnit"/>
+        <NamedIndividual IRI="#Character1"/>
+        <NamedIndividual IRI="#VisualUnit51"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasVisualUnit"/>
+        <NamedIndividual IRI="#Character2"/>
+        <NamedIndividual IRI="#VisualUnit54"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasVisualUnit"/>
+        <NamedIndividual IRI="#Character2"/>
+        <NamedIndividual IRI="#VisualUnit55"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#IntroductedBy"/>
@@ -2353,13 +2430,18 @@
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#IntroductedBy"/>
+        <ObjectProperty IRI="#HasVisualUnit"/>
         <NamedIndividual IRI="#Character3"/>
-        <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
+        <NamedIndividual IRI="#VisualUnit55"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasVisualUnit"/>
+        <NamedIndividual IRI="#Character3"/>
+        <NamedIndividual IRI="#VisualUnit56"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#IntroductedBy"/>
-        <NamedIndividual IRI="#Character4"/>
+        <NamedIndividual IRI="#Character3"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
@@ -2386,11 +2468,6 @@
         <ObjectProperty IRI="#HasCharacter"/>
         <NamedIndividual IRI="#DaVinciIconographyLastSupper"/>
         <NamedIndividual IRI="#Character3"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#HasCharacter"/>
-        <NamedIndividual IRI="#DaVinciIconographyLastSupper"/>
-        <NamedIndividual IRI="#Character4"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#HasCompositionMotif"/>
@@ -3246,6 +3323,16 @@
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
         <NamedIndividual IRI="#MrsJamesWyatt"/>
         <NamedIndividual IRI="#Image7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasVisualUnit"/>
+        <NamedIndividual IRI="#Object1"/>
+        <NamedIndividual IRI="#VisualUnit52"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasVisualUnit"/>
+        <NamedIndividual IRI="#Object1"/>
+        <NamedIndividual IRI="#VisualUnit53"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
@@ -4203,9 +4290,9 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1602</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty IRI="#LongDescription"/>
         <NamedIndividual IRI="#Character1"/>
-        <Literal>Iconography Peter of Last Supper</Literal>
+        <Literal>Peter of Last Supper is typically represented with a knife in one of his hands.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#Label"/>
@@ -4215,12 +4302,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#Label"/>
         <NamedIndividual IRI="#Character3"/>
-        <Literal>Christ Leonardo&apos;s Last Supper Iconography</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#Label"/>
-        <NamedIndividual IRI="#Character4"/>
-        <Literal>Judas Leonardo&apos;s Last Supper iconography</Literal>
+        <Literal>John medieval and Renaissance Last Supper iconography</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#ApproximateDate"/>
@@ -5593,8 +5675,53 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit49"/>
+        <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/Peter/AraldiPeter.png</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
         <NamedIndividual IRI="#VisualUnit5"/>
         <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/VisualUnit/GeometricVisualUnit/DurerPerspective.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit50"/>
+        <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/Peter/FranciobigioPeter.png</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit51"/>
+        <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/Peter/ghirlandaioPeter.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit52"/>
+        <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/Objects/Knife1.png</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit53"/>
+        <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/Objects/Knife1.png</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit54"/>
+        <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/VisualUnit/JohnDaVinci.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit55"/>
+        <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/JohnDaVinci/VespinoJohn.png</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit56"/>
+        <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/JohnMed/CastagnoJohn.png</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#VisualUnit57"/>
+        <Literal>https://raw.githubusercontent.com/MattiaSpadoni/LastSupper/main/Pictures/PictureFolder/JohnMed/FranciobigioJohn.png</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#URI"/>
@@ -7778,6 +7905,31 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#VisualUnit5</IRI>
         <Literal>Visione prospettica de l&apos;Ultima Cena di Albrecht Durer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VisualUnit52</IRI>
+        <Literal>knife</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VisualUnit53</IRI>
+        <Literal>knife</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VisualUnit54</IRI>
+        <Literal>John Da Vinci Iconography</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VisualUnit55</IRI>
+        <Literal>John Da Vinci Iconography</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VisualUnit56</IRI>
+        <Literal>Medieval and Renaissance John</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
