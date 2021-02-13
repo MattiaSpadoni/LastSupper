@@ -4205,12 +4205,12 @@
     <DataPropertyAssertion>
         <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
         <NamedIndividual IRI="#Character1"/>
-        <Literal>Leonardo&apos;s Iconography Peter of Last Supper</Literal>
+        <Literal>Iconography Peter of Last Supper</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#Label"/>
         <NamedIndividual IRI="#Character2"/>
-        <Literal>Leonardo&apos;s Christ Last Supper iconography</Literal>
+        <Literal>Leonardo&apos;s John Last Supper iconography</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#Label"/>
@@ -4997,6 +4997,11 @@ Cristo tipicamente dà del pane a Giuda legandosi ad un episodio evangelico.</Li
         <NamedIndividual IRI="#MrsJamesWyatt"/>
         <Literal xml:lang="en">rs James Wyatt Jr and her Daughter Sarah
 c.1850</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Label"/>
+        <NamedIndividual IRI="#Object1"/>
+        <Literal>Knife</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#Label"/>
