@@ -1,0 +1,2194 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25">
+    <Prefix name="" IRI="http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25"/>
+    <Prefix name="IO" IRI="https://w3id.org/italia/onto/l0"/>
+    <Prefix name="LS" IRI="http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25"/>
+    <Prefix name="CLV" IRI="https://w3id.org/italia/onto/CLV/"/>
+    <Prefix name="cis" IRI="http://dati.beniculturali.it/cis/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="a-cd" IRI="https://w3id.org/arco/ontology/context-description"/>
+    <Prefix name="core" IRI="https://w3id.org/arco/ontology/core"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="Tiapit" IRI="https://w3id.org/italia/onto/TI"/>
+    <Declaration>
+        <Class abbreviatedIRI="cis:CulturalEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AbstractConcept"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArtisticTheory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CharacterVisualAtom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompositionVisualAtom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DerivationRelation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GeometricalVisualAtom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IconographicMotifs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IconographicRepresentation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IconologicalMeaning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InfluenceRelation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MainCharacter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PaintingSource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PartialDerivationRelation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PictorialAttribute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PreparatoryRelation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrimarySource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SceneObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SecondaryCharacter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SecondarySource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Source"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VisualAtom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Arco:AlternativeDating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Arco:CulturalProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IO:Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tiapit:TimeInterval"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#a-cd:CulturalPropertyStage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#a-cd:CulturalScope"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#a-cd:Dating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#a-cd:InterpretationCriterion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#a-cd:RelatedWorkSituation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#a-cd:Subject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#core:Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontopia-lodview.agid.gov.it/onto/l0/Characteristic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/arco/ontology/context-description/DetectionMethod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/arco/ontology/context-description/Interpretation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/arco/ontology/core/Concept"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/arco/ontology/core/CulturalEntityCharacteristic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/arco/ontology/core/Method"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/arco/ontology/core/Situation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/italia/onto/Entity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/italia/onto/Location"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="CLV:Feature"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="CLV:SpatialObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/italia/onto/TI/TemporalEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/italia/onto/l0/Description"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/italia/onto/l0/EventOrSituation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/italia/onto/l0/Object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/italia/onto/l0/Topic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#BelongsTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Comprise"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#CompriseIconography"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#CreatedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Creates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#DerivativeVisualAtom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#DescribedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EmbodiesArtisticTheory"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#FinalVisualAtom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasAlternativeDating"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasCharacterVisualAtom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasCompositionVisualAtom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasDerivatedCulturalProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasFinalCulturalProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasGeometricalVisualAtom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasIconographicalMotif"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasIconographicalRepresentation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasIconologicalMeaning"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasInfluenceMedium"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasInfluencedCulturalProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasInfluencerCulturalProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasInterpretationCriterion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasOriginalCulturalProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasPictorialAttribute"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasPreparatoryCulturalPropety"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasSource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasVisualAtom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IconographyCompriseIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Influenced"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#InfluencedVisualAtom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#InfluencerVisualAtom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Introduce"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IntroductedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsAlternativeDatingOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsAttributeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsCharacterVisualAtomOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsCompositionVisualAtomOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsDerivationInRelation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsDerivativeVisualAtomOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsFinalVisualAtomOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsFinalWorkInRelation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsGeometricalVisualAtomOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsIconologicalMeaningOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsInfluencedInRelation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsInfluencedVisualAtomOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsInfluencerInRelation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsInfluencerVisualAtomOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsMediumInRelation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsOriginalInRelation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsOriginalVisualAtomOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsPredecessorOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsPreparatoryVisualAtomOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsPreparatoryWorkInRelation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsPresentIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsRelatedWorkSituationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsSourceOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsSuccessorOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsUsedInWork"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsVisualAtomOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#OriginalVisualAtom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#PreparatoryVisualAtom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Presents"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#PresentsArtisticTheory"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#RepresentSubject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TheorisedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Theorises"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Arco:HasAuthor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Arco:HasDating"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Arco:HasDatingEvent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Arco:IsAuthorOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Arco:IsDatingEventOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Arco:IsDatingOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Arco:RelatedWorkSituation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://ontopia-lodview.agid.gov.it/onto/TI/atTime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://ontopia-lodview.agid.gov.it/onto/TI/hasTemporalEntity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/specificTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#AlternativeRelationDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ApproximateDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#CharacterRelationDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#CompositionRelationDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Depiction"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#EndDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#GeometricalRelationDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#IconclassCode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#InvolvedPart"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Label"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#LongDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#OtherIconclassCode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#RealisationPeriod"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#RelationDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#RelationDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#StartDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TypicalIconclassCode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Arco:Date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#a-cd:AgentDate"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AbstractConcept"/>
+        <Class IRI="https://w3id.org/arco/ontology/core/Concept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArtisticTheory"/>
+        <Class IRI="#AbstractConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CharacterVisualAtom"/>
+        <Class IRI="#VisualAtom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompositionVisualAtom"/>
+        <Class IRI="#VisualAtom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DerivationRelation"/>
+        <Class IRI="#a-cd:RelatedWorkSituation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GeometricalVisualAtom"/>
+        <Class IRI="#VisualAtom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IconographicMotifs"/>
+        <Class IRI="#AbstractConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IconographicRepresentation"/>
+        <Class IRI="#AbstractConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IconologicalMeaning"/>
+        <Class IRI="#AbstractConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InfluenceRelation"/>
+        <Class IRI="#a-cd:RelatedWorkSituation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MainCharacter"/>
+        <Class IRI="#PictorialAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PaintingSource"/>
+        <Class IRI="#Source"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PartialDerivationRelation"/>
+        <Class IRI="#DerivationRelation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PictorialAttribute"/>
+        <Class IRI="#AbstractConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PreparatoryRelation"/>
+        <Class IRI="#a-cd:RelatedWorkSituation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrimarySource"/>
+        <Class IRI="#Source"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SceneObject"/>
+        <Class IRI="#PictorialAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecondaryCharacter"/>
+        <Class IRI="#PictorialAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecondarySource"/>
+        <Class IRI="#Source"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Arco:AlternativeDating"/>
+        <Class IRI="#a-cd:Dating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Arco:CulturalProperty"/>
+        <Class abbreviatedIRI="cis:CulturalEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tiapit:TimeInterval"/>
+        <Class IRI="https://ontopia-lodview.agid.gov.it/onto/l0/Characteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#a-cd:CulturalPropertyStage"/>
+        <Class IRI="https://w3id.org/arco/ontology/core/CulturalEntityCharacteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#a-cd:CulturalScope"/>
+        <Class IRI="https://w3id.org/italia/onto/l0/Topic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#a-cd:Dating"/>
+        <Class IRI="https://w3id.org/arco/ontology/context-description/DetectionMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#a-cd:Dating"/>
+        <Class IRI="https://w3id.org/arco/ontology/context-description/Interpretation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#a-cd:InterpretationCriterion"/>
+        <Class IRI="https://w3id.org/italia/onto/l0/Description"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#a-cd:RelatedWorkSituation"/>
+        <Class IRI="https://w3id.org/arco/ontology/core/Situation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#a-cd:Subject"/>
+        <Class IRI="https://w3id.org/italia/onto/l0/Topic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontopia-lodview.agid.gov.it/onto/l0/Characteristic"/>
+        <Class IRI="https://w3id.org/italia/onto/Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/arco/ontology/context-description/DetectionMethod"/>
+        <Class IRI="https://w3id.org/arco/ontology/core/Method"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/arco/ontology/context-description/Interpretation"/>
+        <Class IRI="https://w3id.org/arco/ontology/core/Situation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/arco/ontology/core/Concept"/>
+        <Class IRI="https://w3id.org/italia/onto/l0/Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/arco/ontology/core/CulturalEntityCharacteristic"/>
+        <Class IRI="https://ontopia-lodview.agid.gov.it/onto/l0/Characteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/arco/ontology/core/Method"/>
+        <Class IRI="https://w3id.org/italia/onto/l0/Description"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/arco/ontology/core/Situation"/>
+        <Class IRI="https://w3id.org/italia/onto/l0/EventOrSituation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/italia/onto/Location"/>
+        <Class IRI="https://w3id.org/italia/onto/Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="CLV:Feature"/>
+        <Class abbreviatedIRI="CLV:SpatialObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="CLV:SpatialObject"/>
+        <Class IRI="https://w3id.org/italia/onto/Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/italia/onto/TI/TemporalEntity"/>
+        <Class IRI="https://w3id.org/italia/onto/Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/italia/onto/l0/Description"/>
+        <Class IRI="https://w3id.org/italia/onto/l0/Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/italia/onto/l0/EventOrSituation"/>
+        <Class IRI="https://w3id.org/italia/onto/Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/italia/onto/l0/Object"/>
+        <Class IRI="https://w3id.org/italia/onto/Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/italia/onto/l0/Topic"/>
+        <Class IRI="https://w3id.org/italia/onto/Entity"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#CharacterVisualAtom"/>
+        <Class IRI="#CompositionVisualAtom"/>
+        <Class IRI="#GeometricalVisualAtom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CompositionVisualAtom"/>
+        <Class IRI="#GeometricalVisualAtom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MainCharacter"/>
+        <Class IRI="#SceneObject"/>
+        <Class IRI="#SecondaryCharacter"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#CreatedBy"/>
+        <ObjectProperty IRI="#IntroductedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Creates"/>
+        <ObjectProperty IRI="#Introduce"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#DerivativeVisualAtom"/>
+        <ObjectProperty IRI="#HasVisualAtom"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EmbodiesArtisticTheory"/>
+        <ObjectProperty IRI="#IsPresentIn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#FinalVisualAtom"/>
+        <ObjectProperty IRI="#HasVisualAtom"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#HasAlternativeDating"/>
+        <ObjectProperty IRI="#Arco:HasDating"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#HasCharacterVisualAtom"/>
+        <ObjectProperty IRI="#HasVisualAtom"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#HasCompositionVisualAtom"/>
+        <ObjectProperty IRI="#HasVisualAtom"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#HasDerivatedCulturalProperty"/>
+        <ObjectProperty IRI="#IsRelatedWorkSituationOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#HasFinalCulturalProperty"/>
+        <ObjectProperty IRI="#IsRelatedWorkSituationOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#HasGeometricalVisualAtom"/>
+        <ObjectProperty IRI="#HasVisualAtom"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#HasInfluenceMedium"/>
+        <ObjectProperty IRI="#IsRelatedWorkSituationOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#HasInfluencedCulturalProperty"/>
+        <ObjectProperty IRI="#IsRelatedWorkSituationOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#HasInfluencerCulturalProperty"/>
+        <ObjectProperty IRI="#IsRelatedWorkSituationOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#HasInterpretationCriterion"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#HasOriginalCulturalProperty"/>
+        <ObjectProperty IRI="#IsRelatedWorkSituationOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#HasPreparatoryCulturalPropety"/>
+        <ObjectProperty IRI="#IsRelatedWorkSituationOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#InfluencedVisualAtom"/>
+        <ObjectProperty IRI="#HasVisualAtom"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#InfluencerVisualAtom"/>
+        <ObjectProperty IRI="#HasVisualAtom"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsAlternativeDatingOf"/>
+        <ObjectProperty IRI="#Arco:IsDatingOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsCharacterVisualAtomOf"/>
+        <ObjectProperty IRI="#IsVisualAtomOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsCompositionVisualAtomOf"/>
+        <ObjectProperty IRI="#IsVisualAtomOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsDerivationInRelation"/>
+        <ObjectProperty IRI="#Arco:RelatedWorkSituation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsDerivativeVisualAtomOf"/>
+        <ObjectProperty IRI="#IsVisualAtomOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsFinalVisualAtomOf"/>
+        <ObjectProperty IRI="#IsVisualAtomOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsFinalWorkInRelation"/>
+        <ObjectProperty IRI="#Arco:RelatedWorkSituation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsGeometricalVisualAtomOf"/>
+        <ObjectProperty IRI="#IsVisualAtomOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsInfluencedInRelation"/>
+        <ObjectProperty IRI="#Arco:RelatedWorkSituation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsInfluencedVisualAtomOf"/>
+        <ObjectProperty IRI="#IsVisualAtomOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsInfluencerInRelation"/>
+        <ObjectProperty IRI="#Arco:RelatedWorkSituation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsInfluencerVisualAtomOf"/>
+        <ObjectProperty IRI="#IsVisualAtomOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsMediumInRelation"/>
+        <ObjectProperty IRI="#Arco:RelatedWorkSituation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsOriginalInRelation"/>
+        <ObjectProperty IRI="#Arco:RelatedWorkSituation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsOriginalVisualAtomOf"/>
+        <ObjectProperty IRI="#IsVisualAtomOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsPreparatoryVisualAtomOf"/>
+        <ObjectProperty IRI="#IsVisualAtomOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsPreparatoryWorkInRelation"/>
+        <ObjectProperty IRI="#Arco:RelatedWorkSituation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsSuccessorOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#OriginalVisualAtom"/>
+        <ObjectProperty IRI="#HasVisualAtom"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#PreparatoryVisualAtom"/>
+        <ObjectProperty IRI="#HasVisualAtom"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#PresentsArtisticTheory"/>
+        <ObjectProperty IRI="#Presents"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TheorisedBy"/>
+        <ObjectProperty IRI="#IntroductedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Theorises"/>
+        <ObjectProperty IRI="#Introduce"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Arco:HasAuthor"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Arco:IsAuthorOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://ontopia-lodview.agid.gov.it/onto/TI/atTime"/>
+        <ObjectProperty IRI="https://ontopia-lodview.agid.gov.it/onto/TI/hasTemporalEntity"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/specificTime"/>
+        <ObjectProperty IRI="https://ontopia-lodview.agid.gov.it/onto/TI/atTime"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#BelongsTo"/>
+        <ObjectProperty IRI="#Comprise"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#CompriseIconography"/>
+        <ObjectProperty IRI="#IconographyCompriseIn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#CreatedBy"/>
+        <ObjectProperty IRI="#Creates"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#DerivativeVisualAtom"/>
+        <ObjectProperty IRI="#IsDerivativeVisualAtomOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#EmbodiesArtisticTheory"/>
+        <ObjectProperty IRI="#PresentsArtisticTheory"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#FinalVisualAtom"/>
+        <ObjectProperty IRI="#IsFinalVisualAtomOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#HasAlternativeDating"/>
+        <ObjectProperty IRI="#IsAlternativeDatingOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#HasDerivatedCulturalProperty"/>
+        <ObjectProperty IRI="#IsDerivationInRelation"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#HasFinalCulturalProperty"/>
+        <ObjectProperty IRI="#IsFinalWorkInRelation"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#HasIconographicalMotif"/>
+        <ObjectProperty IRI="#RepresentSubject"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#HasIconographicalRepresentation"/>
+        <ObjectProperty IRI="#IsUsedInWork"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#HasIconologicalMeaning"/>
+        <ObjectProperty IRI="#IsIconologicalMeaningOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#HasInfluenceMedium"/>
+        <ObjectProperty IRI="#IsMediumInRelation"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#HasInfluencedCulturalProperty"/>
+        <ObjectProperty IRI="#IsInfluencedInRelation"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#HasInfluencerCulturalProperty"/>
+        <ObjectProperty IRI="#IsInfluencerInRelation"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#HasOriginalCulturalProperty"/>
+        <ObjectProperty IRI="#IsOriginalInRelation"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#HasPictorialAttribute"/>
+        <ObjectProperty IRI="#IsAttributeOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#HasPreparatoryCulturalPropety"/>
+        <ObjectProperty IRI="#IsPreparatoryWorkInRelation"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#HasSource"/>
+        <ObjectProperty IRI="#IsSourceOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#HasVisualAtom"/>
+        <ObjectProperty IRI="#IsVisualAtomOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Introduce"/>
+        <ObjectProperty IRI="#IntroductedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#IsOriginalVisualAtomOf"/>
+        <ObjectProperty IRI="#OriginalVisualAtom"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#IsPredecessorOf"/>
+        <ObjectProperty IRI="#IsSuccessorOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#IsPreparatoryVisualAtomOf"/>
+        <ObjectProperty IRI="#PreparatoryVisualAtom"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#IsPresentIn"/>
+        <ObjectProperty IRI="#Presents"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#IsRelatedWorkSituationOf"/>
+        <ObjectProperty IRI="#Arco:RelatedWorkSituation"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#TheorisedBy"/>
+        <ObjectProperty IRI="#Theorises"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Arco:HasDating"/>
+        <ObjectProperty IRI="#Arco:IsDatingOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Arco:HasDatingEvent"/>
+        <ObjectProperty IRI="#Arco:IsDatingEventOf"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#Arco:RelatedWorkSituation"/>
+    </FunctionalObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#CreatedBy"/>
+    </AsymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#BelongsTo"/>
+        <Class IRI="#AbstractConcept"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Comprise"/>
+        <Class IRI="#a-cd:CulturalScope"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#CompriseIconography"/>
+        <Class IRI="#IconographicMotifs"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#CreatedBy"/>
+        <Class IRI="#AbstractConcept"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Creates"/>
+        <Class IRI="#core:Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#DerivativeVisualAtom"/>
+        <Class IRI="#DerivationRelation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#DescribedIn"/>
+        <Class IRI="https://w3id.org/arco/ontology/core/Concept"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#EmbodiesArtisticTheory"/>
+        <Class IRI="#IconographicRepresentation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#FinalVisualAtom"/>
+        <Class IRI="#PreparatoryRelation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasCharacterVisualAtom"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasCompositionVisualAtom"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasDerivatedCulturalProperty"/>
+        <Class IRI="#DerivationRelation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasFinalCulturalProperty"/>
+        <Class IRI="#DerivationRelation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasGeometricalVisualAtom"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasIconographicalMotif"/>
+        <Class IRI="#a-cd:Subject"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasIconographicalRepresentation"/>
+        <Class IRI="#Arco:CulturalProperty"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasIconologicalMeaning"/>
+        <Class IRI="#IconographicRepresentation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasInfluencedCulturalProperty"/>
+        <Class IRI="#InfluenceRelation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasInfluencerCulturalProperty"/>
+        <Class IRI="#InfluenceRelation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasInterpretationCriterion"/>
+        <Class IRI="#a-cd:InterpretationCriterion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasOriginalCulturalProperty"/>
+        <Class IRI="#DerivationRelation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasPictorialAttribute"/>
+        <Class IRI="#IconographicRepresentation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasPreparatoryCulturalPropety"/>
+        <Class IRI="#PreparatoryRelation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasSource"/>
+        <Class IRI="#ArtisticTheory"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasVisualAtom"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IconographyCompriseIn"/>
+        <Class IRI="#IconographicRepresentation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Influenced"/>
+        <Class IRI="#ArtisticTheory"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsAlternativeDatingOf"/>
+        <Class IRI="#a-cd:Dating"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsAttributeOf"/>
+        <Class IRI="#PictorialAttribute"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsDerivationInRelation"/>
+        <Class IRI="#Arco:CulturalProperty"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsDerivativeVisualAtomOf"/>
+        <Class IRI="#VisualAtom"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsFinalVisualAtomOf"/>
+        <Class IRI="#VisualAtom"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsFinalWorkInRelation"/>
+        <Class IRI="#Arco:CulturalProperty"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsIconologicalMeaningOf"/>
+        <Class IRI="#IconologicalMeaning"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsInfluencedInRelation"/>
+        <Class IRI="#Arco:CulturalProperty"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsInfluencerInRelation"/>
+        <Class IRI="#Arco:CulturalProperty"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsOriginalInRelation"/>
+        <Class IRI="#Arco:CulturalProperty"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsOriginalVisualAtomOf"/>
+        <Class IRI="#VisualAtom"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsPredecessorOf"/>
+        <Class IRI="#IconographicRepresentation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsPreparatoryVisualAtomOf"/>
+        <Class IRI="#VisualAtom"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsPreparatoryWorkInRelation"/>
+        <Class IRI="#Arco:CulturalProperty"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsPresentIn"/>
+        <Class IRI="#AbstractConcept"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsSourceOf"/>
+        <Class IRI="#Source"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsSuccessorOf"/>
+        <Class IRI="#IconographicRepresentation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsUsedInWork"/>
+        <Class IRI="#IconographicRepresentation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#OriginalVisualAtom"/>
+        <Class IRI="#DerivationRelation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#PreparatoryVisualAtom"/>
+        <Class IRI="#PreparatoryRelation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Presents"/>
+        <Class IRI="#Arco:CulturalProperty"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#RepresentSubject"/>
+        <Class IRI="#IconographicMotifs"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#TheorisedBy"/>
+        <Class IRI="#ArtisticTheory"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Theorises"/>
+        <Class IRI="#core:Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Arco:HasDating"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Arco:HasDatingEvent"/>
+        <Class IRI="#a-cd:Dating"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Arco:IsDatingEventOf"/>
+        <Class IRI="#IO:Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Arco:IsDatingOf"/>
+        <Class IRI="#a-cd:Dating"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://ontopia-lodview.agid.gov.it/onto/TI/atTime"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://ontopia-lodview.agid.gov.it/onto/TI/hasTemporalEntity"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/specificTime"/>
+        <Class IRI="https://w3id.org/italia/onto/l0/EventOrSituation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#BelongsTo"/>
+        <Class IRI="#a-cd:CulturalScope"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Comprise"/>
+        <Class IRI="#AbstractConcept"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#CompriseIconography"/>
+        <Class IRI="#IconographicRepresentation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#CreatedBy"/>
+        <Class IRI="#core:Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Creates"/>
+        <Class IRI="#AbstractConcept"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#DerivativeVisualAtom"/>
+        <Class IRI="#VisualAtom"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#DescribedIn"/>
+        <Class IRI="#Source"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#EmbodiesArtisticTheory"/>
+        <Class IRI="#ArtisticTheory"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#FinalVisualAtom"/>
+        <Class IRI="#VisualAtom"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasCharacterVisualAtom"/>
+        <Class IRI="#CharacterVisualAtom"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasCompositionVisualAtom"/>
+        <Class IRI="#CompositionVisualAtom"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasDerivatedCulturalProperty"/>
+        <Class IRI="#Arco:CulturalProperty"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasFinalCulturalProperty"/>
+        <Class IRI="#Arco:CulturalProperty"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasGeometricalVisualAtom"/>
+        <Class IRI="#GeometricalVisualAtom"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasIconographicalMotif"/>
+        <Class IRI="#IconographicMotifs"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasIconographicalRepresentation"/>
+        <Class IRI="#IconographicRepresentation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasIconologicalMeaning"/>
+        <Class IRI="#IconologicalMeaning"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasInfluencedCulturalProperty"/>
+        <Class IRI="#Arco:CulturalProperty"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasInfluencerCulturalProperty"/>
+        <Class IRI="#Arco:CulturalProperty"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasInterpretationCriterion"/>
+        <Class IRI="#a-cd:InterpretationCriterion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasOriginalCulturalProperty"/>
+        <Class IRI="#Arco:CulturalProperty"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasPictorialAttribute"/>
+        <Class IRI="#PictorialAttribute"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasPreparatoryCulturalPropety"/>
+        <Class IRI="#Arco:CulturalProperty"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasSource"/>
+        <Class IRI="#Source"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasVisualAtom"/>
+        <Class IRI="#VisualAtom"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IconographyCompriseIn"/>
+        <Class IRI="#IconographicMotifs"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Influenced"/>
+        <Class IRI="#IconographicRepresentation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsAlternativeDatingOf"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsAttributeOf"/>
+        <Class IRI="#IconographicRepresentation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsDerivationInRelation"/>
+        <Class IRI="#DerivationRelation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsDerivativeVisualAtomOf"/>
+        <Class IRI="#DerivationRelation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsFinalVisualAtomOf"/>
+        <Class IRI="#PreparatoryRelation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsFinalWorkInRelation"/>
+        <Class IRI="#DerivationRelation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsIconologicalMeaningOf"/>
+        <Class IRI="#IconographicRepresentation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsInfluencedInRelation"/>
+        <Class IRI="#InfluenceRelation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsInfluencerInRelation"/>
+        <Class IRI="#InfluenceRelation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsOriginalInRelation"/>
+        <Class IRI="#DerivationRelation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsOriginalVisualAtomOf"/>
+        <Class IRI="#DerivationRelation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsPredecessorOf"/>
+        <Class IRI="#IconographicRepresentation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsPreparatoryVisualAtomOf"/>
+        <Class IRI="#PreparatoryRelation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsPreparatoryWorkInRelation"/>
+        <Class IRI="#PreparatoryRelation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsPresentIn"/>
+        <Class IRI="#Arco:CulturalProperty"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsSourceOf"/>
+        <Class IRI="#ArtisticTheory"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsSuccessorOf"/>
+        <Class IRI="#IconographicRepresentation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsUsedInWork"/>
+        <Class IRI="#Arco:CulturalProperty"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#OriginalVisualAtom"/>
+        <Class IRI="#VisualAtom"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#PreparatoryVisualAtom"/>
+        <Class IRI="#VisualAtom"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Presents"/>
+        <Class IRI="#AbstractConcept"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#RepresentSubject"/>
+        <Class IRI="#a-cd:Subject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#TheorisedBy"/>
+        <Class IRI="#core:Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Theorises"/>
+        <Class IRI="#ArtisticTheory"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Arco:HasDating"/>
+        <Class IRI="#a-cd:Dating"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Arco:HasDatingEvent"/>
+        <Class IRI="#IO:Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Arco:IsDatingEventOf"/>
+        <Class IRI="#a-cd:Dating"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Arco:IsDatingOf"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://ontopia-lodview.agid.gov.it/onto/TI/atTime"/>
+        <Class IRI="#Tiapit:TimeInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://ontopia-lodview.agid.gov.it/onto/TI/hasTemporalEntity"/>
+        <Class IRI="https://w3id.org/italia/onto/TI/TemporalEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/specificTime"/>
+        <Class IRI="#Tiapit:TimeInterval"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#AlternativeRelationDate"/>
+        <DataProperty IRI="#Arco:Date"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ApproximateDate"/>
+        <DataProperty IRI="#Arco:Date"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#CharacterRelationDescription"/>
+        <DataProperty IRI="#RelationDescription"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#CompositionRelationDescription"/>
+        <DataProperty IRI="#RelationDescription"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#EndDate"/>
+        <DataProperty IRI="#Arco:Date"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#GeometricalRelationDescription"/>
+        <DataProperty IRI="#RelationDescription"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#LongDescription"/>
+        <DataProperty IRI="#Description"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#OtherIconclassCode"/>
+        <DataProperty IRI="#IconclassCode"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#RealisationPeriod"/>
+        <DataProperty IRI="#Arco:Date"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#RelationDate"/>
+        <DataProperty IRI="#Arco:Date"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#RelationDescription"/>
+        <DataProperty IRI="#Description"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#StartDate"/>
+        <DataProperty IRI="#Arco:Date"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#TypicalIconclassCode"/>
+        <DataProperty IRI="#IconclassCode"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#a-cd:AgentDate"/>
+        <DataProperty IRI="#Arco:Date"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#AlternativeRelationDate"/>
+        <Class IRI="#a-cd:RelatedWorkSituation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ApproximateDate"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#CharacterRelationDescription"/>
+        <Class IRI="#a-cd:RelatedWorkSituation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#CompositionRelationDescription"/>
+        <Class IRI="#a-cd:RelatedWorkSituation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Depiction"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Description"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#EndDate"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#GeometricalRelationDescription"/>
+        <Class IRI="#a-cd:RelatedWorkSituation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#IconclassCode"/>
+        <Class IRI="#IconographicMotifs"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#InvolvedPart"/>
+        <Class IRI="#a-cd:RelatedWorkSituation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Label"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#LongDescription"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Name"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#OtherIconclassCode"/>
+        <Class IRI="#IconographicMotifs"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#RealisationPeriod"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#RelationDate"/>
+        <Class IRI="#a-cd:RelatedWorkSituation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#RelationDescription"/>
+        <Class IRI="#a-cd:RelatedWorkSituation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#StartDate"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#TypicalIconclassCode"/>
+        <Class IRI="#IconographicMotifs"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Arco:Date"/>
+        <Class IRI="#Tiapit:TimeInterval"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#a-cd:AgentDate"/>
+        <Class IRI="#core:Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#AlternativeRelationDate"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+            <Datatype abbreviatedIRI="xsd:int"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ApproximateDate"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#CharacterRelationDescription"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#CompositionRelationDescription"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Depiction"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Description"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#EndDate"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#GeometricalRelationDescription"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#IconclassCode"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Label"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#LongDescription"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Name"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#OtherIconclassCode"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#RealisationPeriod"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#RelationDate"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+            <Datatype abbreviatedIRI="xsd:int"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#RelationDescription"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#StartDate"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#TypicalIconclassCode"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Arco:Date"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+            <Datatype abbreviatedIRI="xsd:int"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#a-cd:AgentDate"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DisjointDataProperties>
+        <DataProperty IRI="#ApproximateDate"/>
+        <DataProperty IRI="#EndDate"/>
+        <DataProperty IRI="#StartDate"/>
+    </DisjointDataProperties>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AbstractConcept</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">This class represent a specification class for the &quot;Concept&quot; of Top Level Ontology. It is not thought to be directly instatiated, but only to be a collector of more defined abstract concepts as Artistic Theories, Iconographies, Iconologies interpretations and elements of paintings.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AlternativeRelationDate</IRI>
+        <Literal>Alternative date of a relation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ArtisticTheory</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Artistic Theory groups all the theories conceived in the art domain. It specifically focus on theories of painting. Example: Moti dell&apos;Animo. Theory with the Aim of expressing the range of human emotion inside a painting.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BelongsTo</IRI>
+        <Literal>This property link and abstract concept to its origin movement. Example: Teoria dei moti dell&apos;animo was formalised during Renaissance and belongs to it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CharacterRelationDescription</IRI>
+        <Literal>Specialisation of Relation Description. This property describes the influence a work has on another one from a character point of view. Eg: Judas of Da Vinci Last Supper influenced the Judas of Gaudenzio Ferrari Last Supper</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CharacterVisualAtom</IRI>
+        <Literal>Specialisation of VisualAtom, it collects the atoms identified as being a character without a link to a special meaning. Eg: the figure of Judas in Last Supper is a character, but is not linked to his identification.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CompositionRelationDescription</IRI>
+        <Literal>Property describing the influence a work has on another from a composition point of view. Eg: Marcantonio Raimondi Last Supper shows a composition influenced by the symmetry and the groupings of 3 of Leonardo Last Supper</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CompositionVisualAtom</IRI>
+        <Literal>Specialisation of VisualAtom, it represent VisualAtoms identified to be representative of composition elements of a painting. Eg: the groupings of 3 figures in Last Supper.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Comprise</IRI>
+        <Literal>Inverse of BelongsTo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CompriseIconography</IRI>
+        <Literal>This property link the Iconographical motifs to all its known Iconographical Representations. Example: Last Supper Iconographical Motifs is linked to Florentine Last Supper, Da Vinci Last Supper, Nordic Last Supper ecc...</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CreatedBy</IRI>
+        <Literal>This property highlights the role of creator of an agent of an abstract concept.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Creates</IRI>
+        <Literal>Inverse of CreatedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Depiction</IRI>
+        <IRI>http://xmlns.com/foaf/spec/#term_depiction</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DerivativeVisualAtom</IRI>
+        <Literal>Specialisation of VisualAtom. Identifying the Derivated Visual Atom of a Derivation Relation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DescribedIn</IRI>
+        <Literal>This property links a concept to a source that describes it</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Description</IRI>
+        <Literal>Long description of an owl thing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EmbodiesArtisticTheory</IRI>
+        <Literal>This property link an Iconographical Representation to the Theory it embodies inside it. Da Vinci Last Supper Iconography embodies Theory of Moti dell&apos;Animo inside it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FinalVisualAtom</IRI>
+        <Literal>Specialisation of VisualAtom. Identifying the Final Visual Atom of a Preparatory relation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GeometricalRelationDescription</IRI>
+        <Literal>Property describing the geometrical influence a work has on another from a Geometrical point of view. Eg: The symmetry used in Leonardo Last Supper partially reused in Albrecht Durer Last Supper of 1523</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GeometricalVisualAtom</IRI>
+        <Literal>Specialisation of VisualAtom. It comprise visual Atoms aimed at showing the geometrical elements of a painting. Eg: the perspective lines of Last Supper</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HasAlternativeDating</IRI>
+        <Literal>Specialisation of father property linking an element to its possible alternative dating.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HasCharacterVisualAtom</IRI>
+        <Literal>Property specialisation of HasVisualAtom, linking an element to a Visual Atom identified as a character.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HasCompositionVisualAtom</IRI>
+        <Literal>Specialisation of HasVisualAtom used to link an element to a visual Atom representing the composition (the order of figures and elements) of something. Eg: A photo of Last Supper marked in order to highlights the groupings of figures.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HasDerivatedCulturalProperty</IRI>
+        <Literal>Inverse of  IsDerivationInRelation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HasGeometricalVisualAtom</IRI>
+        <Literal>Specialisation of HasVisualAtom. It link something to a visual Atom showing the geometrical elements of a Cultural Property. Eg: a photo highlighting the perspectical lines of Leonardo&apos;s Last Supper</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HasIconographicalMotif</IRI>
+        <Literal>Inverse of RepresentSubject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HasIconographicalRepresentation</IRI>
+        <Literal>This property link a Cultura Property to its iconographical representation. Ex: Cenacolo of Fuligno has a Florentine Last Supper Iconography.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HasIconologicalMeaning</IRI>
+        <Literal>This property links an iconographical representation to its Iconological meaning. Eg: Nordic Last Supper has an iconological meaning (the focus on the love of the episode and the contrast with the catholic focus on the eucharistic moment)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HasInfluenceMedium</IRI>
+        <Literal>Inverse of IsMediumInRelation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HasInfluencedCulturalProperty</IRI>
+        <Literal>Inverse of IsInfluencedInRelation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HasInfluencerCulturalProperty</IRI>
+        <Literal>Inverse of IsInfluencerInRelation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HasOriginalCulturalProperty</IRI>
+        <Literal>Inverse of  IsOriginalInRelation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HasPictorialAttribute</IRI>
+        <Literal>This property link an iconographical representation to a pictorial attribute part of it. eg: Last Supper has the figure of Christ inside it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HasPreparatoryCulturalPropety</IRI>
+        <Literal>Inverse of IsPreparatoryWorkInRelation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HasSource</IRI>
+        <Literal>This property link an artistic theory to related sources.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HasVisualAtom</IRI>
+        <Literal>Property linking an Owl:thing to a Visual Atom representing a significant visual feature of it. Eg: Da Vinci&apos;s Last Supper Iconography linked to a Visual Atom showing a photo of a representation identifiable as part of this Iconography</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#IconclassCode</IRI>
+        <IRI>https://w3id.org/arco/ontology/context-description/iconclassCode</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IconographicMotifs</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Iconographical Motifs is the class aimed to collect all the single representations of different subjects. Example: the pictorical subject &quot;Last Supper&quot; has an iconographical Motifs. This motifs collects an x number of different single iconographical representations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IconographicRepresentation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">This class is the single iconographical representation. Each instance of this class could be present in different cultural properties and has a specific set of features that distinguish it from another one. Example: Florentine Last Supper is a way of representing Last Supper with certain temporal and location characteristics and with specific visual features.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IconographyCompriseIn</IRI>
+        <Literal>Inverse of CompriseIconography</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IconologicalMeaning</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">This class represent the iconological meaning present inside a painting or an iconography. Due to the presence of other works in that direction, further developments are not implemented.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Influenced</IRI>
+        <Literal>This property highlights the influence that an artistic Theory has on an iconographical representation. At the moment no reification is provided.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#InfluencedVisualAtom</IRI>
+        <Literal>Property used to describe the VisualAtom of the Influenced cultural property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#InfluencerVisualAtom</IRI>
+        <Literal>Property used to describe the VisualAtom of the Influencer cultural property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Introduce</IRI>
+        <Literal>Inverse of IntroducedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IntroductedBy</IRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IsAttributeOf</IRI>
+        <Literal>Inverse of  HasAttribute</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IsDerivationInRelation</IRI>
+        <Literal>Coupled with IsOriginalRelation this property link a cultural Property to the DerivationRelation node. Specifically this property link the derivation one of the 2 Cultural Properties.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IsDerivativeVisualAtomOf</IRI>
+        <Literal>Inverse of DerivativeVisualAtom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IsFinalVisualAtomOf</IRI>
+        <Literal>Inverse of FinalVisualAtom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IsFinalWorkInRelation</IRI>
+        <Literal>Coupled with IsPreparatoryWorkInRelation. This property link a Cultural Property to its PreparatoryRelation node. Specifically this property identify the final work of the relation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IsIconologicalMeaningOf</IRI>
+        <Literal>Inverse of HasIconologicalMeaning</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IsInfluencedInRelation</IRI>
+        <Literal>Coupled with InfluencerInRelation. This property links a Cultural Property to its influence relation node. Specifically this property identify the cultural property that is influenced by another one.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IsInfluencerInRelation</IRI>
+        <Literal>Coupled with InfluencerInRelation. This property links a Cultural Property to its influence relation node. Specifically this property identify the cultural property that influence the other one.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IsMediumInRelation</IRI>
+        <Literal>This property highlights the role of medium in the relation between 2 cultural properties. Eg: The incision from Pietro Birago of Last Supper was the medium of influence from Last Supper to the Flanders.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IsOriginalInRelation</IRI>
+        <Literal>Coupled with IsOriginalRelation this property link a cultural Property to the DerivationRelation node. Specifically this property link the original one of the 2 cultural properties.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IsOriginalVisualAtomOf</IRI>
+        <Literal>Inverse of OriginalVisualAtom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IsPredecessorOf</IRI>
+        <Literal>This property link an iconographical representation to another one that come immediately before it. Eg: The Florentine iconographical representation is the predecessor of Da Vinci&apos;s one.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IsPreparatoryVisualAtomOf</IRI>
+        <Literal>Inverse of PreparatoryVisualAtom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IsPreparatoryWorkInRelation</IRI>
+        <Literal>Coupled with IsPreparatoryWorkInRelation. This property link a Cultural Property to its PreparatoryRelation node. Specifically this property identify the preparatory work of the relation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IsPresentIn</IRI>
+        <Literal>It highlights the presence of an abstract concept inside a Cultural property. Eg: Da Vinci&apos;s iconographical rapresentation of Last Supper is present in a set of different Cultural Properties. Teoria dei Moti dell&apos;animo is present in another set of other Cultural Properties.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IsSourceOf</IRI>
+        <Literal>Inverse of HasSource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IsSuccessorOf</IRI>
+        <Literal>Inverse of IsPredecessorOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IsUsedInWork</IRI>
+        <Literal>Inverse of HasIconographicalRepresentation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IsVisualAtomOf</IRI>
+        <Literal>Inverse of HasVisualAtom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Label</IRI>
+        <AbbreviatedIRI>rdfs:label</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Name</IRI>
+        <IRI>https://w3id.org/italia/onto/l0/name</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OriginalVisualAtom</IRI>
+        <Literal>Specialisation of VisualAtom. Identifying the Original Visual Atom of the relation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OtherIconclassCode</IRI>
+        <Literal>Mention of other possible Iconclass Code</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PartialDerivationRelation</IRI>
+        <Literal>Relation describing the derivation relation between only a part of a cultural property and another. Eg: Bayonne Tapestry is a derivation of Last Supper but only for the central composition, the background is totally different.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PictorialAttribute</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">It is a significant element of an iconographical representation. it difference itself from a simple visual features due to its having an indipendence from the representation itself. Example: Last Supper has inside it the figure of Peter. Peter is a character that is independent from a single painting.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PreparatoryVisualAtom</IRI>
+        <Literal>Specialisation of VisualAtom. Identifying the Preparatory Visual Atom of a Preparatory Relation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Presents</IRI>
+        <Literal>Inverse of IsPresentIn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PrimarySource</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Primary source is the class of literary sources directly speaking about an abstract concept from the creator/theorist of it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RelationDate</IRI>
+        <Literal>Date of a relation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RelationDescription</IRI>
+        <Literal>Long description of a relation between 2 entities in a RelatedWorkSituation class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RepresentSubject</IRI>
+        <Literal>This property show the subject highlighted by the Iconographical Motifs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Source</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">This class is an empty class for further specification. It comprises all sources about an abstract concept.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TheorisedBy</IRI>
+        <Literal>This property highlights who theorised a certain artistic theory.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Theorises</IRI>
+        <Literal>Inverse of TheorisedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TypicalIconclassCode</IRI>
+        <Literal>Mention of the typical Iconclass Code used to mark the episode of an iconographical motif.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#VisualAtom</IRI>
+        <Literal>Inspired by VIR: this class represent the minimum set of significative physical features without a linked meaning. Eg: the figure of Christ in Last Supper from Leonardo da Vinci is denoted by the set of colors that represent that figure inside the painting.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Arco:AlternativeDating</IRI>
+        <IRI>https://w3id.org/arco/ontology/context-description/AlternativeDating</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Arco:CulturalProperty</IRI>
+        <IRI>https://w3id.org/arco/ontology/arco/CulturalProperty</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Arco:Date</IRI>
+        <IRI>https://w3id.org/italia/onto/TI/date</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Arco:HasDating</IRI>
+        <IRI>https://w3id.org/arco/ontology/context-description/hasDating</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Arco:HasDating</IRI>
+        <Literal>Mutuated from contextual description module, this property links an element to its dating node.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Arco:HasDatingEvent</IRI>
+        <IRI>https://w3id.org/arco/ontology/context-description/hasDatingEvent</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Arco:HasDatingEvent</IRI>
+        <Literal>This property link the Dating node to its dating Event. The dating pattern is mutuated by the contextual description module.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Arco:IsDatingEventOf</IRI>
+        <Literal>Inverse of HasDatingEvent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Arco:IsDatingOf</IRI>
+        <Literal>Inverse of Arco:HasDating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Arco:RelatedWorkSituation</IRI>
+        <Literal>Mutuated by Contextual Description module of Arco. This property links a work to a related one. The pattern used in Arco is maintained even if it is specialised by a new set of subproperties and subclasses.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#IO:Event</IRI>
+        <IRI>https://w3id.org/italia/onto/l0/EventOrSituation</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Tiapit:TimeInterval</IRI>
+        <IRI>https://w3id.org/italia/onto/TI/TimeInterval</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#a-cd:AgentDate</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Property used to indicate temporal information (birth date/death date/period of life)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#a-cd:AgentDate</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">https://w3id.org/arco/ontology/context-description/agentDate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#a-cd:CulturalPropertyStage</IRI>
+        <IRI>https://w3id.org/arco/ontology/context-description/CulturalPropertyStage</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#a-cd:CulturalScope</IRI>
+        <IRI>https://w3id.org/arco/ontology/context-description/CulturalScope</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#a-cd:Dating</IRI>
+        <IRI>https://w3id.org/arco/ontology/context-description/Dating</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#a-cd:InterpretationCriterion</IRI>
+        <IRI>https://w3id.org/arco/ontology/context-description/InterpretationCriterion</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#a-cd:RelatedWorkSituation</IRI>
+        <IRI>https://w3id.org/arco/ontology/context-description/RelatedWorkSituation</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#a-cd:Subject</IRI>
+        <IRI>https://w3id.org/arco/ontology/context-description/Subject</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#core:Agent</IRI>
+        <IRI>http://dati.gov.it/onto/dcatapit#Agent</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>https://w3id.org/arco/ontology/core/Concept</IRI>
+        <IRI>https://w3id.org/italia/onto/l0/Concept</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>https://w3id.org/italia/onto/Location</IRI>
+        <Literal>https://w3id.org/italia/onto/l0/Location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>CLV:Feature</AbbreviatedIRI>
+        <Literal>https://w3id.org/italia/onto/CLV/Feature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>CLV:SpatialObject</AbbreviatedIRI>
+        <Literal>https://w3id.org/italia/onto/CLV/SpatialObject</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
