@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="https://github.com/MattiaSpadoni/LastSupper/blob/main/KBLastSupper.owl"
+     xml:base="http://www.semanticweb.org/mattia/ontologies/2020/10/LastSupperOntology"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="https://github.com/MattiaSpadoni/LastSupper/blob/main/KBLastSupper.owl">
+     ontologyIRI="http://www.semanticweb.org/mattia/ontologies/2020/10/LastSupperOntology">
     <Prefix name="" IRI="http://www.semanticweb.org/mattia/ontologies/2020/10/LastSupperOntology"/>
     <Prefix name="IO" IRI="https://w3id.org/italia/onto/l0"/>
     <Prefix name="LS" IRI="http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25"/>
@@ -19,11 +19,9 @@
     <Prefix name="core" IRI="https://w3id.org/arco/ontology/core"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="Tiapit" IRI="https://w3id.org/italia/onto/TI"/>
+    <Prefix name="lastsupperontology" IRI="http://www.semanticweb.org/mattia/ontologies/2020/10/LastSupperOntology#"/>
     <Declaration>
         <Class abbreviatedIRI="cis:CulturalEntity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
     </Declaration>
     <Declaration>
         <Class IRI="#AbstractConcept"/>
@@ -96,6 +94,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#core:Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
     </Declaration>
     <Declaration>
         <Class IRI="https://ontopia-lodview.agid.gov.it/onto/l0/Characteristic"/>
@@ -2548,11 +2549,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>https://w3id.org/italia/onto/Location</IRI>
         <Literal>https://w3id.org/italia/onto/l0/Location</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <AbbreviatedIRI>CLV:Feature</AbbreviatedIRI>
-        <Literal>https://w3id.org/italia/onto/CLV/Feature</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>

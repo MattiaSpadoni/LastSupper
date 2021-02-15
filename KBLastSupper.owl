@@ -1,26 +1,38 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/mattia/ontologies/2020/10/LastSupperOntology"
+     xml:base="https://github.com/MattiaSpadoni/LastSupper/KBLastSupper.owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/mattia/ontologies/2020/10/LastSupperOntology">
-    <Prefix name="" IRI="http://www.semanticweb.org/mattia/ontologies/2020/10/LastSupperOntology"/>
-    <Prefix name="IO" IRI="https://w3id.org/italia/onto/l0"/>
-    <Prefix name="LS" IRI="http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25"/>
+     ontologyIRI="https://github.com/MattiaSpadoni/LastSupper/KBLastSupper.owl#">
+    <Prefix name="" IRI="http://www.semanticweb.org/mattia/ontologies/2020/10/LastSupperOntology/"/>
+    <Prefix name="LS" IRI="https://github.com/MattiaSpadoni/LastSupper/KBLastSupper.owl#"/>
+    <Prefix name="l0" IRI="https://w3id.org/italia/onto/l0/"/>
     <Prefix name="CLV" IRI="https://w3id.org/italia/onto/CLV/"/>
     <Prefix name="cis" IRI="http://dati.beniculturali.it/cis/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
-    <Prefix name="a-cd" IRI="https://w3id.org/arco/ontology/context-description"/>
-    <Prefix name="core" IRI="https://w3id.org/arco/ontology/core"/>
+    <Prefix name="a-cd" IRI="https://w3id.org/arco/ontology/context-description/"/>
+    <Prefix name="core" IRI="https://w3id.org/arco/ontology/core/"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="Tiapit" IRI="https://w3id.org/italia/onto/TI"/>
+    <Prefix name="Tiapit" IRI="https://w3id.org/italia/onto/TI/"/>
+    <Declaration>
+        <Class IRI="a-cd:Bibliography"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="a-cd:BibliographyType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="core:Agent"/>
+    </Declaration>
     <Declaration>
         <Class abbreviatedIRI="cis:CulturalEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
     </Declaration>
     <Declaration>
         <Class IRI="#AbstractConcept"/>
@@ -92,37 +104,25 @@
         <Class IRI="#a-cd:Subject"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#core:Agent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="https://ontopia-lodview.agid.gov.it/onto/l0/Characteristic"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://w3id.org/arco/ontology/context-description/Bibliography"/>
+        <Class abbreviatedIRI="a-cd:DetectionMethod"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://w3id.org/arco/ontology/context-description/BibliographyType"/>
+        <Class abbreviatedIRI="a-cd:Interpretation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://w3id.org/arco/ontology/context-description/DetectionMethod"/>
+        <Class abbreviatedIRI="core:Concept"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://w3id.org/arco/ontology/context-description/Interpretation"/>
+        <Class abbreviatedIRI="core:CulturalEntityCharacteristic"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://w3id.org/arco/ontology/core/Concept"/>
+        <Class abbreviatedIRI="core:Method"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://w3id.org/arco/ontology/core/CulturalEntityCharacteristic"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://w3id.org/arco/ontology/core/Method"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://w3id.org/arco/ontology/core/Situation"/>
+        <Class abbreviatedIRI="core:Situation"/>
     </Declaration>
     <Declaration>
         <Class IRI="https://w3id.org/italia/onto/Entity"/>
@@ -140,22 +140,22 @@
         <Class abbreviatedIRI="CLV:SpatialObject"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://w3id.org/italia/onto/TI/TemporalEntity"/>
+        <Class abbreviatedIRI="Tiapit:TemporalEntity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <Class abbreviatedIRI="Tiapit:TimeInterval"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://w3id.org/italia/onto/l0/Description"/>
+        <Class abbreviatedIRI="l0:Description"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://w3id.org/italia/onto/l0/EventOrSituation"/>
+        <Class abbreviatedIRI="l0:EventOrSituation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://w3id.org/italia/onto/l0/Object"/>
+        <Class abbreviatedIRI="l0:Object"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://w3id.org/italia/onto/l0/Topic"/>
+        <Class abbreviatedIRI="l0:Topic"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
@@ -386,70 +386,70 @@
         <ObjectProperty IRI="https://ontopia-lodview.agid.gov.it/onto/TI/hasTemporalEntity"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasBibliography"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasBibliography"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasBibliographyType"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasBibliographyType"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDating"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDating"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDatingEvent"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDatingEvent"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDepiction"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasRelatedAgent"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasRelatedAgent"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasRelatedWorkSituation"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasRelatedWorkSituation"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAgentRelatedTo"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isAgentRelatedTo"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isAuthorOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isBibliographyOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isBibliographyOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isBibliographyTypeOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isBibliographyTypeOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isDatingEventOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isDatingEventOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isDatingOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isDatingOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isRelatedWorkSituationOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isRelatedWorkSituationOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/specificTime"/>
+        <ObjectProperty abbreviatedIRI="a-cd:specificTime"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasConcept"/>
+        <ObjectProperty abbreviatedIRI="core:hasConcept"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasSituation"/>
+        <ObjectProperty abbreviatedIRI="core:hasSituation"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasType"/>
+        <ObjectProperty abbreviatedIRI="core:hasType"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/isConceptOf"/>
+        <ObjectProperty abbreviatedIRI="core:isConceptOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/isSituationOf"/>
+        <ObjectProperty abbreviatedIRI="core:isSituationOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/isTypeOf"/>
+        <ObjectProperty abbreviatedIRI="core:isTypeOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="CLV:hasGeometry"/>
@@ -524,16 +524,16 @@
         <DataProperty IRI="https://ontopia-lodview.agid.gov.it/onto/CLV/coordinate"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
+        <DataProperty abbreviatedIRI="a-cd:agentDate"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/bibliographicReferenceAuthor"/>
+        <DataProperty abbreviatedIRI="a-cd:bibliographicReferenceAuthor"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/bilbiographicReference"/>
+        <DataProperty abbreviatedIRI="a-cd:bilbiographicReference"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/iconclassCode"/>
+        <DataProperty abbreviatedIRI="a-cd:iconclassCode"/>
     </Declaration>
     <Declaration>
         <DataProperty abbreviatedIRI="CLV:lat"/>
@@ -542,10 +542,10 @@
         <DataProperty abbreviatedIRI="CLV:long"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="https://w3id.org/italia/onto/TI/date"/>
+        <DataProperty abbreviatedIRI="Tiapit:date"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#AlbrechtDurer"/>
@@ -1122,7 +1122,7 @@
     </Declaration>
     <SubClassOf>
         <Class IRI="#AbstractConcept"/>
-        <Class IRI="https://w3id.org/arco/ontology/core/Concept"/>
+        <Class abbreviatedIRI="core:Concept"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ArtisticTheory"/>
@@ -1182,59 +1182,59 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#a-cd:CulturalPropertyStage"/>
-        <Class IRI="https://w3id.org/arco/ontology/core/CulturalEntityCharacteristic"/>
+        <Class abbreviatedIRI="core:CulturalEntityCharacteristic"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#a-cd:CulturalScope"/>
-        <Class IRI="https://w3id.org/italia/onto/l0/Topic"/>
+        <Class abbreviatedIRI="l0:Topic"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#a-cd:Dating"/>
-        <Class IRI="https://w3id.org/arco/ontology/context-description/DetectionMethod"/>
+        <Class abbreviatedIRI="a-cd:DetectionMethod"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#a-cd:Dating"/>
-        <Class IRI="https://w3id.org/arco/ontology/context-description/Interpretation"/>
+        <Class abbreviatedIRI="a-cd:Interpretation"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#a-cd:InterpretationCriterion"/>
-        <Class IRI="https://w3id.org/italia/onto/l0/Description"/>
+        <Class abbreviatedIRI="l0:Description"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#a-cd:RelatedWorkSituation"/>
-        <Class IRI="https://w3id.org/arco/ontology/core/Situation"/>
+        <Class abbreviatedIRI="core:Situation"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#a-cd:Subject"/>
-        <Class IRI="https://w3id.org/italia/onto/l0/Topic"/>
+        <Class abbreviatedIRI="l0:Topic"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="https://ontopia-lodview.agid.gov.it/onto/l0/Characteristic"/>
         <Class IRI="https://w3id.org/italia/onto/Entity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://w3id.org/arco/ontology/context-description/DetectionMethod"/>
-        <Class IRI="https://w3id.org/arco/ontology/core/Method"/>
+        <Class abbreviatedIRI="a-cd:DetectionMethod"/>
+        <Class abbreviatedIRI="core:Method"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://w3id.org/arco/ontology/context-description/Interpretation"/>
-        <Class IRI="https://w3id.org/arco/ontology/core/Situation"/>
+        <Class abbreviatedIRI="a-cd:Interpretation"/>
+        <Class abbreviatedIRI="core:Situation"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://w3id.org/arco/ontology/core/Concept"/>
-        <Class IRI="https://w3id.org/italia/onto/l0/Object"/>
+        <Class abbreviatedIRI="core:Concept"/>
+        <Class abbreviatedIRI="l0:Object"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://w3id.org/arco/ontology/core/CulturalEntityCharacteristic"/>
+        <Class abbreviatedIRI="core:CulturalEntityCharacteristic"/>
         <Class IRI="https://ontopia-lodview.agid.gov.it/onto/l0/Characteristic"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://w3id.org/arco/ontology/core/Method"/>
-        <Class IRI="https://w3id.org/italia/onto/l0/Description"/>
+        <Class abbreviatedIRI="core:Method"/>
+        <Class abbreviatedIRI="l0:Description"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://w3id.org/arco/ontology/core/Situation"/>
-        <Class IRI="https://w3id.org/italia/onto/l0/EventOrSituation"/>
+        <Class abbreviatedIRI="core:Situation"/>
+        <Class abbreviatedIRI="l0:EventOrSituation"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="https://w3id.org/italia/onto/Location"/>
@@ -1253,31 +1253,31 @@
         <Class IRI="https://w3id.org/italia/onto/Location"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://w3id.org/italia/onto/TI/TemporalEntity"/>
+        <Class abbreviatedIRI="Tiapit:TemporalEntity"/>
         <Class IRI="https://w3id.org/italia/onto/Entity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <Class abbreviatedIRI="Tiapit:TimeInterval"/>
         <Class IRI="https://ontopia-lodview.agid.gov.it/onto/l0/Characteristic"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://w3id.org/italia/onto/TI/TimeInterval"/>
-        <Class IRI="https://w3id.org/italia/onto/TI/TemporalEntity"/>
+        <Class abbreviatedIRI="Tiapit:TimeInterval"/>
+        <Class abbreviatedIRI="Tiapit:TemporalEntity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://w3id.org/italia/onto/l0/Description"/>
-        <Class IRI="https://w3id.org/italia/onto/l0/Object"/>
+        <Class abbreviatedIRI="l0:Description"/>
+        <Class abbreviatedIRI="l0:Object"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://w3id.org/italia/onto/l0/EventOrSituation"/>
+        <Class abbreviatedIRI="l0:EventOrSituation"/>
         <Class IRI="https://w3id.org/italia/onto/Entity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://w3id.org/italia/onto/l0/Object"/>
+        <Class abbreviatedIRI="l0:Object"/>
         <Class IRI="https://w3id.org/italia/onto/Entity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://w3id.org/italia/onto/l0/Topic"/>
+        <Class abbreviatedIRI="l0:Topic"/>
         <Class IRI="https://w3id.org/italia/onto/Entity"/>
     </SubClassOf>
     <DisjointClasses>
@@ -1285,23 +1285,23 @@
         <Class IRI="#GeometricVisualUnit"/>
     </DisjointClasses>
     <ClassAssertion>
-        <Class IRI="#core:Agent"/>
+        <Class IRI="core:Agent"/>
         <NamedIndividual IRI="#AlbrechtDurer"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#core:Agent"/>
+        <Class IRI="core:Agent"/>
         <NamedIndividual IRI="#Alessandro_Araldi"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#core:Agent"/>
+        <Class IRI="core:Agent"/>
         <NamedIndividual IRI="#AndreaDelCastagno"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#core:Agent"/>
+        <Class IRI="core:Agent"/>
         <NamedIndividual IRI="#AndreaDiBartolo"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#core:Agent"/>
+        <Class IRI="core:Agent"/>
         <NamedIndividual IRI="#AnonimoUmbro"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1317,47 +1317,47 @@
         <NamedIndividual IRI="#ArtisticTheory1"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/context-description/Bibliography"/>
+        <Class IRI="a-cd:Bibliography"/>
         <NamedIndividual IRI="#Bibliography1"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/context-description/Bibliography"/>
+        <Class IRI="a-cd:Bibliography"/>
         <NamedIndividual IRI="#Bibliography10"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/context-description/Bibliography"/>
+        <Class IRI="a-cd:Bibliography"/>
         <NamedIndividual IRI="#Bibliography2"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/context-description/Bibliography"/>
+        <Class IRI="a-cd:Bibliography"/>
         <NamedIndividual IRI="#Bibliography3"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/context-description/Bibliography"/>
+        <Class IRI="a-cd:Bibliography"/>
         <NamedIndividual IRI="#Bibliography4"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/context-description/Bibliography"/>
+        <Class IRI="a-cd:Bibliography"/>
         <NamedIndividual IRI="#Bibliography5"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/context-description/Bibliography"/>
+        <Class IRI="a-cd:Bibliography"/>
         <NamedIndividual IRI="#Bibliography6"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/context-description/Bibliography"/>
+        <Class IRI="a-cd:Bibliography"/>
         <NamedIndividual IRI="#Bibliography8"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/context-description/Bibliography"/>
+        <Class IRI="a-cd:Bibliography"/>
         <NamedIndividual IRI="#Bibliography9"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/context-description/BibliographyType"/>
+        <Class IRI="a-cd:BibliographyType"/>
         <NamedIndividual IRI="#BibliographyType1"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/context-description/BibliographyType"/>
+        <Class IRI="a-cd:BibliographyType"/>
         <NamedIndividual IRI="#BibliographyType2"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1365,7 +1365,7 @@
         <NamedIndividual IRI="#BiragoLastSupper"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#core:Agent"/>
+        <Class IRI="core:Agent"/>
         <NamedIndividual IRI="#Boccaccino"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1373,7 +1373,7 @@
         <NamedIndividual IRI="#BoccaccinoPastori"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#core:Agent"/>
+        <Class IRI="core:Agent"/>
         <NamedIndividual IRI="#Caravaggio"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1449,7 +1449,7 @@
         <NamedIndividual IRI="#Derivation5"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#core:Agent"/>
+        <Class IRI="core:Agent"/>
         <NamedIndividual IRI="#DomenicoGhirlandaio"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1465,7 +1465,7 @@
         <NamedIndividual IRI="#FerrariUltimaCena"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#core:Agent"/>
+        <Class IRI="core:Agent"/>
         <NamedIndividual IRI="#FrancescoMelzi"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1473,7 +1473,7 @@
         <NamedIndividual IRI="#FranciobigiLastSupper"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#core:Agent"/>
+        <Class IRI="core:Agent"/>
         <NamedIndividual IRI="#Franciobigio"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1481,7 +1481,7 @@
         <NamedIndividual IRI="#GaddiLastSupper"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#core:Agent"/>
+        <Class IRI="core:Agent"/>
         <NamedIndividual IRI="#Garofalo"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1489,7 +1489,7 @@
         <NamedIndividual IRI="#GarofaloAdultera"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#core:Agent"/>
+        <Class IRI="core:Agent"/>
         <NamedIndividual IRI="#GaudenzioFerrari"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1505,7 +1505,7 @@
         <NamedIndividual IRI="#GhirlandaioLastSupper"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#core:Agent"/>
+        <Class IRI="core:Agent"/>
         <NamedIndividual IRI="#Giorgione"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1513,11 +1513,11 @@
         <NamedIndividual IRI="#GiovanniAgostinoDoublePortrait"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#core:Agent"/>
+        <Class IRI="core:Agent"/>
         <NamedIndividual IRI="#GiovanniAgostinoLodi"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#core:Agent"/>
+        <Class IRI="core:Agent"/>
         <NamedIndividual IRI="#GiovanniPietroBirago"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1577,11 +1577,11 @@
         <NamedIndividual IRI="#Image5"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#VisualUnit"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
         <NamedIndividual IRI="#Image6"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
+        <Class IRI="#VisualUnit"/>
         <NamedIndividual IRI="#Image6"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1625,7 +1625,7 @@
         <NamedIndividual IRI="#Influence8"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#core:Agent"/>
+        <Class IRI="core:Agent"/>
         <NamedIndividual IRI="#John_Everett_Millais"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1645,7 +1645,7 @@
         <NamedIndividual IRI="#Le_tre_età"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#core:Agent"/>
+        <Class IRI="core:Agent"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1661,7 +1661,7 @@
         <NamedIndividual IRI="#Location3"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#core:Agent"/>
+        <Class IRI="core:Agent"/>
         <NamedIndividual IRI="#MarcantonioRaimondi"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1677,7 +1677,7 @@
         <NamedIndividual IRI="#Object1"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#core:Agent"/>
+        <Class IRI="core:Agent"/>
         <NamedIndividual IRI="#Perugino"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1685,7 +1685,7 @@
         <NamedIndividual IRI="#PeruginoLastSupper"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#core:Agent"/>
+        <Class IRI="core:Agent"/>
         <NamedIndividual IRI="#PeterCoeckeVanAelst"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1733,7 +1733,7 @@
         <NamedIndividual IRI="#PreparatoryRelation9"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#core:Agent"/>
+        <Class IRI="core:Agent"/>
         <NamedIndividual IRI="#RaffaelloMorghen"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1741,23 +1741,23 @@
         <NamedIndividual IRI="#RaimondiLastSupper"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#core:Agent"/>
+        <Class IRI="core:Agent"/>
         <NamedIndividual IRI="#TaddeoGaddi"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <Class abbreviatedIRI="Tiapit:TimeInterval"/>
         <NamedIndividual IRI="#TimeInterval1"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <Class abbreviatedIRI="Tiapit:TimeInterval"/>
         <NamedIndividual IRI="#TimeInterval2"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <Class abbreviatedIRI="Tiapit:TimeInterval"/>
         <NamedIndividual IRI="#TimeInterval3"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <Class abbreviatedIRI="Tiapit:TimeInterval"/>
         <NamedIndividual IRI="#TimeInterval4"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1765,7 +1765,7 @@
         <NamedIndividual IRI="#VaticanTapestry"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#core:Agent"/>
+        <Class IRI="core:Agent"/>
         <NamedIndividual IRI="#Vespino"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -2085,32 +2085,32 @@
         <NamedIndividual IRI="#Ferrari&apos;sLastSupperIconography"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isAuthorOf"/>
         <NamedIndividual IRI="#AlbrechtDurer"/>
         <NamedIndividual IRI="#DurerLastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isAuthorOf"/>
         <NamedIndividual IRI="#Alessandro_Araldi"/>
         <NamedIndividual IRI="#AraldiUltimaCena"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isAuthorOf"/>
         <NamedIndividual IRI="#AndreaDelCastagno"/>
         <NamedIndividual IRI="#CastagnoLastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isAuthorOf"/>
         <NamedIndividual IRI="#AnonimoUmbro"/>
         <NamedIndividual IRI="#AnonimoUmbroLastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#AnonimoUmbroLastSupper"/>
         <NamedIndividual IRI="#AnonimoUmbro"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDepiction"/>
         <NamedIndividual IRI="#AnonimoUmbroLastSupper"/>
         <NamedIndividual IRI="#Image9"/>
     </ObjectPropertyAssertion>
@@ -2120,12 +2120,12 @@
         <NamedIndividual IRI="#Derivation1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#AraldiUltimaCena"/>
         <NamedIndividual IRI="#Alessandro_Araldi"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDepiction"/>
         <NamedIndividual IRI="#AraldiUltimaCena"/>
         <NamedIndividual IRI="#Image10"/>
     </ObjectPropertyAssertion>
@@ -2200,137 +2200,137 @@
         <NamedIndividual IRI="#Location2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasBibliography"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasBibliography"/>
         <NamedIndividual IRI="#ArtisticTheory1"/>
         <NamedIndividual IRI="#Bibliography1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasBibliography"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasBibliography"/>
         <NamedIndividual IRI="#ArtisticTheory1"/>
         <NamedIndividual IRI="#Bibliography10"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasBibliography"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasBibliography"/>
         <NamedIndividual IRI="#ArtisticTheory1"/>
         <NamedIndividual IRI="#Bibliography2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasBibliography"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasBibliography"/>
         <NamedIndividual IRI="#ArtisticTheory1"/>
         <NamedIndividual IRI="#Bibliography3"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasBibliography"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasBibliography"/>
         <NamedIndividual IRI="#ArtisticTheory1"/>
         <NamedIndividual IRI="#Bibliography4"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasBibliography"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasBibliography"/>
         <NamedIndividual IRI="#ArtisticTheory1"/>
         <NamedIndividual IRI="#Bibliography5"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasBibliography"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasBibliography"/>
         <NamedIndividual IRI="#ArtisticTheory1"/>
         <NamedIndividual IRI="#Bibliography6"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasBibliography"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasBibliography"/>
         <NamedIndividual IRI="#ArtisticTheory1"/>
         <NamedIndividual IRI="#Bibliography7"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasBibliography"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasBibliography"/>
         <NamedIndividual IRI="#ArtisticTheory1"/>
         <NamedIndividual IRI="#Bibliography8"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasBibliography"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasBibliography"/>
         <NamedIndividual IRI="#ArtisticTheory1"/>
         <NamedIndividual IRI="#Bibliography9"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#Bibliography1"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasBibliographyType"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasBibliographyType"/>
         <NamedIndividual IRI="#Bibliography1"/>
         <NamedIndividual IRI="#BibliographyType1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasBibliographyType"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasBibliographyType"/>
         <NamedIndividual IRI="#Bibliography10"/>
         <NamedIndividual IRI="#BibliographyType2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#Bibliography2"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasBibliographyType"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasBibliographyType"/>
         <NamedIndividual IRI="#Bibliography2"/>
         <NamedIndividual IRI="#BibliographyType1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#Bibliography3"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasBibliographyType"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasBibliographyType"/>
         <NamedIndividual IRI="#Bibliography3"/>
         <NamedIndividual IRI="#BibliographyType1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#Bibliography4"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasBibliographyType"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasBibliographyType"/>
         <NamedIndividual IRI="#Bibliography4"/>
         <NamedIndividual IRI="#BibliographyType1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#Bibliography5"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasBibliographyType"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasBibliographyType"/>
         <NamedIndividual IRI="#Bibliography5"/>
         <NamedIndividual IRI="#BibliographyType1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#Bibliography6"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasBibliographyType"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasBibliographyType"/>
         <NamedIndividual IRI="#Bibliography6"/>
         <NamedIndividual IRI="#BibliographyType1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#Bibliography7"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasBibliographyType"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasBibliographyType"/>
         <NamedIndividual IRI="#Bibliography7"/>
         <NamedIndividual IRI="#BibliographyType1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasBibliographyType"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasBibliographyType"/>
         <NamedIndividual IRI="#Bibliography8"/>
         <NamedIndividual IRI="#BibliographyType2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasBibliographyType"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasBibliographyType"/>
         <NamedIndividual IRI="#Bibliography9"/>
         <NamedIndividual IRI="#BibliographyType2"/>
     </ObjectPropertyAssertion>
@@ -2340,17 +2340,17 @@
         <NamedIndividual IRI="#Derivation2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#BiragoLastSupper"/>
         <NamedIndividual IRI="#GiovanniPietroBirago"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDepiction"/>
         <NamedIndividual IRI="#BiragoLastSupper"/>
         <NamedIndividual IRI="#Image6"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isAuthorOf"/>
         <NamedIndividual IRI="#Boccaccino"/>
         <NamedIndividual IRI="#BoccaccinoPastori"/>
     </ObjectPropertyAssertion>
@@ -2360,22 +2360,22 @@
         <NamedIndividual IRI="#Influence1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#BoccaccinoPastori"/>
         <NamedIndividual IRI="#Boccaccino"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isAuthorOf"/>
         <NamedIndividual IRI="#Caravaggio"/>
         <NamedIndividual IRI="#CatturaDiCristo"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#CastagnoLastSupper"/>
         <NamedIndividual IRI="#AndreaDelCastagno"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDepiction"/>
         <NamedIndividual IRI="#CastagnoLastSupper"/>
         <NamedIndividual IRI="#Image1"/>
     </ObjectPropertyAssertion>
@@ -2385,12 +2385,12 @@
         <NamedIndividual IRI="#Influence2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#CatturaDiCristo"/>
         <NamedIndividual IRI="#Caravaggio"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDepiction"/>
         <NamedIndividual IRI="#CatturaDiCristo"/>
         <NamedIndividual IRI="#Image11"/>
     </ObjectPropertyAssertion>
@@ -2445,12 +2445,12 @@
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#ChristHead"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDepiction"/>
         <NamedIndividual IRI="#ChristHead"/>
         <NamedIndividual IRI="#VisualUnit34"/>
     </ObjectPropertyAssertion>
@@ -2540,42 +2540,42 @@
         <NamedIndividual IRI="#Location3"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasBibliography"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasBibliography"/>
         <NamedIndividual IRI="#DaVinciIconographyLastSupper"/>
         <NamedIndividual IRI="#Bibliography10"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasBibliography"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasBibliography"/>
         <NamedIndividual IRI="#DaVinciIconographyLastSupper"/>
         <NamedIndividual IRI="#Bibliography2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasBibliography"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasBibliography"/>
         <NamedIndividual IRI="#DaVinciIconographyLastSupper"/>
         <NamedIndividual IRI="#Bibliography3"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasBibliography"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasBibliography"/>
         <NamedIndividual IRI="#DaVinciIconographyLastSupper"/>
         <NamedIndividual IRI="#Bibliography4"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasBibliography"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasBibliography"/>
         <NamedIndividual IRI="#DaVinciIconographyLastSupper"/>
         <NamedIndividual IRI="#Bibliography5"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasBibliography"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasBibliography"/>
         <NamedIndividual IRI="#DaVinciIconographyLastSupper"/>
         <NamedIndividual IRI="#Bibliography8"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#DamaErmellino"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDepiction"/>
         <NamedIndividual IRI="#DamaErmellino"/>
         <NamedIndividual IRI="#Image4"/>
     </ObjectPropertyAssertion>
@@ -2630,7 +2630,7 @@
         <NamedIndividual IRI="#LastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isAuthorOf"/>
         <NamedIndividual IRI="#DomenicoGhirlandaio"/>
         <NamedIndividual IRI="#GhirlandaioLastSupper"/>
     </ObjectPropertyAssertion>
@@ -2640,12 +2640,12 @@
         <NamedIndividual IRI="#Influence3"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#DurerLastSupper"/>
         <NamedIndividual IRI="#AlbrechtDurer"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDepiction"/>
         <NamedIndividual IRI="#DurerLastSupper"/>
         <NamedIndividual IRI="#Image2"/>
     </ObjectPropertyAssertion>
@@ -2700,42 +2700,42 @@
         <NamedIndividual IRI="#Location3"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#FerrariUltimaCena"/>
         <NamedIndividual IRI="#GaudenzioFerrari"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDepiction"/>
         <NamedIndividual IRI="#FerrariUltimaCena"/>
         <NamedIndividual IRI="#Image12"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#FranciobigiLastSupper"/>
         <NamedIndividual IRI="#Franciobigio"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDepiction"/>
         <NamedIndividual IRI="#FranciobigiLastSupper"/>
         <NamedIndividual IRI="#Image13"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isAuthorOf"/>
         <NamedIndividual IRI="#Franciobigio"/>
         <NamedIndividual IRI="#FranciobigiLastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#GaddiLastSupper"/>
         <NamedIndividual IRI="#TaddeoGaddi"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDepiction"/>
         <NamedIndividual IRI="#GaddiLastSupper"/>
         <NamedIndividual IRI="#Image14"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isAuthorOf"/>
         <NamedIndividual IRI="#Garofalo"/>
         <NamedIndividual IRI="#GarofaloAdultera"/>
     </ObjectPropertyAssertion>
@@ -2745,32 +2745,32 @@
         <NamedIndividual IRI="#Influence4"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#GarofaloAdultera"/>
         <NamedIndividual IRI="#Garofalo"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDepiction"/>
         <NamedIndividual IRI="#GarofaloAdultera"/>
         <NamedIndividual IRI="#Image15"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isAuthorOf"/>
         <NamedIndividual IRI="#GaudenzioFerrari"/>
         <NamedIndividual IRI="#FerrariUltimaCena"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#GhirlandaioLastSupper"/>
         <NamedIndividual IRI="#DomenicoGhirlandaio"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDepiction"/>
         <NamedIndividual IRI="#GhirlandaioLastSupper"/>
         <NamedIndividual IRI="#Image3"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isAuthorOf"/>
         <NamedIndividual IRI="#Giorgione"/>
         <NamedIndividual IRI="#Le_tre_età"/>
     </ObjectPropertyAssertion>
@@ -2780,22 +2780,22 @@
         <NamedIndividual IRI="#Influence5"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#GiovanniAgostinoDoublePortrait"/>
         <NamedIndividual IRI="#GiovanniAgostinoLodi"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDepiction"/>
         <NamedIndividual IRI="#GiovanniAgostinoDoublePortrait"/>
         <NamedIndividual IRI="#Image5"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isAuthorOf"/>
         <NamedIndividual IRI="#GiovanniAgostinoLodi"/>
         <NamedIndividual IRI="#GiovanniAgostinoDoublePortrait"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isAuthorOf"/>
         <NamedIndividual IRI="#GiovanniPietroBirago"/>
         <NamedIndividual IRI="#BiragoLastSupper"/>
     </ObjectPropertyAssertion>
@@ -3000,7 +3000,7 @@
         <NamedIndividual IRI="#MorghenLastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isAuthorOf"/>
         <NamedIndividual IRI="#John_Everett_Millais"/>
         <NamedIndividual IRI="#MrsJamesWyatt"/>
     </ObjectPropertyAssertion>
@@ -3090,12 +3090,12 @@
         <NamedIndividual IRI="#Derivation5"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#LastSupper"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDepiction"/>
         <NamedIndividual IRI="#LastSupper"/>
         <NamedIndividual IRI="#VisualUnit12"/>
     </ObjectPropertyAssertion>
@@ -3165,12 +3165,12 @@
         <NamedIndividual IRI="#Influence8"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#Le_tre_età"/>
         <NamedIndividual IRI="#Giorgione"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDepiction"/>
         <NamedIndividual IRI="#Le_tre_età"/>
         <NamedIndividual IRI="#image8"/>
     </ObjectPropertyAssertion>
@@ -3205,77 +3205,77 @@
         <NamedIndividual IRI="#Location2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isAuthorOf"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
         <NamedIndividual IRI="#DamaErmellino"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isAuthorOf"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
         <NamedIndividual IRI="#LastSupper"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isAuthorOf"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
         <NamedIndividual IRI="#Windsor12542"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isAuthorOf"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
         <NamedIndividual IRI="#Windsor12543"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isAuthorOf"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
         <NamedIndividual IRI="#Windsor12544"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isAuthorOf"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
         <NamedIndividual IRI="#Windsor12545"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isAuthorOf"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
         <NamedIndividual IRI="#Windsor12547"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isAuthorOf"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
         <NamedIndividual IRI="#Windsor12548"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isAuthorOf"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
         <NamedIndividual IRI="#Windsor12549"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isAuthorOf"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
         <NamedIndividual IRI="#Windsor12551"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isAuthorOf"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
         <NamedIndividual IRI="#Windsor12552"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isAuthorOf"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
         <NamedIndividual IRI="#Windsor12554"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isAuthorOf"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
         <NamedIndividual IRI="#423E"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isAuthorOf"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
         <NamedIndividual IRI="#428E"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isAuthorOf"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
         <NamedIndividual IRI="#436E"/>
     </ObjectPropertyAssertion>
@@ -3290,7 +3290,7 @@
         <NamedIndividual IRI="#Geometry2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isAuthorOf"/>
         <NamedIndividual IRI="#MarcantonioRaimondi"/>
         <NamedIndividual IRI="#RaimondiLastSupper"/>
     </ObjectPropertyAssertion>
@@ -3300,12 +3300,12 @@
         <NamedIndividual IRI="#Derivation3"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#MorghenLastSupper"/>
         <NamedIndividual IRI="#RaffaelloMorghen"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDepiction"/>
         <NamedIndividual IRI="#MorghenLastSupper"/>
         <NamedIndividual IRI="#VisualUnit35"/>
     </ObjectPropertyAssertion>
@@ -3315,12 +3315,12 @@
         <NamedIndividual IRI="#Influence6"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#MrsJamesWyatt"/>
         <NamedIndividual IRI="#John_Everett_Millais"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDepiction"/>
         <NamedIndividual IRI="#MrsJamesWyatt"/>
         <NamedIndividual IRI="#Image7"/>
     </ObjectPropertyAssertion>
@@ -3335,12 +3335,12 @@
         <NamedIndividual IRI="#VisualUnit53"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#PeruginoLastSupper"/>
         <NamedIndividual IRI="#Perugino"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isAuthorOf"/>
         <NamedIndividual IRI="#PeterCoeckeVanAelst"/>
         <NamedIndividual IRI="#CoeckeLastSupper"/>
     </ObjectPropertyAssertion>
@@ -3545,12 +3545,12 @@
         <NamedIndividual IRI="#Windsor12552"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#RaimondiLastSupper"/>
         <NamedIndividual IRI="#MarcantonioRaimondi"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDepiction"/>
         <NamedIndividual IRI="#RaimondiLastSupper"/>
         <NamedIndividual IRI="#RaimondiLastSupper"/>
     </ObjectPropertyAssertion>
@@ -3560,7 +3560,7 @@
         <NamedIndividual IRI="#Derivation4"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDepiction"/>
         <NamedIndividual IRI="#VaticanTapestry"/>
         <NamedIndividual IRI="#Image17"/>
     </ObjectPropertyAssertion>
@@ -3570,12 +3570,12 @@
         <NamedIndividual IRI="#Derivation5"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#VespinoLastSupper"/>
         <NamedIndividual IRI="#Vespino"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDepiction"/>
         <NamedIndividual IRI="#VespinoLastSupper"/>
         <NamedIndividual IRI="#Image18"/>
     </ObjectPropertyAssertion>
@@ -3680,12 +3680,12 @@
         <NamedIndividual IRI="#PreparatoryRelation1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#Windsor12542"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDepiction"/>
         <NamedIndividual IRI="#Windsor12542"/>
         <NamedIndividual IRI="#VisualUnit24"/>
     </ObjectPropertyAssertion>
@@ -3695,12 +3695,12 @@
         <NamedIndividual IRI="#PreparatoryRelation2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#Windsor12543"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDepiction"/>
         <NamedIndividual IRI="#Windsor12543"/>
         <NamedIndividual IRI="#VisualUnit25"/>
     </ObjectPropertyAssertion>
@@ -3710,12 +3710,12 @@
         <NamedIndividual IRI="#PreparatoryRelation3"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#Windsor12544"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDepiction"/>
         <NamedIndividual IRI="#Windsor12544"/>
         <NamedIndividual IRI="#VisualUnit26"/>
     </ObjectPropertyAssertion>
@@ -3725,12 +3725,12 @@
         <NamedIndividual IRI="#PreparatoryRelation4"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#Windsor12545"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDepiction"/>
         <NamedIndividual IRI="#Windsor12545"/>
         <NamedIndividual IRI="#VisualUnit27"/>
     </ObjectPropertyAssertion>
@@ -3740,12 +3740,12 @@
         <NamedIndividual IRI="#PreparatoryRelation5"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#Windsor12547"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDepiction"/>
         <NamedIndividual IRI="#Windsor12547"/>
         <NamedIndividual IRI="#VisualUnit28"/>
     </ObjectPropertyAssertion>
@@ -3755,12 +3755,12 @@
         <NamedIndividual IRI="#PreparatoryRelation6"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#Windsor12548"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDepiction"/>
         <NamedIndividual IRI="#Windsor12548"/>
         <NamedIndividual IRI="#VisualUnit29"/>
     </ObjectPropertyAssertion>
@@ -3770,12 +3770,12 @@
         <NamedIndividual IRI="#PreparatoryRelation7"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#Windsor12549"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDepiction"/>
         <NamedIndividual IRI="#Windsor12549"/>
         <NamedIndividual IRI="#VisualUnit30"/>
     </ObjectPropertyAssertion>
@@ -3785,12 +3785,12 @@
         <NamedIndividual IRI="#PreparatoryRelation8"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#Windsor12551"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDepiction"/>
         <NamedIndividual IRI="#Windsor12551"/>
         <NamedIndividual IRI="#VisualUnit31"/>
     </ObjectPropertyAssertion>
@@ -3800,12 +3800,12 @@
         <NamedIndividual IRI="#PreparatoryRelation9"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#Windsor12552"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDepiction"/>
         <NamedIndividual IRI="#Windsor12552"/>
         <NamedIndividual IRI="#VisualUnit32"/>
     </ObjectPropertyAssertion>
@@ -3815,27 +3815,27 @@
         <NamedIndividual IRI="#ArtisticTheory1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#Windsor12554"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDepiction"/>
         <NamedIndividual IRI="#Windsor12554"/>
         <NamedIndividual IRI="#VisualUnit33"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#423E"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#428E"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <NamedIndividual IRI="#436E"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
     </ObjectPropertyAssertion>
@@ -3865,12 +3865,12 @@
         <Literal>Albrecht Durer, artista tedesco.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
+        <DataProperty abbreviatedIRI="a-cd:agentDate"/>
         <NamedIndividual IRI="#AlbrechtDurer"/>
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">1471 - 05 -21 / 1528 - 04 - 06</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#AlbrechtDurer"/>
         <Literal>Albrecht Durer</Literal>
     </DataPropertyAssertion>
@@ -3885,17 +3885,17 @@
         <Literal xml:lang="it">Alessandro Araldi, pittore parmense.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
+        <DataProperty abbreviatedIRI="a-cd:agentDate"/>
         <NamedIndividual IRI="#Alessandro_Araldi"/>
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">1460 - 1529</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#Alessandro_Araldi"/>
         <Literal xml:lang="en">Alessandro Araldi.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#Alessandro_Araldi"/>
         <Literal xml:lang="it">Alessandro Araldi.</Literal>
     </DataPropertyAssertion>
@@ -3905,12 +3905,12 @@
         <Literal>Andrea del Castagno, pittore.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
+        <DataProperty abbreviatedIRI="a-cd:agentDate"/>
         <NamedIndividual IRI="#AndreaDelCastagno"/>
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">1419 / 1457 - 08 - 19</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#AndreaDelCastagno"/>
         <Literal>Andrea del Castagno.</Literal>
     </DataPropertyAssertion>
@@ -3920,12 +3920,12 @@
         <Literal>Andrea di Bartolo, pittore toscano</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
+        <DataProperty abbreviatedIRI="a-cd:agentDate"/>
         <NamedIndividual IRI="#AndreaDiBartolo"/>
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">1360 - 1428</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#AndreaDiBartolo"/>
         <Literal>Andrea Di Bartolo.</Literal>
     </DataPropertyAssertion>
@@ -3935,12 +3935,12 @@
         <Literal>Maestro del Trittico di Perugia, anonimo Umbro</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
+        <DataProperty abbreviatedIRI="a-cd:agentDate"/>
         <NamedIndividual IRI="#AnonimoUmbro"/>
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Sec XIII seconda metà / sec XIV</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#AnonimoUmbro"/>
         <Literal>Maestro del Trittico di Perugia.</Literal>
     </DataPropertyAssertion>
@@ -3990,7 +3990,7 @@
         <Literal>Teoria dei moti dell&apos;animo</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#ArtisticTheory1"/>
         <Literal>Teoria dei moti dell&apos;animo</Literal>
     </DataPropertyAssertion>
@@ -4000,12 +4000,12 @@
         <Literal>Biografia 1 della teoria artistica 1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/bibliographicReferenceAuthor"/>
+        <DataProperty abbreviatedIRI="a-cd:bibliographicReferenceAuthor"/>
         <NamedIndividual IRI="#Bibliography1"/>
         <Literal>L. Da Vinci</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/bilbiographicReference"/>
+        <DataProperty abbreviatedIRI="a-cd:bilbiographicReference"/>
         <NamedIndividual IRI="#Bibliography1"/>
         <Literal>Manoscritto C Institute du France, folio 16 recto.</Literal>
     </DataPropertyAssertion>
@@ -4015,17 +4015,17 @@
         <Literal>Leonardo, l&apos;Ultima Cena.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/bibliographicReferenceAuthor"/>
+        <DataProperty abbreviatedIRI="a-cd:bibliographicReferenceAuthor"/>
         <NamedIndividual IRI="#Bibliography10"/>
         <Literal>P. Brambilla Barcillon.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/bibliographicReferenceAuthor"/>
+        <DataProperty abbreviatedIRI="a-cd:bibliographicReferenceAuthor"/>
         <NamedIndividual IRI="#Bibliography10"/>
         <Literal>P. C. Marani</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/bilbiographicReference"/>
+        <DataProperty abbreviatedIRI="a-cd:bilbiographicReference"/>
         <NamedIndividual IRI="#Bibliography10"/>
         <Literal>Leonardo. L&apos;ultima cena.</Literal>
     </DataPropertyAssertion>
@@ -4035,12 +4035,12 @@
         <Literal>Biografia 2 della teoria artistica 1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/bibliographicReferenceAuthor"/>
+        <DataProperty abbreviatedIRI="a-cd:bibliographicReferenceAuthor"/>
         <NamedIndividual IRI="#Bibliography2"/>
         <Literal>L. da Vinci</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/bilbiographicReference"/>
+        <DataProperty abbreviatedIRI="a-cd:bilbiographicReference"/>
         <NamedIndividual IRI="#Bibliography2"/>
         <Literal>Manoscritto Forster II, foglio 62 verso</Literal>
     </DataPropertyAssertion>
@@ -4050,12 +4050,12 @@
         <Literal>Biografia 3 della teoria artistica 1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/bibliographicReferenceAuthor"/>
+        <DataProperty abbreviatedIRI="a-cd:bibliographicReferenceAuthor"/>
         <NamedIndividual IRI="#Bibliography3"/>
         <Literal>L. da Vinci</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/bilbiographicReference"/>
+        <DataProperty abbreviatedIRI="a-cd:bilbiographicReference"/>
         <NamedIndividual IRI="#Bibliography3"/>
         <Literal>Manoscritto Forster II, folio 63 recto</Literal>
     </DataPropertyAssertion>
@@ -4065,12 +4065,12 @@
         <Literal>Bibliografia 7 della teoria artistica 1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/bibliographicReferenceAuthor"/>
+        <DataProperty abbreviatedIRI="a-cd:bibliographicReferenceAuthor"/>
         <NamedIndividual IRI="#Bibliography4"/>
         <Literal>L. da Vinci</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/bilbiographicReference"/>
+        <DataProperty abbreviatedIRI="a-cd:bilbiographicReference"/>
         <NamedIndividual IRI="#Bibliography4"/>
         <Literal>Codex Atlanticus, folio 1041 recto.</Literal>
     </DataPropertyAssertion>
@@ -4080,12 +4080,12 @@
         <Literal>Bibliografia 5 della teoria artistica 1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/bibliographicReferenceAuthor"/>
+        <DataProperty abbreviatedIRI="a-cd:bibliographicReferenceAuthor"/>
         <NamedIndividual IRI="#Bibliography5"/>
         <Literal>L. da Vinci</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/bilbiographicReference"/>
+        <DataProperty abbreviatedIRI="a-cd:bilbiographicReference"/>
         <NamedIndividual IRI="#Bibliography5"/>
         <Literal>Manoscritto A, Institute du France, folio 9 verso</Literal>
     </DataPropertyAssertion>
@@ -4095,12 +4095,12 @@
         <Literal>Bibliografia 6 della teoria artistica 1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/bibliographicReferenceAuthor"/>
+        <DataProperty abbreviatedIRI="a-cd:bibliographicReferenceAuthor"/>
         <NamedIndividual IRI="#Bibliography6"/>
         <Literal>L. da Vinci</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/bilbiographicReference"/>
+        <DataProperty abbreviatedIRI="a-cd:bilbiographicReference"/>
         <NamedIndividual IRI="#Bibliography6"/>
         <Literal>Manoscritto A, Institute du France, folio 19 verso</Literal>
     </DataPropertyAssertion>
@@ -4110,12 +4110,12 @@
         <Literal>Bibliografia 7 della teoria artistica 1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/bibliographicReferenceAuthor"/>
+        <DataProperty abbreviatedIRI="a-cd:bibliographicReferenceAuthor"/>
         <NamedIndividual IRI="#Bibliography7"/>
         <Literal>L. da Vinci</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/bilbiographicReference"/>
+        <DataProperty abbreviatedIRI="a-cd:bilbiographicReference"/>
         <NamedIndividual IRI="#Bibliography7"/>
         <Literal>Manoscritto A, Institute du France, folio 109 verso</Literal>
     </DataPropertyAssertion>
@@ -4125,12 +4125,12 @@
         <Literal>Il Cenacolo, guida al refettorio</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/bibliographicReferenceAuthor"/>
+        <DataProperty abbreviatedIRI="a-cd:bibliographicReferenceAuthor"/>
         <NamedIndividual IRI="#Bibliography8"/>
         <Literal>P. C. Marani</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/bilbiographicReference"/>
+        <DataProperty abbreviatedIRI="a-cd:bilbiographicReference"/>
         <NamedIndividual IRI="#Bibliography8"/>
         <Literal>Il Cenacolo. Guida al refettorio</Literal>
     </DataPropertyAssertion>
@@ -4140,12 +4140,12 @@
         <Literal>Il Genio e le passioni, Leonardo e il Cenacolo</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/bibliographicReferenceAuthor"/>
+        <DataProperty abbreviatedIRI="a-cd:bibliographicReferenceAuthor"/>
         <NamedIndividual IRI="#Bibliography9"/>
         <Literal>Il genio e le passioni. Leonardo e il Cenacolo</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/bibliographicReferenceAuthor"/>
+        <DataProperty abbreviatedIRI="a-cd:bibliographicReferenceAuthor"/>
         <NamedIndividual IRI="#Bibliography9"/>
         <Literal>P. C. Marani</Literal>
     </DataPropertyAssertion>
@@ -4155,7 +4155,7 @@
         <Literal>Fonte primaria</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/bibliographicReferenceAuthor"/>
+        <DataProperty abbreviatedIRI="a-cd:bibliographicReferenceAuthor"/>
         <NamedIndividual IRI="#BibliographyType1"/>
         <Literal>P. C. Marani</Literal>
     </DataPropertyAssertion>
@@ -4165,7 +4165,7 @@
         <Literal>Libro</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/bibliographicReferenceAuthor"/>
+        <DataProperty abbreviatedIRI="a-cd:bibliographicReferenceAuthor"/>
         <NamedIndividual IRI="#BibliographyType2"/>
         <Literal>P. C. Marani</Literal>
     </DataPropertyAssertion>
@@ -4195,17 +4195,17 @@
         <Literal xml:lang="it">Boccaccio Boccaccino, pittore emiliano.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
+        <DataProperty abbreviatedIRI="a-cd:agentDate"/>
         <NamedIndividual IRI="#Boccaccino"/>
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">c. 1467 / c. 1525</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#Boccaccino"/>
         <Literal xml:lang="en">Boccaccio Boccaccino</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#Boccaccino"/>
         <Literal xml:lang="it">Boccaccio Boccaccino</Literal>
     </DataPropertyAssertion>
@@ -4240,17 +4240,17 @@
         <Literal xml:lang="it">Michelangelo Merisi detto il Caravaggio, pittore Italiano</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
+        <DataProperty abbreviatedIRI="a-cd:agentDate"/>
         <NamedIndividual IRI="#Caravaggio"/>
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">1571 - 09 - 29 / 1610 - 07 - 18</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#Caravaggio"/>
         <Literal xml:lang="en">Michelangelo Merisi called Caravaggio</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#Caravaggio"/>
         <Literal xml:lang="it">Michelangelo Merisi detto il Caravaggio</Literal>
     </DataPropertyAssertion>
@@ -4421,7 +4421,7 @@ Gli elementi religiosi di questa stampa sono stemperati rispetto all&apos;origin
         <Literal xml:lang="it">Domenico Bigordi, detto il Ghirlandaio.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
+        <DataProperty abbreviatedIRI="a-cd:agentDate"/>
         <NamedIndividual IRI="#DomenicoGhirlandaio"/>
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">1448 - 06 - 02 / 1494 - 01 - 11</Literal>
     </DataPropertyAssertion>
@@ -4493,17 +4493,17 @@ Giuda è posizionato dall&apos;altra parte del tavolo rispetto alle altre figure
         <Literal xml:lang="en">Francesco Melzi, or Francesco de Melzi, Italian painter</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
+        <DataProperty abbreviatedIRI="a-cd:agentDate"/>
         <NamedIndividual IRI="#FrancescoMelzi"/>
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">1491 / 1570</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#FrancescoMelzi"/>
         <Literal xml:lang="en">Francesco Melzi</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#FrancescoMelzi"/>
         <Literal xml:lang="it">Francesco Melzi</Literal>
     </DataPropertyAssertion>
@@ -4538,17 +4538,17 @@ Giuda è posizionato dall&apos;altra parte del tavolo rispetto alle altre figure
         <Literal xml:lang="it">Francesco di Cristofano, detto il Franciabigio, pittore italiano</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
+        <DataProperty abbreviatedIRI="a-cd:agentDate"/>
         <NamedIndividual IRI="#Franciobigio"/>
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">1482 / 1525 - 01 - 24</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#Franciobigio"/>
         <Literal xml:lang="it">Francesco di Cristofano, called Franciabigio</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#Franciobigio"/>
         <Literal xml:lang="it">Francesco di Cristofano, detto il Franciabigio.</Literal>
     </DataPropertyAssertion>
@@ -4583,17 +4583,17 @@ Giuda è posizionato dall&apos;altra parte del tavolo rispetto alle altre figure
         <Literal xml:lang="it">Benvenuto Tisi da Garofalo, detto il Garofalo, pittore italiano</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
+        <DataProperty abbreviatedIRI="a-cd:agentDate"/>
         <NamedIndividual IRI="#Garofalo"/>
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">1481 / 1559 - 09 - 06</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#Garofalo"/>
         <Literal xml:lang="en">Benvenuto Tisi da Garofalo, called Garofalo</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#Garofalo"/>
         <Literal xml:lang="it">Benvenuto Tisi da Garofalo, detto il Garofalo</Literal>
     </DataPropertyAssertion>
@@ -4608,12 +4608,12 @@ Giuda è posizionato dall&apos;altra parte del tavolo rispetto alle altre figure
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1540</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#GarofaloAdultera"/>
         <Literal xml:lang="en">Cristo e l&apos;adultera</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#GarofaloAdultera"/>
         <Literal xml:lang="it">Cristo e l&apos;adultera</Literal>
     </DataPropertyAssertion>
@@ -4628,7 +4628,7 @@ Giuda è posizionato dall&apos;altra parte del tavolo rispetto alle altre figure
         <Literal xml:lang="it">Gaudenzio Ferrari pittore e scultore del Nord Italia</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
+        <DataProperty abbreviatedIRI="a-cd:agentDate"/>
         <NamedIndividual IRI="#GaudenzioFerrari"/>
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">c. 1471 / 1546 - 01 - 11</Literal>
     </DataPropertyAssertion>
@@ -4678,22 +4678,22 @@ Giuda è posizionato dall&apos;altra parte del tavolo rispetto alle altre figure
         <Literal xml:lang="it">Giorgione o Giorgio da Castelfranco, pseudonimo di Giorgio Zorzi, o Zorzo, pittore italiano</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
+        <DataProperty abbreviatedIRI="a-cd:agentDate"/>
         <NamedIndividual IRI="#Giorgione"/>
         <Literal xml:lang="en">1478 / 1510 - 10 - 25</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#Giorgione"/>
         <Literal xml:lang="it">Giorgione o Giorgio da Castelfranco, pseudonimo di Giorgio Zorzi, o Zorzo</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#Giorgione"/>
         <Literal xml:lang="en">Giorgione or Giorgio da Castelfranco, pseudonym of Giorgio Zorzi or Zorzo</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#Giorgione"/>
         <Literal xml:lang="en">Giorgione or Giorgio da Castelfranco, pseudonym of Giorgio Zorzi or Zorzo, Italian painter</Literal>
     </DataPropertyAssertion>
@@ -4728,7 +4728,7 @@ Giuda è posizionato dall&apos;altra parte del tavolo rispetto alle altre figure
         <Literal xml:lang="it">Giovanni Agostino da Lodi, pittore italiano</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
+        <DataProperty abbreviatedIRI="a-cd:agentDate"/>
         <NamedIndividual IRI="#GiovanniAgostinoLodi"/>
         <Literal xml:lang="en">1470 / 1519</Literal>
     </DataPropertyAssertion>
@@ -4738,22 +4738,22 @@ Giuda è posizionato dall&apos;altra parte del tavolo rispetto alle altre figure
         <Literal xml:lang="en">Giovanni Pietro Birago, Italian engraver</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
+        <DataProperty abbreviatedIRI="a-cd:agentDate"/>
         <NamedIndividual IRI="#GiovanniPietroBirago"/>
         <Literal xml:lang="en">not known, probably end of XV and beginning of XVI century, last mention in 1510.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#GiovanniPietroBirago"/>
         <Literal xml:lang="en">Giovanni Pietro Birago</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#GiovanniPietroBirago"/>
         <Literal xml:lang="it">Giovanni Pietro Birago</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#GiovanniPietroBirago"/>
         <Literal xml:lang="it">Giovanni Pietro Birago, incisore italiano</Literal>
     </DataPropertyAssertion>
@@ -4913,17 +4913,17 @@ Giuda è posizionato dall&apos;altra parte del tavolo rispetto alle altre figure
         <Literal xml:lang="it">Sir John Everett Millais, I barone, pittore ed illustratore inglese</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
+        <DataProperty abbreviatedIRI="a-cd:agentDate"/>
         <NamedIndividual IRI="#John_Everett_Millais"/>
         <Literal xml:lang="en">1829 - 06 - 09 / 1896 - 08 - 13</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#John_Everett_Millais"/>
         <Literal xml:lang="en">Sir John Everett Millais</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#John_Everett_Millais"/>
         <Literal xml:lang="it">Sir John Everett Millais</Literal>
     </DataPropertyAssertion>
@@ -5000,22 +5000,22 @@ Cristo tipicamente dà del pane a Giuda legandosi ad un episodio evangelico.</Li
         <Literal xml:lang="it">Leonardo di ser Piero da Vinci più comunemente Leonardo da Vinci o semplicemente Leonardo.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
+        <DataProperty abbreviatedIRI="a-cd:agentDate"/>
         <NamedIndividual IRI="#Leonardo_Da_Vinci"/>
         <Literal xml:lang="en">1452 - 04 - 15 / 1519 - 05 - 2</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#Location1"/>
         <Literal>Flanders, historica region</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#Location2"/>
         <Literal>Milan</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#Location3"/>
         <Literal>Florence</Literal>
     </DataPropertyAssertion>
@@ -5030,17 +5030,17 @@ Cristo tipicamente dà del pane a Giuda legandosi ad un episodio evangelico.</Li
         <Literal xml:lang="it">Marcantonio Raimondi, incisore</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
+        <DataProperty abbreviatedIRI="a-cd:agentDate"/>
         <NamedIndividual IRI="#MarcantonioRaimondi"/>
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">1480 / 1534</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#MarcantonioRaimondi"/>
         <Literal xml:lang="en">Marcantonio Raimondi</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#MarcantonioRaimondi"/>
         <Literal xml:lang="it">Marcantonio Raimondi.</Literal>
     </DataPropertyAssertion>
@@ -5091,22 +5091,22 @@ c.1850</Literal>
         <Literal xml:lang="it">Pietro di Cristoforo Vannucci, noto come il Perugino, Il divin pittore o come Pietro Perugino, pittore Italiano</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
+        <DataProperty abbreviatedIRI="a-cd:agentDate"/>
         <NamedIndividual IRI="#Perugino"/>
         <Literal>1446 / 1523</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#Perugino"/>
         <Literal xml:lang="en">Pietro di Cristoforo Vannucci, know as il Perugino, &quot;Il divin pittore&quot; or as Pietro Perugino</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#Perugino"/>
         <Literal xml:lang="en">Pietro di Cristoforo Vannucci, know as il Perugino, &quot;Il divin pittore&quot; or as Pietro Perugino, Italian painter.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#Perugino"/>
         <Literal xml:lang="it">Pietro di Cristoforo Vannucci, noto come il Perugino, Il divin pittore o come Pietro Perugino.</Literal>
     </DataPropertyAssertion>
@@ -5121,12 +5121,12 @@ c.1850</Literal>
         <Literal xml:lang="it">1480</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#PeruginoLastSupper"/>
         <Literal xml:lang="en">Cenacolo di Fuligno</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#PeruginoLastSupper"/>
         <Literal xml:lang="it">Cenacolo di Fuligno</Literal>
     </DataPropertyAssertion>
@@ -5136,12 +5136,12 @@ c.1850</Literal>
         <Literal>Peter Coecke Van Aelst, Flemish painter and master</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
+        <DataProperty abbreviatedIRI="a-cd:agentDate"/>
         <NamedIndividual IRI="#PeterCoeckeVanAelst"/>
         <Literal>1502 - 1550</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#PeterCoeckeVanAelst"/>
         <Literal>Peter Coecke Van Aelst</Literal>
     </DataPropertyAssertion>
@@ -5314,17 +5314,17 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Literal xml:lang="en">Raffaello Morghen, also known as Raffaele Morghen, italian engraver.</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
+        <DataProperty abbreviatedIRI="a-cd:agentDate"/>
         <NamedIndividual IRI="#RaffaelloMorghen"/>
         <Literal>1758 - 06 - 19 / 1833 - 04 - 8</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#RaffaelloMorghen"/>
         <Literal xml:lang="en">Raffaello Morghen, also known as Raffaele Morghen</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#RaffaelloMorghen"/>
         <Literal xml:lang="it">Raffaello Morghen, conosciuto anche come Raffaele Morghen</Literal>
     </DataPropertyAssertion>
@@ -5369,7 +5369,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Literal xml:lang="it">Taddeo Gaddi, pittore ed architetto medievale italiano</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
+        <DataProperty abbreviatedIRI="a-cd:agentDate"/>
         <NamedIndividual IRI="#TaddeoGaddi"/>
         <Literal>1290 / 1366</Literal>
     </DataPropertyAssertion>
@@ -5429,17 +5429,17 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Literal xml:lang="it">Andrea Bianchi, chiamato Vespino, pittore Italiano</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
+        <DataProperty abbreviatedIRI="a-cd:agentDate"/>
         <NamedIndividual IRI="#Vespino"/>
         <Literal>fine XVI sec. / almeno primo trentennio XVII</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#Vespino"/>
         <Literal xml:lang="en">Andrea Bianchi, called Vespino</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#Vespino"/>
         <Literal xml:lang="it">Andrea Bianchi, detto Vespino</Literal>
     </DataPropertyAssertion>
@@ -5454,12 +5454,12 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1611</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#VespinoLastSupper"/>
         <Literal xml:lang="en">Ultima Cena, 1611-1616</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <NamedIndividual IRI="#VespinoLastSupper"/>
         <Literal xml:lang="it">Ultima Cena, 1611-1616</Literal>
     </DataPropertyAssertion>
@@ -5961,7 +5961,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#HasDerivatedWork"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isRelatedWorkSituationOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isRelatedWorkSituationOf"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#HasDerivativeVisualUnit"/>
@@ -5973,7 +5973,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#HasFinalWork"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isRelatedWorkSituationOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isRelatedWorkSituationOf"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#HasGeometricVisualUnit"/>
@@ -5985,7 +5985,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#HasInfluencedWork"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isRelatedWorkSituationOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isRelatedWorkSituationOf"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#HasInfluencerVisualUnit"/>
@@ -5993,7 +5993,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#HasInfluencerWork"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isRelatedWorkSituationOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isRelatedWorkSituationOf"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#HasMediumVisualUnit"/>
@@ -6001,7 +6001,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#HasMediumWork"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isRelatedWorkSituationOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isRelatedWorkSituationOf"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#HasObject"/>
@@ -6013,7 +6013,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#HasOriginalWork"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isRelatedWorkSituationOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isRelatedWorkSituationOf"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#HasPreparatoryVisualUnit"/>
@@ -6021,7 +6021,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#HasPreparatoryWork"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isRelatedWorkSituationOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isRelatedWorkSituationOf"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#IsCharacterOf"/>
@@ -6037,11 +6037,11 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#IsDerivationIn"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasRelatedWorkSituation"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasRelatedWorkSituation"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#IsFinalIn"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasRelatedWorkSituation"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasRelatedWorkSituation"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#IsFinalVisualUnitOf"/>
@@ -6053,7 +6053,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#IsInfluencedIn"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasRelatedWorkSituation"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasRelatedWorkSituation"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#IsInfluencedVisualUnitOf"/>
@@ -6061,7 +6061,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#IsInfluencerIn"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasRelatedWorkSituation"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasRelatedWorkSituation"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#IsInfluencerVisualUnitOf"/>
@@ -6069,7 +6069,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#IsMediumIn"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasRelatedWorkSituation"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasRelatedWorkSituation"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#IsMediumVisualUnitOf"/>
@@ -6085,11 +6085,11 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#IsOriginaln"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasRelatedWorkSituation"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasRelatedWorkSituation"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#IsPreparatoryIn"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasRelatedWorkSituation"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasRelatedWorkSituation"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#IsPreparatoryVisualUnitOf"/>
@@ -6132,64 +6132,64 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <ObjectProperty IRI="https://ontopia-lodview.agid.gov.it/onto/TI/hasTemporalEntity"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasRelatedAgent"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasRelatedAgent"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasBibliographyType"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasType"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasBibliographyType"/>
+        <ObjectProperty abbreviatedIRI="core:hasType"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDating"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasSituation"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDating"/>
+        <ObjectProperty abbreviatedIRI="core:hasSituation"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasRelatedWorkSituation"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasSituation"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasRelatedWorkSituation"/>
+        <ObjectProperty abbreviatedIRI="core:hasSituation"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAgentRelatedTo"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isAuthorOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isAgentRelatedTo"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isBibliographyOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isBibliographyOf"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isBibliographyTypeOf"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/isTypeOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isBibliographyTypeOf"/>
+        <ObjectProperty abbreviatedIRI="core:isTypeOf"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isDatingOf"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/isSituationOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isDatingOf"/>
+        <ObjectProperty abbreviatedIRI="core:isSituationOf"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/specificTime"/>
+        <ObjectProperty abbreviatedIRI="a-cd:specificTime"/>
         <ObjectProperty IRI="https://ontopia-lodview.agid.gov.it/onto/TI/atTime"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasConcept"/>
+        <ObjectProperty abbreviatedIRI="core:hasConcept"/>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isClassifiedBy"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasSituation"/>
+        <ObjectProperty abbreviatedIRI="core:hasSituation"/>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasType"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasConcept"/>
+        <ObjectProperty abbreviatedIRI="core:hasType"/>
+        <ObjectProperty abbreviatedIRI="core:hasConcept"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/isConceptOf"/>
+        <ObjectProperty abbreviatedIRI="core:isConceptOf"/>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/isSituationOf"/>
+        <ObjectProperty abbreviatedIRI="core:isSituationOf"/>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/isTypeOf"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/isConceptOf"/>
+        <ObjectProperty abbreviatedIRI="core:isTypeOf"/>
+        <ObjectProperty abbreviatedIRI="core:isConceptOf"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies"/>
@@ -6332,40 +6332,40 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <ObjectProperty IRI="#Theorises"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isAuthorOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasBibliography"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isBibliographyOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasBibliography"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isBibliographyOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasBibliographyType"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isBibliographyTypeOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasBibliographyType"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isBibliographyTypeOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDating"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isDatingOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDating"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isDatingOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDatingEvent"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isDatingEventOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDatingEvent"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isDatingEventOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasRelatedAgent"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isAgentRelatedTo"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasRelatedAgent"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isAgentRelatedTo"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasRelatedWorkSituation"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isRelatedWorkSituationOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasRelatedWorkSituation"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isRelatedWorkSituationOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasConcept"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/isConceptOf"/>
+        <ObjectProperty abbreviatedIRI="core:hasConcept"/>
+        <ObjectProperty abbreviatedIRI="core:isConceptOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/hasSituation"/>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/core/isSituationOf"/>
+        <ObjectProperty abbreviatedIRI="core:hasSituation"/>
+        <ObjectProperty abbreviatedIRI="core:isSituationOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty abbreviatedIRI="CLV:hasGeometry"/>
@@ -6392,11 +6392,11 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#Creates"/>
-        <Class IRI="#core:Agent"/>
+        <Class IRI="core:Agent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#DescribedIn"/>
-        <Class IRI="https://w3id.org/arco/ontology/core/Concept"/>
+        <Class abbreviatedIRI="core:Concept"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#EmbodiesArtisticTheory"/>
@@ -6621,7 +6621,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#Theorises"/>
-        <Class IRI="#core:Agent"/>
+        <Class IRI="core:Agent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasDiffusionPeriod"/>
@@ -6644,47 +6644,47 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Class abbreviatedIRI="owl:Thing"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
         <ObjectUnionOf>
+            <Class IRI="a-cd:Bibliography"/>
             <Class abbreviatedIRI="cis:CulturalEntity"/>
-            <Class IRI="https://w3id.org/arco/ontology/context-description/Bibliography"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDating"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDating"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDatingEvent"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDatingEvent"/>
         <Class IRI="#a-cd:Dating"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDepiction"/>
         <ObjectUnionOf>
+            <Class IRI="core:Agent"/>
             <Class abbreviatedIRI="cis:CulturalEntity"/>
             <Class IRI="#VisualUnit"/>
-            <Class IRI="#core:Agent"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasRelatedWorkSituation"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasRelatedWorkSituation"/>
         <Class IRI="#Arco:CulturalProperty"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isDatingEventOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isDatingEventOf"/>
         <Class IRI="#IO:Event"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isDatingOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isDatingOf"/>
         <Class IRI="#a-cd:Dating"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isRelatedWorkSituationOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isRelatedWorkSituationOf"/>
         <Class IRI="#a-cd:RelatedWorkSituation"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/specificTime"/>
-        <Class IRI="https://w3id.org/italia/onto/l0/EventOrSituation"/>
+        <ObjectProperty abbreviatedIRI="a-cd:specificTime"/>
+        <Class abbreviatedIRI="l0:EventOrSituation"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="CLV:hasGeometry"/>
@@ -6708,7 +6708,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#CreatedBy"/>
-        <Class IRI="#core:Agent"/>
+        <Class IRI="core:Agent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#Creates"/>
@@ -6927,7 +6927,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#TheorisedBy"/>
-        <Class IRI="#core:Agent"/>
+        <Class IRI="core:Agent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#Theorises"/>
@@ -6935,7 +6935,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasDiffusionPeriod"/>
-        <Class IRI="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <Class abbreviatedIRI="Tiapit:TimeInterval"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasRelationLocation"/>
@@ -6947,47 +6947,47 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="https://ontopia-lodview.agid.gov.it/onto/TI/atTime"/>
-        <Class IRI="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <Class abbreviatedIRI="Tiapit:TimeInterval"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="https://ontopia-lodview.agid.gov.it/onto/TI/hasTemporalEntity"/>
-        <Class IRI="https://w3id.org/italia/onto/TI/TemporalEntity"/>
+        <Class abbreviatedIRI="Tiapit:TemporalEntity"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
-        <Class IRI="#core:Agent"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
+        <Class IRI="core:Agent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDating"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDating"/>
         <Class IRI="#a-cd:Dating"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDatingEvent"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDatingEvent"/>
         <Class IRI="#IO:Event"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasDepiction"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDepiction"/>
         <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/hasRelatedWorkSituation"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasRelatedWorkSituation"/>
         <Class IRI="#a-cd:RelatedWorkSituation"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isDatingEventOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isDatingEventOf"/>
         <Class IRI="#a-cd:Dating"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isDatingOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isDatingOf"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/isRelatedWorkSituationOf"/>
+        <ObjectProperty abbreviatedIRI="a-cd:isRelatedWorkSituationOf"/>
         <Class IRI="#Arco:CulturalProperty"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://w3id.org/arco/ontology/context-description/specificTime"/>
-        <Class IRI="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <ObjectProperty abbreviatedIRI="a-cd:specificTime"/>
+        <Class abbreviatedIRI="Tiapit:TimeInterval"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="CLV:hasGeometry"/>
@@ -6999,11 +6999,11 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty IRI="#AlternativeRelationDate"/>
-        <DataProperty IRI="https://w3id.org/italia/onto/TI/date"/>
+        <DataProperty abbreviatedIRI="Tiapit:date"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#ApproximateDate"/>
-        <DataProperty IRI="https://w3id.org/italia/onto/TI/date"/>
+        <DataProperty abbreviatedIRI="Tiapit:date"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#ApproximatePeriod"/>
@@ -7027,7 +7027,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#EndDate"/>
-        <DataProperty IRI="https://w3id.org/italia/onto/TI/date"/>
+        <DataProperty abbreviatedIRI="Tiapit:date"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#GeometricalDescription"/>
@@ -7043,15 +7043,15 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#OtherIconclassCode"/>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/iconclassCode"/>
+        <DataProperty abbreviatedIRI="a-cd:iconclassCode"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#RealisationPeriod"/>
-        <DataProperty IRI="https://w3id.org/italia/onto/TI/date"/>
+        <DataProperty abbreviatedIRI="Tiapit:date"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#RelationDate"/>
-        <DataProperty IRI="https://w3id.org/italia/onto/TI/date"/>
+        <DataProperty abbreviatedIRI="Tiapit:date"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#RelationDescription"/>
@@ -7059,15 +7059,15 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#StartDate"/>
-        <DataProperty IRI="https://w3id.org/italia/onto/TI/date"/>
+        <DataProperty abbreviatedIRI="Tiapit:date"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#TypicalIconclassCode"/>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/iconclassCode"/>
+        <DataProperty abbreviatedIRI="a-cd:iconclassCode"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
-        <DataProperty IRI="https://w3id.org/italia/onto/TI/date"/>
+        <DataProperty abbreviatedIRI="a-cd:agentDate"/>
+        <DataProperty abbreviatedIRI="Tiapit:date"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty abbreviatedIRI="CLV:lat"/>
@@ -7162,19 +7162,19 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Class abbreviatedIRI="CLV:Geometry"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
-        <Class IRI="#core:Agent"/>
+        <DataProperty abbreviatedIRI="a-cd:agentDate"/>
+        <Class IRI="core:Agent"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/bibliographicReferenceAuthor"/>
-        <Class IRI="https://w3id.org/arco/ontology/context-description/Bibliography"/>
+        <DataProperty abbreviatedIRI="a-cd:bibliographicReferenceAuthor"/>
+        <Class IRI="a-cd:Bibliography"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/bilbiographicReference"/>
-        <Class IRI="https://w3id.org/arco/ontology/context-description/Bibliography"/>
+        <DataProperty abbreviatedIRI="a-cd:bilbiographicReference"/>
+        <Class IRI="a-cd:Bibliography"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/iconclassCode"/>
+        <DataProperty abbreviatedIRI="a-cd:iconclassCode"/>
         <Class IRI="#IconographicTheme"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
@@ -7186,11 +7186,11 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Class abbreviatedIRI="CLV:Geometry"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="https://w3id.org/italia/onto/TI/date"/>
+        <DataProperty abbreviatedIRI="Tiapit:date"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </DataPropertyDomain>
     <DataPropertyRange>
@@ -7272,19 +7272,19 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/agentDate"/>
+        <DataProperty abbreviatedIRI="a-cd:agentDate"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/bibliographicReferenceAuthor"/>
+        <DataProperty abbreviatedIRI="a-cd:bibliographicReferenceAuthor"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/bilbiographicReference"/>
+        <DataProperty abbreviatedIRI="a-cd:bilbiographicReference"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="https://w3id.org/arco/ontology/context-description/iconclassCode"/>
+        <DataProperty abbreviatedIRI="a-cd:iconclassCode"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -7296,14 +7296,14 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="https://w3id.org/italia/onto/TI/date"/>
+        <DataProperty abbreviatedIRI="Tiapit:date"/>
         <DataUnionOf>
             <Datatype abbreviatedIRI="rdfs:Literal"/>
             <Datatype abbreviatedIRI="xsd:int"/>
         </DataUnionOf>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="https://w3id.org/italia/onto/l0/name"/>
+        <DataProperty abbreviatedIRI="l0:name"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <DisjointDataProperties>
@@ -7326,6 +7326,11 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <DataProperty IRI="#GeometricalDescription"/>
         <DataProperty IRI="#GeometricalRelationDescription"/>
     </DisjointDataProperties>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>core:Agent</IRI>
+        <IRI>http://dati.gov.it/onto/dcatapit#Agent</IRI>
+    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#AbstractConcept</IRI>
@@ -7979,7 +7984,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#Arco:AlternativeDating</IRI>
-        <IRI>https://w3id.org/arco/ontology/context-description/AlternativeDating</IRI>
+        <AbbreviatedIRI>a-cd:AlternativeDating</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
@@ -7989,87 +7994,82 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#IO:Event</IRI>
-        <IRI>https://w3id.org/italia/onto/l0/EventOrSituation</IRI>
+        <AbbreviatedIRI>l0:EventOrSituation</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#a-cd:CulturalPropertyStage</IRI>
-        <IRI>https://w3id.org/arco/ontology/context-description/CulturalPropertyStage</IRI>
+        <AbbreviatedIRI>a-cd:CulturalPropertyStage</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#a-cd:CulturalScope</IRI>
-        <IRI>https://w3id.org/arco/ontology/context-description/CulturalScope</IRI>
+        <AbbreviatedIRI>a-cd:CulturalScope</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#a-cd:Dating</IRI>
-        <IRI>https://w3id.org/arco/ontology/context-description/Dating</IRI>
+        <AbbreviatedIRI>a-cd:Dating</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#a-cd:InterpretationCriterion</IRI>
-        <IRI>https://w3id.org/arco/ontology/context-description/InterpretationCriterion</IRI>
+        <AbbreviatedIRI>a-cd:InterpretationCriterion</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#a-cd:RelatedWorkSituation</IRI>
-        <IRI>https://w3id.org/arco/ontology/context-description/RelatedWorkSituation</IRI>
+        <AbbreviatedIRI>a-cd:RelatedWorkSituation</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#a-cd:Subject</IRI>
-        <IRI>https://w3id.org/arco/ontology/context-description/Subject</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>#core:Agent</IRI>
-        <IRI>http://dati.gov.it/onto/dcatapit#Agent</IRI>
+        <AbbreviatedIRI>a-cd:Subject</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://w3id.org/arco/ontology/context-description/agentDate</IRI>
+        <AbbreviatedIRI>a-cd:agentDate</AbbreviatedIRI>
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Property used to indicate temporal information (birth date/death date/period of life)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>https://w3id.org/arco/ontology/context-description/agentDate</IRI>
+        <AbbreviatedIRI>a-cd:agentDate</AbbreviatedIRI>
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">https://w3id.org/arco/ontology/context-description/agentDate</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://w3id.org/arco/ontology/context-description/hasDating</IRI>
+        <AbbreviatedIRI>a-cd:hasDating</AbbreviatedIRI>
         <Literal>Mutuated from contextual description module, this property links an element to its dating node.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://w3id.org/arco/ontology/context-description/hasDatingEvent</IRI>
+        <AbbreviatedIRI>a-cd:hasDatingEvent</AbbreviatedIRI>
         <Literal>This property link the Dating node to its dating Event. The dating pattern is mutuated by the contextual description module.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://w3id.org/arco/ontology/context-description/hasRelatedWorkSituation</IRI>
+        <AbbreviatedIRI>a-cd:hasRelatedWorkSituation</AbbreviatedIRI>
         <Literal>Mutuated by Contextual Description module of Arco. This property links a work to a related one. The pattern used in Arco is maintained even if it is specialised by a new set of subproperties and subclasses.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>https://w3id.org/arco/ontology/context-description/iconclassCode</IRI>
-        <IRI>https://w3id.org/arco/ontology/context-description/iconclassCode</IRI>
+        <AbbreviatedIRI>a-cd:iconclassCode</AbbreviatedIRI>
+        <AbbreviatedIRI>a-cd:iconclassCode</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://w3id.org/arco/ontology/context-description/isDatingEventOf</IRI>
+        <AbbreviatedIRI>a-cd:isDatingEventOf</AbbreviatedIRI>
         <Literal>Inverse of HasDatingEvent</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://w3id.org/arco/ontology/context-description/isDatingOf</IRI>
+        <AbbreviatedIRI>a-cd:isDatingOf</AbbreviatedIRI>
         <Literal>Inverse of Arco:HasDating</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>https://w3id.org/arco/ontology/core/Concept</IRI>
-        <IRI>https://w3id.org/italia/onto/l0/Concept</IRI>
+        <AbbreviatedIRI>core:Concept</AbbreviatedIRI>
+        <AbbreviatedIRI>l0:Concept</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
@@ -8088,8 +8088,8 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>https://w3id.org/italia/onto/TI/date</IRI>
-        <IRI>https://w3id.org/italia/onto/TI/date</IRI>
+        <AbbreviatedIRI>Tiapit:date</AbbreviatedIRI>
+        <AbbreviatedIRI>Tiapit:date</AbbreviatedIRI>
     </AnnotationAssertion>
 </Ontology>
 

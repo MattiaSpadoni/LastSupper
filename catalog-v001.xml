@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="https://w3id.org/arco/ontology/context-description" uri="https://w3id.org/arco/ontology/context-description/"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1613419691223" name="duplicate:http://www.semanticweb.org/mattia/ontologies/2020/10/LastSupperOntology" uri="BackupKB.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1613419691223" name="duplicate:http://www.semanticweb.org/mattia/ontologies/2020/10/LastSupperOntology" uri="LastSupper.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1613419691223" name="duplicate:http://www.semanticweb.org/mattia/ontologies/2020/10/LastSupperOntology" uri="Prova.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1613419691223" name="duplicate:http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25" uri="KBRDF.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1613419691223" name="duplicate:http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25" uri="ProvaVecchia.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1613419691223" name="https://github.com/MattiaSpadoni/LastSupper/KBLastSupper.owl#" uri="KBLastSupper.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1613419691223" name="shadowed:http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25" uri="myDocumentation/ontology.xml"/>
+    </group>
+</catalog>
