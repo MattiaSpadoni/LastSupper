@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://github.com/MattiaSpadoni/LastSupper/blob/main/KBLastSupper.owl#">
-    <Prefix name="" IRI="https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#"/>
+    <Prefix name="" IRI="https://github.com/MattiaSpadoni/LastSupper/blob/main/KBLastSupper.owl#"/>
     <Prefix name="LS" IRI="https://github.com/MattiaSpadoni/LastSupper/blob/main/KBLastSupper.owl#"/>
     <Prefix name="l0" IRI="https://w3id.org/italia/onto/l0/"/>
     <Prefix name="CLV" IRI="https://w3id.org/italia/onto/CLV/"/>
@@ -70,9 +70,6 @@
         <Class IRI="VisualUnit"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#a-cd:InterpretationCriterion"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
     </Declaration>
     <Declaration>
@@ -98,6 +95,9 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="a-cd:Interpretation"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="a-cd:InterpretationCriterion"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="a-cd:RelatedWorkSituation"/>
@@ -1131,6 +1131,20 @@
         <Class abbreviatedIRI="a-cd:RelatedWorkSituation"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="DerivationRelation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="HasDerivatedWork"/>
+            <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DerivationRelation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="HasOriginalWork"/>
+            <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="GeometricVisualUnit"/>
         <Class IRI="VisualUnit"/>
     </SubClassOf>
@@ -1163,10 +1177,6 @@
         <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#a-cd:InterpretationCriterion"/>
-        <Class abbreviatedIRI="l0:Description"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
         <Class abbreviatedIRI="cis:CulturalEntity"/>
     </SubClassOf>
@@ -1197,6 +1207,10 @@
     <SubClassOf>
         <Class abbreviatedIRI="a-cd:Interpretation"/>
         <Class abbreviatedIRI="core:Situation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="a-cd:InterpretationCriterion"/>
+        <Class abbreviatedIRI="l0:Description"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="a-cd:RelatedWorkSituation"/>
@@ -7847,33 +7861,33 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>#a-cd:InterpretationCriterion</IRI>
+        <IRI>https://w3id.org/arco/ontology/arco/CulturalProperty/</IRI>
+        <IRI>https://w3id.org/arco/ontology/arco/CulturalProperty/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>a-cd:AlternativeDating</AbbreviatedIRI>
+        <AbbreviatedIRI>a-cd:AlternativeDating</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>a-cd:CulturalPropertyStage</AbbreviatedIRI>
+        <AbbreviatedIRI>a-cd:CulturalPropertyStage</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>a-cd:CulturalScope</AbbreviatedIRI>
+        <AbbreviatedIRI>a-cd:CulturalScope</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>a-cd:Dating</AbbreviatedIRI>
+        <AbbreviatedIRI>a-cd:Dating</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <AbbreviatedIRI>a-cd:InterpretationCriterion</AbbreviatedIRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>https://w3id.org/arco/ontology/arco/CulturalProperty/</IRI>
-        <IRI>https://w3id.org/arco/ontology/arco/CulturalProperty/</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <AbbreviatedIRI>a-cd:AlternativeDating</AbbreviatedIRI>
-        <AbbreviatedIRI>a-cd:AlternativeDating</AbbreviatedIRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <AbbreviatedIRI>a-cd:CulturalPropertyStage</AbbreviatedIRI>
-        <AbbreviatedIRI>a-cd:CulturalPropertyStage</AbbreviatedIRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <AbbreviatedIRI>a-cd:CulturalScope</AbbreviatedIRI>
-        <AbbreviatedIRI>a-cd:CulturalScope</AbbreviatedIRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <AbbreviatedIRI>a-cd:Dating</AbbreviatedIRI>
-        <AbbreviatedIRI>a-cd:Dating</AbbreviatedIRI>
+        <AbbreviatedIRI>a-cd:InterpretationCriterion</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
