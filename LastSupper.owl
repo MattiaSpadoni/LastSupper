@@ -1174,7 +1174,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="CreatedBy"/>
-        <Class IRI="AbstractConcept"/>
+        <Class IRI="Iconography"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="Creates"/>
@@ -1224,7 +1224,15 @@
         <Class abbreviatedIRI="Arco:CulturalProperty"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="HasInfluencedVisualUnit"/>
+        <Class IRI="InfluenceRelation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="HasInfluencedWork"/>
+        <Class IRI="InfluenceRelation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="HasInfluencerVisualUnit"/>
         <Class IRI="InfluenceRelation"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -1582,8 +1590,16 @@
         <Class IRI="Iconography"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="HasInfluencedVisualUnit"/>
+        <Class IRI="VisualUnit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="HasInfluencedWork"/>
         <Class abbreviatedIRI="Arco:CulturalProperty"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="HasInfluencerVisualUnit"/>
+        <Class IRI="VisualUnit"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="HasInfluencerWork"/>
@@ -1707,7 +1723,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="IsMediumVisualUnitOf"/>
-        <Class abbreviatedIRI="owl:Thing"/>
+        <Class IRI="InfluenceRelation"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="IsObjectOf"/>
@@ -1742,7 +1758,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="IsRelationLocationOf"/>
-        <Class IRI="AbstractConcept"/>
+        <Class abbreviatedIRI="a-cd:RelatedWorkSituation"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="IsStartingLocationOf"/>
