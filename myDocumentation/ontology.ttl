@@ -1,600 +1,836 @@
-@prefix : <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#> .
+@prefix : <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25> .
+@base <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#> .
 
-<http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25> rdf:type owl:Ontology .
+<https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#> rdf:type owl:Ontology .
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#BelongsTo
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl/associatedWith
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl/associatedWith> rdf:type owl:ObjectProperty .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl/classifies
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl/classifies> rdf:type owl:ObjectProperty ;
+                                                                   rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl/associatedWith> ;
+                                                                   owl:inverseOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl/isClassifiedBy> .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl/hasSetting
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl/hasSetting> rdf:type owl:ObjectProperty ;
+                                                                   rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl/associatedWith> ;
+                                                                   owl:inverseOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl/isSettingFor> .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl/isClassifiedBy
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl/isClassifiedBy> rdf:type owl:ObjectProperty ;
+                                                                       rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl/associatedWith> .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl/isSettingFor
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl/isSettingFor> rdf:type owl:ObjectProperty ;
+                                                                     rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl/associatedWith> .
+
+
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#ArtisticTheoryEmbodiedIn
+:ArtisticTheoryEmbodiedIn rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf :IsPresentIn ;
+                          owl:inverseOf :EmbodiesArtisticTheory ;
+                          rdfs:domain :ArtisticTheory ;
+                          rdfs:range [ rdf:type owl:Class ;
+                                       owl:unionOf ( :AbstractConcept
+                                                     <https://w3id.org/arco/ontology/arco/CulturalProperty>
+                                                   )
+                                     ] ;
+                          rdfs:comment "This property link an Iconographical Representation to the Theory it embodies inside it. Da Vinci Last Supper Iconography embodies Theory of Moti dell'Animo inside it." .
+
+
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#BelongsTo
 :BelongsTo rdf:type owl:ObjectProperty ;
-           owl:inverseOf :Comprise ;
+           owl:inverseOf :IsCulturalScopeOf ;
            rdfs:domain :AbstractConcept ;
-           rdfs:range :a-cd:CulturalScope ;
+           rdfs:range <https://w3id.org/arco/ontology/context-description/hasCulturalScope> ;
            rdfs:comment "This property link and abstract concept to its origin movement. Example: Teoria dei moti dell'animo was formalised during Renaissance and belongs to it." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Comprise
-:Comprise rdf:type owl:ObjectProperty ;
-          rdfs:domain :a-cd:CulturalScope ;
-          rdfs:range :AbstractConcept ;
-          rdfs:comment "Inverse of BelongsTo" .
-
-
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompriseIconography
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#CompriseIconography
 :CompriseIconography rdf:type owl:ObjectProperty ;
                      owl:inverseOf :IconographyCompriseIn ;
-                     rdfs:domain :IconographicMotifs ;
-                     rdfs:range :IconographicRepresentation ;
-                     rdfs:comment "This property link the Iconographical motifs to all its known Iconographical Representations. Example: Last Supper Iconographical Motifs is linked to Florentine Last Supper, Da Vinci Last Supper, Nordic Last Supper ecc..." .
+                     rdfs:domain :IconographicTheme ;
+                     rdfs:range :Iconography ;
+                     rdfs:comment "This property link the Iconographic theme to all its known Iconographies. Example: Last Supper Iconographic theme comprises Florentine Last Supper, Da Vinci Last Supper, Nordic Last Supper ecc..." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CreatedBy
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#CreatedBy
 :CreatedBy rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf :IntroductedBy ;
            owl:inverseOf :Creates ;
            rdf:type owl:AsymmetricProperty ;
-           rdfs:domain :AbstractConcept ;
-           rdfs:range :core:Agent ;
-           rdfs:comment "This property highlights the role of creator of an agent of an abstract concept." .
+           rdfs:domain :Iconography ;
+           rdfs:range <https://w3id.org/italia/onto/l0/Agent> ;
+           rdfs:comment "Inverse of creates." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Creates
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Creates
 :Creates rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :Introduce ;
-         rdfs:domain :core:Agent ;
-         rdfs:range :AbstractConcept ;
-         rdfs:comment "Inverse of CreatedBy" .
+         rdfs:domain <https://w3id.org/italia/onto/l0/Agent> ;
+         rdfs:range :Iconography ;
+         rdfs:comment "This property highlights the role of creator an Agent played in the creation of an iconography. Eg: Leonardo created his own Last Supper iconography." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DerivativeVisualAtom
-:DerivativeVisualAtom rdf:type owl:ObjectProperty ;
-                      rdfs:subPropertyOf :HasVisualAtom ;
-                      owl:inverseOf :IsDerivativeVisualAtomOf ;
-                      rdfs:domain :DerivationRelation ;
-                      rdfs:range :VisualAtom ;
-                      rdfs:comment "Specialisation of VisualAtom. Identifying the Derivated Visual Atom of a Derivation Relation." .
-
-
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DescribedIn
-:DescribedIn rdf:type owl:ObjectProperty ;
-             rdfs:domain <https://w3id.org/arco/ontology/core/Concept> ;
-             rdfs:comment "This property links a concept to a source that describes it" .
-
-
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#EmbodiesArtisticTheory
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#EmbodiesArtisticTheory
 :EmbodiesArtisticTheory rdf:type owl:ObjectProperty ;
-                        rdfs:subPropertyOf :IsPresentIn ;
-                        owl:inverseOf :PresentsArtisticTheory ;
-                        rdfs:domain :IconographicRepresentation ;
+                        rdfs:subPropertyOf :Presents ;
+                        rdfs:domain [ rdf:type owl:Class ;
+                                      owl:unionOf ( :AbstractConcept
+                                                    <https://w3id.org/arco/ontology/arco/CulturalProperty>
+                                                  )
+                                    ] ;
                         rdfs:range :ArtisticTheory ;
-                        rdfs:comment "This property link an Iconographical Representation to the Theory it embodies inside it. Da Vinci Last Supper Iconography embodies Theory of Moti dell'Animo inside it." .
+                        rdfs:comment "Inverse of ArtisticTheoryEmbodied. It highlights the influence of a precise artistic theory on a cultural property or an abstract concept. Eg: Teoria dei moti dell'animo is present in most of Leonardo's drawings and works." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#FinalVisualAtom
-:FinalVisualAtom rdf:type owl:ObjectProperty ;
-                 rdfs:subPropertyOf :HasVisualAtom ;
-                 owl:inverseOf :IsFinalVisualAtomOf ;
-                 rdfs:domain :PreparatoryRelation ;
-                 rdfs:range :VisualAtom ;
-                 rdfs:comment "Specialisation of VisualAtom. Identifying the Final Visual Atom of a Preparatory relation." .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasCharacter
+:HasCharacter rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :HasPictorialAttribute ;
+              owl:inverseOf :IsCharacterOf ;
+              rdfs:domain :Iconography ;
+              rdfs:range :Character ;
+              rdfs:comment "This property links an iconography to a character present inside it indipendently from its shape." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasAlternativeDating
-:HasAlternativeDating rdf:type owl:ObjectProperty ;
-                      rdfs:subPropertyOf :Arco:HasDating ;
-                      owl:inverseOf :IsAlternativeDatingOf ;
-                      rdfs:comment "Specialisation of father property linking an element to its possible alternative dating." .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasCompositionMotif
+:HasCompositionMotif rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :HasVisualUnit ;
+                     owl:inverseOf :IsCompositionMotifOf ;
+                     rdfs:domain owl:Thing ;
+                     rdfs:range :CompositionMotif ;
+                     rdfs:comment "This property links an owl:thing to a visual representation of its composition characteristics. This property was born from Panofsky first level of interpretation where motifs are the display and the organisation of elements in the scene without going further in the interpretation. Eg: In Last Supper the presence of all figures on the other side of the table is a CompositionMotif" .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasCharacterVisualAtom
-:HasCharacterVisualAtom rdf:type owl:ObjectProperty ;
-                        rdfs:subPropertyOf :HasVisualAtom ;
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasDerivatedWork
+:HasDerivatedWork rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf <https://w3id.org/arco/ontology/context-description/isRelatedWorkSituationOf> ;
+                  owl:inverseOf :IsDerivationIn ;
+                  rdfs:domain :DerivationRelation ;
+                  rdfs:range <https://w3id.org/arco/ontology/arco/CulturalProperty> ;
+                  rdfs:comment "This property links the derivation work of the relation." .
+
+
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasDerivativeVisualUnit
+:HasDerivativeVisualUnit rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf :HasVisualUnit ;
+                         owl:inverseOf :IsDerivatedVisualUnitOf ;
+                         rdfs:domain :DerivationRelation ;
+                         rdfs:range :VisualUnit ;
+                         rdfs:comment "This property identifies the derivative visual element in a DerivationRelation." .
+
+
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasFinalVisualUnit
+:HasFinalVisualUnit rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :HasVisualUnit ;
+                    owl:inverseOf :IsFinalVisualUnitOf ;
+                    rdfs:domain :PreparatoryRelation ;
+                    rdfs:range :VisualUnit ;
+                    rdfs:comment "Specialisation of VisualAtom. Identifying the Final Visual Atom of a Preparatory relation. Eg: in the relation between Windsor 12551 and Last Supper by Leonardo the final Visual Unit is the depiction of S. James on the fresco." .
+
+
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasFinalWork
+:HasFinalWork rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf <https://w3id.org/arco/ontology/context-description/isRelatedWorkSituationOf> ;
+              owl:inverseOf :IsFinalIn ;
+              rdfs:domain :PreparatoryRelation ;
+              rdfs:range <https://w3id.org/arco/ontology/arco/CulturalProperty> ;
+              rdfs:comment "This property links a preparatory relation to the final work of the relation" .
+
+
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasGeometricVisualUnit
+:HasGeometricVisualUnit rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf :HasVisualUnit ;
+                        owl:inverseOf :IsGeometricVisualUnitOf ;
                         rdfs:domain owl:Thing ;
-                        rdfs:range :CharacterVisualAtom ;
-                        rdfs:comment "Property specialisation of HasVisualAtom, linking an element to a Visual Atom identified as a character." .
+                        rdfs:range :GeometricVisualUnit ;
+                        rdfs:comment "This property links an owl:thing to a photo/representation with its geometrical elements. Eg: a photo with perspective lines of Leonardo's Last Supper." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasCompositionVisualAtom
-:HasCompositionVisualAtom rdf:type owl:ObjectProperty ;
-                          rdfs:subPropertyOf :HasVisualAtom ;
-                          rdfs:domain owl:Thing ;
-                          rdfs:range :CompositionVisualAtom ;
-                          rdfs:comment "Specialisation of HasVisualAtom used to link an element to a visual Atom representing the composition (the order of figures and elements) of something. Eg: A photo of Last Supper marked in order to highlights the groupings of figures." .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasIconographicTheme
+:HasIconographicTheme rdf:type owl:ObjectProperty ;
+                      owl:inverseOf :RepresentSubject ;
+                      rdfs:domain <https://w3id.org/arco/ontology/context-description/Subject> ;
+                      rdfs:range :IconographicTheme ;
+                      rdfs:comment "Inverse of RepresentSubject. It links a subject to its iconographic theme" .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasDepiction
-:HasDepiction rdf:type owl:ObjectProperty ;
-              rdfs:domain [ rdf:type owl:Class ;
-                            owl:unionOf ( <http://dati.beniculturali.it/cis/CulturalEntity>
-                                          :VisualAtom
-                                          :core:Agent
-                                        )
-                          ] ;
-              rdfs:range <http://xmlns.com/foaf/spec/#term_Image> .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasIconography
+:HasIconography rdf:type owl:ObjectProperty ;
+                owl:inverseOf :IsUsedInWork ;
+                rdfs:domain <https://w3id.org/arco/ontology/arco/CulturalProperty> ;
+                rdfs:range :Iconography ;
+                rdfs:comment "IsUsedInWork. It links a cultural property to the Iconography that it has inside it." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasDerivatedCulturalProperty
-:HasDerivatedCulturalProperty rdf:type owl:ObjectProperty ;
-                              rdfs:subPropertyOf :IsRelatedWorkSituationOf ;
-                              owl:inverseOf :IsDerivationInRelation ;
-                              rdfs:domain :DerivationRelation ;
-                              rdfs:range :Arco:CulturalProperty ;
-                              rdfs:comment "Inverse of  IsDerivationInRelation" .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasInfluencedVisualUnit
+:HasInfluencedVisualUnit rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf :HasVisualUnit ;
+                         owl:inverseOf :IsInfluencedVisualUnitOf ;
+                         rdfs:domain :InfluenceRelation ;
+                         rdfs:range :VisualUnit ;
+                         rdfs:comment "This property link the visual element of the influenced work in a InfluenceRelation. In the relation between Leonardo's Last Supper and Giorgione's Le tre età, the last one is the influenced work. Its visual unit is the depiction of the young man." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasFinalCulturalProperty
-:HasFinalCulturalProperty rdf:type owl:ObjectProperty ;
-                          rdfs:subPropertyOf :IsRelatedWorkSituationOf ;
-                          owl:inverseOf :IsFinalWorkInRelation ;
-                          rdfs:domain :PreparatoryRelation ;
-                          rdfs:range :Arco:CulturalProperty .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasInfluencedWork
+:HasInfluencedWork rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf <https://w3id.org/arco/ontology/context-description/isRelatedWorkSituationOf> ;
+                   owl:inverseOf :IsInfluencedIn ;
+                   rdfs:domain :InfluenceRelation ;
+                   rdfs:range <https://w3id.org/arco/ontology/arco/CulturalProperty> ;
+                   rdfs:comment "This property links an influence relation to the cultural property being the influenced one of the relation." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasGeometricalVisualAtom
-:HasGeometricalVisualAtom rdf:type owl:ObjectProperty ;
-                          rdfs:subPropertyOf :HasVisualAtom ;
-                          rdfs:domain owl:Thing ;
-                          rdfs:range :GeometricalVisualAtom ;
-                          rdfs:label "Specialisation of HasVisualAtom. It link something to a visual Atom showing the geometrical elements of a Cultural Property. Eg: a photo highlighting the perspectical lines of Leonardo's Last Supper" .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasInfluencerVisualUnit
+:HasInfluencerVisualUnit rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf :HasVisualUnit ;
+                         owl:inverseOf :IsInfluencerVisualUnitOf ;
+                         rdfs:domain :InfluenceRelation ;
+                         rdfs:range :VisualUnit ;
+                         rdfs:comment "This property link the visual unit of the influencer in a InfluenceRelation. In the relation between Leonardo's Last Supper and Giorgione's Le tre età Last Supper is the influencer. Its Visual Unit is the depiction of S. Philip's figure." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasIconographicalMotif
-:HasIconographicalMotif rdf:type owl:ObjectProperty ;
-                        owl:inverseOf :RepresentSubject ;
-                        rdfs:domain :a-cd:Subject ;
-                        rdfs:range :IconographicMotifs ;
-                        rdfs:comment "Inverse of RepresentSubject" .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasInfluencerWork
+:HasInfluencerWork rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf <https://w3id.org/arco/ontology/context-description/isRelatedWorkSituationOf> ;
+                   owl:inverseOf :IsInfluencerIn ;
+                   rdfs:domain :InfluenceRelation ;
+                   rdfs:range <https://w3id.org/arco/ontology/arco/CulturalProperty> ;
+                   rdfs:comment "This property links an influence Relation to the cultural property being the influencer." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasIconographicalRepresentation
-:HasIconographicalRepresentation rdf:type owl:ObjectProperty ;
-                                 owl:inverseOf :IsUsedInWork ;
-                                 rdfs:domain :Arco:CulturalProperty ;
-                                 rdfs:range :IconographicRepresentation ;
-                                 rdfs:comment "This property link a Cultura Property to its iconographical representation. Ex: Cenacolo of Fuligno has a Florentine Last Supper Iconography." .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasLocation
+:HasLocation rdf:type owl:ObjectProperty ;
+             owl:inverseOf :IsLocationOf ;
+             rdfs:domain owl:Thing ;
+             rdfs:range <https://w3id.org/italia/onto/l0/Location> ;
+             rdfs:comment "This property links an owl:Thing to a particular location" .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasInfluenceMedium
-:HasInfluenceMedium rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf :IsRelatedWorkSituationOf ;
-                    owl:inverseOf :IsMediumInRelation ;
-                    rdfs:comment "Inverse of IsMediumInRelation" .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasMediumVisualUnit
+:HasMediumVisualUnit rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :HasVisualUnit ;
+                     owl:inverseOf :IsMediumVisualUnitOf ;
+                     rdfs:domain :InfluenceRelation ;
+                     rdfs:range :VisualUnit ;
+                     rdfs:comment "This property link the medium visual element of an InfluenceRelation. In the case of Influence relation between Leonardo's Last Supper and Coecke's Last Supper, Birago's Last Supper played the role of medium among them. The visual Unit is the depiction of the elements allowing the establisment of this role." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasInfluencedCulturalProperty
-:HasInfluencedCulturalProperty rdf:type owl:ObjectProperty ;
-                               rdfs:subPropertyOf :IsRelatedWorkSituationOf ;
-                               owl:inverseOf :IsInfluencedInRelation ;
-                               rdfs:domain :InfluenceRelation ;
-                               rdfs:range :Arco:CulturalProperty ;
-                               rdfs:comment "Inverse of IsInfluencedInRelation" .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasMediumWork
+:HasMediumWork rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf <https://w3id.org/arco/ontology/context-description/isRelatedWorkSituationOf> ;
+               owl:inverseOf :IsMediumIn ;
+               rdfs:domain :InfluenceRelation ;
+               rdfs:range <https://w3id.org/arco/ontology/arco/CulturalProperty> ;
+               rdfs:comment "This property links the InfluenceRelation to the cultural property being the medium of influence in the relation." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasInfluencerCulturalProperty
-:HasInfluencerCulturalProperty rdf:type owl:ObjectProperty ;
-                               rdfs:subPropertyOf :IsRelatedWorkSituationOf ;
-                               owl:inverseOf :IsInfluencerInRelation ;
-                               rdfs:domain :InfluenceRelation ;
-                               rdfs:range :Arco:CulturalProperty ;
-                               rdfs:comment "Inverse of IsInfluencerInRelation" .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasObject
+:HasObject rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :HasPictorialAttribute ;
+           owl:inverseOf :IsObjectOf ;
+           rdfs:domain :Iconography ;
+           rdfs:range :SceneObject ;
+           rdfs:comment "This property links an iconography to a certain object inside it. In this case it is not important the shape of the figure, but the presence of that specific element. Eg: in Last Supper S. Peter always has a knife indipendently from its shape." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasInterpretationCriterion
-:HasInterpretationCriterion rdf:type owl:ObjectProperty ;
-                            rdfs:subPropertyOf owl:topObjectProperty ;
-                            rdfs:domain :a-cd:InterpretationCriterion ;
-                            rdfs:range :a-cd:InterpretationCriterion .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasOriginalVisualUnit
+:HasOriginalVisualUnit rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf :HasVisualUnit ;
+                       owl:inverseOf :IsOriginalVisualUnitOf ;
+                       rdfs:domain :DerivationRelation ;
+                       rdfs:range :VisualUnit ;
+                       rdfs:comment "This property identifies the original visual element in a DerivationRelation." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasOriginalCulturalProperty
-:HasOriginalCulturalProperty rdf:type owl:ObjectProperty ;
-                             rdfs:subPropertyOf :IsRelatedWorkSituationOf ;
-                             owl:inverseOf :IsOriginalInRelation ;
-                             rdfs:domain :DerivationRelation ;
-                             rdfs:range :Arco:CulturalProperty ;
-                             rdfs:comment "Inverse of  IsOriginalInRelation" .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasOriginalWork
+:HasOriginalWork rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf <https://w3id.org/arco/ontology/context-description/isRelatedWorkSituationOf> ;
+                 owl:inverseOf :IsOriginaln ;
+                 rdfs:domain :DerivationRelation ;
+                 rdfs:range <https://w3id.org/arco/ontology/arco/CulturalProperty> ;
+                 rdfs:comment "This property links the Derivation Relation to the cultural property be the original one in the relation." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasPictorialAttribute
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasPictorialAttribute
 :HasPictorialAttribute rdf:type owl:ObjectProperty ;
                        owl:inverseOf :IsAttributeOf ;
-                       rdfs:domain :IconographicRepresentation ;
+                       rdfs:domain :Iconography ;
                        rdfs:range :PictorialAttribute ;
                        rdfs:comment "This property link an iconographical representation to a pictorial attribute part of it. eg: Last Supper has the figure of Christ inside it." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasPreparatoryCulturalPropety
-:HasPreparatoryCulturalPropety rdf:type owl:ObjectProperty ;
-                               rdfs:subPropertyOf :IsRelatedWorkSituationOf ;
-                               owl:inverseOf :IsPreparatoryWorkInRelation ;
-                               rdfs:domain :PreparatoryRelation ;
-                               rdfs:range :Arco:CulturalProperty ;
-                               rdfs:comment "Inverse of IsPreparatoryWorkInRelation" .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasPreparatoryVisualUnit
+:HasPreparatoryVisualUnit rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf :HasVisualUnit ;
+                          owl:inverseOf :IsPreparatoryVisualUnitOf ;
+                          rdfs:domain :PreparatoryRelation ;
+                          rdfs:range :VisualUnit ;
+                          rdfs:comment "This property highlights the preparatory visual element of a Preparatory Relation. Eg: in the relation between Windsor 12551 and Last Supper by Leonardo the preparatory Visual Unit is the depiction of S. James in the Windsor sheet." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#HasVisualAtom
-:HasVisualAtom rdf:type owl:ObjectProperty ;
-               owl:inverseOf :IsVisualAtomOf ;
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasPreparatoryWork
+:HasPreparatoryWork rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf <https://w3id.org/arco/ontology/context-description/isRelatedWorkSituationOf> ;
+                    owl:inverseOf :IsPreparatoryIn ;
+                    rdfs:domain :PreparatoryRelation ;
+                    rdfs:range <https://w3id.org/arco/ontology/arco/CulturalProperty> ;
+                    rdfs:comment "This property link a preparatory relation to the cultural property being the preparatory work in the relation" .
+
+
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasVisualUnit
+:HasVisualUnit rdf:type owl:ObjectProperty ;
+               owl:inverseOf :IsVisualUnitOf ;
                rdfs:domain owl:Thing ;
-               rdfs:range :VisualAtom ;
-               rdfs:comment "Property linking an Owl:thing to a Visual Atom representing a significant visual feature of it. Eg: Da Vinci's Last Supper Iconography linked to a Visual Atom showing a photo of a representation identifiable as part of this Iconography" .
+               rdfs:range :VisualUnit ;
+               rdfs:comment "Property linking an Owl:thing to a Visual Uni representing a significant visual feature of it. Eg: Da Vinci's Last Supper Iconography linked to a Visual Unit showing some visible feature of the iconography itself. The visual element is not meaningful by itself, but it is significant for its colors and shapes." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographyCompriseIn
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IconographyCompriseIn
 :IconographyCompriseIn rdf:type owl:ObjectProperty ;
-                       rdfs:domain :IconographicRepresentation ;
-                       rdfs:range :IconographicMotifs ;
+                       rdfs:domain :Iconography ;
+                       rdfs:range :IconographicTheme ;
                        rdfs:comment "Inverse of CompriseIconography" .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Influenced
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Influenced
 :Influenced rdf:type owl:ObjectProperty ;
+            owl:inverseOf :InfluencedBy ;
             rdfs:domain :ArtisticTheory ;
-            rdfs:range :IconographicRepresentation ;
-            rdfs:comment "This property highlights the influence that an artistic Theory has on an iconographical representation. At the moment no reification is provided." .
+            rdfs:range :Iconography ;
+            rdfs:comment "This property highlights the influence that an artistic Theory has on an iconographies." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#InfluencedVisualAtom
-:InfluencedVisualAtom rdf:type owl:ObjectProperty ;
-                      rdfs:subPropertyOf :HasVisualAtom ;
-                      rdfs:comment "Property used to describe the VisualAtom of the Influenced cultural property." .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#InfluencedBy
+:InfluencedBy rdf:type owl:ObjectProperty ;
+              rdfs:domain :Iconography ;
+              rdfs:range :ArtisticTheory ;
+              rdfs:comment "Inverse of Influenced." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#InfluencerVisualAtom
-:InfluencerVisualAtom rdf:type owl:ObjectProperty ;
-                      rdfs:subPropertyOf :HasVisualAtom ;
-                      rdfs:comment "Property used to describe the VisualAtom of the Influencer cultural property." .
-
-
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Introduce
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Introduce
 :Introduce rdf:type owl:ObjectProperty ;
            owl:inverseOf :IntroductedBy ;
-           rdfs:comment "Inverse of IntroducedBy" .
+           rdfs:domain <https://w3id.org/italia/onto/l0/Agent> ;
+           rdfs:range :AbstractConcept ;
+           rdfs:comment "Inverse of IntroducedBy. This property highlight the role of creator an Agent played in the birth of an abstract concept" .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IntroductedBy
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IntroductedBy
 :IntroductedBy rdf:type owl:ObjectProperty ;
-               rdfs:label "" .
+               rdfs:domain :AbstractConcept ;
+               rdfs:range <https://w3id.org/italia/onto/l0/Agent> ;
+               rdfs:comment "Inverse of Introduce." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsAlternativeDatingOf
-:IsAlternativeDatingOf rdf:type owl:ObjectProperty ;
-                       rdfs:subPropertyOf :Arco:IsDatingOf ;
-                       rdfs:domain :a-cd:Dating ;
-                       rdfs:range owl:Thing .
-
-
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsAttributeOf
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsAttributeOf
 :IsAttributeOf rdf:type owl:ObjectProperty ;
                rdfs:domain :PictorialAttribute ;
-               rdfs:range :IconographicRepresentation ;
+               rdfs:range :Iconography ;
                rdfs:comment "Inverse of  HasAttribute" .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsCharacterVisualAtomOf
-:IsCharacterVisualAtomOf rdf:type owl:ObjectProperty ;
-                         rdfs:subPropertyOf :IsVisualAtomOf .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsCharacterOf
+:IsCharacterOf rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :IsAttributeOf ;
+               rdfs:domain :Character ;
+               rdfs:range :Iconography ;
+               rdfs:comment "Inverse of HasCharacter." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsCompositionVisualAtomOf
-:IsCompositionVisualAtomOf rdf:type owl:ObjectProperty ;
-                           rdfs:subPropertyOf :IsVisualAtomOf .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsCompositionMotifOf
+:IsCompositionMotifOf rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :IsVisualUnitOf ;
+                      rdfs:domain :CompositionMotif ;
+                      rdfs:range owl:Thing ;
+                      rdfs:comment "Inverse of HasCompositionMotif." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsDerivationInRelation
-:IsDerivationInRelation rdf:type owl:ObjectProperty ;
-                        rdfs:subPropertyOf :Arco:RelatedWorkSituation ;
-                        rdfs:domain :Arco:CulturalProperty ;
-                        rdfs:range :DerivationRelation ;
-                        rdfs:comment "Coupled with IsOriginalRelation this property link a cultural Property to the DerivationRelation node. Specifically this property link the derivation one of the 2 Cultural Properties." .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsCulturalScopeOf
+:IsCulturalScopeOf rdf:type owl:ObjectProperty ;
+                   rdfs:domain <https://w3id.org/arco/ontology/context-description/hasCulturalScope> ;
+                   rdfs:range :AbstractConcept ;
+                   rdfs:comment "Inverse of BelongsTo" .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsDerivativeVisualAtomOf
-:IsDerivativeVisualAtomOf rdf:type owl:ObjectProperty ;
-                          rdfs:subPropertyOf :IsVisualAtomOf ;
-                          rdfs:domain :VisualAtom ;
-                          rdfs:range :DerivationRelation ;
-                          rdfs:comment "Inverse of DerivativeVisualAtom" .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsDerivatedVisualUnitOf
+:IsDerivatedVisualUnitOf rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf :IsVisualUnitOf ;
+                         rdfs:domain :VisualUnit ;
+                         rdfs:range :DerivationRelation ;
+                         rdfs:comment "Inverse of HasDerivativeVisualUnit." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsFinalVisualAtomOf
-:IsFinalVisualAtomOf rdf:type owl:ObjectProperty ;
-                     rdfs:subPropertyOf :IsVisualAtomOf ;
-                     rdfs:domain :VisualAtom ;
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsDerivationIn
+:IsDerivationIn rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf <https://w3id.org/arco/ontology/context-description/hasRelatedWorkSituation> ;
+                rdfs:domain <https://w3id.org/arco/ontology/arco/CulturalProperty> ;
+                rdfs:range :DerivationRelation ;
+                rdfs:comment "This property link a cultural Property to the DerivationRelation node. Specifically this property link the derivation one of the 2 Cultural Properties." .
+
+
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsFinalIn
+:IsFinalIn rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf <https://w3id.org/arco/ontology/context-description/hasRelatedWorkSituation> ;
+           rdfs:domain <https://w3id.org/arco/ontology/arco/CulturalProperty> ;
+           rdfs:range :PreparatoryRelation ;
+           rdfs:comment "This property link a Cultural Property to its PreparatoryRelation node. Specifically this property identify the final work of the relation." .
+
+
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsFinalVisualUnitOf
+:IsFinalVisualUnitOf rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :IsVisualUnitOf ;
+                     rdfs:domain :VisualUnit ;
                      rdfs:range :PreparatoryRelation ;
-                     rdfs:comment "Inverse of FinalVisualAtom" .
+                     rdfs:comment "Inverse of HasFinalVisualUnit" .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsFinalWorkInRelation
-:IsFinalWorkInRelation rdf:type owl:ObjectProperty ;
-                       rdfs:subPropertyOf :Arco:RelatedWorkSituation ;
-                       rdfs:domain :Arco:CulturalProperty ;
-                       rdfs:range :PreparatoryRelation ;
-                       rdfs:comment "Coupled with IsPreparatoryWorkInRelation. This property link a Cultural Property to its PreparatoryRelation node. Specifically this property identify the final work of the relation." .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsGeometricVisualUnitOf
+:IsGeometricVisualUnitOf rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf :IsVisualUnitOf ;
+                         rdfs:domain :GeometricVisualUnit ;
+                         rdfs:range owl:Thing ;
+                         rdfs:comment "Inverse of HasGeometricVisualUnit" .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsGeometricalVisualAtomOf
-:IsGeometricalVisualAtomOf rdf:type owl:ObjectProperty ;
-                           rdfs:subPropertyOf :IsVisualAtomOf .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsInfluencedIn
+:IsInfluencedIn rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf <https://w3id.org/arco/ontology/context-description/hasRelatedWorkSituation> ;
+                rdfs:domain <https://w3id.org/arco/ontology/arco/CulturalProperty> ;
+                rdfs:range :InfluenceRelation ;
+                rdfs:comment "This property links a Cultural Property to its influence relation node. Specifically this property identify the cultural property that is influenced by another one." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsIconologicalMeaningOf
-:IsIconologicalMeaningOf rdf:type owl:ObjectProperty ;
-                         rdfs:range :IconographicRepresentation ;
-                         rdfs:comment "Inverse of HasIconologicalMeaning" .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsInfluencedVisualUnitOf
+:IsInfluencedVisualUnitOf rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf :IsVisualUnitOf ;
+                          rdfs:domain :VisualUnit ;
+                          rdfs:range :InfluenceRelation ;
+                          rdfs:comment "Inverse of HasInfluencedVisualUnit" .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsInfluencedInRelation
-:IsInfluencedInRelation rdf:type owl:ObjectProperty ;
-                        rdfs:subPropertyOf :Arco:RelatedWorkSituation ;
-                        rdfs:domain :Arco:CulturalProperty ;
-                        rdfs:range :InfluenceRelation ;
-                        rdfs:comment "Coupled with InfluencerInRelation. This property links a Cultural Property to its influence relation node. Specifically this property identify the cultural property that is influenced by another one." .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsInfluencerIn
+:IsInfluencerIn rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf <https://w3id.org/arco/ontology/context-description/hasRelatedWorkSituation> ;
+                rdfs:domain <https://w3id.org/arco/ontology/arco/CulturalProperty> ;
+                rdfs:range :InfluenceRelation ;
+                rdfs:comment "This property links a Cultural Property to its influence relation node. Specifically this property identify the cultural property that influence the other one." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsInfluencedVisualAtomOf
-:IsInfluencedVisualAtomOf rdf:type owl:ObjectProperty ;
-                          rdfs:subPropertyOf :IsVisualAtomOf .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsInfluencerVisualUnitOf
+:IsInfluencerVisualUnitOf rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf :IsVisualUnitOf ;
+                          rdfs:domain :VisualUnit ;
+                          rdfs:range :InfluenceRelation ;
+                          rdfs:comment "Inverse of HasInfluencerVisualUnit." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsInfluencerInRelation
-:IsInfluencerInRelation rdf:type owl:ObjectProperty ;
-                        rdfs:subPropertyOf :Arco:RelatedWorkSituation ;
-                        rdfs:domain :Arco:CulturalProperty ;
-                        rdfs:range :InfluenceRelation ;
-                        rdfs:comment "Coupled with InfluencerInRelation. This property links a Cultural Property to its influence relation node. Specifically this property identify the cultural property that influence the other one." .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsLocationOf
+:IsLocationOf rdf:type owl:ObjectProperty ;
+              rdfs:domain <https://w3id.org/italia/onto/l0/Location> ;
+              rdfs:range owl:Thing ;
+              rdfs:comment "Inverse of HasLocation." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsInfluencerVisualAtomOf
-:IsInfluencerVisualAtomOf rdf:type owl:ObjectProperty ;
-                          rdfs:subPropertyOf :IsVisualAtomOf .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsMediumIn
+:IsMediumIn rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf <https://w3id.org/arco/ontology/context-description/hasRelatedWorkSituation> ;
+            rdfs:comment "This property highlights the role of medium in the relation between 2 cultural properties. Eg: The incision from Pietro Birago of Last Supper was the medium of influence from Last Supper to the Flanders." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsMediumInRelation
-:IsMediumInRelation rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf :Arco:RelatedWorkSituation ;
-                    rdfs:comment "This property highlights the role of medium in the relation between 2 cultural properties. Eg: The incision from Pietro Birago of Last Supper was the medium of influence from Last Supper to the Flanders." .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsMediumVisualUnitOf
+:IsMediumVisualUnitOf rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :IsVisualUnitOf ;
+                      rdfs:domain :VisualUnit ;
+                      rdfs:range :InfluenceRelation ;
+                      rdfs:comment "Inverse of HasMediumVisualUnit." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsOriginalInRelation
-:IsOriginalInRelation rdf:type owl:ObjectProperty ;
-                      rdfs:subPropertyOf :Arco:RelatedWorkSituation ;
-                      rdfs:domain :Arco:CulturalProperty ;
-                      rdfs:range :DerivationRelation ;
-                      rdfs:comment "Coupled with IsOriginalRelation this property link a cultural Property to the DerivationRelation node. Specifically this property link the original one of the 2 cultural properties." .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsObjectOf
+:IsObjectOf rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :IsAttributeOf ;
+            rdfs:domain :SceneObject ;
+            rdfs:range :Iconography ;
+            rdfs:comment "Inverse of HasObject." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsOriginalVisualAtomOf
-:IsOriginalVisualAtomOf rdf:type owl:ObjectProperty ;
-                        rdfs:subPropertyOf :IsVisualAtomOf ;
-                        owl:inverseOf :OriginalVisualAtom ;
-                        rdfs:domain :VisualAtom ;
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsOriginalVisualUnitOf
+:IsOriginalVisualUnitOf rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf :IsVisualUnitOf ;
+                        rdfs:domain :VisualUnit ;
                         rdfs:range :DerivationRelation ;
-                        rdfs:comment "Inverse of OriginalVisualAtom" .
+                        rdfs:comment "Inverse of HasOriginalVisualUnit." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPredecessorOf
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsOriginaln
+:IsOriginaln rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <https://w3id.org/arco/ontology/context-description/hasRelatedWorkSituation> ;
+             rdfs:domain <https://w3id.org/arco/ontology/arco/CulturalProperty> ;
+             rdfs:range :DerivationRelation ;
+             rdfs:comment "This property links a cultural property to a derivation relation where it is the original work." .
+
+
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsPredecessorOf
 :IsPredecessorOf rdf:type owl:ObjectProperty ;
                  owl:inverseOf :IsSuccessorOf ;
-                 rdfs:domain :IconographicRepresentation ;
-                 rdfs:range :IconographicRepresentation ;
+                 rdfs:domain :Iconography ;
+                 rdfs:range :Iconography ;
                  rdfs:comment "This property link an iconographical representation to another one that come immediately before it. Eg: The Florentine iconographical representation is the predecessor of Da Vinci's one." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPreparatoryVisualAtomOf
-:IsPreparatoryVisualAtomOf rdf:type owl:ObjectProperty ;
-                           rdfs:subPropertyOf :IsVisualAtomOf ;
-                           owl:inverseOf :PreparatoryVisualAtom ;
-                           rdfs:domain :VisualAtom ;
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsPreparatoryIn
+:IsPreparatoryIn rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf <https://w3id.org/arco/ontology/context-description/hasRelatedWorkSituation> ;
+                 rdfs:domain <https://w3id.org/arco/ontology/arco/CulturalProperty> ;
+                 rdfs:range :PreparatoryRelation ;
+                 rdfs:comment "This property links a cultural property to a relation where it is a preparatory work." .
+
+
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsPreparatoryVisualUnitOf
+:IsPreparatoryVisualUnitOf rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf :IsVisualUnitOf ;
+                           rdfs:domain :VisualUnit ;
                            rdfs:range :PreparatoryRelation ;
-                           rdfs:comment "Inverse of PreparatoryVisualAtom" .
+                           rdfs:comment "Inverse of HasPreparatoryVisualUnit" .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPreparatoryWorkInRelation
-:IsPreparatoryWorkInRelation rdf:type owl:ObjectProperty ;
-                             rdfs:subPropertyOf :Arco:RelatedWorkSituation ;
-                             rdfs:domain :Arco:CulturalProperty ;
-                             rdfs:range :PreparatoryRelation ;
-                             rdfs:comment "Coupled with IsPreparatoryWorkInRelation. This property link a Cultural Property to its PreparatoryRelation node. Specifically this property identify the preparatory work of the relation." .
-
-
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsPresentIn
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsPresentIn
 :IsPresentIn rdf:type owl:ObjectProperty ;
              owl:inverseOf :Presents ;
              rdfs:domain :AbstractConcept ;
-             rdfs:range :Arco:CulturalProperty ;
+             rdfs:range [ rdf:type owl:Class ;
+                          owl:unionOf ( :AbstractConcept
+                                        <https://w3id.org/arco/ontology/arco/CulturalProperty>
+                                      )
+                        ] ;
              rdfs:comment "It highlights the presence of an abstract concept inside a Cultural property. Eg: Da Vinci's iconographical rapresentation of Last Supper is present in a set of different Cultural Properties. Teoria dei Moti dell'animo is present in another set of other Cultural Properties." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsRelatedWorkSituationOf
-:IsRelatedWorkSituationOf rdf:type owl:ObjectProperty ;
-                          owl:inverseOf :Arco:RelatedWorkSituation ;
-                          rdfs:domain :a-cd:RelatedWorkSituation ;
-                          rdfs:range :Arco:CulturalProperty .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsRelationLocationOf
+:IsRelationLocationOf rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :IsLocationOf ;
+                      owl:inverseOf :hasRelationLocation ;
+                      rdfs:domain <https://w3id.org/italia/onto/l0/Location> ;
+                      rdfs:range <https://w3id.org/arco/ontology/context-description/RelatedWorkSituation> ;
+                      rdfs:comment "Inverse of HasRelationLocation" .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsSuccessorOf
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsStartingLocationOf
+:IsStartingLocationOf rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :IsLocationOf ;
+                      owl:inverseOf :hasStartingLocation ;
+                      rdfs:domain <https://w3id.org/italia/onto/l0/Location> ;
+                      rdfs:range :AbstractConcept ;
+                      rdfs:comment "Inverse of HasStartingLocation" .
+
+
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsSuccessorOf
 :IsSuccessorOf rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf owl:topObjectProperty ;
-               rdfs:domain :IconographicRepresentation ;
-               rdfs:range :IconographicRepresentation ;
-               rdfs:comment "Inverse of IsPredecessorOf" .
+               rdfs:domain :Iconography ;
+               rdfs:range :Iconography ;
+               rdfs:comment "Inverse of IsPredecessorOf. It links an iconography to a successive one. Eg. Late Florentine Last Supper Iconography is successor of Early Florentine Last Supper Iconography." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsUsedInWork
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsUsedInWork
 :IsUsedInWork rdf:type owl:ObjectProperty ;
-              rdfs:domain :IconographicRepresentation ;
-              rdfs:range :Arco:CulturalProperty ;
-              rdfs:comment "Inverse of HasIconographicalRepresentation" .
+              rdfs:domain :Iconography ;
+              rdfs:range <https://w3id.org/arco/ontology/arco/CulturalProperty> ;
+              rdfs:comment "Inverse of HasIconography" .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IsVisualAtomOf
-:IsVisualAtomOf rdf:type owl:ObjectProperty ;
-                rdfs:comment "Inverse of HasVisualAtom" .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsVisualUnitOf
+:IsVisualUnitOf rdf:type owl:ObjectProperty ;
+                rdfs:domain :VisualUnit ;
+                rdfs:range owl:Thing ;
+                rdfs:comment "Inverse of HasVisualUnit." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#OriginalVisualAtom
-:OriginalVisualAtom rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf :HasVisualAtom ;
-                    rdfs:domain :DerivationRelation ;
-                    rdfs:range :VisualAtom ;
-                    rdfs:comment "Specialisation of VisualAtom. Identifying the Original Visual Atom of the relation." .
-
-
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PreparatoryVisualAtom
-:PreparatoryVisualAtom rdf:type owl:ObjectProperty ;
-                       rdfs:subPropertyOf :HasVisualAtom ;
-                       rdfs:domain :PreparatoryRelation ;
-                       rdfs:range :VisualAtom ;
-                       rdfs:comment "Specialisation of VisualAtom. Identifying the Preparatory Visual Atom of a Preparatory Relation." .
-
-
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Presents
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Presents
 :Presents rdf:type owl:ObjectProperty ;
-          rdfs:domain :Arco:CulturalProperty ;
+          rdfs:domain [ rdf:type owl:Class ;
+                        owl:unionOf ( :AbstractConcept
+                                      <https://w3id.org/arco/ontology/arco/CulturalProperty>
+                                    )
+                      ] ;
           rdfs:range :AbstractConcept ;
-          rdfs:comment "Inverse of IsPresentIn" .
+          rdfs:comment "Inverse of IsPresentIn. This property means that an abstract concept or a cultural property show characteristics of another abstract concept." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PresentsArtisticTheory
-:PresentsArtisticTheory rdf:type owl:ObjectProperty ;
-                        rdfs:subPropertyOf :Presents .
-
-
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RepresentSubject
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#RepresentSubject
 :RepresentSubject rdf:type owl:ObjectProperty ;
-                  rdfs:domain :IconographicMotifs ;
-                  rdfs:range :a-cd:Subject ;
-                  rdfs:comment "This property show the subject highlighted by the Iconographical Motifs" .
+                  rdfs:domain :IconographicTheme ;
+                  rdfs:range <https://w3id.org/arco/ontology/context-description/Subject> ;
+                  rdfs:comment "This property link an iconographic theme to its a-cd:Subject. Eg: Last Supper iconographic theme represent the a-cd:subject \"Last Supper\" or \"Cena Domini\"." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#TheorisedBy
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#TheorisedBy
 :TheorisedBy rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf :IntroductedBy ;
              owl:inverseOf :Theorises ;
-             rdfs:domain :AbstractConcept ;
-             rdfs:range :core:Agent ;
-             rdfs:comment "This property highlights who theorised a certain artistic theory." .
+             rdfs:domain :ArtisticTheory ;
+             rdfs:range <https://w3id.org/italia/onto/l0/Agent> ;
+             rdfs:comment "Inverse of Theorises" .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Theorises
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Theorises
 :Theorises rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf :Introduce ;
-           rdfs:domain :core:Agent ;
-           rdfs:range :AbstractConcept ;
-           rdfs:comment "Inverse of TheorisedBy" .
+           rdfs:domain <https://w3id.org/italia/onto/l0/Agent> ;
+           rdfs:range :ArtisticTheory ;
+           rdfs:comment "This property highlights the role of theoriser an Agent played for an artistic theory. It does not necessarily imply the agent to be a conscious theoriser. Leonardo is one of the theorisers of Teoria dei Moti dell'Animo even though he did not that on purpose." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:HasAuthor
-:Arco:HasAuthor rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf owl:topObjectProperty ;
-                owl:inverseOf :Arco:IsAuthorOf ;
-                rdfs:domain [ rdf:type owl:Class ;
-                              owl:unionOf ( <http://dati.beniculturali.it/cis/CulturalEntity>
-                                            <https://w3id.org/arco/ontology/context-description/Bibliography>
-                                          )
-                            ] ;
-                rdfs:range :core:Agent .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#hasDepiction
+:hasDepiction rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf <https://w3id.org/arco/ontology/context-description/hasDepiction> ;
+              rdfs:domain [ rdf:type owl:Class ;
+                            owl:unionOf ( <http://dati.beniculturali.it/cis/CulturalEntity>
+                                          :VisualUnit
+                                          <https://w3id.org/italia/onto/l0/Agent>
+                                        )
+                          ] ;
+              rdfs:range <http://xmlns.com/foaf/0.1/Image> ;
+              rdfs:comment "This property relates an entity to its depiction." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:HasDating
-:Arco:HasDating rdf:type owl:ObjectProperty ;
-                owl:inverseOf :Arco:IsDatingOf ;
-                rdfs:domain owl:Thing ;
-                rdfs:range :a-cd:Dating ;
-                rdfs:comment "Mutuated from contextual description module, this property links an element to its dating node." ;
-                rdfs:isDefinedBy <https://w3id.org/arco/ontology/context-description/hasDating> .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#hasDiffusionPeriod
+:hasDiffusionPeriod rdf:type owl:ObjectProperty ;
+                    rdfs:domain :AbstractConcept ;
+                    rdfs:range <https://w3id.org/italia/onto/TI/TimeInterval> ;
+                    rdfs:comment "This property links an abstract concept to its diffusion time period." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:HasDatingEvent
-:Arco:HasDatingEvent rdf:type owl:ObjectProperty ;
-                     owl:inverseOf :Arco:IsDatingEventOf ;
-                     rdfs:domain :a-cd:Dating ;
-                     rdfs:range :IO:Event ;
-                     rdfs:comment "This property link the Dating node to its dating Event. The dating pattern is mutuated by the contextual description module." ;
-                     rdfs:isDefinedBy <https://w3id.org/arco/ontology/context-description/hasDatingEvent> .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#hasRelationLocation
+:hasRelationLocation rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :HasLocation ;
+                     rdfs:domain <https://w3id.org/arco/ontology/context-description/RelatedWorkSituation> ;
+                     rdfs:range <https://w3id.org/italia/onto/l0/Location> ;
+                     rdfs:comment "This property links a relation to the place where it happened (if it is known)." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:IsAuthorOf
-:Arco:IsAuthorOf rdf:type owl:ObjectProperty ;
-                 rdfs:subPropertyOf owl:topObjectProperty .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#hasStartingLocation
+:hasStartingLocation rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :HasLocation ;
+                     rdfs:domain :AbstractConcept ;
+                     rdfs:range <https://w3id.org/italia/onto/l0/Location> ;
+                     rdfs:comment "This property links an abstract concept to the place where it started (if it is known). Eg: Leonardo's Last Supper iconography started in Milan" .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:IsDatingEventOf
-:Arco:IsDatingEventOf rdf:type owl:ObjectProperty ;
-                      rdfs:domain :IO:Event ;
-                      rdfs:range :a-cd:Dating ;
-                      rdfs:comment "Inverse of HasDatingEvent" .
-
-
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:IsDatingOf
-:Arco:IsDatingOf rdf:type owl:ObjectProperty ;
-                 rdfs:domain :a-cd:Dating ;
-                 rdfs:range owl:Thing ;
-                 rdfs:comment "Inverse of Arco:HasDating" .
-
-
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:RelatedWorkSituation
-:Arco:RelatedWorkSituation rdf:type owl:ObjectProperty ;
-                           rdfs:domain :Arco:CulturalProperty ;
-                           rdfs:range :a-cd:RelatedWorkSituation ;
-                           rdfs:comment "Mutuated by Contextual Description module of Arco. This property links a work to a related one. The pattern used in Arco is maintained even if it is specialised by a new set of subproperties and subclasses." .
-
-
-###  https://ontopia-lodview.agid.gov.it/onto/TI/atTime
-<https://ontopia-lodview.agid.gov.it/onto/TI/atTime> rdf:type owl:ObjectProperty ;
-                                                     rdfs:subPropertyOf <https://ontopia-lodview.agid.gov.it/onto/TI/hasTemporalEntity> ;
-                                                     rdfs:domain owl:Thing ;
-                                                     rdfs:range :Tiapit:TimeInterval .
-
-
-###  https://ontopia-lodview.agid.gov.it/onto/TI/hasTemporalEntity
-<https://ontopia-lodview.agid.gov.it/onto/TI/hasTemporalEntity> rdf:type owl:ObjectProperty ;
-                                                                rdfs:domain owl:Thing ;
-                                                                rdfs:range <https://w3id.org/italia/onto/TI/TemporalEntity> .
+###  https://w3id.org/arco/ontology/context-description/hasAuthor
+<https://w3id.org/arco/ontology/context-description/hasAuthor> rdf:type owl:ObjectProperty ;
+                                                               rdfs:subPropertyOf <https://w3id.org/arco/ontology/context-description/hasRelatedAgent> ;
+                                                               owl:inverseOf <https://w3id.org/arco/ontology/context-description/isAuthorOf> ;
+                                                               rdfs:domain owl:Thing ;
+                                                               rdfs:range <https://w3id.org/italia/onto/l0/Agent> ;
+                                                               rdfs:comment """This property relates an entity to its author.
+This property relates a entity (i.e. documentation, cultural entity, etc.) to its author.""" .
 
 
 ###  https://w3id.org/arco/ontology/context-description/hasBibliography
 <https://w3id.org/arco/ontology/context-description/hasBibliography> rdf:type owl:ObjectProperty ;
-                                                                     owl:inverseOf <https://w3id.org/arco/ontology/context-description/isBibliographyOf> .
+                                                                     owl:inverseOf <https://w3id.org/arco/ontology/context-description/isBibliographyOf> ;
+                                                                     rdfs:domain owl:Thing ;
+                                                                     rdfs:range <https://w3id.org/arco/ontology/context-description/Bibliography> ;
+                                                                     rdfs:comment "This property relates an entity to its bibliography." .
 
 
 ###  https://w3id.org/arco/ontology/context-description/hasBibliographyType
 <https://w3id.org/arco/ontology/context-description/hasBibliographyType> rdf:type owl:ObjectProperty ;
-                                                                         owl:inverseOf <https://w3id.org/arco/ontology/context-description/isBibliographyTypeOf> .
+                                                                         rdfs:subPropertyOf <https://w3id.org/arco/ontology/core/hasType> ;
+                                                                         owl:inverseOf <https://w3id.org/arco/ontology/context-description/isBibliographyTypeOf> ;
+                                                                         rdfs:domain <https://w3id.org/arco/ontology/context-description/Bibliography> ;
+                                                                         rdfs:range <https://w3id.org/arco/ontology/context-description/BibliographyType> .
+
+
+###  https://w3id.org/arco/ontology/context-description/hasDating
+<https://w3id.org/arco/ontology/context-description/hasDating> rdf:type owl:ObjectProperty ;
+                                                               rdfs:subPropertyOf <https://w3id.org/arco/ontology/core/hasSituation> ;
+                                                               owl:inverseOf <https://w3id.org/arco/ontology/context-description/isDatingOf> ;
+                                                               rdfs:domain owl:Thing ;
+                                                               rdfs:range <https://w3id.org/arco/ontology/context-description/Dating> ;
+                                                               rdfs:comment "This property relates an entity to its dating." .
+
+
+###  https://w3id.org/arco/ontology/context-description/hasDatingEvent
+<https://w3id.org/arco/ontology/context-description/hasDatingEvent> rdf:type owl:ObjectProperty ;
+                                                                    owl:inverseOf <https://w3id.org/arco/ontology/context-description/isDatingEventOf> ;
+                                                                    rdfs:domain <https://w3id.org/arco/ontology/context-description/Dating> ;
+                                                                    rdfs:range <https://w3id.org/italia/onto/l0/EventOrSituation> ;
+                                                                    rdfs:comment "This property link the Dating node to its dating Event. The dating pattern is mutuated by the contextual description module." .
+
+
+###  https://w3id.org/arco/ontology/context-description/hasDepiction
+<https://w3id.org/arco/ontology/context-description/hasDepiction> rdf:type owl:ObjectProperty ;
+                                                                  rdfs:comment "This property relates an entity to its depiction." .
+
+
+###  https://w3id.org/arco/ontology/context-description/hasRelatedAgent
+<https://w3id.org/arco/ontology/context-description/hasRelatedAgent> rdf:type owl:ObjectProperty ;
+                                                                     owl:inverseOf <https://w3id.org/arco/ontology/context-description/isAgentRelatedTo> ;
+                                                                     rdfs:domain owl:Thing ;
+                                                                     rdfs:range <https://w3id.org/italia/onto/l0/Agent> ;
+                                                                     rdfs:comment "This property is used to associate an entity of any kind to an agent related to that entity in some way. It is used when it is not possible to express the relation in a more specific way." .
+
+
+###  https://w3id.org/arco/ontology/context-description/hasRelatedWorkSituation
+<https://w3id.org/arco/ontology/context-description/hasRelatedWorkSituation> rdf:type owl:ObjectProperty ;
+                                                                             rdfs:subPropertyOf <https://w3id.org/arco/ontology/core/hasSituation> ;
+                                                                             owl:inverseOf <https://w3id.org/arco/ontology/context-description/isRelatedWorkSituationOf> ;
+                                                                             rdfs:domain <https://w3id.org/arco/ontology/arco/CulturalProperty> ;
+                                                                             rdfs:range <https://w3id.org/arco/ontology/context-description/RelatedWorkSituation> ;
+                                                                             rdfs:comment "This property relates a cultural property to a situation in which this cultural property is related to another work, that could even be another cultural property, as its preparatory or final phase." .
+
+
+###  https://w3id.org/arco/ontology/context-description/isAgentRelatedTo
+<https://w3id.org/arco/ontology/context-description/isAgentRelatedTo> rdf:type owl:ObjectProperty ;
+                                                                      rdfs:domain <https://w3id.org/italia/onto/l0/Agent> ;
+                                                                      rdfs:range owl:Thing ;
+                                                                      rdfs:comment "This property is used to associate an agent related in some way to an entity of any kind to that entity. It is used when it is not possible to express the relation in a more specific way." .
+
+
+###  https://w3id.org/arco/ontology/context-description/isAuthorOf
+<https://w3id.org/arco/ontology/context-description/isAuthorOf> rdf:type owl:ObjectProperty ;
+                                                                rdfs:subPropertyOf <https://w3id.org/arco/ontology/context-description/isAgentRelatedTo> ;
+                                                                rdfs:domain <https://w3id.org/italia/onto/l0/Agent> ;
+                                                                rdfs:range owl:Thing ;
+                                                                rdfs:comment "This property relates an agent to an entity the agent is author of." .
 
 
 ###  https://w3id.org/arco/ontology/context-description/isBibliographyOf
 <https://w3id.org/arco/ontology/context-description/isBibliographyOf> rdf:type owl:ObjectProperty ;
-                                                                      rdfs:subPropertyOf owl:topObjectProperty .
+                                                                      rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                      rdfs:domain <https://w3id.org/arco/ontology/context-description/Bibliography> ;
+                                                                      rdfs:range owl:Thing ;
+                                                                      rdfs:comment "This property relates a bibliography to the entity which is referred to." .
 
 
 ###  https://w3id.org/arco/ontology/context-description/isBibliographyTypeOf
-<https://w3id.org/arco/ontology/context-description/isBibliographyTypeOf> rdf:type owl:ObjectProperty .
+<https://w3id.org/arco/ontology/context-description/isBibliographyTypeOf> rdf:type owl:ObjectProperty ;
+                                                                          rdfs:subPropertyOf <https://w3id.org/arco/ontology/core/isTypeOf> ;
+                                                                          rdfs:domain <https://w3id.org/arco/ontology/context-description/BibliographyType> ;
+                                                                          rdfs:range <https://w3id.org/arco/ontology/context-description/Bibliography> ;
+                                                                          rdfs:comment "This property relates the bibliography type to its bibliography." .
+
+
+###  https://w3id.org/arco/ontology/context-description/isDatingEventOf
+<https://w3id.org/arco/ontology/context-description/isDatingEventOf> rdf:type owl:ObjectProperty ;
+                                                                     rdfs:domain <https://w3id.org/italia/onto/l0/EventOrSituation> ;
+                                                                     rdfs:range <https://w3id.org/arco/ontology/context-description/Dating> ;
+                                                                     rdfs:comment "This property relates an event involving the cultural property, which the dating is about, to a dating." .
+
+
+###  https://w3id.org/arco/ontology/context-description/isDatingOf
+<https://w3id.org/arco/ontology/context-description/isDatingOf> rdf:type owl:ObjectProperty ;
+                                                                rdfs:subPropertyOf <https://w3id.org/arco/ontology/core/isSituationOf> ;
+                                                                rdfs:domain <https://w3id.org/arco/ontology/context-description/Dating> ;
+                                                                rdfs:range owl:Thing ;
+                                                                rdfs:comment "This property relates a dating to an entity." .
+
+
+###  https://w3id.org/arco/ontology/context-description/isRelatedWorkSituationOf
+<https://w3id.org/arco/ontology/context-description/isRelatedWorkSituationOf> rdf:type owl:ObjectProperty ;
+                                                                              rdfs:domain <https://w3id.org/arco/ontology/context-description/RelatedWorkSituation> ;
+                                                                              rdfs:range <https://w3id.org/arco/ontology/arco/CulturalProperty> ;
+                                                                              rdfs:comment "This property, inverse of 'has related work situation', relates a situation in which a cultural property is related to another work, that could even be another cultural property, to the cultural property." .
 
 
 ###  https://w3id.org/arco/ontology/context-description/specificTime
 <https://w3id.org/arco/ontology/context-description/specificTime> rdf:type owl:ObjectProperty ;
-                                                                  rdfs:subPropertyOf <https://ontopia-lodview.agid.gov.it/onto/TI/atTime> ;
+                                                                  rdfs:subPropertyOf <https://w3id.org/italia/onto/TI/atTime> ;
                                                                   rdfs:domain <https://w3id.org/italia/onto/l0/EventOrSituation> ;
-                                                                  rdfs:range :Tiapit:TimeInterval .
+                                                                  rdfs:range <https://w3id.org/italia/onto/TI/TimeInterval> ;
+                                                                  rdfs:comment "This property relates the event (creation, distruction) to which a dating of a cultural property is related to the \"specific time\", as the dating expressed in year or as a date yyyy/mm/dd." .
+
+
+###  https://w3id.org/arco/ontology/core/hasConcept
+<https://w3id.org/arco/ontology/core/hasConcept> rdf:type owl:ObjectProperty ;
+                                                 rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl/isClassifiedBy> ;
+                                                 owl:inverseOf <https://w3id.org/arco/ontology/core/isConceptOf> .
+
+
+###  https://w3id.org/arco/ontology/core/hasSituation
+<https://w3id.org/arco/ontology/core/hasSituation> rdf:type owl:ObjectProperty ;
+                                                   rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl/hasSetting> ;
+                                                   owl:inverseOf <https://w3id.org/arco/ontology/core/isSituationOf> ;
+                                                   rdfs:comment "The property that links any object to a situation." .
+
+
+###  https://w3id.org/arco/ontology/core/hasType
+<https://w3id.org/arco/ontology/core/hasType> rdf:type owl:ObjectProperty ;
+                                              rdfs:subPropertyOf <https://w3id.org/arco/ontology/core/hasConcept> ;
+                                              owl:inverseOf <https://w3id.org/arco/ontology/core/isTypeOf> .
+
+
+###  https://w3id.org/arco/ontology/core/isConceptOf
+<https://w3id.org/arco/ontology/core/isConceptOf> rdf:type owl:ObjectProperty ;
+                                                  rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl/classifies> ;
+                                                  rdfs:domain <https://w3id.org/italia/onto/l0/Concept> ;
+                                                  rdfs:range owl:Thing ;
+                                                  rdfs:comment "The inverse property of hasConcept, that relates a concept to any object." .
+
+
+###  https://w3id.org/arco/ontology/core/isSituationOf
+<https://w3id.org/arco/ontology/core/isSituationOf> rdf:type owl:ObjectProperty ;
+                                                    rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl/isSettingFor> .
+
+
+###  https://w3id.org/arco/ontology/core/isTypeOf
+<https://w3id.org/arco/ontology/core/isTypeOf> rdf:type owl:ObjectProperty ;
+                                               rdfs:subPropertyOf <https://w3id.org/arco/ontology/core/isConceptOf> .
+
+
+###  https://w3id.org/italia/onto/CLV/hasGeometry
+<https://w3id.org/italia/onto/CLV/hasGeometry> rdf:type owl:ObjectProperty ;
+                                               owl:inverseOf <https://w3id.org/italia/onto/CLV/isGeometryFor> ;
+                                               rdfs:domain owl:Thing ;
+                                               rdfs:range <https://w3id.org/italia/onto/CLV/Geometry> ;
+                                               rdfs:comment "This property links any thing of the domain to the geometry." .
+
+
+###  https://w3id.org/italia/onto/CLV/isGeometryFor
+<https://w3id.org/italia/onto/CLV/isGeometryFor> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain <https://w3id.org/italia/onto/CLV/Geometry> ;
+                                                 rdfs:range owl:Thing ;
+                                                 rdfs:comment "Inverse property of \"hasGeometry\" that links a geometry to the related Thing of the domain." .
+
+
+###  https://w3id.org/italia/onto/TI/atTime
+<https://w3id.org/italia/onto/TI/atTime> rdf:type owl:ObjectProperty ;
+                                         rdfs:subPropertyOf <https://w3id.org/italia/onto/TI/hasTemporalEntity> ;
+                                         rdfs:domain owl:Thing ;
+                                         rdfs:range <https://w3id.org/italia/onto/TI/TimeInterval> ;
+                                         rdfs:comment "Relation between any thing and time interval" .
+
+
+###  https://w3id.org/italia/onto/TI/hasTemporalEntity
+<https://w3id.org/italia/onto/TI/hasTemporalEntity> rdf:type owl:ObjectProperty ;
+                                                    rdfs:domain owl:Thing ;
+                                                    rdfs:range <https://w3id.org/italia/onto/TI/TemporalEntity> ;
+                                                    rdfs:comment "Property that links a time indexed event to a temporal entity." .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AlternativeRelationDate
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#AlternativeRelationDate
 :AlternativeRelationDate rdf:type owl:DatatypeProperty ;
-                         rdfs:subPropertyOf :Arco:Date ;
-                         rdfs:domain :a-cd:RelatedWorkSituation ;
+                         rdfs:subPropertyOf <https://w3id.org/italia/onto/TI/date> ;
+                         rdfs:domain <https://w3id.org/arco/ontology/context-description/RelatedWorkSituation> ;
                          rdfs:range [ rdf:type rdfs:Datatype ;
                                       owl:unionOf ( rdfs:Literal
                                                     xsd:int
@@ -603,128 +839,108 @@
                          rdfs:comment "Alternative date of a relation" .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#ApproximateDate
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#ApproximateDate
 :ApproximateDate rdf:type owl:DatatypeProperty ;
-                 rdfs:subPropertyOf :Arco:Date ;
+                 rdfs:subPropertyOf <https://w3id.org/italia/onto/TI/date> ;
                  rdfs:domain owl:Thing ;
                  rdfs:range rdfs:Literal ;
                  owl:propertyDisjointWith :EndDate ,
-                                          :StartDate .
+                                          :StartDate ;
+                 rdfs:comment "Approximate date of an owl:thing" .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CharacterDescription
-:CharacterDescription rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf :LongDescription ;
-                      rdfs:domain owl:Thing ;
-                      owl:propertyDisjointWith :CharacterRelationDescription .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#ApproximatePeriod
+:ApproximatePeriod rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :ApproximateDate ;
+                   rdfs:domain owl:Thing ;
+                   rdfs:range rdfs:Literal ;
+                   rdfs:comment "Approximate period of an owl:thing" .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CharacterRelationDescription
-:CharacterRelationDescription rdf:type owl:DatatypeProperty ;
-                              rdfs:subPropertyOf :RelationDescription ;
-                              rdfs:domain :a-cd:RelatedWorkSituation ;
-                              rdfs:range rdfs:Literal ;
-                              rdfs:comment "Specialisation of Relation Description. This property describes the influence a work has on another one from a character point of view. Eg: Judas of Da Vinci Last Supper influenced the Judas of Gaudenzio Ferrari Last Supper" .
-
-
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompositionDescription
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#CompositionDescription
 :CompositionDescription rdf:type owl:DatatypeProperty ;
                         rdfs:subPropertyOf :LongDescription ;
                         rdfs:domain owl:Thing ;
-                        owl:propertyDisjointWith :CompositionRelationDescription .
+                        rdfs:range rdfs:Literal ;
+                        owl:propertyDisjointWith :CompositionRelationDescription ;
+                        rdfs:comment "Description of composition element of a owl:thing" .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompositionRelationDescription
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#CompositionRelationDescription
 :CompositionRelationDescription rdf:type owl:DatatypeProperty ;
                                 rdfs:subPropertyOf :RelationDescription ;
-                                rdfs:domain :a-cd:RelatedWorkSituation ;
+                                rdfs:domain <https://w3id.org/arco/ontology/context-description/RelatedWorkSituation> ;
                                 rdfs:range rdfs:Literal ;
                                 rdfs:comment "Property describing the influence a work has on another from a composition point of view. Eg: Marcantonio Raimondi Last Supper shows a composition influenced by the symmetry and the groupings of 3 of Leonardo Last Supper" .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Depiction
-:Depiction rdf:type owl:DatatypeProperty ;
-           rdfs:domain owl:Thing ;
-           rdfs:range xsd:anyURI ;
-           rdfs:isDefinedBy <http://xmlns.com/foaf/spec/#term_depiction> .
-
-
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Description
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Description
 :Description rdf:type owl:DatatypeProperty ;
              rdfs:domain owl:Thing ;
              rdfs:range rdfs:Literal ;
-             rdfs:comment "Long description of an owl thing." .
+             rdfs:comment "Long textual description of an owl thing." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#EndDate
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#EndDate
 :EndDate rdf:type owl:DatatypeProperty ;
-         rdfs:subPropertyOf :Arco:Date ;
+         rdfs:subPropertyOf <https://w3id.org/italia/onto/TI/date> ;
          rdfs:domain owl:Thing ;
-         rdfs:range rdfs:Literal .
+         rdfs:range rdfs:Literal ;
+         rdfs:comment "End date of an owl:thing" .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#GeometricalDescription
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#GeometricalDescription
 :GeometricalDescription rdf:type owl:DatatypeProperty ;
                         rdfs:subPropertyOf :LongDescription ;
                         rdfs:domain owl:Thing ;
-                        owl:propertyDisjointWith :GeometricalRelationDescription .
+                        rdfs:range rdfs:Literal ;
+                        owl:propertyDisjointWith :GeometricalRelationDescription ;
+                        rdfs:comment "Description of geometric features of an owl:thing" .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#GeometricalRelationDescription
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#GeometricalRelationDescription
 :GeometricalRelationDescription rdf:type owl:DatatypeProperty ;
                                 rdfs:subPropertyOf :RelationDescription ;
-                                rdfs:domain :a-cd:RelatedWorkSituation ;
+                                rdfs:domain <https://w3id.org/arco/ontology/context-description/RelatedWorkSituation> ;
                                 rdfs:range rdfs:Literal ;
                                 rdfs:comment "Property describing the geometrical influence a work has on another from a Geometrical point of view. Eg: The symmetry used in Leonardo Last Supper partially reused in Albrecht Durer Last Supper of 1523" .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconclassCode
-:IconclassCode rdf:type owl:DatatypeProperty ;
-               rdfs:domain :IconographicMotifs ;
-               rdfs:range rdfs:Literal ;
-               rdfs:comment <https://w3id.org/arco/ontology/context-description/iconclassCode> .
-
-
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Label
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Label
 :Label rdf:type owl:DatatypeProperty ;
        rdfs:domain owl:Thing ;
        rdfs:range rdfs:Literal ;
        rdfs:isDefinedBy rdfs:label .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#LongDescription
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#LongDescription
 :LongDescription rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf :Description ;
                  rdfs:domain owl:Thing ;
-                 rdfs:range rdfs:Literal .
+                 rdfs:range rdfs:Literal ;
+                 rdfs:comment "Extensive description of an owl:thing" .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Name
-:Name rdf:type owl:DatatypeProperty ;
-      rdfs:domain owl:Thing ;
-      rdfs:range rdfs:Literal ;
-      rdfs:isDefinedBy <https://w3id.org/italia/onto/l0/name> .
-
-
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#OtherIconclassCode
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#OtherIconclassCode
 :OtherIconclassCode rdf:type owl:DatatypeProperty ;
-                    rdfs:subPropertyOf :IconclassCode ;
-                    rdfs:domain :IconographicMotifs ;
+                    rdfs:subPropertyOf <https://w3id.org/arco/ontology/context-description/iconclassCode> ;
+                    rdfs:domain :IconographicTheme ;
                     rdfs:range rdfs:Literal ;
-                    rdfs:comment "Mention of other possible Iconclass Code" .
+                    rdfs:comment "Mention of other possible Iconclass Code of an Iconographi theme." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RealisationPeriod
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#RealisationPeriod
 :RealisationPeriod rdf:type owl:DatatypeProperty ;
-                   rdfs:subPropertyOf :Arco:Date ;
+                   rdfs:subPropertyOf <https://w3id.org/italia/onto/TI/date> ;
                    rdfs:domain owl:Thing ;
-                   rdfs:range rdfs:Literal .
+                   rdfs:range rdfs:Literal ;
+                   rdfs:comment "Generic period of realisation of an owl:thing." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RelationDate
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#RelationDate
 :RelationDate rdf:type owl:DatatypeProperty ;
-              rdfs:subPropertyOf :Arco:Date ;
-              rdfs:domain :a-cd:RelatedWorkSituation ;
+              rdfs:subPropertyOf <https://w3id.org/italia/onto/TI/date> ;
+              rdfs:domain <https://w3id.org/arco/ontology/context-description/RelatedWorkSituation> ;
               rdfs:range [ rdf:type rdfs:Datatype ;
                            owl:unionOf ( rdfs:Literal
                                          xsd:int
@@ -733,65 +949,106 @@
               rdfs:comment "Date of a relation" .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#RelationDescription
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#RelationDescription
 :RelationDescription rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf :Description ;
-                     rdfs:domain :a-cd:RelatedWorkSituation ;
+                     rdfs:domain <https://w3id.org/arco/ontology/context-description/RelatedWorkSituation> ;
                      rdfs:range rdfs:Literal ;
                      rdfs:comment "Long description of a relation between 2 entities in a RelatedWorkSituation class." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#StartDate
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#StartDate
 :StartDate rdf:type owl:DatatypeProperty ;
-           rdfs:subPropertyOf :Arco:Date ;
+           rdfs:subPropertyOf <https://w3id.org/italia/onto/TI/date> ;
            rdfs:domain owl:Thing ;
-           rdfs:range rdfs:Literal .
+           rdfs:range rdfs:Literal ;
+           rdfs:comment "Start date of an owl:thing" .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#TypicalIconclassCode
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#TypicalIconclassCode
 :TypicalIconclassCode rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf :IconclassCode ;
-                      rdfs:domain :IconographicMotifs ;
+                      rdfs:subPropertyOf <https://w3id.org/arco/ontology/context-description/iconclassCode> ;
+                      rdfs:domain :IconographicTheme ;
                       rdfs:range rdfs:Literal ;
-                      rdfs:comment "Mention of the typical Iconclass Code used to mark the episode of an iconographical motif." .
+                      rdfs:comment "Mention of the typical Iconclass Code used to mark the episode of an iconographic theme." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#URI
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#URI
 :URI rdf:type owl:DatatypeProperty ;
-     rdfs:domain <http://xmlns.com/foaf/spec/#term_Image> ;
-     rdfs:range xsd:anyURI .
+     rdfs:range xsd:string ;
+     rdfs:comment "This property gives the plain value of URI of the image file." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:Date
-:Arco:Date rdf:type owl:DatatypeProperty ;
-           rdfs:domain owl:Thing ;
-           rdfs:range [ rdf:type rdfs:Datatype ;
-                        owl:unionOf ( rdfs:Literal
-                                      xsd:int
-                                    )
-                      ] ;
-           rdfs:isDefinedBy <https://w3id.org/italia/onto/TI/date> .
-
-
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:AgentDate
-:a-cd:AgentDate rdf:type owl:DatatypeProperty ;
-                rdfs:subPropertyOf :Arco:Date ;
-                rdfs:domain :core:Agent ;
-                rdfs:range rdfs:Literal ;
-                rdfs:comment "Property used to indicate temporal information (birth date/death date/period of life)"^^rdfs:Literal ;
-                rdfs:isDefinedBy "https://w3id.org/arco/ontology/context-description/agentDate"^^rdfs:Literal .
+###  https://w3id.org/arco/ontology/context-description/agentDate
+<https://w3id.org/arco/ontology/context-description/agentDate> rdf:type owl:DatatypeProperty ;
+                                                               rdfs:subPropertyOf <https://w3id.org/italia/onto/TI/date> ;
+                                                               rdfs:domain <https://w3id.org/italia/onto/l0/Agent> ;
+                                                               rdfs:range rdfs:Literal ;
+                                                               rdfs:comment "This property allows you to associate generic chronological indications to an agent."^^rdfs:Literal ;
+                                                               rdfs:isDefinedBy "https://w3id.org/arco/ontology/context-description/agentDate"^^rdfs:Literal .
 
 
 ###  https://w3id.org/arco/ontology/context-description/bibliographicReferenceAuthor
 <https://w3id.org/arco/ontology/context-description/bibliographicReferenceAuthor> rdf:type owl:DatatypeProperty ;
                                                                                   rdfs:domain <https://w3id.org/arco/ontology/context-description/Bibliography> ;
-                                                                                  rdfs:range rdfs:Literal .
+                                                                                  rdfs:range rdfs:Literal ;
+                                                                                  rdfs:comment "This property represents the author related to the bibliographic reference." .
 
 
 ###  https://w3id.org/arco/ontology/context-description/bilbiographicReference
 <https://w3id.org/arco/ontology/context-description/bilbiographicReference> rdf:type owl:DatatypeProperty ;
                                                                             rdfs:domain <https://w3id.org/arco/ontology/context-description/Bibliography> ;
-                                                                            rdfs:range rdfs:Literal .
+                                                                            rdfs:range rdfs:Literal ;
+                                                                            rdfs:comment "This property represents the bibliographic reference." .
+
+
+###  https://w3id.org/arco/ontology/context-description/iconclassCode
+<https://w3id.org/arco/ontology/context-description/iconclassCode> rdf:type owl:DatatypeProperty ;
+                                                                   rdfs:domain :IconographicTheme ;
+                                                                   rdfs:range rdfs:Literal ;
+                                                                   rdfs:comment "This property represents the Iconclass code, for describing the subject or ornamental motif represented by the cultural property." ;
+                                                                   rdfs:isDefinedBy <https://w3id.org/arco/ontology/context-description/iconclassCode> .
+
+
+###  https://w3id.org/italia/onto/CLV/coordinate
+<https://w3id.org/italia/onto/CLV/coordinate> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain <https://w3id.org/italia/onto/CLV/Geometry> ;
+                                              rdfs:range rdfs:Literal ;
+                                              rdfs:comment "This property represents the geographical coordinate of the Geometry" .
+
+
+###  https://w3id.org/italia/onto/CLV/lat
+<https://w3id.org/italia/onto/CLV/lat> rdf:type owl:DatatypeProperty ;
+                                       rdfs:subPropertyOf <https://w3id.org/italia/onto/CLV/coordinate> ;
+                                       rdfs:domain <https://w3id.org/italia/onto/CLV/Geometry> ;
+                                       rdfs:range rdfs:Literal ;
+                                       rdfs:comment "This property represents the latitude. It is associated with the Geometry." .
+
+
+###  https://w3id.org/italia/onto/CLV/long
+<https://w3id.org/italia/onto/CLV/long> rdf:type owl:DatatypeProperty ;
+                                        rdfs:subPropertyOf <https://w3id.org/italia/onto/CLV/coordinate> ;
+                                        rdfs:domain <https://w3id.org/italia/onto/CLV/Geometry> ;
+                                        rdfs:range rdfs:Literal ;
+                                        rdfs:comment "This property allows one to specify the longitude. It is associated with the Geometry" .
+
+
+###  https://w3id.org/italia/onto/TI/date
+<https://w3id.org/italia/onto/TI/date> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain owl:Thing ;
+                                       rdfs:range [ rdf:type rdfs:Datatype ;
+                                                    owl:unionOf ( rdfs:Literal
+                                                                  xsd:int
+                                                                )
+                                                  ] ;
+                                       rdfs:comment "This property represents a generic date / time instant." ;
+                                       rdfs:isDefinedBy <https://w3id.org/italia/onto/TI/date> .
+
+
+###  https://w3id.org/italia/onto/l0/name
+<https://w3id.org/italia/onto/l0/name> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain owl:Thing ;
+                                       rdfs:range rdfs:Literal .
 
 
 #################################################################
@@ -799,277 +1056,279 @@
 #################################################################
 
 ###  http://dati.beniculturali.it/cis/CulturalEntity
-<http://dati.beniculturali.it/cis/CulturalEntity> rdf:type owl:Class .
+<http://dati.beniculturali.it/cis/CulturalEntity> rdf:type owl:Class ;
+                                                  rdfs:comment "Class that provides a generalization of three classes; that is , cultural institute or site, collection and cultural heritage object. It does not correspond to a concept used typically in the cultural domain but it is used in order to model properties and property restrictions that are common to all the these three classes. The class will never be directly instanziated."@en .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#AbstractConcept
+###  http://xmlns.com/foaf/0.1/Image
+<http://xmlns.com/foaf/0.1/Image> rdf:type owl:Class ;
+                                  rdfs:comment """The class Image is a sub-class of Document corresponding to those documents which are images.
+Digital images (such as JPEG, PNG, GIF bitmaps, SVG diagrams etc.) are examples of Image."""@en .
+
+
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#AbstractConcept
 :AbstractConcept rdf:type owl:Class ;
-                 rdfs:subClassOf <https://w3id.org/arco/ontology/core/Concept> ;
-                 rdfs:comment "This class represent a specification class for the \"Concept\" of Top Level Ontology. It is not thought to be directly instatiated, but only to be a collector of more defined abstract concepts as Artistic Theories, Iconographies, Iconologies interpretations and elements of paintings."^^rdfs:Literal .
+                 rdfs:subClassOf <https://w3id.org/italia/onto/l0/Concept> ;
+                 rdfs:comment "This class represent a specification class for the \"Concept\". It is not thought to be directly instatiated, but only to be a collector of more defined abstract concepts as artistic theories and iconographies"^^rdfs:Literal .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#ArtisticTheory
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#ArtisticTheory
 :ArtisticTheory rdf:type owl:Class ;
                 rdfs:subClassOf :AbstractConcept ;
-                rdfs:comment "Artistic Theory groups all the theories conceived in the art domain. It specifically focus on theories of painting. Example: Moti dell'Animo. Theory with the Aim of expressing the range of human emotion inside a painting."^^rdfs:Literal .
+                rdfs:comment """This class collects artistic theories, they are what an author/artist thinks the art practice should be and what they want to represent. An artistic theories does not necessarily have strict rules and it does not need to be consciously defined.
+E.g. Leonardo's Teoria dei moti dell'animo is an artistic theory, there are literary sources talking about it but Leonardo did not identified strict rules nor defined a clear definition for it."""^^rdfs:Literal .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CharacterVisualAtom
-:CharacterVisualAtom rdf:type owl:Class ;
-                     rdfs:subClassOf :VisualAtom ;
-                     rdfs:comment "Specialisation of VisualAtom, it collects the atoms identified as being a character without a link to a special meaning. Eg: the figure of Judas in Last Supper is a character, but is not linked to his identification." .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Character
+:Character rdf:type owl:Class ;
+           rdfs:subClassOf :PictorialAttribute ;
+           rdfs:comment "A character is a figure playing a certain role inside a representation. It is indipendent from the representation itself. E.g. S. Peter is a character of Last Supper iconography." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#CompositionVisualAtom
-:CompositionVisualAtom rdf:type owl:Class ;
-                       rdfs:subClassOf :VisualAtom ;
-                       owl:disjointWith :GeometricalVisualAtom ;
-                       rdfs:comment "Specialisation of VisualAtom, it represent VisualAtoms identified to be representative of composition elements of a painting. Eg: the groupings of 3 figures in Last Supper." .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#CompositionMotif
+:CompositionMotif rdf:type owl:Class ;
+                  rdfs:subClassOf :VisualUnit ;
+                  owl:disjointWith :GeometricVisualUnit ;
+                  rdfs:comment "Specialisation of VisualUnit, it represent VisualUnit identified to be representative of composition elements of a painting. Eg: the groupings of 3 figures in Last Supper." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#DerivationRelation
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#DerivationRelation
 :DerivationRelation rdf:type owl:Class ;
-                    rdfs:subClassOf :a-cd:RelatedWorkSituation .
+                    rdfs:subClassOf <https://w3id.org/arco/ontology/context-description/RelatedWorkSituation> ;
+                    rdfs:comment "This class is a specialisation of a RelatedWorkSituation one. It aims to represent a special type of relation that is the derivation relation among 2 different cultural properties."@en .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#GeometricalVisualAtom
-:GeometricalVisualAtom rdf:type owl:Class ;
-                       rdfs:subClassOf :VisualAtom ;
-                       rdfs:comment "Specialisation of VisualAtom. It comprise visual Atoms aimed at showing the geometrical elements of a painting. Eg: the perspective lines of Last Supper" .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#GeometricVisualUnit
+:GeometricVisualUnit rdf:type owl:Class ;
+                     rdfs:subClassOf :VisualUnit ;
+                     rdfs:comment "Specialisation of VisualUnit. It comprise visualUnit aimed at showing the geometrical elements of a painting. Eg: the perspective lines of Last Supper" .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicMotifs
-:IconographicMotifs rdf:type owl:Class ;
-                    rdfs:subClassOf :AbstractConcept ;
-                    rdfs:comment "Iconographical Motifs is the class aimed to collect all the single representations of different subjects. Example: the pictorical subject \"Last Supper\" has an iconographical Motifs. This motifs collects an x number of different single iconographical representations."^^rdfs:Literal .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IconographicTheme
+:IconographicTheme rdf:type owl:Class ;
+                   rdfs:subClassOf :AbstractConcept ;
+                   rdfs:comment "This class is a general collector of all iconographies sharing the same theme. Eg. All Last Supper iconographies are connected to the instance of Iconographic Theme \"Last Supper\". It serves as a general overview of registered iconographies."^^rdfs:Literal .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IconographicRepresentation
-:IconographicRepresentation rdf:type owl:Class ;
-                            rdfs:subClassOf :AbstractConcept ;
-                            rdfs:comment "This class is the single iconographical representation. Each instance of this class could be present in different cultural properties and has a specific set of features that distinguish it from another one. Example: Florentine Last Supper is a way of representing Last Supper with certain temporal and location characteristics and with specific visual features."^^rdfs:Literal .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Iconography
+:Iconography rdf:type owl:Class ;
+             rdfs:subClassOf :AbstractConcept ;
+             rdfs:comment "This class is the single iconographical representation. Each instance of this class could be present in different cultural properties and has a specific set of features that distinguish it from another one. Example: Florentine Last Supper is a way of representing Last Supper with certain temporal and location characteristics and with specific visual features."^^rdfs:Literal .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#InfluenceRelation
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#InfluenceRelation
 :InfluenceRelation rdf:type owl:Class ;
-                   rdfs:subClassOf :a-cd:RelatedWorkSituation .
+                   rdfs:subClassOf <https://w3id.org/arco/ontology/context-description/RelatedWorkSituation> ;
+                   rdfs:comment "This class represent the influence relation between two cultural properties. One artwork influencing in every possible way another one establish an InfluenceRelation."@en .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#MainCharacter
-:MainCharacter rdf:type owl:Class ;
-               rdfs:subClassOf :PictorialAttribute .
-
-
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PartialDerivationRelation
-:PartialDerivationRelation rdf:type owl:Class ;
-                           rdfs:subClassOf :DerivationRelation ;
-                           rdfs:label "Relation describing the derivation relation between only a part of a cultural property and another. Eg: Bayonne Tapestry is a derivation of Last Supper but only for the central composition, the background is totally different." .
-
-
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PictorialAttribute
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#PictorialAttribute
 :PictorialAttribute rdf:type owl:Class ;
-                    rdfs:subClassOf :AbstractConcept ;
                     rdfs:comment "It is a significant element of an iconographical representation. it difference itself from a simple visual features due to its having an indipendence from the representation itself. Example: Last Supper has inside it the figure of Peter. Peter is a character that is independent from a single painting."^^rdfs:Literal .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#PreparatoryRelation
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#PreparatoryRelation
 :PreparatoryRelation rdf:type owl:Class ;
-                     rdfs:subClassOf :a-cd:RelatedWorkSituation .
+                     rdfs:subClassOf <https://w3id.org/arco/ontology/context-description/RelatedWorkSituation> ;
+                     rdfs:comment "This class is the one responsible for representing the preparatory relation between two cultural properties, the preparatory and the final one. Eg: Windsor 12542 being a preparatory work of Last Supper"@en .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#SceneObject
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#SceneObject
 :SceneObject rdf:type owl:Class ;
-             rdfs:subClassOf :PictorialAttribute .
+             rdfs:subClassOf :PictorialAttribute ;
+             rdfs:comment "A scene object is a significant object existing inside an artwork. It is different from pure shapes and arrangements of motif due to fact that it could be represented in many differet ways but it is always present in certain representation. For example the figure of S. Peter in Last Supper always have a knife." .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#SecondaryCharacter
-:SecondaryCharacter rdf:type owl:Class ;
-                    rdfs:subClassOf :PictorialAttribute .
+###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#VisualUnit
+:VisualUnit rdf:type owl:Class ;
+            rdfs:subClassOf <http://xmlns.com/foaf/0.1/Image> ;
+            rdfs:comment "This class represent significant visive units coming from an artwork. It has no proper meaning besides being images. The image of this class is the little as possible detail."@en .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#VisualAtom
-:VisualAtom rdf:type owl:Class ;
-            rdfs:comment "Inspired by VIR: this class represent the minimum set of significative physical features without a linked meaning. Eg: the figure of Christ in Last Supper from Leonardo da Vinci is denoted by the set of colors that represent that figure inside the painting." .
+###  https://w3id.org/arco/ontology/arco/CulturalProperty
+<https://w3id.org/arco/ontology/arco/CulturalProperty> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://dati.beniculturali.it/cis/CulturalEntity> ;
+                                                       rdfs:comment "This class represents a cultural property, both tangible and intangible. A cultural property is the legacy, tangible or intangible, recognised as part of the national cultural heritage, since it helps know and reconstruct the history and the landscape."@en ;
+                                                       rdfs:isDefinedBy <https://w3id.org/arco/ontology/arco/CulturalProperty> .
 
 
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:AlternativeDating
-:Arco:AlternativeDating rdf:type owl:Class ;
-                        rdfs:subClassOf :a-cd:Dating ;
-                        rdfs:isDefinedBy <https://w3id.org/arco/ontology/context-description/AlternativeDating> .
-
-
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Arco:CulturalProperty
-:Arco:CulturalProperty rdf:type owl:Class ;
-                       rdfs:subClassOf <http://dati.beniculturali.it/cis/CulturalEntity> ;
-                       rdfs:isDefinedBy <https://w3id.org/arco/ontology/arco/CulturalProperty> .
-
-
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#IO:Event
-:IO:Event rdf:type owl:Class ;
-          rdfs:isDefinedBy <https://w3id.org/italia/onto/l0/EventOrSituation> .
-
-
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#Tiapit:TimeInterval
-:Tiapit:TimeInterval rdf:type owl:Class ;
-                     rdfs:subClassOf <https://ontopia-lodview.agid.gov.it/onto/l0/Characteristic> ;
-                     rdfs:isDefinedBy <https://w3id.org/italia/onto/TI/TimeInterval> .
-
-
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:CulturalPropertyStage
-:a-cd:CulturalPropertyStage rdf:type owl:Class ;
-                            rdfs:subClassOf <https://w3id.org/arco/ontology/core/CulturalEntityCharacteristic> ;
-                            rdfs:isDefinedBy <https://w3id.org/arco/ontology/context-description/CulturalPropertyStage> .
-
-
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:CulturalScope
-:a-cd:CulturalScope rdf:type owl:Class ;
-                    rdfs:subClassOf <https://w3id.org/italia/onto/l0/Topic> ;
-                    rdfs:isDefinedBy <https://w3id.org/arco/ontology/context-description/CulturalScope> .
-
-
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:Dating
-:a-cd:Dating rdf:type owl:Class ;
-             rdfs:subClassOf <https://w3id.org/arco/ontology/context-description/DetectionMethod> ,
-                             <https://w3id.org/arco/ontology/context-description/Interpretation> ;
-             rdfs:isDefinedBy <https://w3id.org/arco/ontology/context-description/Dating> .
-
-
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:InterpretationCriterion
-:a-cd:InterpretationCriterion rdf:type owl:Class ;
-                              rdfs:subClassOf <https://w3id.org/italia/onto/l0/Description> ;
-                              rdfs:isDefinedBy <https://w3id.org/arco/ontology/context-description/InterpretationCriterion> .
-
-
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:RelatedWorkSituation
-:a-cd:RelatedWorkSituation rdf:type owl:Class ;
-                           rdfs:subClassOf <https://w3id.org/arco/ontology/core/Situation> ;
-                           rdfs:isDefinedBy <https://w3id.org/arco/ontology/context-description/RelatedWorkSituation> .
-
-
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#a-cd:Subject
-:a-cd:Subject rdf:type owl:Class ;
-              rdfs:subClassOf <https://w3id.org/italia/onto/l0/Topic> ;
-              rdfs:isDefinedBy <https://w3id.org/arco/ontology/context-description/Subject> .
-
-
-###  http://www.semanticweb.org/mattia/ontologies/2020/10/untitled-ontology-25#core:Agent
-:core:Agent rdf:type owl:Class ;
-            rdfs:isDefinedBy <http://dati.gov.it/onto/dcatapit#Agent> .
-
-
-###  http://xmlns.com/foaf/spec/#term_Image
-<http://xmlns.com/foaf/spec/#term_Image> rdf:type owl:Class .
-
-
-###  https://ontopia-lodview.agid.gov.it/onto/l0/Characteristic
-<https://ontopia-lodview.agid.gov.it/onto/l0/Characteristic> rdf:type owl:Class ;
-                                                             rdfs:subClassOf <https://w3id.org/italia/onto/Entity> .
+###  https://w3id.org/arco/ontology/context-description/AlternativeDating
+<https://w3id.org/arco/ontology/context-description/AlternativeDating> rdf:type owl:Class ;
+                                                                       rdfs:subClassOf <https://w3id.org/arco/ontology/context-description/Dating> ;
+                                                                       rdfs:comment "This class represents an alternative dating of a cultural property (e.g.: an obsolete dating, a dating based on another method of dating)."@en ;
+                                                                       rdfs:isDefinedBy <https://w3id.org/arco/ontology/context-description/AlternativeDating> .
 
 
 ###  https://w3id.org/arco/ontology/context-description/Bibliography
-<https://w3id.org/arco/ontology/context-description/Bibliography> rdf:type owl:Class .
+<https://w3id.org/arco/ontology/context-description/Bibliography> rdf:type owl:Class ;
+                                                                  rdfs:comment "Questa classe rappresenta un riferimento bibliografico che riguarda un'entità, per esempio un bene culturale." .
 
 
 ###  https://w3id.org/arco/ontology/context-description/BibliographyType
-<https://w3id.org/arco/ontology/context-description/BibliographyType> rdf:type owl:Class .
+<https://w3id.org/arco/ontology/context-description/BibliographyType> rdf:type owl:Class ;
+                                                                      rdfs:comment "Questa classe rappresenta il tipo di riferimento bibliografico." .
+
+
+###  https://w3id.org/arco/ontology/context-description/CulturalPropertyStage
+<https://w3id.org/arco/ontology/context-description/CulturalPropertyStage> rdf:type owl:Class ;
+                                                                           rdfs:subClassOf <https://w3id.org/arco/ontology/core/CulturalEntityCharacteristic> ;
+                                                                           rdfs:comment "This class represents the stage of the catalogued cultural property related to the object which constitutes its preparatory or final stage."@en ;
+                                                                           rdfs:isDefinedBy <https://w3id.org/arco/ontology/context-description/CulturalPropertyStage> .
+
+
+###  https://w3id.org/arco/ontology/context-description/Dating
+<https://w3id.org/arco/ontology/context-description/Dating> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <https://w3id.org/arco/ontology/context-description/DetectionMethod> ,
+                                                                            <https://w3id.org/arco/ontology/context-description/Interpretation> ;
+                                                            rdfs:comment "This class represents the dating of an entity, that is information about the chronology of the entity (e.g.: a cultural property), referring to a particular event (e.g.: the creation of the cultural property, its distruction, etc.)"@en ;
+                                                            rdfs:isDefinedBy <https://w3id.org/arco/ontology/context-description/Dating> .
 
 
 ###  https://w3id.org/arco/ontology/context-description/DetectionMethod
 <https://w3id.org/arco/ontology/context-description/DetectionMethod> rdf:type owl:Class ;
-                                                                     rdfs:subClassOf <https://w3id.org/arco/ontology/core/Method> .
+                                                                     rdfs:subClassOf <https://w3id.org/arco/ontology/core/Method> ;
+                                                                     rdfs:comment "This class represents the method of detection that allowed the detection of a cultural property and which is indicative of the type and consistency of some information in the catalogue record that describes it (e.g.: coring, archive data, oral sources)." .
 
 
 ###  https://w3id.org/arco/ontology/context-description/Interpretation
 <https://w3id.org/arco/ontology/context-description/Interpretation> rdf:type owl:Class ;
-                                                                    rdfs:subClassOf <https://w3id.org/arco/ontology/core/Situation> .
+                                                                    rdfs:subClassOf <https://w3id.org/arco/ontology/core/Situation> ;
+                                                                    rdfs:comment "This class represents a situation in which pieces of information related to an object (e.g.: a cultural property) are detected and recorded by an agent, based on a specific source or motivation (e.g.:ithe authorship attribution, commission, etc.)"@en .
 
 
-###  https://w3id.org/arco/ontology/core/Concept
-<https://w3id.org/arco/ontology/core/Concept> rdf:type owl:Class ;
-                                              rdfs:subClassOf <https://w3id.org/italia/onto/l0/Object> ;
-                                              rdfs:isDefinedBy <https://w3id.org/italia/onto/l0/Concept> .
+###  https://w3id.org/arco/ontology/context-description/InterpretationCriterion
+<https://w3id.org/arco/ontology/context-description/InterpretationCriterion> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <https://w3id.org/italia/onto/l0/Description> ;
+                                                                             rdfs:comment "This class represents the criterion that motivated an interpretation (e.g. inscription, bibliography, documentation)." ;
+                                                                             rdfs:isDefinedBy <https://w3id.org/arco/ontology/context-description/InterpretationCriterion> .
+
+
+###  https://w3id.org/arco/ontology/context-description/RelatedWorkSituation
+<https://w3id.org/arco/ontology/context-description/RelatedWorkSituation> rdf:type owl:Class ;
+                                                                          rdfs:subClassOf <https://w3id.org/arco/ontology/core/Situation> ;
+                                                                          rdfs:comment "This class represents a situation in which a cultural property is related to another work, that could even be another cultural property. The cultural property stage is defined referring to this relationship with a related work, that can represent a preparatory, a final phase or a derivation of the cultural property. When the relationship is between two cultural properties, when possible, the nature of the relationship is specified (e.g.: finding location)"@en ;
+                                                                          rdfs:isDefinedBy <https://w3id.org/arco/ontology/context-description/RelatedWorkSituation> .
+
+
+###  https://w3id.org/arco/ontology/context-description/Subject
+<https://w3id.org/arco/ontology/context-description/Subject> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <https://w3id.org/italia/onto/l0/Topic> ;
+                                                             rdfs:comment "This class represents the subject of a cultural property, or its ornamental motif." ;
+                                                             rdfs:isDefinedBy <https://w3id.org/arco/ontology/context-description/Subject> .
+
+
+###  https://w3id.org/arco/ontology/context-description/hasCulturalScope
+<https://w3id.org/arco/ontology/context-description/hasCulturalScope> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <https://w3id.org/italia/onto/l0/Topic> ;
+                                                                      rdfs:comment "This property relates a situation, where a cultural scope is attributed to a cultural entity, to the cultural scope." ;
+                                                                      rdfs:isDefinedBy <https://w3id.org/arco/ontology/context-description/CulturalScope> .
 
 
 ###  https://w3id.org/arco/ontology/core/CulturalEntityCharacteristic
 <https://w3id.org/arco/ontology/core/CulturalEntityCharacteristic> rdf:type owl:Class ;
-                                                                   rdfs:subClassOf <https://ontopia-lodview.agid.gov.it/onto/l0/Characteristic> .
+                                                                   rdfs:subClassOf <https://w3id.org/italia/onto/l0/Characteristic> ;
+                                                                   rdfs:comment "The class representing the characteristic of a cultural entity (e.g. a cultural property)."@en .
 
 
 ###  https://w3id.org/arco/ontology/core/Method
 <https://w3id.org/arco/ontology/core/Method> rdf:type owl:Class ;
-                                             rdfs:subClassOf <https://w3id.org/italia/onto/l0/Description> .
+                                             rdfs:subClassOf <https://w3id.org/italia/onto/l0/Description> ;
+                                             rdfs:comment "The class representing the concept of method." .
 
 
 ###  https://w3id.org/arco/ontology/core/Situation
 <https://w3id.org/arco/ontology/core/Situation> rdf:type owl:Class ;
-                                                rdfs:subClassOf <https://w3id.org/italia/onto/l0/EventOrSituation> .
-
-
-###  https://w3id.org/italia/onto/Entity
-<https://w3id.org/italia/onto/Entity> rdf:type owl:Class .
-
-
-###  https://w3id.org/italia/onto/Location
-<https://w3id.org/italia/onto/Location> rdf:type owl:Class ;
-                                        rdfs:subClassOf <https://w3id.org/italia/onto/Entity> ;
-                                        rdfs:isDefinedBy "https://w3id.org/italia/onto/l0/Location" .
+                                                rdfs:subClassOf <https://w3id.org/italia/onto/l0/EventOrSituation> ;
+                                                rdfs:comment "The class representing the generic concept of situation."@en .
 
 
 ###  https://w3id.org/italia/onto/CLV/Feature
 <https://w3id.org/italia/onto/CLV/Feature> rdf:type owl:Class ;
                                            rdfs:subClassOf <https://w3id.org/italia/onto/CLV/SpatialObject> ;
+                                           rdfs:comment "This class is used to represent any geographical entity." ;
                                            rdfs:isDefinedBy "https://w3id.org/italia/onto/CLV/Feature" .
+
+
+###  https://w3id.org/italia/onto/CLV/Geometry
+<https://w3id.org/italia/onto/CLV/Geometry> rdf:type owl:Class ;
+                                            rdfs:subClassOf <https://w3id.org/italia/onto/CLV/SpatialObject> ;
+                                            rdfs:comment "This class represents the geometry of a spatial entity." .
 
 
 ###  https://w3id.org/italia/onto/CLV/SpatialObject
 <https://w3id.org/italia/onto/CLV/SpatialObject> rdf:type owl:Class ;
-                                                 rdfs:subClassOf <https://w3id.org/italia/onto/Location> ;
+                                                 rdfs:subClassOf <https://w3id.org/italia/onto/l0/Location> ;
+                                                 rdfs:comment "This class represents everything that can have a spatial representation." ;
                                                  rdfs:isDefinedBy "https://w3id.org/italia/onto/CLV/SpatialObject" .
 
 
 ###  https://w3id.org/italia/onto/TI/TemporalEntity
 <https://w3id.org/italia/onto/TI/TemporalEntity> rdf:type owl:Class ;
-                                                 rdfs:subClassOf <https://w3id.org/italia/onto/Entity> .
+                                                 rdfs:subClassOf <https://w3id.org/italia/onto/l0/Entity> ;
+                                                 rdfs:comment "This class represents a temporal entity." .
+
+
+###  https://w3id.org/italia/onto/TI/TimeInterval
+<https://w3id.org/italia/onto/TI/TimeInterval> rdf:type owl:Class ;
+                                               rdfs:subClassOf <https://w3id.org/italia/onto/TI/TemporalEntity> ,
+                                                               <https://w3id.org/italia/onto/l0/Characteristic> ;
+                                               rdfs:comment "A time interval"@en ,
+                                                            "https://w3id.org/italia/onto/TI/TimeInterval"@en .
+
+
+###  https://w3id.org/italia/onto/l0/Agent
+<https://w3id.org/italia/onto/l0/Agent> rdf:type owl:Class ;
+                                        rdfs:comment "Any agentive Object , either physical (e.g. a person, a robot, an oak), or social (e.g. a corporation, an institution, a community)."@en .
+
+
+###  https://w3id.org/italia/onto/l0/Characteristic
+<https://w3id.org/italia/onto/l0/Characteristic> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <https://w3id.org/italia/onto/l0/Entity> ;
+                                                 rdfs:comment "The class of characteristics, intended as any aspect, attribuite, or quality of an entity. E.g. a certain size, aesthetic quality, color, etc."@en .
+
+
+###  https://w3id.org/italia/onto/l0/Concept
+<https://w3id.org/italia/onto/l0/Concept> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://w3id.org/italia/onto/l0/Object> ;
+                                          rdfs:comment "It is an object that is defined in some description. Once defined it can be used in other descriptions" ;
+                                          rdfs:isDefinedBy <https://w3id.org/italia/onto/l0/Concept> .
 
 
 ###  https://w3id.org/italia/onto/l0/Description
 <https://w3id.org/italia/onto/l0/Description> rdf:type owl:Class ;
-                                              rdfs:subClassOf <https://w3id.org/italia/onto/l0/Object> .
+                                              rdfs:subClassOf <https://w3id.org/italia/onto/l0/Object> ;
+                                              rdfs:comment "The class of socially-created objects (texts, values, categories, relations, contexts) used to describe something else in a structured way. Examples include plans (as structured descriptions of actions to be executed), diagnoses (as structured descriptions of observed situations, explanations (as structured texts clarifying e.g. a concept), objective observations (as structured sets of values that identify a relevant situation)." .
+
+
+###  https://w3id.org/italia/onto/l0/Entity
+<https://w3id.org/italia/onto/l0/Entity> rdf:type owl:Class ;
+                                         rdfs:comment "Anything: real, possible, or imaginary, which some modeller wants to talk about for some purpose."@en .
 
 
 ###  https://w3id.org/italia/onto/l0/EventOrSituation
 <https://w3id.org/italia/onto/l0/EventOrSituation> rdf:type owl:Class ;
-                                                   rdfs:subClassOf <https://w3id.org/italia/onto/Entity> .
+                                                   rdfs:subClassOf <https://w3id.org/italia/onto/l0/Entity> ;
+                                                   rdfs:comment """This class represents a specific situation or an event that happens in the lifecycle of either a business or a person or a group of persons. The class is recommended.
+Any entity that typically flows in time, either in the physical or social world Examples include athmospheric phenomena, concerts, travels, institutional processes, etc. It also represents a relational context created by an observer on the basis of a frame' Events are opposable to objects, since events typically flow in time, aggregating multiple objects during their flow, while objects tend to be stable in a certain time interval."""@en .
+
+
+###  https://w3id.org/italia/onto/l0/Location
+<https://w3id.org/italia/onto/l0/Location> rdf:type owl:Class ;
+                                           rdfs:subClassOf <https://w3id.org/italia/onto/l0/Entity> ;
+                                           rdfs:comment "The class including locations. Individuals of this class can be anything that is intended as a location for something else, e.g. geographical places, spatial objects, containers, etc." ;
+                                           rdfs:isDefinedBy "https://w3id.org/italia/onto/l0/Location" .
 
 
 ###  https://w3id.org/italia/onto/l0/Object
 <https://w3id.org/italia/onto/l0/Object> rdf:type owl:Class ;
-                                         rdfs:subClassOf <https://w3id.org/italia/onto/Entity> .
+                                         rdfs:subClassOf <https://w3id.org/italia/onto/l0/Entity> ;
+                                         rdfs:comment "Any entity that tends to be stable in time, either in the physical or social world. Examples include homes, cities, organizations, works of art, natural objects, artifacts, words, ideas, etc. Objects are opposable to events, since events typically flow in time, aggregating multiple objects during their flow, as with working, travelling or leisure activities, industrial or athmospheric processes, etc." .
 
 
 ###  https://w3id.org/italia/onto/l0/Topic
 <https://w3id.org/italia/onto/l0/Topic> rdf:type owl:Class ;
-                                        rdfs:subClassOf <https://w3id.org/italia/onto/Entity> .
-
-
-#################################################################
-#    General axioms
-#################################################################
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :CharacterVisualAtom
-                :CompositionVisualAtom
-                :GeometricalVisualAtom
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :MainCharacter
-                :SceneObject
-                :SecondaryCharacter
-              )
-] .
+                                        rdfs:subClassOf <https://w3id.org/italia/onto/l0/Entity> ;
+                                        rdfs:comment "The class of topics, subjects, arguments, categories, domains, etc., intended as topics of a discourse or a categorization." .
 
 
 ###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
