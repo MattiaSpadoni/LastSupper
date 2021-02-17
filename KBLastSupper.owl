@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#"
+     xml:base="https://github.com/MattiaSpadoni/LastSupper/blob/main/KBLastSupper.owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#">
+     ontologyIRI="https://github.com/MattiaSpadoni/LastSupper/blob/main/KBLastSupper.owl#">
     <Prefix name="" IRI="https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#"/>
-    <Prefix name="LS" IRI="https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#"/>
+    <Prefix name="LS" IRI="https://github.com/MattiaSpadoni/LastSupper/blob/main/KBLastSupper.owl#"/>
     <Prefix name="l0" IRI="https://w3id.org/italia/onto/l0/"/>
     <Prefix name="CLV" IRI="https://w3id.org/italia/onto/CLV/"/>
     <Prefix name="DUL" IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl/"/>
