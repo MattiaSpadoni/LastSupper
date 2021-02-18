@@ -55,9 +55,6 @@
         <Class IRI="InfluenceRelation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="PartialDerivationRelation"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="PictorialAttribute"/>
     </Declaration>
     <Declaration>
@@ -70,7 +67,7 @@
         <Class IRI="VisualUnit"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="a-cd:AlternativeDating"/>
@@ -172,10 +169,10 @@
         <ObjectProperty abbreviatedIRI="DUL:isSettingFor"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="BelongsTo"/>
+        <ObjectProperty IRI="ArtisticTheoryEmbodiedIn"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="Comprise"/>
+        <ObjectProperty IRI="BelongsTo"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="CompriseIconography"/>
@@ -185,9 +182,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="Creates"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="DescribedIn"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="EmbodiesArtisticTheory"/>
@@ -268,6 +262,9 @@
         <ObjectProperty IRI="Influenced"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="InfluencedBy"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="Introduce"/>
     </Declaration>
     <Declaration>
@@ -281,6 +278,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="IsCompositionMotifOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="IsCulturalScopeOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="IsDerivatedVisualUnitOf"/>
@@ -358,9 +358,6 @@
         <ObjectProperty IRI="Presents"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="PresentsArtisticTheory"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="RepresentSubject"/>
     </Declaration>
     <Declaration>
@@ -368,6 +365,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="Theorises"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasDepiction"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasDiffusionPeriod"/>
@@ -482,9 +482,6 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="GeometricalRelationDescription"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="InvolvedPart"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="Label"/>
@@ -1134,14 +1131,14 @@
         <Class IRI="DerivationRelation"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="HasDerivatedWork"/>
-            <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+            <Class abbreviatedIRI="Arco:CulturalProperty"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="DerivationRelation"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="HasOriginalWork"/>
-            <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+            <Class abbreviatedIRI="Arco:CulturalProperty"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1161,10 +1158,6 @@
         <Class abbreviatedIRI="a-cd:RelatedWorkSituation"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="PartialDerivationRelation"/>
-        <Class IRI="DerivationRelation"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="PreparatoryRelation"/>
         <Class abbreviatedIRI="a-cd:RelatedWorkSituation"/>
     </SubClassOf>
@@ -1177,7 +1170,7 @@
         <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
         <Class abbreviatedIRI="cis:CulturalEntity"/>
     </SubClassOf>
     <SubClassOf>
@@ -1309,11 +1302,11 @@
         <NamedIndividual IRI="AnonimoUmbro"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
         <NamedIndividual IRI="AnonimoUmbroLastSupper"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
         <NamedIndividual IRI="AraldiUltimaCena"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1365,7 +1358,7 @@
         <NamedIndividual IRI="BibliographyType2"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
         <NamedIndividual IRI="BiragoLastSupper"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1373,7 +1366,7 @@
         <NamedIndividual IRI="Boccaccino"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
         <NamedIndividual IRI="BoccaccinoPastori"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1381,11 +1374,11 @@
         <NamedIndividual IRI="Caravaggio"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
         <NamedIndividual IRI="CastagnoLastSupper"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
         <NamedIndividual IRI="CatturaDiCristo"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1413,11 +1406,11 @@
         <NamedIndividual IRI="Character3"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
         <NamedIndividual IRI="ChristHead"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
         <NamedIndividual IRI="CoeckeLastSupper"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1425,7 +1418,7 @@
         <NamedIndividual IRI="DaVinciIconographyLastSupper"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
         <NamedIndividual IRI="DamaErmellino"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1445,11 +1438,7 @@
         <NamedIndividual IRI="Derivation4"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="PartialDerivationRelation"/>
-        <NamedIndividual IRI="Derivation4"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="PartialDerivationRelation"/>
+        <Class IRI="DerivationRelation"/>
         <NamedIndividual IRI="Derivation5"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1457,7 +1446,7 @@
         <NamedIndividual IRI="DomenicoGhirlandaio"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
         <NamedIndividual IRI="DurerLastSupper"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1465,7 +1454,7 @@
         <NamedIndividual IRI="EarlyFlorentineLastSupperIconography"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
         <NamedIndividual IRI="FerrariUltimaCena"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1473,7 +1462,7 @@
         <NamedIndividual IRI="FrancescoMelzi"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
         <NamedIndividual IRI="FranciobigiLastSupper"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1481,7 +1470,7 @@
         <NamedIndividual IRI="Franciobigio"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
         <NamedIndividual IRI="GaddiLastSupper"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1489,7 +1478,7 @@
         <NamedIndividual IRI="Garofalo"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
         <NamedIndividual IRI="GarofaloAdultera"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1505,7 +1494,7 @@
         <NamedIndividual IRI="Geometry2"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
         <NamedIndividual IRI="GhirlandaioLastSupper"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1513,7 +1502,7 @@
         <NamedIndividual IRI="Giorgione"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
         <NamedIndividual IRI="GiovanniAgostinoDoublePortrait"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1633,7 +1622,7 @@
         <NamedIndividual IRI="John_Everett_Millais"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
         <NamedIndividual IRI="LastSupper"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1645,7 +1634,7 @@
         <NamedIndividual IRI="LateFlorentineLastSupperIconography"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
         <NamedIndividual IRI="Le_tre_età"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1669,11 +1658,11 @@
         <NamedIndividual IRI="MarcantonioRaimondi"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
         <NamedIndividual IRI="MorghenLastSupper"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
         <NamedIndividual IRI="MrsJamesWyatt"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1685,7 +1674,7 @@
         <NamedIndividual IRI="Perugino"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
         <NamedIndividual IRI="PeruginoLastSupper"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1741,7 +1730,7 @@
         <NamedIndividual IRI="RaffaelloMorghen"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
         <NamedIndividual IRI="RaimondiLastSupper"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1765,7 +1754,7 @@
         <NamedIndividual IRI="TimeInterval4"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
         <NamedIndividual IRI="VaticanTapestry"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1773,7 +1762,7 @@
         <NamedIndividual IRI="Vespino"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
         <NamedIndividual IRI="VespinoLastSupper"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -2029,43 +2018,43 @@
         <NamedIndividual IRI="VisualUnit9"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
         <NamedIndividual IRI="Windsor12542"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
         <NamedIndividual IRI="Windsor12543"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
         <NamedIndividual IRI="Windsor12544"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
         <NamedIndividual IRI="Windsor12545"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
         <NamedIndividual IRI="Windsor12547"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
         <NamedIndividual IRI="Windsor12548"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
         <NamedIndividual IRI="Windsor12549"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
         <NamedIndividual IRI="Windsor12551"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
         <NamedIndividual IRI="Windsor12552"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
         <NamedIndividual IRI="Windsor12554"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -2073,15 +2062,15 @@
         <NamedIndividual IRI="image8"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
         <NamedIndividual IRI="423E"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
         <NamedIndividual IRI="428E"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
         <NamedIndividual IRI="436E"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -5860,6 +5849,10 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <ObjectProperty abbreviatedIRI="DUL:associatedWith"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="ArtisticTheoryEmbodiedIn"/>
+        <ObjectProperty IRI="IsPresentIn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="CreatedBy"/>
         <ObjectProperty IRI="IntroductedBy"/>
     </SubObjectPropertyOf>
@@ -5869,7 +5862,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="EmbodiesArtisticTheory"/>
-        <ObjectProperty IRI="IsPresentIn"/>
+        <ObjectProperty IRI="Presents"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="HasCharacter"/>
@@ -6028,16 +6021,16 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="PresentsArtisticTheory"/>
-        <ObjectProperty IRI="Presents"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
         <ObjectProperty IRI="TheorisedBy"/>
         <ObjectProperty IRI="IntroductedBy"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="Theorises"/>
         <ObjectProperty IRI="Introduce"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasDepiction"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasDepiction"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="hasRelationLocation"/>
@@ -6120,8 +6113,12 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <ObjectProperty abbreviatedIRI="DUL:isSettingFor"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
+        <ObjectProperty IRI="ArtisticTheoryEmbodiedIn"/>
+        <ObjectProperty IRI="EmbodiesArtisticTheory"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
         <ObjectProperty IRI="BelongsTo"/>
-        <ObjectProperty IRI="Comprise"/>
+        <ObjectProperty IRI="IsCulturalScopeOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="CompriseIconography"/>
@@ -6130,10 +6127,6 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     <InverseObjectProperties>
         <ObjectProperty IRI="CreatedBy"/>
         <ObjectProperty IRI="Creates"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="EmbodiesArtisticTheory"/>
-        <ObjectProperty IRI="PresentsArtisticTheory"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="HasCharacter"/>
@@ -6165,11 +6158,11 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="HasIconographicTheme"/>
-        <ObjectProperty IRI="IsUsedInWork"/>
+        <ObjectProperty IRI="RepresentSubject"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="HasIconography"/>
-        <ObjectProperty IRI="RepresentSubject"/>
+        <ObjectProperty IRI="IsUsedInWork"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="HasInfluencedVisualUnit"/>
@@ -6226,6 +6219,10 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     <InverseObjectProperties>
         <ObjectProperty IRI="HasVisualUnit"/>
         <ObjectProperty IRI="IsVisualUnitOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="Influenced"/>
+        <ObjectProperty IRI="InfluencedBy"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="Introduce"/>
@@ -6295,12 +6292,12 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <ObjectProperty IRI="CreatedBy"/>
     </AsymmetricObjectProperty>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="BelongsTo"/>
-        <Class IRI="AbstractConcept"/>
+        <ObjectProperty IRI="ArtisticTheoryEmbodiedIn"/>
+        <Class IRI="ArtisticTheory"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="Comprise"/>
-        <Class abbreviatedIRI="a-cd:CulturalScope"/>
+        <ObjectProperty IRI="BelongsTo"/>
+        <Class IRI="AbstractConcept"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="CompriseIconography"/>
@@ -6315,14 +6312,10 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Class abbreviatedIRI="l0:Agent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="DescribedIn"/>
-        <Class abbreviatedIRI="core:Concept"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="EmbodiesArtisticTheory"/>
         <ObjectUnionOf>
             <Class IRI="AbstractConcept"/>
-            <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+            <Class abbreviatedIRI="Arco:CulturalProperty"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -6355,11 +6348,11 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="HasIconographicTheme"/>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="a-cd:Subject"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="HasIconography"/>
-        <Class abbreviatedIRI="a-cd:Subject"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="HasInfluencedWork"/>
@@ -6376,6 +6369,10 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="HasMediumVisualUnit"/>
         <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="HasMediumWork"/>
+        <Class IRI="InfluenceRelation"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="HasObject"/>
@@ -6414,6 +6411,10 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Class IRI="ArtisticTheory"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="InfluencedBy"/>
+        <Class IRI="Iconography"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="IsAttributeOf"/>
         <Class IRI="PictorialAttribute"/>
     </ObjectPropertyDomain>
@@ -6426,16 +6427,20 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Class IRI="CompositionMotif"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="IsCulturalScopeOf"/>
+        <Class abbreviatedIRI="a-cd:CulturalScope"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="IsDerivatedVisualUnitOf"/>
         <Class IRI="VisualUnit"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="IsDerivationIn"/>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="IsFinalIn"/>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="IsFinalVisualUnitOf"/>
@@ -6447,7 +6452,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="IsInfluencedIn"/>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="IsInfluencedVisualUnitOf"/>
@@ -6455,7 +6460,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="IsInfluencerIn"/>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="IsInfluencerVisualUnitOf"/>
@@ -6464,6 +6469,10 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="IsLocationOf"/>
         <Class abbreviatedIRI="l0:Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="IsMediumIn"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="IsMediumVisualUnitOf"/>
@@ -6479,7 +6488,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="IsOriginaln"/>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="IsPredecessorOf"/>
@@ -6487,7 +6496,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="IsPreparatoryIn"/>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="IsPreparatoryVisualUnitOf"/>
@@ -6521,14 +6530,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <ObjectProperty IRI="Presents"/>
         <ObjectUnionOf>
             <Class IRI="AbstractConcept"/>
-            <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
-        </ObjectUnionOf>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="PresentsArtisticTheory"/>
-        <ObjectUnionOf>
-            <Class IRI="AbstractConcept"/>
-            <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+            <Class abbreviatedIRI="Arco:CulturalProperty"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -6544,6 +6546,14 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Class abbreviatedIRI="l0:Agent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasDepiction"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="cis:CulturalEntity"/>
+            <Class IRI="VisualUnit"/>
+            <Class abbreviatedIRI="l0:Agent"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="hasDiffusionPeriod"/>
         <Class IRI="AbstractConcept"/>
     </ObjectPropertyDomain>
@@ -6557,10 +6567,11 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="a-cd:hasAuthor"/>
-        <ObjectUnionOf>
-            <Class abbreviatedIRI="cis:CulturalEntity"/>
-            <Class abbreviatedIRI="a-cd:Bibliography"/>
-        </ObjectUnionOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="a-cd:hasBibliographyType"/>
+        <Class abbreviatedIRI="a-cd:Bibliography"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="a-cd:hasDating"/>
@@ -6571,16 +6582,32 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Class abbreviatedIRI="a-cd:Dating"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty abbreviatedIRI="a-cd:hasDepiction"/>
-        <ObjectUnionOf>
-            <Class abbreviatedIRI="cis:CulturalEntity"/>
-            <Class IRI="VisualUnit"/>
-            <Class abbreviatedIRI="l0:Agent"/>
-        </ObjectUnionOf>
+        <ObjectProperty abbreviatedIRI="a-cd:hasRelatedAgent"/>
+        <Class abbreviatedIRI="owl:Thing"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="a-cd:hasRelatedWorkSituation"/>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="a-cd:isAgentRelatedTo"/>
+        <Class abbreviatedIRI="l0:Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="a-cd:isAuthorOf"/>
+        <Class abbreviatedIRI="l0:Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="a-cd:isBibliographyOf"/>
+        <Class abbreviatedIRI="a-cd:Bibliography"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="a-cd:isBibliographyTypeOf"/>
+        <Class abbreviatedIRI="a-cd:BibliographyType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="a-cd:isDatingEventOf"/>
+        <Class abbreviatedIRI="l0:EventOrSituation"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="a-cd:isDatingOf"/>
@@ -6611,12 +6638,15 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Class abbreviatedIRI="owl:Thing"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="BelongsTo"/>
-        <Class abbreviatedIRI="a-cd:CulturalScope"/>
+        <ObjectProperty IRI="ArtisticTheoryEmbodiedIn"/>
+        <ObjectUnionOf>
+            <Class IRI="AbstractConcept"/>
+            <Class abbreviatedIRI="Arco:CulturalProperty"/>
+        </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="Comprise"/>
-        <Class IRI="AbstractConcept"/>
+        <ObjectProperty IRI="BelongsTo"/>
+        <Class abbreviatedIRI="a-cd:CulturalScope"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="CompriseIconography"/>
@@ -6644,7 +6674,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="HasDerivatedWork"/>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="HasDerivativeVisualUnit"/>
@@ -6656,7 +6686,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="HasFinalWork"/>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="HasGeometricVisualUnit"/>
@@ -6664,19 +6694,19 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="HasIconographicTheme"/>
-        <Class IRI="Iconography"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="HasIconography"/>
         <Class IRI="IconographicTheme"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="HasIconography"/>
+        <Class IRI="Iconography"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="HasInfluencedWork"/>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="HasInfluencerWork"/>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="HasLocation"/>
@@ -6685,6 +6715,10 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     <ObjectPropertyRange>
         <ObjectProperty IRI="HasMediumVisualUnit"/>
         <Class IRI="VisualUnit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="HasMediumWork"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="HasObject"/>
@@ -6696,7 +6730,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="HasOriginalWork"/>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="HasPictorialAttribute"/>
@@ -6708,7 +6742,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="HasPreparatoryWork"/>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="HasVisualUnit"/>
@@ -6723,6 +6757,10 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Class IRI="Iconography"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="InfluencedBy"/>
+        <Class IRI="ArtisticTheory"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="IsAttributeOf"/>
         <Class IRI="Iconography"/>
     </ObjectPropertyRange>
@@ -6733,6 +6771,10 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     <ObjectPropertyRange>
         <ObjectProperty IRI="IsCompositionMotifOf"/>
         <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="IsCulturalScopeOf"/>
+        <Class IRI="AbstractConcept"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="IsDerivatedVisualUnitOf"/>
@@ -6775,6 +6817,10 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Class abbreviatedIRI="owl:Thing"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="IsMediumIn"/>
+        <Class IRI="InfluenceRelation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="IsMediumVisualUnitOf"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </ObjectPropertyRange>
@@ -6806,7 +6852,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <ObjectProperty IRI="IsPresentIn"/>
         <ObjectUnionOf>
             <Class IRI="AbstractConcept"/>
-            <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+            <Class abbreviatedIRI="Arco:CulturalProperty"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -6823,7 +6869,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="IsUsedInWork"/>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="IsVisualUnitOf"/>
@@ -6832,10 +6878,6 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     <ObjectPropertyRange>
         <ObjectProperty IRI="Presents"/>
         <Class IRI="AbstractConcept"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="PresentsArtisticTheory"/>
-        <Class IRI="ArtisticTheory"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="RepresentSubject"/>
@@ -6848,6 +6890,10 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     <ObjectPropertyRange>
         <ObjectProperty IRI="Theorises"/>
         <Class IRI="AbstractConcept"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasDepiction"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasDiffusionPeriod"/>
@@ -6866,16 +6912,36 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Class abbreviatedIRI="l0:Agent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="a-cd:hasBibliographyType"/>
+        <Class abbreviatedIRI="a-cd:BibliographyType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="a-cd:hasDating"/>
         <Class abbreviatedIRI="a-cd:Dating"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI="a-cd:hasDepiction"/>
-        <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
+        <ObjectProperty abbreviatedIRI="a-cd:hasRelatedAgent"/>
+        <Class abbreviatedIRI="l0:Agent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="a-cd:hasRelatedWorkSituation"/>
         <Class abbreviatedIRI="a-cd:RelatedWorkSituation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="a-cd:isAgentRelatedTo"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="a-cd:isAuthorOf"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="a-cd:isBibliographyOf"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="a-cd:isBibliographyTypeOf"/>
+        <Class abbreviatedIRI="a-cd:Bibliography"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="a-cd:isDatingEventOf"/>
@@ -6887,7 +6953,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="a-cd:isRelatedWorkSituationOf"/>
-        <Class IRI="https://w3id.org/arco/ontology/arco/CulturalProperty/"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="a-cd:specificTime"/>
@@ -7018,10 +7084,6 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Class abbreviatedIRI="a-cd:RelatedWorkSituation"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="InvolvedPart"/>
-        <Class abbreviatedIRI="a-cd:RelatedWorkSituation"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="Label"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </DataPropertyDomain>
@@ -7052,6 +7114,10 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     <DataPropertyDomain>
         <DataProperty IRI="TypicalIconclassCode"/>
         <Class IRI="IconographicTheme"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="URI"/>
+        <Class abbreviatedIRI="owl:Thing"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty abbreviatedIRI="a-cd:agentDate"/>
@@ -7105,6 +7171,10 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="CompositionDescription"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="CompositionRelationDescription"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
@@ -7114,6 +7184,10 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="EndDate"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="GeometricalDescription"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -7216,13 +7290,34 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </DisjointDataProperties>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>cis:CulturalEntity</AbbreviatedIRI>
+        <Literal>Class that provides a generalization of three classes; that is , cultural institute or site, collection and cultural heritage object. It does not correspond to a concept used typically in the cultural domain but it is used in order to model properties and property restrictions that are common to all the these three classes. The class will never be directly instanziated.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/Image</IRI>
+        <Literal>The class Image is a sub-class of Document corresponding to those documents which are images.
+Digital images (such as JPEG, PNG, GIF bitmaps, SVG diagrams etc.) are examples of Image.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>AbstractConcept</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">This class represent a specification class for the &quot;Concept&quot; of Top Level Ontology. It is not thought to be directly instatiated, but only to be a collector of more defined abstract concepts as Artistic Theories, Iconographies, Iconologies interpretations and elements of paintings.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">This class represent a specification class for the &quot;Concept&quot;. It is not thought to be directly instatiated, but only to be a collector of more defined abstract concepts as artistic theories and iconographies</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>AlternativeRelationDate</IRI>
         <Literal>Alternative date of a relation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ApproximateDate</IRI>
+        <Literal>Approximate date of an owl:thing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ApproximatePeriod</IRI>
+        <Literal>Approximate period of an owl:thing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
@@ -7232,7 +7327,13 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>ArtisticTheory</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Artistic Theory groups all the theories conceived in the art domain. It specifically focus on theories of painting. Example: Moti dell&apos;Animo. Theory with the Aim of expressing the range of human emotion inside a painting.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">This class collects artistic theories, they are what an author/artist thinks the art practice should be and what they want to represent. An artistic theories does not necessarily have strict rules and it does not need to be consciously defined.
+E.g. Leonardo&apos;s Teoria dei moti dell&apos;animo is an artistic theory, there are literary sources talking about it but Leonardo did not identified strict rules nor defined a clear definition for it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ArtisticTheoryEmbodiedIn</IRI>
+        <Literal>This property link an Iconographical Representation to the Theory it embodies inside it. Da Vinci Last Supper Iconography embodies Theory of Moti dell&apos;Animo inside it.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -7241,8 +7342,18 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Character</IRI>
+        <Literal>A character is a figure playing a certain role inside a representation. It is indipendent from the representation itself. E.g. S. Peter is a character of Last Supper iconography.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>CompositionDescription</IRI>
+        <Literal>Description of composition element of a owl:thing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>CompositionMotif</IRI>
-        <Literal>Specialisation of VisualAtom, it represent VisualAtoms identified to be representative of composition elements of a painting. Eg: the groupings of 3 figures in Last Supper.</Literal>
+        <Literal>Specialisation of VisualUnit, it represent VisualUnit identified to be representative of composition elements of a painting. Eg: the groupings of 3 figures in Last Supper.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -7251,43 +7362,48 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Comprise</IRI>
-        <Literal>Inverse of BelongsTo</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>CompriseIconography</IRI>
-        <Literal>This property link the Iconographical motifs to all its known Iconographical Representations. Example: Last Supper Iconographical Motifs is linked to Florentine Last Supper, Da Vinci Last Supper, Nordic Last Supper ecc...</Literal>
+        <Literal>This property link the Iconographic theme to all its known Iconographies. Example: Last Supper Iconographic theme comprises Florentine Last Supper, Da Vinci Last Supper, Nordic Last Supper ecc...</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>CreatedBy</IRI>
-        <Literal>This property highlights the role of creator of an agent of an abstract concept.</Literal>
+        <Literal>Inverse of creates.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Creates</IRI>
-        <Literal>Inverse of CreatedBy</Literal>
+        <Literal>This property highlights the role of creator an Agent played in the creation of an iconography. Eg: Leonardo created his own Last Supper iconography.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>DescribedIn</IRI>
-        <Literal>This property links a concept to a source that describes it</Literal>
+        <IRI>DerivationRelation</IRI>
+        <Literal>This class is a specialisation of a RelatedWorkSituation one. It aims to represent a special type of relation that is the derivation relation among 2 different cultural properties.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Description</IRI>
-        <Literal>Long description of an owl thing.</Literal>
+        <Literal>Long textual description of an owl thing.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>EmbodiesArtisticTheory</IRI>
-        <Literal>This property link an Iconographical Representation to the Theory it embodies inside it. Da Vinci Last Supper Iconography embodies Theory of Moti dell&apos;Animo inside it.</Literal>
+        <Literal>Inverse of ArtisticTheoryEmbodied. It highlights the influence of a precise artistic theory on a cultural property or an abstract concept. Eg: Teoria dei moti dell&apos;animo is present in most of Leonardo&apos;s drawings and works.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>EndDate</IRI>
+        <Literal>End date of an owl:thing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>GeometricVisualUnit</IRI>
-        <Literal>Specialisation of VisualAtom. It comprise visual Atoms aimed at showing the geometrical elements of a painting. Eg: the perspective lines of Last Supper</Literal>
+        <Literal>Specialisation of VisualUnit. It comprise visualUnit aimed at showing the geometrical elements of a painting. Eg: the perspective lines of Last Supper</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>GeometricalDescription</IRI>
+        <Literal>Description of geometric features of an owl:thing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -7301,28 +7417,38 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>HasCharacter</IRI>
+        <Literal>This property links an iconography to a character present inside it indipendently from its shape.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>HasCompositionMotif</IRI>
-        <Literal>Specialisation of HasVisualAtom used to link an element to a visual Atom representing the composition (the order of figures and elements) of something. Eg: A photo of Last Supper marked in order to highlights the groupings of figures.</Literal>
+        <Literal>This property links an owl:thing to a visual representation of its composition characteristics. This property was born from Panofsky first level of interpretation where motifs are the display and the organisation of elements in the scene without going further in the interpretation. Eg: In Last Supper the presence of all figures on the other side of the table is a CompositionMotif</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>HasDerivatedWork</IRI>
-        <Literal>Inverse of  IsDerivationInRelation</Literal>
+        <Literal>This property links the derivation work of the relation.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>HasDerivativeVisualUnit</IRI>
-        <Literal>Specialisation of VisualAtom. Identifying the Derivated Visual Atom of a Derivation Relation.</Literal>
+        <Literal>This property identifies the derivative visual element in a DerivationRelation.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>HasFinalVisualUnit</IRI>
-        <Literal>Specialisation of VisualAtom. Identifying the Final Visual Atom of a Preparatory relation.</Literal>
+        <Literal>Specialisation of VisualAtom. Identifying the Final Visual Atom of a Preparatory relation. Eg: in the relation between Windsor 12551 and Last Supper by Leonardo the final Visual Unit is the depiction of S. James on the fresco.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>HasFinalWork</IRI>
+        <Literal>This property links a preparatory relation to the final work of the relation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>HasGeometricVisualUnit</IRI>
-        <Literal>Specialisation of HasVisualAtom. It link something to a visual Atom showing the geometrical elements of a Cultural Property. Eg: a photo highlighting the perspectical lines of Leonardo&apos;s Last Supper</Literal>
+        <Literal>This property links an owl:thing to a photo/representation with its geometrical elements. Eg: a photo with perspective lines of Leonardo&apos;s Last Supper.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -7332,42 +7458,57 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>HasIconography</IRI>
-        <Literal>Inverse of RepresentSubject</Literal>
+        <Literal>IsUsedInWork. It links a cultural property to the Iconography that it has inside it.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>HasInfluencedVisualUnit</IRI>
-        <Literal>Property used to describe the VisualAtom of the Influenced cultural property.</Literal>
+        <Literal>This property link the visual element of the influenced work in a InfluenceRelation. In the relation between Leonardo&apos;s Last Supper and Giorgione&apos;s Le tre età, the last one is the influenced work. Its visual unit is the depiction of the young man.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>HasInfluencedWork</IRI>
-        <Literal>Inverse of IsInfluencedInRelation</Literal>
+        <Literal>This property links an influence relation to the cultural property being the influenced one of the relation.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>HasInfluencerVisualUnit</IRI>
-        <Literal>Property used to describe the VisualAtom of the Influencer cultural property.</Literal>
+        <Literal>This property link the visual unit of the influencer in a InfluenceRelation. In the relation between Leonardo&apos;s Last Supper and Giorgione&apos;s Le tre età Last Supper is the influencer. Its Visual Unit is the depiction of S. Philip&apos;s figure.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>HasInfluencerWork</IRI>
-        <Literal>Inverse of IsInfluencerInRelation</Literal>
+        <Literal>This property links an influence Relation to the cultural property being the influencer.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>HasLocation</IRI>
+        <Literal>This property links an owl:Thing to a particular location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>HasMediumVisualUnit</IRI>
+        <Literal>This property link the medium visual element of an InfluenceRelation. In the case of Influence relation between Leonardo&apos;s Last Supper and Coecke&apos;s Last Supper, Birago&apos;s Last Supper played the role of medium among them. The visual Unit is the depiction of the elements allowing the establisment of this role.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>HasMediumWork</IRI>
-        <Literal>Inverse of IsMediumInRelation</Literal>
+        <Literal>This property links the InfluenceRelation to the cultural property being the medium of influence in the relation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>HasObject</IRI>
+        <Literal>This property links an iconography to a certain object inside it. In this case it is not important the shape of the figure, but the presence of that specific element. Eg: in Last Supper S. Peter always has a knife indipendently from its shape.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>HasOriginalVisualUnit</IRI>
-        <Literal>Specialisation of VisualAtom. Identifying the Original Visual Atom of the relation.</Literal>
+        <Literal>This property identifies the original visual element in a DerivationRelation.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>HasOriginalWork</IRI>
-        <Literal>Inverse of  IsOriginalInRelation</Literal>
+        <Literal>This property links the Derivation Relation to the cultural property be the original one in the relation.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -7377,22 +7518,22 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>HasPreparatoryVisualUnit</IRI>
-        <Literal>Specialisation of VisualAtom. Identifying the Preparatory Visual Atom of a Preparatory Relation.</Literal>
+        <Literal>This property highlights the preparatory visual element of a Preparatory Relation. Eg: in the relation between Windsor 12551 and Last Supper by Leonardo the preparatory Visual Unit is the depiction of S. James in the Windsor sheet.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>HasPreparatoryWork</IRI>
-        <Literal>Inverse of IsPreparatoryWorkInRelation</Literal>
+        <Literal>This property link a preparatory relation to the cultural property being the preparatory work in the relation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>HasVisualUnit</IRI>
-        <Literal>Property linking an Owl:thing to a Visual Atom representing a significant visual feature of it. Eg: Da Vinci&apos;s Last Supper Iconography linked to a Visual Atom showing a photo of a representation identifiable as part of this Iconography</Literal>
+        <Literal>Property linking an Owl:thing to a Visual Uni representing a significant visual feature of it. Eg: Da Vinci&apos;s Last Supper Iconography linked to a Visual Unit showing some visible feature of the iconography itself. The visual element is not meaningful by itself, but it is significant for its colors and shapes.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>IconographicTheme</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Iconographical Motifs is the class aimed to collect all the single representations of different subjects. Example: the pictorical subject &quot;Last Supper&quot; has an iconographical Motifs. This motifs collects an x number of different single iconographical representations.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">This class is a general collector of all iconographies sharing the same theme. Eg. All Last Supper iconographies are connected to the instance of Iconographic Theme &quot;Last Supper&quot;. It serves as a general overview of registered iconographies.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -7402,7 +7543,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>IconographyCompriseIn</IRI>
-        <Literal>Inverse of CompriseIconography</Literal>
+        <Literal>Inverse of CompriseIconography.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -7481,13 +7622,28 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>InfluenceRelation</IRI>
+        <Literal>This class represent the influence relation between two cultural properties. One artwork influencing in every possible way another one establish an InfluenceRelation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Influenced</IRI>
-        <Literal>This property highlights the influence that an artistic Theory has on an iconographical representation. At the moment no reification is provided.</Literal>
+        <Literal>This property highlights the influence that an artistic Theory has on an iconographies.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>InfluencedBy</IRI>
+        <Literal>Inverse of Influenced.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Introduce</IRI>
-        <Literal>Inverse of IntroducedBy</Literal>
+        <Literal>Inverse of IntroducedBy. This property highlight the role of creator an Agent played in the birth of an abstract concept</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>IntroductedBy</IRI>
+        <Literal>Inverse of Introduce.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -7496,33 +7652,68 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>IsCharacterOf</IRI>
+        <Literal>Inverse of HasCharacter.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>IsCompositionMotifOf</IRI>
+        <Literal>Inverse of HasCompositionMotif.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>IsCulturalScopeOf</IRI>
+        <Literal>Inverse of BelongsTo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>IsDerivatedVisualUnitOf</IRI>
-        <Literal>Inverse of DerivativeVisualAtom</Literal>
+        <Literal>Inverse of HasDerivativeVisualUnit.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>IsDerivationIn</IRI>
-        <Literal>Coupled with IsOriginalRelation this property link a cultural Property to the DerivationRelation node. Specifically this property link the derivation one of the 2 Cultural Properties.</Literal>
+        <Literal>This property link a cultural Property to the DerivationRelation node. Specifically this property link the derivation one of the 2 Cultural Properties.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>IsFinalIn</IRI>
-        <Literal>Coupled with IsPreparatoryWorkInRelation. This property link a Cultural Property to its PreparatoryRelation node. Specifically this property identify the final work of the relation.</Literal>
+        <Literal>This property link a Cultural Property to its PreparatoryRelation node. Specifically this property identify the final work of the relation.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>IsFinalVisualUnitOf</IRI>
-        <Literal>Inverse of FinalVisualAtom</Literal>
+        <Literal>Inverse of HasFinalVisualUnit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>IsGeometricVisualUnitOf</IRI>
+        <Literal>Inverse of HasGeometricVisualUnit</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>IsInfluencedIn</IRI>
-        <Literal>Coupled with InfluencerInRelation. This property links a Cultural Property to its influence relation node. Specifically this property identify the cultural property that is influenced by another one.</Literal>
+        <Literal>This property links a Cultural Property to its influence relation node. Specifically this property identify the cultural property that is influenced by another one.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>IsInfluencedVisualUnitOf</IRI>
+        <Literal>Inverse of HasInfluencedVisualUnit</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>IsInfluencerIn</IRI>
-        <Literal>Coupled with InfluencerInRelation. This property links a Cultural Property to its influence relation node. Specifically this property identify the cultural property that influence the other one.</Literal>
+        <Literal>This property links a Cultural Property to its influence relation node. Specifically this property identify the cultural property that influence the other one.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>IsInfluencerVisualUnitOf</IRI>
+        <Literal>Inverse of HasInfluencerVisualUnit.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>IsLocationOf</IRI>
+        <Literal>Inverse of HasLocation.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -7531,13 +7722,23 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>IsMediumVisualUnitOf</IRI>
+        <Literal>Inverse of HasMediumVisualUnit.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>IsObjectOf</IRI>
+        <Literal>Inverse of HasObject.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>IsOriginalVisualUnitOf</IRI>
-        <Literal>Inverse of OriginalVisualAtom</Literal>
+        <Literal>Inverse of HasOriginalVisualUnit.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>IsOriginaln</IRI>
-        <Literal>Coupled with IsOriginalRelation this property link a cultural Property to the DerivationRelation node. Specifically this property link the original one of the 2 cultural properties.</Literal>
+        <Literal>This property links a cultural property to a derivation relation where it is the original work.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -7547,7 +7748,12 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>IsPreparatoryIn</IRI>
-        <Literal>Coupled with IsPreparatoryWorkInRelation. This property link a Cultural Property to its PreparatoryRelation node. Specifically this property identify the preparatory work of the relation.</Literal>
+        <Literal>This property links a cultural property to a relation where it is a preparatory work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>IsPreparatoryVisualUnitOf</IRI>
+        <Literal>Inverse of HasPreparatoryVisualUnit</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -7561,18 +7767,28 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>IsRelationLocationOf</IRI>
+        <Literal>Inverse of HasRelationLocation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>IsStartingLocationOf</IRI>
+        <Literal>Inverse of HasStartingLocation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>IsSuccessorOf</IRI>
-        <Literal>Inverse of IsPredecessorOf</Literal>
+        <Literal>Inverse of IsPredecessorOf. It links an iconography to a successive one. Eg. Late Florentine Last Supper Iconography is successor of Early Florentine Last Supper Iconography.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>IsUsedInWork</IRI>
-        <Literal>Inverse of HasIconographicalRepresentation</Literal>
+        <Literal>Inverse of HasIconography.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>IsVisualUnitOf</IRI>
-        <Literal>Inverse of HasVisualAtom</Literal>
+        <Literal>Inverse of HasVisualUnit.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
@@ -7601,13 +7817,13 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>OtherIconclassCode</IRI>
-        <Literal>Mention of other possible Iconclass Code</Literal>
+        <IRI>LongDescription</IRI>
+        <Literal>Extensive description of an owl:thing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>PartialDerivationRelation</IRI>
-        <Literal>Relation describing the derivation relation between only a part of a cultural property and another. Eg: Bayonne Tapestry is a derivation of Last Supper but only for the central composition, the background is totally different.</Literal>
+        <IRI>OtherIconclassCode</IRI>
+        <Literal>Mention of other possible Iconclass Code of an Iconographi theme.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -7616,8 +7832,18 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>PreparatoryRelation</IRI>
+        <Literal>This class is the one responsible for representing the preparatory relation between two cultural properties, the preparatory and the final one. Eg: Windsor 12542 being a preparatory work of Last Supper</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Presents</IRI>
-        <Literal>Inverse of IsPresentIn</Literal>
+        <Literal>Inverse of IsPresentIn. This property means that an abstract concept or a cultural property show characteristics of another abstract concept.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>RealisationPeriod</IRI>
+        <Literal>Generic period of realisation of an owl:thing.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -7632,22 +7858,42 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>RepresentSubject</IRI>
-        <Literal>This property show the subject highlighted by the Iconographical Motifs</Literal>
+        <Literal>This property link an iconographic theme to its a-cd:Subject. Eg: Last Supper iconographic theme represent the a-cd:subject &quot;Last Supper&quot; or &quot;Cena Domini&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>SceneObject</IRI>
+        <Literal>A scene object is a significant object existing inside an artwork. It is different from pure shapes and arrangements of motif due to fact that it could be represented in many differet ways but it is always present in certain representation. For example the figure of S. Peter in Last Supper always have a knife.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>StartDate</IRI>
+        <Literal>Start date of an owl:thing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>TheorisedBy</IRI>
-        <Literal>This property highlights who theorised a certain artistic theory.</Literal>
+        <Literal>Inverse of Theorises</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Theorises</IRI>
-        <Literal>Inverse of TheorisedBy</Literal>
+        <Literal>This property highlights the role of theoriser an Agent played for an artistic theory. It does not necessarily imply the agent to be a conscious theoriser. Leonardo is one of the theorisers of Teoria dei Moti dell&apos;Animo even though he did not that on purpose.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>TypicalIconclassCode</IRI>
-        <Literal>Mention of the typical Iconclass Code used to mark the episode of an iconographical motif.</Literal>
+        <Literal>Mention of the typical Iconclass Code used to mark the episode of an iconographic theme.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>URI</IRI>
+        <Literal>This property gives the plain value of URI of the image file.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>VisualUnit</IRI>
+        <Literal>This class represent significant visive units coming from an artwork. It has no proper meaning besides being images. The image of this class is the little as possible detail.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -7856,13 +8102,43 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasDepiction</IRI>
+        <Literal>This property relates an entity to its depiction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasDiffusionPeriod</IRI>
+        <Literal>This property links an abstract concept to its diffusion time period.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasRelationLocation</IRI>
+        <Literal>This property links a relation to the place where it happened (if it is known).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasStartingLocation</IRI>
+        <Literal>This property links an abstract concept to the place where it started (if it is known). Eg: Leonardo&apos;s Last Supper iconography started in Milan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>image8</IRI>
         <Literal>Tre età Giorgione</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Arco:CulturalProperty</AbbreviatedIRI>
+        <Literal>This class represents a cultural property, both tangible and intangible. A cultural property is the legacy, tangible or intangible, recognised as part of the national cultural heritage, since it helps know and reconstruct the history and the landscape.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>https://w3id.org/arco/ontology/arco/CulturalProperty/</IRI>
-        <IRI>https://w3id.org/arco/ontology/arco/CulturalProperty/</IRI>
+        <AbbreviatedIRI>Arco:CulturalProperty</AbbreviatedIRI>
+        <AbbreviatedIRI>Arco:CulturalProperty</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>a-cd:AlternativeDating</AbbreviatedIRI>
+        <Literal>This class represents an alternative dating of a cultural property (e.g.: an obsolete dating, a dating based on another method of dating).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
@@ -7870,9 +8146,29 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <AbbreviatedIRI>a-cd:AlternativeDating</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>a-cd:Bibliography</AbbreviatedIRI>
+        <Literal>Questa classe rappresenta un riferimento bibliografico che riguarda un&apos;entità, per esempio un bene culturale.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>a-cd:BibliographyType</AbbreviatedIRI>
+        <Literal>Questa classe rappresenta il tipo di riferimento bibliografico.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>a-cd:CulturalPropertyStage</AbbreviatedIRI>
+        <Literal>This class represents the stage of the catalogued cultural property related to the object which constitutes its preparatory or final stage.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <AbbreviatedIRI>a-cd:CulturalPropertyStage</AbbreviatedIRI>
         <AbbreviatedIRI>a-cd:CulturalPropertyStage</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>a-cd:CulturalScope</AbbreviatedIRI>
+        <Literal>This property relates a situation, where a cultural scope is attributed to a cultural entity, to the cultural scope.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
@@ -7880,9 +8176,29 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <AbbreviatedIRI>a-cd:CulturalScope</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>a-cd:Dating</AbbreviatedIRI>
+        <Literal>This class represents the dating of an entity, that is information about the chronology of the entity (e.g.: a cultural property), referring to a particular event (e.g.: the creation of the cultural property, its distruction, etc.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <AbbreviatedIRI>a-cd:Dating</AbbreviatedIRI>
         <AbbreviatedIRI>a-cd:Dating</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>a-cd:DetectionMethod</AbbreviatedIRI>
+        <Literal>This class represents the method of detection that allowed the detection of a cultural property and which is indicative of the type and consistency of some information in the catalogue record that describes it (e.g.: coring, archive data, oral sources).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>a-cd:Interpretation</AbbreviatedIRI>
+        <Literal>This class represents a situation in which pieces of information related to an object (e.g.: a cultural property) are detected and recorded by an agent, based on a specific source or motivation (e.g.:ithe authorship attribution, commission, etc.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>a-cd:InterpretationCriterion</AbbreviatedIRI>
+        <Literal>This class represents the criterion that motivated an interpretation (e.g. inscription, bibliography, documentation).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
@@ -7890,9 +8206,19 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <AbbreviatedIRI>a-cd:InterpretationCriterion</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>a-cd:RelatedWorkSituation</AbbreviatedIRI>
+        <Literal>This class represents a situation in which a cultural property is related to another work, that could even be another cultural property. The cultural property stage is defined referring to this relationship with a related work, that can represent a preparatory, a final phase or a derivation of the cultural property. When the relationship is between two cultural properties, when possible, the nature of the relationship is specified (e.g.: finding location)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <AbbreviatedIRI>a-cd:RelatedWorkSituation</AbbreviatedIRI>
         <AbbreviatedIRI>a-cd:RelatedWorkSituation</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>a-cd:Subject</AbbreviatedIRI>
+        <Literal>This class represents the subject of a cultural property, or its ornamental motif.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
@@ -7902,7 +8228,7 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>a-cd:agentDate</AbbreviatedIRI>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Property used to indicate temporal information (birth date/death date/period of life)</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">This property allows you to associate generic chronological indications to an agent.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
@@ -7911,8 +8237,34 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>a-cd:bibliographicReferenceAuthor</AbbreviatedIRI>
+        <Literal>This property represents the author related to the bibliographic reference.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>a-cd:bilbiographicReference</AbbreviatedIRI>
+        <Literal>This property represents the bibliographic reference.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>a-cd:hasAuthor</AbbreviatedIRI>
+        <Literal>This property relates an entity to its author.
+This property relates a entity (i.e. documentation, cultural entity, etc.) to its author.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>a-cd:hasBibliography</AbbreviatedIRI>
+        <Literal>This property relates an entity to its bibliography.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>a-cd:hasBibliographyType</AbbreviatedIRI>
+        <Literal>This property relates a bibliography to its bibliography type.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>a-cd:hasDating</AbbreviatedIRI>
-        <Literal>Mutuated from contextual description module, this property links an element to its dating node.</Literal>
+        <Literal>This property relates an entity to its dating.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -7921,8 +8273,23 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>a-cd:hasDepiction</AbbreviatedIRI>
+        <Literal>This property relates an entity to its depiction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>a-cd:hasRelatedAgent</AbbreviatedIRI>
+        <Literal>This property is used to associate an entity of any kind to an agent related to that entity in some way. It is used when it is not possible to express the relation in a more specific way.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>a-cd:hasRelatedWorkSituation</AbbreviatedIRI>
-        <Literal>Mutuated by Contextual Description module of Arco. This property links a work to a related one. The pattern used in Arco is maintained even if it is specialised by a new set of subproperties and subclasses.</Literal>
+        <Literal>This property relates a cultural property to a situation in which this cultural property is related to another work, that could even be another cultural property, as its preparatory or final phase.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>a-cd:iconclassCode</AbbreviatedIRI>
+        <Literal>This property represents the Iconclass code, for describing the subject or ornamental motif represented by the cultural property.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
@@ -7931,13 +8298,48 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>a-cd:isAgentRelatedTo</AbbreviatedIRI>
+        <Literal>This property is used to associate an agent related in some way to an entity of any kind to that entity. It is used when it is not possible to express the relation in a more specific way.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>a-cd:isAuthorOf</AbbreviatedIRI>
+        <Literal>This property relates an agent to an entity the agent is author of.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>a-cd:isBibliographyOf</AbbreviatedIRI>
+        <Literal>This property relates a bibliography to the entity which is referred to.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>a-cd:isBibliographyTypeOf</AbbreviatedIRI>
+        <Literal>This property relates the bibliography type to its bibliography.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>a-cd:isDatingEventOf</AbbreviatedIRI>
-        <Literal>Inverse of HasDatingEvent</Literal>
+        <Literal>This property relates an event involving the cultural property, which the dating is about, to a dating.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>a-cd:isDatingOf</AbbreviatedIRI>
-        <Literal>Inverse of Arco:HasDating</Literal>
+        <Literal>This property relates a dating to an entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>a-cd:isRelatedWorkSituationOf</AbbreviatedIRI>
+        <Literal>This property, inverse of &apos;has related work situation&apos;, relates a situation in which a cultural property is related to another work, that could even be another cultural property, to the cultural property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>a-cd:specificTime</AbbreviatedIRI>
+        <Literal>This property relates the event (creation, distruction) to which a dating of a cultural property is related to the &quot;specific time&quot;, as the dating expressed in year or as a date yyyy/mm/dd.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>core:Concept</AbbreviatedIRI>
+        <Literal>It is an object that is defined in some description. Once defined it can be used in other descriptions</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
@@ -7945,9 +8347,49 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <AbbreviatedIRI>l0:Concept</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>core:CulturalEntityCharacteristic</AbbreviatedIRI>
+        <Literal>The class representing the characteristic of a cultural entity (e.g. a cultural property).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>core:Method</AbbreviatedIRI>
+        <Literal>The class representing the concept of method.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>core:Situation</AbbreviatedIRI>
+        <Literal>The class representing the generic concept of situation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>core:hasSituation</AbbreviatedIRI>
+        <Literal>The property that links any object to a situation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>core:isConceptOf</AbbreviatedIRI>
+        <Literal>The inverse property of hasConcept, that relates a concept to any object.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>CLV:Feature</AbbreviatedIRI>
+        <Literal>This class represents everything that can have a spatial representation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <AbbreviatedIRI>CLV:Feature</AbbreviatedIRI>
         <Literal>https://w3id.org/italia/onto/CLV/Feature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>CLV:Geometry</AbbreviatedIRI>
+        <Literal>This class represents the geometry of a spatial entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>CLV:SpatialObject</AbbreviatedIRI>
+        <Literal>This class represents everything that can have a spatial representation.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
@@ -7955,19 +8397,105 @@ Giacomo è reclinato sul ventre di cristo.</Literal>
         <Literal>https://w3id.org/italia/onto/CLV/SpatialObject</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>CLV:coordinate</AbbreviatedIRI>
+        <Literal>This property represents the geographical coordinate of the Geometry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>CLV:hasGeometry</AbbreviatedIRI>
+        <Literal>This property links any thing of the domain to the geometry.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>CLV:isGeometryFor</AbbreviatedIRI>
+        <Literal>Inverse property of &quot;hasGeometry&quot; that links a geometry to the related Thing of the domain.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>CLV:lat</AbbreviatedIRI>
+        <Literal>This property represents the latitude. It is associated with the Geometry.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>CLV:long</AbbreviatedIRI>
+        <Literal>This property allows one to specify the longitude. It is associated with the Geometry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Tiapit:TemporalEntity</AbbreviatedIRI>
+        <Literal>This class represents a temporal entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Tiapit:TimeInterval</AbbreviatedIRI>
+        <Literal>A time interval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Tiapit:atTime</AbbreviatedIRI>
+        <Literal>Relation between any thing and time interval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Tiapit:date</AbbreviatedIRI>
+        <Literal>This property represents a generic date / time instant.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <AbbreviatedIRI>Tiapit:date</AbbreviatedIRI>
         <AbbreviatedIRI>Tiapit:date</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>Tiapit:hasTemporalEntity</AbbreviatedIRI>
+        <Literal>Property that links a time indexed event to a temporal entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>l0:Agent</AbbreviatedIRI>
-        <IRI>http://dati.gov.it/onto/dcatapit#Agent</IRI>
+        <Literal>Any agentive Object , either physical (e.g. a person, a robot, an oak), or social (e.g. a corporation, an institution, a community).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>l0:Characteristic</AbbreviatedIRI>
+        <Literal>The class of characteristics, intended as any aspect, attribuite, or quality of an entity. E.g. a certain size, aesthetic quality, color, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>l0:Description</AbbreviatedIRI>
+        <Literal>The class of socially-created objects (texts, values, categories, relations, contexts) used to describe something else in a structured way. Examples include plans (as structured descriptions of actions to be executed), diagnoses (as structured descriptions of observed situations, explanations (as structured texts clarifying e.g. a concept), objective observations (as structured sets of values that identify a relevant situation).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>l0:Entity</AbbreviatedIRI>
+        <Literal>Anything: real, possible, or imaginary, which some modeller wants to talk about for some purpose.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>l0:EventOrSituation</AbbreviatedIRI>
+        <Literal>This class represents a specific situation or an event that happens in the lifecycle of either a business or a person or a group of persons. The class is recommended.
+Any entity that typically flows in time, either in the physical or social world Examples include athmospheric phenomena, concerts, travels, institutional processes, etc. It also represents a relational context created by an observer on the basis of a frame&apos; Events are opposable to objects, since events typically flow in time, aggregating multiple objects during their flow, while objects tend to be stable in a certain time interval.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>l0:Location</AbbreviatedIRI>
+        <Literal>The class including locations. Individuals of this class can be anything that is intended as a location for something else, e.g. geographical places, spatial objects, containers, etc.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <AbbreviatedIRI>l0:Location</AbbreviatedIRI>
         <Literal>https://w3id.org/italia/onto/l0/Location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>l0:Object</AbbreviatedIRI>
+        <Literal>Any entity that tends to be stable in time, either in the physical or social world. Examples include homes, cities, organizations, works of art, natural objects, artifacts, words, ideas, etc. Objects are opposable to events, since events typically flow in time, aggregating multiple objects during their flow, as with working, travelling or leisure activities, industrial or athmospheric processes, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>l0:Topic</AbbreviatedIRI>
+        <Literal>The class of topics, subjects, arguments, categories, domains, etc., intended as topics of a discourse or a categorization.</Literal>
     </AnnotationAssertion>
 </Ontology>
 

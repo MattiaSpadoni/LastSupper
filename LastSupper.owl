@@ -1578,6 +1578,10 @@
         <Class abbreviatedIRI="l0:Location"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="IsMediumIn"/>
+        <Class abbreviatedIRI="Arco:CulturalProperty"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="IsMediumVisualUnitOf"/>
         <Class IRI="VisualUnit"/>
     </ObjectPropertyDomain>
@@ -1944,6 +1948,10 @@
         <Class abbreviatedIRI="owl:Thing"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="IsMediumIn"/>
+        <Class IRI="InfluenceRelation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="IsMediumVisualUnitOf"/>
         <Class IRI="InfluenceRelation"/>
     </ObjectPropertyRange>
@@ -2249,6 +2257,10 @@
     <DataPropertyDomain>
         <DataProperty IRI="TypicalIconclassCode"/>
         <Class IRI="IconographicTheme"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="URI"/>
+        <Class abbreviatedIRI="owl:Thing"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty abbreviatedIRI="a-cd:agentDate"/>
@@ -2814,7 +2826,7 @@ E.g. Leonardo&apos;s Teoria dei moti dell&apos;animo is an artistic theory, ther
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>IsStartingLocationOf</IRI>
-        <Literal>Inverse of HasStartingLocation</Literal>
+        <Literal>Inverse of HasStartingLocation.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3056,6 +3068,11 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>a-cd:hasBibliography</AbbreviatedIRI>
         <Literal>This property relates an entity to its bibliography.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>a-cd:hasBibliographyType</AbbreviatedIRI>
+        <Literal>This property relates a bibliography to its bibliography type.This property relates a bibliography to its bibliography type.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
