@@ -1120,6 +1120,20 @@
         <Class IRI="PictorialAttribute"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="Character"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="HasVisualUnit"/>
+            <Class IRI="VisualUnit"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Character"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="IsCharacterOf"/>
+            <Class IRI="Iconography"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="CompositionMotif"/>
         <Class IRI="VisualUnit"/>
     </SubClassOf>
@@ -1132,6 +1146,20 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="HasDerivatedWork"/>
             <Class abbreviatedIRI="Arco:CulturalProperty"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DerivationRelation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="HasDerivativeVisualUnit"/>
+            <Class IRI="VisualUnit"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DerivationRelation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="HasOriginalVisualUnit"/>
+            <Class IRI="VisualUnit"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1158,12 +1186,89 @@
         <Class abbreviatedIRI="a-cd:RelatedWorkSituation"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="InfluenceRelation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="HasInfluencedWork"/>
+            <Class abbreviatedIRI="Arco:CulturalProperty"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="InfluenceRelation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="HasInfluencerVisualUnit"/>
+            <Class IRI="VisualUnit"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="InfluenceRelation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="HasInfluencerWork"/>
+            <Class abbreviatedIRI="Arco:CulturalProperty"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="InfluenceRelation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="HasMediumVisualUnit"/>
+            <Class IRI="VisualUnit"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="InfluenceRelation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="HasMediumWork"/>
+            <Class abbreviatedIRI="Arco:CulturalProperty"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="PreparatoryRelation"/>
         <Class abbreviatedIRI="a-cd:RelatedWorkSituation"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="PreparatoryRelation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="HasFinalVisualUnit"/>
+            <Class IRI="VisualUnit"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PreparatoryRelation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="HasFinalWork"/>
+            <Class abbreviatedIRI="Arco:CulturalProperty"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PreparatoryRelation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="HasPreparatoryVisualUnit"/>
+            <Class IRI="VisualUnit"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PreparatoryRelation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="HasPreparatoryWork"/>
+            <Class abbreviatedIRI="Arco:CulturalProperty"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="SceneObject"/>
         <Class IRI="PictorialAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SceneObject"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="HasVisualUnit"/>
+            <Class IRI="VisualUnit"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SceneObject"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="IsObjectOf"/>
+            <Class IRI="Iconography"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="VisualUnit"/>
