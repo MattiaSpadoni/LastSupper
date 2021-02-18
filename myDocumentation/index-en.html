@@ -6,7 +6,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#","name":"https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#", "headline":"Document describing the ontology https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#", "datePublished":"Wed Feb 17 16:54:50 CET 2021", "author":[{"@type":"Person","name":"Mattia Spadoni"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#","name":"https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#", "headline":"Document describing the ontology https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#", "datePublished":"20/02/2021", "author":[{"@type":"Person","name":"Mattia Spadoni"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -54,6 +54,7 @@ $(function(){
 <div class="container">
 <div class="head">
 <div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<h2>Release  20/02/2021</h2>
 
 
 <dl>
@@ -62,8 +63,12 @@ $(function(){
 <dt>Authors:</dt>
 <dd>Mattia Spadoni</dd>
 
-<dt>Download serialization:</dt><dd><span><a href="ontology.json" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.xml" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License: </dt><dd><a href="http://insertlicenseURIhere.org" target="_blank"><img src="https://img.shields.io/badge/License-license%20name%20goes%20here-blue.svg" alt="http://insertlicenseURIhere.org" /></a>
-</dd><!-- <dt>Evaluation:</dt><dd><a href="OOPSEvaluation/OOPSeval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --></dl>
+<dt>Publisher:</dt>
+<dd>Mattia Spadoni</dd>
+<dt>Download serialization:</dt><dd><span><a href="ontology.json" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.xml" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License: </dt><dd><a href="http://insertlicenseURIhere.org" target="_blank"><img src="https://img.shields.io/badge/License-CC%20BY-blue.svg" alt="http://insertlicenseURIhere.org" /></a>
+</dd><dt>Evaluation:</dt><dd><a href="OOPSEvaluation/OOPSeval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd><dt>Cite as:</dt>
+<dd>LS</dd>
+</dl>
 
 <hr/>
 </div>
@@ -1431,6 +1436,11 @@ This section provides details for each class and property defined by Last Supper
                title="https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Presents">presents</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#http://xmlns.com/foaf/0.1/Image" title="http://xmlns.com/foaf/0.1/Image">image</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="https://w3id.org/italia/onto/l0/Agent">
@@ -1806,6 +1816,8 @@ E.g. Leonardo's Teoria dei moti dell'animo is an artistic theory, there are lite
                title="https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsInfluencedIn">is influenced in</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#IsInfluencerIn"
                title="https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsInfluencerIn">is influencer in</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#IsMediumIn"
+               title="https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsMediumIn">is medium in</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#IsOriginaln"
                title="https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsOriginaln">is originaln</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#IsPreparatoryIn"
@@ -1950,6 +1962,14 @@ E.g. Leonardo's Teoria dei moti dell'animo is an artistic theory, there are lite
             <sup class="type-op" title="object property">op</sup>, <a href="#IsOriginaln"
                title="https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsOriginaln">is originaln</a>
             <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#InfluenceRelation"
+               title="https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#InfluenceRelation">influence relation</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PreparatoryRelation"
+               title="https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#PreparatoryRelation">preparatory relation</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -2318,6 +2338,12 @@ Digital images (such as JPEG, PNG, GIF bitmaps, SVG diagrams etc.) are examples 
                title="https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#hasDepiction">has depiction</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#AbstractConcept"
+               title="https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#AbstractConcept">abstract concept</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="InfluenceRelation">
@@ -2363,9 +2389,19 @@ Digital images (such as JPEG, PNG, GIF bitmaps, SVG diagrams etc.) are examples 
                title="https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsInfluencerIn">is influencer in</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#IsInfluencerVisualUnitOf"
                title="https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsInfluencerVisualUnitOf">is influencer visual unit of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#IsMediumIn"
+               title="https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsMediumIn">is medium in</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#IsMediumVisualUnitOf"
                title="https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsMediumVisualUnitOf">is medium visual unit of</a>
             <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#DerivationRelation"
+               title="https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#DerivationRelation">derivation relation</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PreparatoryRelation"
+               title="https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#PreparatoryRelation">preparatory relation</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -2585,6 +2621,14 @@ Digital images (such as JPEG, PNG, GIF bitmaps, SVG diagrams etc.) are examples 
             <sup class="type-op" title="object property">op</sup>, <a href="#IsPreparatoryVisualUnitOf"
                title="https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsPreparatoryVisualUnitOf">is preparatory visual unit of</a>
             <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#DerivationRelation"
+               title="https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#DerivationRelation">derivation relation</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#InfluenceRelation"
+               title="https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#InfluenceRelation">influence relation</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -3896,6 +3940,9 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/arco/ontology/context-description/hasBibliographyType</p>
+      <div class="comment">
+         <span class="markdown">This property relates a bibliography to its bibliography type.This property relates a bibliography to its bibliography type.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -6425,6 +6472,18 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
                   title="https://w3id.org/arco/ontology/context-description/hasRelatedWorkSituation">has related work situation</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/arco/ontology/arco/CulturalProperty"
+                  title="https://w3id.org/arco/ontology/arco/CulturalProperty">cultural property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#InfluenceRelation"
+                  title="https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#InfluenceRelation">influence relation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>is inverse of</dt>
             <dd>
                <a href="#HasMediumWork"
@@ -6902,7 +6961,7 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
       <p>
          <strong>IRI:</strong> https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsStartingLocationOf</p>
       <div class="comment">
-         <span class="markdown">Inverse of HasStartingLocation</span>
+         <span class="markdown">Inverse of HasStartingLocation.</span>
       </div>
       <div class="description">
          <dl>
@@ -8343,6 +8402,13 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
       </div>
       <div class="description">
          <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Thing"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>has range</dt>
             <dd>
                <a href="http://www.w3.org/2001/XMLSchema#string"

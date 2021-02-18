@@ -448,6 +448,8 @@
 ###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsMediumIn
 :IsMediumIn rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf <https://w3id.org/arco/ontology/context-description/hasRelatedWorkSituation> ;
+            rdfs:domain <https://w3id.org/arco/ontology/arco/CulturalProperty> ;
+            rdfs:range :InfluenceRelation ;
             rdfs:comment "This property highlights the role of medium in the relation between 2 cultural properties. Eg: The incision from Pietro Birago of Last Supper was the medium of influence from Last Supper to the Flanders." .
 
 
@@ -534,7 +536,7 @@
                       owl:inverseOf :hasStartingLocation ;
                       rdfs:domain <https://w3id.org/italia/onto/l0/Location> ;
                       rdfs:range :AbstractConcept ;
-                      rdfs:comment "Inverse of HasStartingLocation" .
+                      rdfs:comment "Inverse of HasStartingLocation." .
 
 
 ###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsSuccessorOf
@@ -653,7 +655,8 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
                                                                          rdfs:subPropertyOf <https://w3id.org/arco/ontology/core/hasType> ;
                                                                          owl:inverseOf <https://w3id.org/arco/ontology/context-description/isBibliographyTypeOf> ;
                                                                          rdfs:domain <https://w3id.org/arco/ontology/context-description/Bibliography> ;
-                                                                         rdfs:range <https://w3id.org/arco/ontology/context-description/BibliographyType> .
+                                                                         rdfs:range <https://w3id.org/arco/ontology/context-description/BibliographyType> ;
+                                                                         rdfs:comment "This property relates a bibliography to its bibliography type.This property relates a bibliography to its bibliography type." .
 
 
 ###  https://w3id.org/arco/ontology/context-description/hasDating
@@ -975,6 +978,7 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
 
 ###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#URI
 :URI rdf:type owl:DatatypeProperty ;
+     rdfs:domain owl:Thing ;
      rdfs:range xsd:string ;
      rdfs:comment "This property gives the plain value of URI of the image file." .
 
@@ -1062,6 +1066,7 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
 
 ###  http://xmlns.com/foaf/0.1/Image
 <http://xmlns.com/foaf/0.1/Image> rdf:type owl:Class ;
+                                  owl:disjointWith :AbstractConcept ;
                                   rdfs:comment """The class Image is a sub-class of Document corresponding to those documents which are images.
 Digital images (such as JPEG, PNG, GIF bitmaps, SVG diagrams etc.) are examples of Image."""@en .
 
@@ -1074,14 +1079,38 @@ Digital images (such as JPEG, PNG, GIF bitmaps, SVG diagrams etc.) are examples 
 
 ###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#ArtisticTheory
 :ArtisticTheory rdf:type owl:Class ;
-                rdfs:subClassOf :AbstractConcept ;
+                rdfs:subClassOf :AbstractConcept ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :ArtisticTheoryEmbodiedIn ;
+                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                       owl:unionOf ( :AbstractConcept
+                                                                     <https://w3id.org/arco/ontology/arco/CulturalProperty>
+                                                                   )
+                                                     ]
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :HasIconography ;
+                                  owl:someValuesFrom <https://w3id.org/arco/ontology/context-description/Bibliography>
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :HasVisualUnit ;
+                                  owl:someValuesFrom :VisualUnit
+                                ] ;
                 rdfs:comment """This class collects artistic theories, they are what an author/artist thinks the art practice should be and what they want to represent. An artistic theories does not necessarily have strict rules and it does not need to be consciously defined.
 E.g. Leonardo's Teoria dei moti dell'animo is an artistic theory, there are literary sources talking about it but Leonardo did not identified strict rules nor defined a clear definition for it."""^^rdfs:Literal .
 
 
 ###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Character
 :Character rdf:type owl:Class ;
-           rdfs:subClassOf :PictorialAttribute ;
+           rdfs:subClassOf :PictorialAttribute ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :HasVisualUnit ;
+                             owl:someValuesFrom :VisualUnit
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :IsCharacterOf ;
+                             owl:someValuesFrom :Iconography
+                           ] ;
            rdfs:comment "A character is a figure playing a certain role inside a representation. It is indipendent from the representation itself. E.g. S. Peter is a character of Last Supper iconography." .
 
 
@@ -1094,7 +1123,23 @@ E.g. Leonardo's Teoria dei moti dell'animo is an artistic theory, there are lite
 
 ###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#DerivationRelation
 :DerivationRelation rdf:type owl:Class ;
-                    rdfs:subClassOf <https://w3id.org/arco/ontology/context-description/RelatedWorkSituation> ;
+                    rdfs:subClassOf <https://w3id.org/arco/ontology/context-description/RelatedWorkSituation> ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :HasDerivatedWork ;
+                                      owl:someValuesFrom <https://w3id.org/arco/ontology/arco/CulturalProperty>
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :HasFinalVisualUnit ;
+                                      owl:someValuesFrom :VisualUnit
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :HasOriginalVisualUnit ;
+                                      owl:someValuesFrom :VisualUnit
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :HasOriginalWork ;
+                                      owl:someValuesFrom <https://w3id.org/arco/ontology/arco/CulturalProperty>
+                                    ] ;
                     rdfs:comment "This class is a specialisation of a RelatedWorkSituation one. It aims to represent a special type of relation that is the derivation relation among 2 different cultural properties."@en .
 
 
@@ -1106,19 +1151,79 @@ E.g. Leonardo's Teoria dei moti dell'animo is an artistic theory, there are lite
 
 ###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IconographicTheme
 :IconographicTheme rdf:type owl:Class ;
-                   rdfs:subClassOf :AbstractConcept ;
+                   rdfs:subClassOf :AbstractConcept ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :CompriseIconography ;
+                                     owl:someValuesFrom :Iconography
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :OtherIconclassCode ;
+                                     owl:someValuesFrom rdfs:Literal
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :TypicalIconclassCode ;
+                                     owl:someValuesFrom rdfs:Literal
+                                   ] ;
                    rdfs:comment "This class is a general collector of all iconographies sharing the same theme. Eg. All Last Supper iconographies are connected to the instance of Iconographic Theme \"Last Supper\". It serves as a general overview of registered iconographies."^^rdfs:Literal .
 
 
 ###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Iconography
 :Iconography rdf:type owl:Class ;
-             rdfs:subClassOf :AbstractConcept ;
+             rdfs:subClassOf :AbstractConcept ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :HasCharacter ;
+                               owl:someValuesFrom :Character
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :HasCompositionMotif ;
+                               owl:someValuesFrom :CompositionMotif
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :HasGeometricVisualUnit ;
+                               owl:someValuesFrom :GeometricVisualUnit
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :HasObject ;
+                               owl:someValuesFrom :SceneObject
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :IsUsedInWork ;
+                               owl:someValuesFrom <https://w3id.org/arco/ontology/arco/CulturalProperty>
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasStartingLocation ;
+                               owl:someValuesFrom <https://w3id.org/italia/onto/l0/Location>
+                             ] ;
              rdfs:comment "This class is the single iconographical representation. Each instance of this class could be present in different cultural properties and has a specific set of features that distinguish it from another one. Example: Florentine Last Supper is a way of representing Last Supper with certain temporal and location characteristics and with specific visual features."^^rdfs:Literal .
 
 
 ###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#InfluenceRelation
 :InfluenceRelation rdf:type owl:Class ;
-                   rdfs:subClassOf <https://w3id.org/arco/ontology/context-description/RelatedWorkSituation> ;
+                   rdfs:subClassOf <https://w3id.org/arco/ontology/context-description/RelatedWorkSituation> ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :HasInfluencedWork ;
+                                     owl:someValuesFrom :VisualUnit
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :HasInfluencedWork ;
+                                     owl:someValuesFrom <https://w3id.org/arco/ontology/arco/CulturalProperty>
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :HasInfluencerWork ;
+                                     owl:someValuesFrom :VisualUnit
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :HasInfluencerWork ;
+                                     owl:someValuesFrom <https://w3id.org/arco/ontology/arco/CulturalProperty>
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :HasMediumWork ;
+                                     owl:someValuesFrom :VisualUnit
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :HasMediumWork ;
+                                     owl:someValuesFrom <https://w3id.org/arco/ontology/arco/CulturalProperty>
+                                   ] ;
                    rdfs:comment "This class represent the influence relation between two cultural properties. One artwork influencing in every possible way another one establish an InfluenceRelation."@en .
 
 
@@ -1129,13 +1234,37 @@ E.g. Leonardo's Teoria dei moti dell'animo is an artistic theory, there are lite
 
 ###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#PreparatoryRelation
 :PreparatoryRelation rdf:type owl:Class ;
-                     rdfs:subClassOf <https://w3id.org/arco/ontology/context-description/RelatedWorkSituation> ;
+                     rdfs:subClassOf <https://w3id.org/arco/ontology/context-description/RelatedWorkSituation> ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :HasFinalVisualUnit ;
+                                       owl:someValuesFrom :VisualUnit
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :HasFinalWork ;
+                                       owl:someValuesFrom <https://w3id.org/arco/ontology/arco/CulturalProperty>
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :HasPreparatoryVisualUnit ;
+                                       owl:someValuesFrom :VisualUnit
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :HasPreparatoryWork ;
+                                       owl:someValuesFrom <https://w3id.org/arco/ontology/arco/CulturalProperty>
+                                     ] ;
                      rdfs:comment "This class is the one responsible for representing the preparatory relation between two cultural properties, the preparatory and the final one. Eg: Windsor 12542 being a preparatory work of Last Supper"@en .
 
 
 ###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#SceneObject
 :SceneObject rdf:type owl:Class ;
-             rdfs:subClassOf :PictorialAttribute ;
+             rdfs:subClassOf :PictorialAttribute ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :HasVisualUnit ;
+                               owl:someValuesFrom :VisualUnit
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :IsObjectOf ;
+                               owl:someValuesFrom :Iconography
+                             ] ;
              rdfs:comment "A scene object is a significant object existing inside an artwork. It is different from pure shapes and arrangements of motif due to fact that it could be represented in many differet ways but it is always present in certain representation. For example the figure of S. Peter in Last Supper always have a knife." .
 
 
@@ -1329,6 +1458,18 @@ Any entity that typically flows in time, either in the physical or social world 
 <https://w3id.org/italia/onto/l0/Topic> rdf:type owl:Class ;
                                         rdfs:subClassOf <https://w3id.org/italia/onto/l0/Entity> ;
                                         rdfs:comment "The class of topics, subjects, arguments, categories, domains, etc., intended as topics of a discourse or a categorization." .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DerivationRelation
+                :InfluenceRelation
+                :PreparatoryRelation
+              )
+] .
 
 
 ###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
