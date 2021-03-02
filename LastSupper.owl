@@ -547,27 +547,27 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ArtisticTheory"/>
-        <ObjectSomeValuesFrom>
+        <ObjectAllValuesFrom>
             <ObjectProperty IRI="ArtisticTheoryEmbodiedIn"/>
             <ObjectUnionOf>
                 <Class IRI="AbstractConcept"/>
                 <Class abbreviatedIRI="Arco:CulturalProperty"/>
             </ObjectUnionOf>
-        </ObjectSomeValuesFrom>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ArtisticTheory"/>
-        <ObjectSomeValuesFrom>
+        <ObjectAllValuesFrom>
             <ObjectProperty IRI="HasIconography"/>
             <Class abbreviatedIRI="a-cd:Bibliography"/>
-        </ObjectSomeValuesFrom>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ArtisticTheory"/>
-        <ObjectSomeValuesFrom>
+        <ObjectAllValuesFrom>
             <ObjectProperty IRI="HasVisualUnit"/>
             <Class IRI="VisualUnit"/>
-        </ObjectSomeValuesFrom>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Character"/>
@@ -582,10 +582,17 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Character"/>
-        <ObjectSomeValuesFrom>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="HasObject"/>
+            <Class IRI="SceneObject"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Character"/>
+        <ObjectAllValuesFrom>
             <ObjectProperty IRI="IsCharacterOf"/>
             <Class IRI="Iconography"/>
-        </ObjectSomeValuesFrom>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="CompositionMotif"/>
@@ -594,13 +601,6 @@
     <SubClassOf>
         <Class IRI="DerivationRelation"/>
         <Class abbreviatedIRI="a-cd:RelatedWorkSituation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="DerivationRelation"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="HasDerivatedWork"/>
-            <Class abbreviatedIRI="Arco:CulturalProperty"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="DerivationRelation"/>
@@ -618,10 +618,17 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="DerivationRelation"/>
-        <ObjectSomeValuesFrom>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="HasDerivatedWork"/>
+            <Class abbreviatedIRI="Arco:CulturalProperty"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DerivationRelation"/>
+        <ObjectExactCardinality cardinality="1">
             <ObjectProperty IRI="HasOriginalWork"/>
             <Class abbreviatedIRI="Arco:CulturalProperty"/>
-        </ObjectSomeValuesFrom>
+        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GeometricVisualUnit"/>
@@ -633,10 +640,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="IconographicTheme"/>
-        <ObjectSomeValuesFrom>
+        <ObjectAllValuesFrom>
             <ObjectProperty IRI="CompriseIconography"/>
             <Class IRI="Iconography"/>
-        </ObjectSomeValuesFrom>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="IconographicTheme"/>
@@ -659,29 +666,8 @@
     <SubClassOf>
         <Class IRI="Iconography"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="HasCharacter"/>
-            <Class IRI="Character"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Iconography"/>
-        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="HasCompositionMotif"/>
             <Class IRI="CompositionMotif"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Iconography"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="HasGeometricVisualUnit"/>
-            <Class IRI="GeometricVisualUnit"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Iconography"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="HasObject"/>
-            <Class IRI="SceneObject"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -693,10 +679,31 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Iconography"/>
-        <ObjectSomeValuesFrom>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="HasCharacter"/>
+            <Class IRI="Character"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Iconography"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="HasGeometricVisualUnit"/>
+            <Class IRI="GeometricVisualUnit"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Iconography"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="HasObject"/>
+            <Class IRI="SceneObject"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Iconography"/>
+        <ObjectAllValuesFrom>
             <ObjectProperty IRI="hasStartingLocation"/>
             <Class abbreviatedIRI="l0:Location"/>
-        </ObjectSomeValuesFrom>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="InfluenceRelation"/>
@@ -712,36 +719,43 @@
     <SubClassOf>
         <Class IRI="InfluenceRelation"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="HasInfluencerWork"/>
+            <Class IRI="VisualUnit"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="InfluenceRelation"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="HasMediumWork"/>
+            <Class IRI="VisualUnit"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="InfluenceRelation"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="HasMediumWork"/>
+            <Class abbreviatedIRI="Arco:CulturalProperty"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="InfluenceRelation"/>
+        <ObjectExactCardinality cardinality="1">
             <ObjectProperty IRI="HasInfluencedWork"/>
             <Class abbreviatedIRI="Arco:CulturalProperty"/>
-        </ObjectSomeValuesFrom>
+        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="InfluenceRelation"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="HasInfluencerWork"/>
-            <Class IRI="VisualUnit"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="InfluenceRelation"/>
-        <ObjectSomeValuesFrom>
+        <ObjectExactCardinality cardinality="1">
             <ObjectProperty IRI="HasInfluencerWork"/>
             <Class abbreviatedIRI="Arco:CulturalProperty"/>
-        </ObjectSomeValuesFrom>
+        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="InfluenceRelation"/>
+        <Class IRI="PictorialAttribute"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="HasMediumWork"/>
-            <Class IRI="VisualUnit"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="InfluenceRelation"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="HasMediumWork"/>
-            <Class abbreviatedIRI="Arco:CulturalProperty"/>
+            <ObjectProperty IRI="IsAttributeOf"/>
+            <Class IRI="Iconography"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -764,17 +778,17 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="PreparatoryRelation"/>
-        <ObjectSomeValuesFrom>
+        <ObjectExactCardinality cardinality="1">
             <ObjectProperty IRI="HasPreparatoryVisualUnit"/>
             <Class IRI="VisualUnit"/>
-        </ObjectSomeValuesFrom>
+        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="PreparatoryRelation"/>
-        <ObjectSomeValuesFrom>
+        <ObjectExactCardinality cardinality="1">
             <ObjectProperty IRI="HasPreparatoryWork"/>
             <Class abbreviatedIRI="Arco:CulturalProperty"/>
-        </ObjectSomeValuesFrom>
+        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="SceneObject"/>
@@ -789,10 +803,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="SceneObject"/>
-        <ObjectSomeValuesFrom>
+        <ObjectAllValuesFrom>
             <ObjectProperty IRI="IsObjectOf"/>
             <Class IRI="Iconography"/>
-        </ObjectSomeValuesFrom>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="VisualUnit"/>
@@ -911,6 +925,14 @@
         <Class IRI="AbstractConcept"/>
     </DisjointClasses>
     <DisjointClasses>
+        <Class IRI="http://xmlns.com/foaf/0.1/Image"/>
+        <Class IRI="PictorialAttribute"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Character"/>
+        <Class IRI="SceneObject"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="CompositionMotif"/>
         <Class IRI="GeometricVisualUnit"/>
     </DisjointClasses>
@@ -918,6 +940,10 @@
         <Class IRI="DerivationRelation"/>
         <Class IRI="InfluenceRelation"/>
         <Class IRI="PreparatoryRelation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="IconographicTheme"/>
+        <Class IRI="Iconography"/>
     </DisjointClasses>
     <SubObjectPropertyOf>
         <ObjectProperty abbreviatedIRI="DUL:classifies"/>
