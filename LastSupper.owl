@@ -21,6 +21,18 @@
     <Prefix name="core" IRI="https://w3id.org/arco/ontology/core/"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="Tiapit" IRI="https://w3id.org/italia/onto/TI/"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Last Supper Ontology: this ontology is the dissertation linked data project by Mattia Spadoni for his final exam of the digital humanities and digital knowledge Master Degree. Supervisor: prof. Gangemi Aldo, Co-Supervisor: prof. Pescarin Sofia. A virtual reality application linked to this work is available at the following link: https://github.com/MattiaSpadoni/LastSupperVR</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>License: CC-BY-SA</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Main focus of the ontology is to model abstract concepts from CH domain e.g. iconographies and relation among artworks. There is the extensive reuse of ArCo&apos;s set of ontologies due to the project being a base for a future integration inside that scheme.</Literal>
+    </Annotation>
     <Declaration>
         <Class abbreviatedIRI="cis:CulturalEntity"/>
     </Declaration>
