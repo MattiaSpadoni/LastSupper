@@ -2542,7 +2542,7 @@ E.g. Leonardo&apos;s Teoria dei moti dell&apos;animo is an artistic theory, ther
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>DerivationRelation</IRI>
-        <Literal xml:lang="en">This class is a specialisation of a RelatedWorkSituation one. It aims to represent a special type of relation that is the derivation relation among 2 different cultural properties.</Literal>
+        <Literal xml:lang="en">This class is a specialisation of a RelatedWorkSituation one. It aims to represent a special type of relation that is the derivation relation among two different cultural properties.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
