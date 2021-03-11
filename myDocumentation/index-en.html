@@ -6,7 +6,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#","name":"https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#", "headline":"Document describing the ontology https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#", "datePublished":"20/02/2021", "author":[{"@type":"Person","name":"Mattia Spadoni"}]}</script>
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#","name":"https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#", "headline":"Document describing the ontology https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#", "datePublished":"Thu Mar 11 16:54:53 CET 2021", "author":[{"@type":"Person","name":"Mattia Spadoni"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -42,9 +42,7 @@ function loadTOC(){
 	  t+='</ul>';
 	  $("#toc").html(t); 
 }
-$(function(){
-    loadHash();
-}); $.fn.ignore = function(sel){
+ $.fn.ignore = function(sel){
         return this.clone().find(sel||">*").remove().end();
  }; 
    </script> 
@@ -54,7 +52,6 @@ $(function(){
 <div class="container">
 <div class="head">
 <div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
-<h2>Release  20/02/2021</h2>
 
 
 <dl>
@@ -63,18 +60,15 @@ $(function(){
 <dt>Authors:</dt>
 <dd>Mattia Spadoni</dd>
 
-<dt>Publisher:</dt>
-<dd>Mattia Spadoni</dd>
-<dt>Download serialization:</dt><dd><span><a href="ontology.json" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.xml" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License: </dt><dd><a href="http://insertlicenseURIhere.org" target="_blank"><img src="https://img.shields.io/badge/License-CC%20BY-blue.svg" alt="http://insertlicenseURIhere.org" /></a>
-</dd><dt>Evaluation:</dt><dd><a href="OOPSEvaluation/OOPSeval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd><dt>Cite as:</dt>
-<dd>LS</dd>
-</dl>
+<dt>Download serialization:</dt><dd><span><a href="ontology.json" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.xml" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License: </dt><dd><a href="http://insertlicenseURIhere.org" target="_blank"><img src="https://img.shields.io/badge/License-CC_BY_SA-blue.svg" alt="http://insertlicenseURIhere.org" /></a>
+</dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
+<!-- <dt>Evaluation:</dt><dd><a href="OOPSEvaluation/OOPSeval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --></dl>
 
 <hr/>
 </div>
 <div class="status">
 <div>
-<span>Ontology Specification Draft</span>
+<span>Alpha</span>
 </div>
 </div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
 This is a place holder text for the abstract. The abstract should contain a couple of sentences summarizing the ontology and its purpose.</span>
@@ -1118,7 +1112,7 @@ This ontology has the following classes and properties.</span>
          <span>u r i</span>
       </a>
    </li>
-</ul>
+</ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe> 
 </div>
   
 
@@ -1638,6 +1632,12 @@ E.g. Leonardo's Teoria dei moti dell'animo is an artistic theory, there are lite
                title="https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasCharacter">has character</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#SceneObject"
+               title="https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#SceneObject">scene object</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="https://w3id.org/italia/onto/l0/Characteristic">
@@ -1930,7 +1930,7 @@ E.g. Leonardo's Teoria dei moti dell'animo is an artistic theory, there are lite
       <p>
          <strong>IRI:</strong> https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#DerivationRelation</p>
       <div class="comment">
-         <span class="markdown">This class is a specialisation of a RelatedWorkSituation one. It aims to represent a special type of relation that is the derivation relation among 2 different cultural properties.</span>
+         <span class="markdown">This class is a specialisation of a RelatedWorkSituation one. It aims to represent a special type of relation that is the derivation relation among two different cultural properties.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -2249,6 +2249,12 @@ Any entity that typically flows in time, either in the physical or social world 
                title="https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IconographyCompriseIn">iconography comprise in</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Iconography"
+               title="https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Iconography">iconography</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="Iconography">
@@ -2312,6 +2318,12 @@ Any entity that typically flows in time, either in the physical or social world 
                title="https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsSuccessorOf">is successor of</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#IconographicTheme"
+               title="https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IconographicTheme">iconographic theme</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="http://xmlns.com/foaf/0.1/Image">
@@ -2342,6 +2354,8 @@ Digital images (such as JPEG, PNG, GIF bitmaps, SVG diagrams etc.) are examples 
          <dd>
             <a href="#AbstractConcept"
                title="https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#AbstractConcept">abstract concept</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PictorialAttribute"
+               title="https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#PictorialAttribute">pictorial attribute</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -2559,6 +2573,8 @@ Digital images (such as JPEG, PNG, GIF bitmaps, SVG diagrams etc.) are examples 
          <span class="markdown">It is a significant element of an iconographical representation. it difference itself from a simple visual features due to its having an indipendence from the representation itself. Example: Last Supper has inside it the figure of Peter. Peter is a character that is independent from a single painting.</span>
       </div>
       <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
          <dt>has sub-classes</dt>
          <dd>
             <a href="#Character"
@@ -2578,6 +2594,11 @@ Digital images (such as JPEG, PNG, GIF bitmaps, SVG diagrams etc.) are examples 
             <a href="#HasPictorialAttribute"
                title="https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasPictorialAttribute">has pictorial attribute</a>
             <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#http://xmlns.com/foaf/0.1/Image" title="http://xmlns.com/foaf/0.1/Image">image</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -2720,6 +2741,12 @@ Digital images (such as JPEG, PNG, GIF bitmaps, SVG diagrams etc.) are examples 
             <a href="#HasObject"
                title="https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasObject">has object</a>
             <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Character"
+               title="https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Character">character</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -3629,9 +3656,7 @@ Digital images (such as JPEG, PNG, GIF bitmaps, SVG diagrams etc.) are examples 
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="http://www.w3.org/2002/07/owl#Thing"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -3686,9 +3711,8 @@ Digital images (such as JPEG, PNG, GIF bitmaps, SVG diagrams etc.) are examples 
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl/associatedWith"
-                  target="_blank"
-                  title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl/associatedWith">associated with</a>
+               <span class="dotted"
+                     title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl/associatedWith">associated with</span>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has sub-properties</dt>
@@ -3880,9 +3904,7 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="http://www.w3.org/2002/07/owl#Thing"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -3913,9 +3935,7 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="http://www.w3.org/2002/07/owl#Thing"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -4030,9 +4050,7 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="http://www.w3.org/2002/07/owl#Thing"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -4098,9 +4116,7 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="http://www.w3.org/2002/07/owl#Thing"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -4412,9 +4428,7 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="http://www.w3.org/2002/07/owl#Thing"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -4446,9 +4460,7 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="http://www.w3.org/2002/07/owl#Thing"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -4708,9 +4720,7 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="http://www.w3.org/2002/07/owl#Thing"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -5061,9 +5071,7 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="http://www.w3.org/2002/07/owl#Thing"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -5186,9 +5194,8 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl/associatedWith"
-                  target="_blank"
-                  title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl/associatedWith">associated with</a>
+               <span class="dotted"
+                     title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl/associatedWith">associated with</span>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has sub-properties</dt>
@@ -5298,9 +5305,7 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="http://www.w3.org/2002/07/owl#Thing"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -5375,9 +5380,7 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="http://www.w3.org/2002/07/owl#Thing"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -5599,9 +5602,7 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2002/07/owl#Thing"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -5679,9 +5680,7 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2002/07/owl#Thing"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -5707,9 +5706,7 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="http://www.w3.org/2002/07/owl#topObjectProperty"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
             </dd>
             <dt>has domain</dt>
             <dd>
@@ -5719,9 +5716,7 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2002/07/owl#Thing"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -5821,9 +5816,8 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl/associatedWith"
-                  target="_blank"
-                  title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl/associatedWith">associated with</a>
+               <span class="dotted"
+                     title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl/associatedWith">associated with</span>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has sub-properties</dt>
@@ -5866,9 +5860,7 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2002/07/owl#Thing"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -5910,9 +5902,7 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2002/07/owl#Thing"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -6015,9 +6005,7 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2002/07/owl#Thing"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -6211,9 +6199,7 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2002/07/owl#Thing"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -6244,9 +6230,7 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2002/07/owl#Thing"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -6440,9 +6424,7 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2002/07/owl#Thing"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -6903,9 +6885,8 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl/associatedWith"
-                  target="_blank"
-                  title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl/associatedWith">associated with</a>
+               <span class="dotted"
+                     title="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl/associatedWith">associated with</span>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has sub-properties</dt>
@@ -7005,9 +6986,7 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="http://www.w3.org/2002/07/owl#topObjectProperty"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
             </dd>
             <dt>has domain</dt>
             <dd>
@@ -7133,9 +7112,7 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2002/07/owl#Thing"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -7519,9 +7496,7 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
-                  target="_blank"
-                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
             </dd>
          </dl>
       </div>
@@ -7551,13 +7526,9 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
-                  target="_blank"
-                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a> 
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span> 
                <span class="logic">or</span> 
-               <a href="http://www.w3.org/2001/XMLSchema#int"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#int">int</a>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#int">int</span>
             </dd>
          </dl>
       </div>
@@ -7587,16 +7558,12 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="http://www.w3.org/2002/07/owl#Thing"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
-                  target="_blank"
-                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
             </dd>
          </dl>
       </div>
@@ -7621,16 +7588,12 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="http://www.w3.org/2002/07/owl#Thing"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
-                  target="_blank"
-                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
             </dd>
          </dl>
       </div>
@@ -7655,9 +7618,7 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
-                  target="_blank"
-                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
             </dd>
          </dl>
       </div>
@@ -7682,9 +7643,7 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
-                  target="_blank"
-                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
             </dd>
          </dl>
       </div>
@@ -7709,16 +7668,12 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="http://www.w3.org/2002/07/owl#Thing"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
-                  target="_blank"
-                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
             </dd>
          </dl>
       </div>
@@ -7749,9 +7704,7 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
-                  target="_blank"
-                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
             </dd>
          </dl>
       </div>
@@ -7781,9 +7734,7 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
-                  target="_blank"
-                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
             </dd>
          </dl>
       </div>
@@ -7826,20 +7777,14 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="http://www.w3.org/2002/07/owl#Thing"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
-                  target="_blank"
-                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a> 
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span> 
                <span class="logic">or</span> 
-               <a href="http://www.w3.org/2001/XMLSchema#int"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#int">int</a>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#int">int</span>
             </dd>
          </dl>
       </div>
@@ -7866,16 +7811,12 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="http://www.w3.org/2002/07/owl#Thing"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
-                  target="_blank"
-                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
             </dd>
          </dl>
       </div>
@@ -7899,16 +7840,12 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="http://www.w3.org/2002/07/owl#Thing"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
-                  target="_blank"
-                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
             </dd>
          </dl>
       </div>
@@ -7933,16 +7870,12 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="http://www.w3.org/2002/07/owl#Thing"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
-                  target="_blank"
-                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
             </dd>
          </dl>
       </div>
@@ -7973,9 +7906,7 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
-                  target="_blank"
-                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
             </dd>
          </dl>
       </div>
@@ -8014,9 +7945,7 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
-                  target="_blank"
-                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
             </dd>
          </dl>
       </div>
@@ -8038,16 +7967,12 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="http://www.w3.org/2002/07/owl#Thing"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
-                  target="_blank"
-                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
             </dd>
          </dl>
       </div>
@@ -8076,9 +8001,7 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
-                  target="_blank"
-                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
             </dd>
          </dl>
       </div>
@@ -8107,9 +8030,7 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
-                  target="_blank"
-                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
             </dd>
          </dl>
       </div>
@@ -8142,16 +8063,12 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="http://www.w3.org/2002/07/owl#Thing"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
-                  target="_blank"
-                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
             </dd>
          </dl>
       </div>
@@ -8167,16 +8084,12 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="http://www.w3.org/2002/07/owl#Thing"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
-                  target="_blank"
-                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
             </dd>
          </dl>
       </div>
@@ -8207,9 +8120,7 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
-                  target="_blank"
-                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
             </dd>
          </dl>
       </div>
@@ -8233,16 +8144,12 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="http://www.w3.org/2002/07/owl#Thing"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
-                  target="_blank"
-                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
             </dd>
          </dl>
       </div>
@@ -8272,13 +8179,9 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
-                  target="_blank"
-                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a> 
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span> 
                <span class="logic">or</span> 
-               <a href="http://www.w3.org/2001/XMLSchema#int"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#int">int</a>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#int">int</span>
             </dd>
          </dl>
       </div>
@@ -8317,9 +8220,7 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
-                  target="_blank"
-                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
             </dd>
          </dl>
       </div>
@@ -8343,16 +8244,12 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="http://www.w3.org/2002/07/owl#Thing"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
-                  target="_blank"
-                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
             </dd>
          </dl>
       </div>
@@ -8383,9 +8280,7 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
-                  target="_blank"
-                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
             </dd>
          </dl>
       </div>
@@ -8404,16 +8299,12 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="http://www.w3.org/2002/07/owl#Thing"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#Thing">thing</a>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
             </dd>
          </dl>
       </div>
@@ -8437,8 +8328,8 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
 Add your references here. It is recommended to have them as a list.</span>
 
 </div>
-<div id="acknowledgments">
-<h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div id="acknowledgements">
+<h2 id="ack" class="list">Acknowledgements <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <p>
 The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
 </div>

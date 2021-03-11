@@ -977,6 +977,7 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # http://xmlns.com/foaf/0.1/Image
 <http://xmlns.com/foaf/0.1/Image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://xmlns.com/foaf/0.1/Image> <http://www.w3.org/2002/07/owl#disjointWith> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#AbstractConcept> .
+<http://xmlns.com/foaf/0.1/Image> <http://www.w3.org/2002/07/owl#disjointWith> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#PictorialAttribute> .
 <http://xmlns.com/foaf/0.1/Image> <http://www.w3.org/2000/01/rdf-schema#comment> "The class Image is a sub-class of Document corresponding to those documents which are images.\nDigital images (such as JPEG, PNG, GIF bitmaps, SVG diagrams etc.) are examples of Image."@en .
 # 
 # https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#AbstractConcept
@@ -990,7 +991,7 @@ _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#ArtisticTheory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
 _:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid26 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#ArtisticTheoryEmbodiedIn> .
-_:genid26 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid27 .
+_:genid26 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid27 .
 _:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid27 <http://www.w3.org/2002/07/owl#unionOf> _:genid29 .
 _:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
@@ -1002,11 +1003,11 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#ArtisticTheory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
 _:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid30 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasIconography> .
-_:genid30 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/arco/ontology/context-description/Bibliography> .
+_:genid30 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/arco/ontology/context-description/Bibliography> .
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#ArtisticTheory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
 _:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid31 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasVisualUnit> .
-_:genid31 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#VisualUnit> .
+_:genid31 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#VisualUnit> .
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#ArtisticTheory> <http://www.w3.org/2000/01/rdf-schema#comment> "This class collects artistic theories, they are what an author/artist thinks the art practice should be and what they want to represent. An artistic theories does not necessarily have strict rules and it does not need to be consciously defined.\nE.g. Leonardo's Teoria dei moti dell'animo is an artistic theory, there are literary sources talking about it but Leonardo did not identified strict rules nor defined a clear definition for it."^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 # 
 # https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Character
@@ -1018,8 +1019,13 @@ _:genid32 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaS
 _:genid32 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#VisualUnit> .
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
 _:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsCharacterOf> .
-_:genid33 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Iconography> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasObject> .
+_:genid33 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#SceneObject> .
+<https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsCharacterOf> .
+_:genid34 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Iconography> .
+<https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Character> <http://www.w3.org/2002/07/owl#disjointWith> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#SceneObject> .
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Character> <http://www.w3.org/2000/01/rdf-schema#comment> "A character is a figure playing a certain role inside a representation. It is indipendent from the representation itself. E.g. S. Peter is a character of Last Supper iconography." .
 # 
 # https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#CompositionMotif
@@ -1031,10 +1037,6 @@ _:genid33 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/Mat
 # https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#DerivationRelation
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#DerivationRelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#DerivationRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/arco/ontology/context-description/RelatedWorkSituation> .
-<https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#DerivationRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasDerivatedWork> .
-_:genid34 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/arco/ontology/arco/CulturalProperty> .
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#DerivationRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
 _:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid35 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasFinalVisualUnit> .
@@ -1045,9 +1047,15 @@ _:genid36 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaS
 _:genid36 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#VisualUnit> .
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#DerivationRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
 _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasOriginalWork> .
-_:genid37 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/arco/ontology/arco/CulturalProperty> .
-<https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#DerivationRelation> <http://www.w3.org/2000/01/rdf-schema#comment> "This class is a specialisation of a RelatedWorkSituation one. It aims to represent a special type of relation that is the derivation relation among 2 different cultural properties."@en .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasDerivatedWork> .
+_:genid37 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid37 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/arco/ontology/arco/CulturalProperty> .
+<https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#DerivationRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasOriginalWork> .
+_:genid38 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid38 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/arco/ontology/arco/CulturalProperty> .
+<https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#DerivationRelation> <http://www.w3.org/2000/01/rdf-schema#comment> "This class is a specialisation of a RelatedWorkSituation one. It aims to represent a special type of relation that is the derivation relation among two different cultural properties."@en .
 # 
 # https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#GeometricVisualUnit
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#GeometricVisualUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1057,114 +1065,123 @@ _:genid37 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/arco/
 # https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IconographicTheme
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IconographicTheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IconographicTheme> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#AbstractConcept> .
-<https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IconographicTheme> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#CompriseIconography> .
-_:genid38 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Iconography> .
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IconographicTheme> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
 _:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#OtherIconclassCode> .
-_:genid39 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#CompriseIconography> .
+_:genid39 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Iconography> .
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IconographicTheme> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
 _:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#TypicalIconclassCode> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#OtherIconclassCode> .
 _:genid40 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IconographicTheme> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#TypicalIconclassCode> .
+_:genid41 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IconographicTheme> <http://www.w3.org/2002/07/owl#disjointWith> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Iconography> .
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IconographicTheme> <http://www.w3.org/2000/01/rdf-schema#comment> "This class is a general collector of all iconographies sharing the same theme. Eg. All Last Supper iconographies are connected to the instance of Iconographic Theme \"Last Supper\". It serves as a general overview of registered iconographies."^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 # 
 # https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Iconography
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Iconography> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Iconography> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#AbstractConcept> .
-<https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Iconography> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
-_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasCharacter> .
-_:genid41 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Character> .
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Iconography> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
 _:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid42 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasCompositionMotif> .
 _:genid42 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#CompositionMotif> .
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Iconography> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
 _:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasGeometricVisualUnit> .
-_:genid43 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#GeometricVisualUnit> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsUsedInWork> .
+_:genid43 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/arco/ontology/arco/CulturalProperty> .
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Iconography> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
 _:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasObject> .
-_:genid44 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#SceneObject> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasCharacter> .
+_:genid44 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Character> .
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Iconography> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
 _:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsUsedInWork> .
-_:genid45 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/arco/ontology/arco/CulturalProperty> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasGeometricVisualUnit> .
+_:genid45 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#GeometricVisualUnit> .
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Iconography> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid46 .
 _:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#hasStartingLocation> .
-_:genid46 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/italia/onto/l0/Location> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasObject> .
+_:genid46 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#SceneObject> .
+<https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Iconography> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#hasStartingLocation> .
+_:genid47 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/italia/onto/l0/Location> .
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Iconography> <http://www.w3.org/2000/01/rdf-schema#comment> "This class is the single iconographical representation. Each instance of this class could be present in different cultural properties and has a specific set of features that distinguish it from another one. Example: Florentine Last Supper is a way of representing Last Supper with certain temporal and location characteristics and with specific visual features."^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 # 
 # https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#InfluenceRelation
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#InfluenceRelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#InfluenceRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/arco/ontology/context-description/RelatedWorkSituation> .
-<https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#InfluenceRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
-_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasInfluencedWork> .
-_:genid47 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#VisualUnit> .
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#InfluenceRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
 _:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid48 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasInfluencedWork> .
-_:genid48 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/arco/ontology/arco/CulturalProperty> .
+_:genid48 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#VisualUnit> .
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#InfluenceRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
 _:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid49 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasInfluencerWork> .
 _:genid49 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#VisualUnit> .
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#InfluenceRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
 _:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasInfluencerWork> .
-_:genid50 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/arco/ontology/arco/CulturalProperty> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasMediumWork> .
+_:genid50 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#VisualUnit> .
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#InfluenceRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
 _:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid51 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasMediumWork> .
-_:genid51 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#VisualUnit> .
+_:genid51 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/arco/ontology/arco/CulturalProperty> .
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#InfluenceRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
 _:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasMediumWork> .
-_:genid52 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/arco/ontology/arco/CulturalProperty> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasInfluencedWork> .
+_:genid52 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid52 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/arco/ontology/arco/CulturalProperty> .
+<https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#InfluenceRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasInfluencerWork> .
+_:genid53 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid53 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/arco/ontology/arco/CulturalProperty> .
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#InfluenceRelation> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represent the influence relation between two cultural properties. One artwork influencing in every possible way another one establish an InfluenceRelation."@en .
 # 
 # https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#PictorialAttribute
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#PictorialAttribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#PictorialAttribute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsAttributeOf> .
+_:genid54 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Iconography> .
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#PictorialAttribute> <http://www.w3.org/2000/01/rdf-schema#comment> "It is a significant element of an iconographical representation. it difference itself from a simple visual features due to its having an indipendence from the representation itself. Example: Last Supper has inside it the figure of Peter. Peter is a character that is independent from a single painting."^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 # 
 # https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#PreparatoryRelation
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#PreparatoryRelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#PreparatoryRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/arco/ontology/context-description/RelatedWorkSituation> .
-<https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#PreparatoryRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
-_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasFinalVisualUnit> .
-_:genid53 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#VisualUnit> .
-<https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#PreparatoryRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
-_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasFinalWork> .
-_:genid54 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/arco/ontology/arco/CulturalProperty> .
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#PreparatoryRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid55 .
 _:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasPreparatoryVisualUnit> .
+_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasFinalVisualUnit> .
 _:genid55 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#VisualUnit> .
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#PreparatoryRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid56 .
 _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasPreparatoryWork> .
+_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasFinalWork> .
 _:genid56 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/arco/ontology/arco/CulturalProperty> .
+<https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#PreparatoryRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasPreparatoryVisualUnit> .
+_:genid57 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid57 <http://www.w3.org/2002/07/owl#onClass> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#VisualUnit> .
+<https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#PreparatoryRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasPreparatoryWork> .
+_:genid58 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid58 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/arco/ontology/arco/CulturalProperty> .
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#PreparatoryRelation> <http://www.w3.org/2000/01/rdf-schema#comment> "This class is the one responsible for representing the preparatory relation between two cultural properties, the preparatory and the final one. Eg: Windsor 12542 being a preparatory work of Last Supper"@en .
 # 
 # https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#SceneObject
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#SceneObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#SceneObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#PictorialAttribute> .
-<https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#SceneObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
-_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasVisualUnit> .
-_:genid57 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#VisualUnit> .
-<https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#SceneObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid58 .
-_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsObjectOf> .
-_:genid58 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Iconography> .
+<https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#SceneObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid59 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasVisualUnit> .
+_:genid59 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#VisualUnit> .
+<https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#SceneObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid60 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsObjectOf> .
+_:genid60 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Iconography> .
 <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#SceneObject> <http://www.w3.org/2000/01/rdf-schema#comment> "A scene object is a significant object existing inside an artwork. It is different from pure shapes and arrangements of motif due to fact that it could be represented in many differet ways but it is always present in certain representation. For example the figure of S. Peter in Last Supper always have a knife." .
 # 
 # https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#VisualUnit
@@ -1337,16 +1354,16 @@ _:genid58 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://github.com/Mat
 # #################################################################
 # 
 # 
-_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid59 <http://www.w3.org/2002/07/owl#members> _:genid62 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid61 <http://www.w3.org/2002/07/owl#members> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#DerivationRelation> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#InfluenceRelation> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid62 .
 _:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#DerivationRelation> .
-_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid61 .
-_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#InfluenceRelation> .
-_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid60 .
-_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#PreparatoryRelation> .
-_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#PreparatoryRelation> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
 # Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
