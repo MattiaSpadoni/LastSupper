@@ -63,11 +63,11 @@
 }, {
   "@id" : "_:genid26",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid27"
+  } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#ArtisticTheoryEmbodiedIn"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "_:genid27"
   } ]
 }, {
   "@id" : "_:genid27",
@@ -82,20 +82,20 @@
 }, {
   "@id" : "_:genid30",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/arco/ontology/context-description/Bibliography"
+  } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasIconography"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/arco/ontology/context-description/Bibliography"
   } ]
 }, {
   "@id" : "_:genid31",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#VisualUnit"
+  } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasVisualUnit"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#VisualUnit"
   } ]
 }, {
   "@id" : "_:genid32",
@@ -109,20 +109,20 @@
 }, {
   "@id" : "_:genid33",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsCharacterOf"
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#SceneObject"
   } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Iconography"
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasObject"
   } ]
 }, {
   "@id" : "_:genid34",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasDerivatedWork"
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Iconography"
   } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/arco/ontology/arco/CulturalProperty"
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsCharacterOf"
   } ]
 }, {
   "@id" : "_:genid35",
@@ -145,29 +145,37 @@
 }, {
   "@id" : "_:genid37",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasOriginalWork"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/arco/ontology/arco/CulturalProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasDerivatedWork"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid38",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#CompriseIconography"
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/arco/ontology/arco/CulturalProperty"
   } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Iconography"
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasOriginalWork"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid39",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#OtherIconclassCode"
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Iconography"
   } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#CompriseIconography"
   } ]
 }, {
   "@id" : "_:genid4",
@@ -183,7 +191,7 @@
   "@id" : "_:genid40",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#TypicalIconclassCode"
+    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#OtherIconclassCode"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
@@ -192,10 +200,10 @@
   "@id" : "_:genid41",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasCharacter"
+    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#TypicalIconclassCode"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Character"
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
   "@id" : "_:genid42",
@@ -210,46 +218,46 @@
   "@id" : "_:genid43",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasGeometricVisualUnit"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#GeometricVisualUnit"
-  } ]
-}, {
-  "@id" : "_:genid44",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasObject"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#SceneObject"
-  } ]
-}, {
-  "@id" : "_:genid45",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsUsedInWork"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/arco/ontology/arco/CulturalProperty"
   } ]
 }, {
+  "@id" : "_:genid44",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Character"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasCharacter"
+  } ]
+}, {
+  "@id" : "_:genid45",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#GeometricVisualUnit"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasGeometricVisualUnit"
+  } ]
+}, {
   "@id" : "_:genid46",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#hasStartingLocation"
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#SceneObject"
   } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/italia/onto/l0/Location"
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasObject"
   } ]
 }, {
   "@id" : "_:genid47",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasInfluencedWork"
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Location"
   } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#VisualUnit"
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#hasStartingLocation"
   } ]
 }, {
   "@id" : "_:genid48",
@@ -258,7 +266,7 @@
     "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasInfluencedWork"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/arco/ontology/arco/CulturalProperty"
+    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#VisualUnit"
   } ]
 }, {
   "@id" : "_:genid49",
@@ -272,32 +280,58 @@
 }, {
   "@id" : "_:genid50",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasInfluencerWork"
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#VisualUnit"
   } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/arco/ontology/arco/CulturalProperty"
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasMediumWork"
   } ]
 }, {
   "@id" : "_:genid51",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/arco/ontology/arco/CulturalProperty"
+  } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasMediumWork"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#VisualUnit"
   } ]
 }, {
   "@id" : "_:genid52",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasMediumWork"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/arco/ontology/arco/CulturalProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasInfluencedWork"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid53",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/arco/ontology/arco/CulturalProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasInfluencerWork"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid54",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsAttributeOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Iconography"
+  } ]
+}, {
+  "@id" : "_:genid55",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasFinalVisualUnit"
@@ -306,7 +340,7 @@
     "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#VisualUnit"
   } ]
 }, {
-  "@id" : "_:genid54",
+  "@id" : "_:genid56",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasFinalWork"
@@ -315,25 +349,33 @@
     "@id" : "https://w3id.org/arco/ontology/arco/CulturalProperty"
   } ]
 }, {
-  "@id" : "_:genid55",
+  "@id" : "_:genid57",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#VisualUnit"
+  } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasPreparatoryVisualUnit"
   } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#VisualUnit"
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid56",
+  "@id" : "_:genid58",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/arco/ontology/arco/CulturalProperty"
+  } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasPreparatoryWork"
   } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/arco/ontology/arco/CulturalProperty"
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid57",
+  "@id" : "_:genid59",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#HasVisualUnit"
@@ -342,16 +384,16 @@
     "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#VisualUnit"
   } ]
 }, {
-  "@id" : "_:genid58",
+  "@id" : "_:genid60",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Iconography"
+  } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IsObjectOf"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Iconography"
   } ]
 }, {
-  "@id" : "_:genid59",
+  "@id" : "_:genid61",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -421,6 +463,8 @@
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#AbstractConcept"
+  }, {
+    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#PictorialAttribute"
   } ]
 }, {
   "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#",
@@ -546,6 +590,11 @@
     "@id" : "_:genid32"
   }, {
     "@id" : "_:genid33"
+  }, {
+    "@id" : "_:genid34"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#SceneObject"
   } ]
 }, {
   "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#CompositionDescription",
@@ -645,18 +694,18 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "This class is a specialisation of a RelatedWorkSituation one. It aims to represent a special type of relation that is the derivation relation among 2 different cultural properties."
+    "@value" : "This class is a specialisation of a RelatedWorkSituation one. It aims to represent a special type of relation that is the derivation relation among two different cultural properties."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/arco/ontology/context-description/RelatedWorkSituation"
-  }, {
-    "@id" : "_:genid34"
   }, {
     "@id" : "_:genid35"
   }, {
     "@id" : "_:genid36"
   }, {
     "@id" : "_:genid37"
+  }, {
+    "@id" : "_:genid38"
   } ]
 }, {
   "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Description",
@@ -1151,11 +1200,14 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#AbstractConcept"
   }, {
-    "@id" : "_:genid38"
-  }, {
     "@id" : "_:genid39"
   }, {
     "@id" : "_:genid40"
+  }, {
+    "@id" : "_:genid41"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Iconography"
   } ]
 }, {
   "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Iconography",
@@ -1167,8 +1219,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#AbstractConcept"
   }, {
-    "@id" : "_:genid41"
-  }, {
     "@id" : "_:genid42"
   }, {
     "@id" : "_:genid43"
@@ -1178,6 +1228,8 @@
     "@id" : "_:genid45"
   }, {
     "@id" : "_:genid46"
+  }, {
+    "@id" : "_:genid47"
   } ]
 }, {
   "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#IconographyCompriseIn",
@@ -1201,8 +1253,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/arco/ontology/context-description/RelatedWorkSituation"
   }, {
-    "@id" : "_:genid47"
-  }, {
     "@id" : "_:genid48"
   }, {
     "@id" : "_:genid49"
@@ -1212,6 +1262,8 @@
     "@id" : "_:genid51"
   }, {
     "@id" : "_:genid52"
+  }, {
+    "@id" : "_:genid53"
   } ]
 }, {
   "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Influenced",
@@ -1726,6 +1778,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "@value" : "It is a significant element of an iconographical representation. it difference itself from a simple visual features due to its having an indipendence from the representation itself. Example: Last Supper has inside it the figure of Peter. Peter is a character that is independent from a single painting."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid54"
   } ]
 }, {
   "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#PreparatoryRelation",
@@ -1737,13 +1792,13 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/arco/ontology/context-description/RelatedWorkSituation"
   }, {
-    "@id" : "_:genid53"
-  }, {
-    "@id" : "_:genid54"
-  }, {
     "@id" : "_:genid55"
   }, {
     "@id" : "_:genid56"
+  }, {
+    "@id" : "_:genid57"
+  }, {
+    "@id" : "_:genid58"
   } ]
 }, {
   "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#Presents",
@@ -1823,9 +1878,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#PictorialAttribute"
   }, {
-    "@id" : "_:genid57"
+    "@id" : "_:genid59"
   }, {
-    "@id" : "_:genid58"
+    "@id" : "_:genid60"
   } ]
 }, {
   "@id" : "https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#StartDate",

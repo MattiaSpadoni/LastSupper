@@ -1066,7 +1066,8 @@ This property relates a entity (i.e. documentation, cultural entity, etc.) to it
 
 ###  http://xmlns.com/foaf/0.1/Image
 <http://xmlns.com/foaf/0.1/Image> rdf:type owl:Class ;
-                                  owl:disjointWith :AbstractConcept ;
+                                  owl:disjointWith :AbstractConcept ,
+                                                   :PictorialAttribute ;
                                   rdfs:comment """The class Image is a sub-class of Document corresponding to those documents which are images.
 Digital images (such as JPEG, PNG, GIF bitmaps, SVG diagrams etc.) are examples of Image."""@en .
 
@@ -1082,19 +1083,19 @@ Digital images (such as JPEG, PNG, GIF bitmaps, SVG diagrams etc.) are examples 
                 rdfs:subClassOf :AbstractConcept ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty :ArtisticTheoryEmbodiedIn ;
-                                  owl:someValuesFrom [ rdf:type owl:Class ;
-                                                       owl:unionOf ( :AbstractConcept
-                                                                     <https://w3id.org/arco/ontology/arco/CulturalProperty>
-                                                                   )
-                                                     ]
+                                  owl:allValuesFrom [ rdf:type owl:Class ;
+                                                      owl:unionOf ( :AbstractConcept
+                                                                    <https://w3id.org/arco/ontology/arco/CulturalProperty>
+                                                                  )
+                                                    ]
                                 ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty :HasIconography ;
-                                  owl:someValuesFrom <https://w3id.org/arco/ontology/context-description/Bibliography>
+                                  owl:allValuesFrom <https://w3id.org/arco/ontology/context-description/Bibliography>
                                 ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty :HasVisualUnit ;
-                                  owl:someValuesFrom :VisualUnit
+                                  owl:allValuesFrom :VisualUnit
                                 ] ;
                 rdfs:comment """This class collects artistic theories, they are what an author/artist thinks the art practice should be and what they want to represent. An artistic theories does not necessarily have strict rules and it does not need to be consciously defined.
 E.g. Leonardo's Teoria dei moti dell'animo is an artistic theory, there are literary sources talking about it but Leonardo did not identified strict rules nor defined a clear definition for it."""^^rdfs:Literal .
@@ -1108,9 +1109,14 @@ E.g. Leonardo's Teoria dei moti dell'animo is an artistic theory, there are lite
                              owl:someValuesFrom :VisualUnit
                            ] ,
                            [ rdf:type owl:Restriction ;
+                             owl:onProperty :HasObject ;
+                             owl:allValuesFrom :SceneObject
+                           ] ,
+                           [ rdf:type owl:Restriction ;
                              owl:onProperty :IsCharacterOf ;
-                             owl:someValuesFrom :Iconography
+                             owl:allValuesFrom :Iconography
                            ] ;
+           owl:disjointWith :SceneObject ;
            rdfs:comment "A character is a figure playing a certain role inside a representation. It is indipendent from the representation itself. E.g. S. Peter is a character of Last Supper iconography." .
 
 
@@ -1125,10 +1131,6 @@ E.g. Leonardo's Teoria dei moti dell'animo is an artistic theory, there are lite
 :DerivationRelation rdf:type owl:Class ;
                     rdfs:subClassOf <https://w3id.org/arco/ontology/context-description/RelatedWorkSituation> ,
                                     [ rdf:type owl:Restriction ;
-                                      owl:onProperty :HasDerivatedWork ;
-                                      owl:someValuesFrom <https://w3id.org/arco/ontology/arco/CulturalProperty>
-                                    ] ,
-                                    [ rdf:type owl:Restriction ;
                                       owl:onProperty :HasFinalVisualUnit ;
                                       owl:someValuesFrom :VisualUnit
                                     ] ,
@@ -1137,10 +1139,16 @@ E.g. Leonardo's Teoria dei moti dell'animo is an artistic theory, there are lite
                                       owl:someValuesFrom :VisualUnit
                                     ] ,
                                     [ rdf:type owl:Restriction ;
+                                      owl:onProperty :HasDerivatedWork ;
+                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass <https://w3id.org/arco/ontology/arco/CulturalProperty>
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
                                       owl:onProperty :HasOriginalWork ;
-                                      owl:someValuesFrom <https://w3id.org/arco/ontology/arco/CulturalProperty>
+                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass <https://w3id.org/arco/ontology/arco/CulturalProperty>
                                     ] ;
-                    rdfs:comment "This class is a specialisation of a RelatedWorkSituation one. It aims to represent a special type of relation that is the derivation relation among 2 different cultural properties."@en .
+                    rdfs:comment "This class is a specialisation of a RelatedWorkSituation one. It aims to represent a special type of relation that is the derivation relation among two different cultural properties."@en .
 
 
 ###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#GeometricVisualUnit
@@ -1154,7 +1162,7 @@ E.g. Leonardo's Teoria dei moti dell'animo is an artistic theory, there are lite
                    rdfs:subClassOf :AbstractConcept ,
                                    [ rdf:type owl:Restriction ;
                                      owl:onProperty :CompriseIconography ;
-                                     owl:someValuesFrom :Iconography
+                                     owl:allValuesFrom :Iconography
                                    ] ,
                                    [ rdf:type owl:Restriction ;
                                      owl:onProperty :OtherIconclassCode ;
@@ -1164,6 +1172,7 @@ E.g. Leonardo's Teoria dei moti dell'animo is an artistic theory, there are lite
                                      owl:onProperty :TypicalIconclassCode ;
                                      owl:someValuesFrom rdfs:Literal
                                    ] ;
+                   owl:disjointWith :Iconography ;
                    rdfs:comment "This class is a general collector of all iconographies sharing the same theme. Eg. All Last Supper iconographies are connected to the instance of Iconographic Theme \"Last Supper\". It serves as a general overview of registered iconographies."^^rdfs:Literal .
 
 
@@ -1171,28 +1180,28 @@ E.g. Leonardo's Teoria dei moti dell'animo is an artistic theory, there are lite
 :Iconography rdf:type owl:Class ;
              rdfs:subClassOf :AbstractConcept ,
                              [ rdf:type owl:Restriction ;
-                               owl:onProperty :HasCharacter ;
-                               owl:someValuesFrom :Character
-                             ] ,
-                             [ rdf:type owl:Restriction ;
                                owl:onProperty :HasCompositionMotif ;
                                owl:someValuesFrom :CompositionMotif
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty :HasGeometricVisualUnit ;
-                               owl:someValuesFrom :GeometricVisualUnit
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty :HasObject ;
-                               owl:someValuesFrom :SceneObject
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :IsUsedInWork ;
                                owl:someValuesFrom <https://w3id.org/arco/ontology/arco/CulturalProperty>
                              ] ,
                              [ rdf:type owl:Restriction ;
+                               owl:onProperty :HasCharacter ;
+                               owl:allValuesFrom :Character
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :HasGeometricVisualUnit ;
+                               owl:allValuesFrom :GeometricVisualUnit
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :HasObject ;
+                               owl:allValuesFrom :SceneObject
+                             ] ,
+                             [ rdf:type owl:Restriction ;
                                owl:onProperty :hasStartingLocation ;
-                               owl:someValuesFrom <https://w3id.org/italia/onto/l0/Location>
+                               owl:allValuesFrom <https://w3id.org/italia/onto/l0/Location>
                              ] ;
              rdfs:comment "This class is the single iconographical representation. Each instance of this class could be present in different cultural properties and has a specific set of features that distinguish it from another one. Example: Florentine Last Supper is a way of representing Last Supper with certain temporal and location characteristics and with specific visual features."^^rdfs:Literal .
 
@@ -1205,30 +1214,36 @@ E.g. Leonardo's Teoria dei moti dell'animo is an artistic theory, there are lite
                                      owl:someValuesFrom :VisualUnit
                                    ] ,
                                    [ rdf:type owl:Restriction ;
+                                     owl:onProperty :HasInfluencerWork ;
+                                     owl:someValuesFrom :VisualUnit
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :HasMediumWork ;
+                                     owl:allValuesFrom :VisualUnit
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :HasMediumWork ;
+                                     owl:allValuesFrom <https://w3id.org/arco/ontology/arco/CulturalProperty>
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
                                      owl:onProperty :HasInfluencedWork ;
-                                     owl:someValuesFrom <https://w3id.org/arco/ontology/arco/CulturalProperty>
+                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass <https://w3id.org/arco/ontology/arco/CulturalProperty>
                                    ] ,
                                    [ rdf:type owl:Restriction ;
                                      owl:onProperty :HasInfluencerWork ;
-                                     owl:someValuesFrom :VisualUnit
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty :HasInfluencerWork ;
-                                     owl:someValuesFrom <https://w3id.org/arco/ontology/arco/CulturalProperty>
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty :HasMediumWork ;
-                                     owl:someValuesFrom :VisualUnit
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty :HasMediumWork ;
-                                     owl:someValuesFrom <https://w3id.org/arco/ontology/arco/CulturalProperty>
+                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass <https://w3id.org/arco/ontology/arco/CulturalProperty>
                                    ] ;
                    rdfs:comment "This class represent the influence relation between two cultural properties. One artwork influencing in every possible way another one establish an InfluenceRelation."@en .
 
 
 ###  https://github.com/MattiaSpadoni/LastSupper/blob/main/LastSupper.owl#PictorialAttribute
 :PictorialAttribute rdf:type owl:Class ;
+                    rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                      owl:onProperty :IsAttributeOf ;
+                                      owl:someValuesFrom :Iconography
+                                    ] ;
                     rdfs:comment "It is a significant element of an iconographical representation. it difference itself from a simple visual features due to its having an indipendence from the representation itself. Example: Last Supper has inside it the figure of Peter. Peter is a character that is independent from a single painting."^^rdfs:Literal .
 
 
@@ -1245,11 +1260,13 @@ E.g. Leonardo's Teoria dei moti dell'animo is an artistic theory, there are lite
                                      ] ,
                                      [ rdf:type owl:Restriction ;
                                        owl:onProperty :HasPreparatoryVisualUnit ;
-                                       owl:someValuesFrom :VisualUnit
+                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onClass :VisualUnit
                                      ] ,
                                      [ rdf:type owl:Restriction ;
                                        owl:onProperty :HasPreparatoryWork ;
-                                       owl:someValuesFrom <https://w3id.org/arco/ontology/arco/CulturalProperty>
+                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onClass <https://w3id.org/arco/ontology/arco/CulturalProperty>
                                      ] ;
                      rdfs:comment "This class is the one responsible for representing the preparatory relation between two cultural properties, the preparatory and the final one. Eg: Windsor 12542 being a preparatory work of Last Supper"@en .
 
@@ -1263,7 +1280,7 @@ E.g. Leonardo's Teoria dei moti dell'animo is an artistic theory, there are lite
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :IsObjectOf ;
-                               owl:someValuesFrom :Iconography
+                               owl:allValuesFrom :Iconography
                              ] ;
              rdfs:comment "A scene object is a significant object existing inside an artwork. It is different from pure shapes and arrangements of motif due to fact that it could be represented in many differet ways but it is always present in certain representation. For example the figure of S. Peter in Last Supper always have a knife." .
 
